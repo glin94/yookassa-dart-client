@@ -1,0 +1,11 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        options:
+          union_key: type
+          union_value_case: snake
+          explicit_to_json: true
+      json_serializable:
+        options:
+          field_rename: snake
