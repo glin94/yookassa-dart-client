@@ -19,25 +19,22 @@ void start() {
 
   test('createPayment', () async {
     final payment = await yookassaClient.createPayment(
-      payment: createdPayment,
+      paymentRequest: createdPayment,
       idempotenceKey: createdPaymentIdempotenceKey,
     );
 
-    print(payment);
     expect(payment, isNotNull);
     expect(payment.status, YookassaPaymentStatus.pending);
   });
 
   test('getPaymentInfo', () async {
     final payment = await yookassaClient.createPayment(
-      payment: createdPayment,
+      paymentRequest: createdPayment,
       idempotenceKey: createdPaymentIdempotenceKey,
     );
 
     final resultPayment =
         await yookassaClient.getPaymentInfo(paymentId: payment.id);
-
-    print(resultPayment);
 
     expect(resultPayment, isNotNull);
     expect(resultPayment.id, payment.id);
@@ -47,27 +44,7 @@ void start() {
     final succeededPayment =
         await yookassaClient.getPaymentInfo(paymentId: succeededPaymentId);
 
-    print(succeededPayment);
-
     expect(succeededPayment, isNotNull);
     expect(succeededPayment.status, YookassaPaymentStatus.succeeded);
   });
-
-  // test('capturePayment', () async {
-  //   final capturedPayment = await yookassaClient.createPayment(
-  //     payment: createdPayment.copyWith(capture: false),
-  //   );
-
-  //   print(capturedPayment);
-
-  //   final succeededPayment = await yookassaClient.capturePayment(
-  //     paymentId: capturedPayment.id,
-  //     payment: capturedPayment,
-  //   );
-
-  //   print(succeededPayment);
-
-  //   expect(succeededPayment, isNotNull);
-  //   expect(succeededPayment.status, YookassaPaymentStatus.succeeded);
-  // });
 }

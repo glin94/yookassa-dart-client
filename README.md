@@ -18,7 +18,7 @@ import 'package:dio/dio.dart';
 import 'package:yookassa_client/yookassa_client.dart';
 
 
-  final dio = Dio();
+    final dio = Dio();
 
   final yookassaClient = YookassaClient(
     dio,
@@ -26,7 +26,7 @@ import 'package:yookassa_client/yookassa_client.dart';
     secretKey: 'your_secret_key',
   );
 
-  final createdPayment = YookassaPayment.create(
+  const createdPaymentRequest = CreatePaymentRequest(
     amount: Amount(
       value: '100.00',
       currency: 'RUB',
@@ -38,9 +38,10 @@ import 'package:yookassa_client/yookassa_client.dart';
   );
 
   try {
-    final payment = await yookassaClient.createPayment(payment: createdPayment);
+    final payment =
+        await yookassaClient.createPayment(payment: createdPaymentRequest);
 
-    payment.mapOrNull(
+    payment.map(
       pending: (payment) {
         print(payment);
       },
@@ -57,4 +58,5 @@ import 'package:yookassa_client/yookassa_client.dart';
   } on YookassaError catch (e) {
     print(e);
   }
+}
 ```

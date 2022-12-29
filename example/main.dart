@@ -22,10 +22,11 @@ void main() async {
   );
 
   try {
-    final payment =
-        await yookassaClient.createPayment(payment: createdPaymentRequest);
+    final payment = await yookassaClient.createPayment(
+      paymentRequest: createdPaymentRequest,
+    );
 
-    payment.mapOrNull(
+    payment.map(
       pending: (payment) {
         print(payment);
       },

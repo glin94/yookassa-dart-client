@@ -62,7 +62,7 @@ abstract class YookassaClient {
   /// [idempotenceKey] -  Ключ идемпотентности
   @POST(Urls.base)
   Future<YookassaPayment> createPayment({
-    @Body() required CreatePaymentRequest payment,
+    @Body() required CreatePaymentRequest paymentRequest,
     @Header(_idempotenceKey) String? idempotenceKey,
   });
 
