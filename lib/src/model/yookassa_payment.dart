@@ -62,16 +62,8 @@ part 'yookassa_payment.g.dart';
 /// [merchant_customer_id] - Идентификатор покупателя в вашей системе, например электронная почта или номер телефона. Не более 200 символов. Присутствует, если вы хотите запомнить банковскую карту.
 @Freezed(unionKey: 'status')
 class YookassaPayment with _$YookassaPayment {
-  factory YookassaPayment.create({
-    required Amount amount,
-    String? description,
-    Map<String, Object>? metadata,
-    YookassaPaymentMethod? paymentMethodData,
-    YookassaConfirmation? confirmation,
-    bool? capture,
-  }) = _CreatedYookassaPayment;
-
   factory YookassaPayment.pending({
+    required YookassaPaymentStatus status,
     required String id,
     required Amount amount,
     Amount? incomeAmount,
@@ -87,9 +79,10 @@ class YookassaPayment with _$YookassaPayment {
     AuthorizationDetails? authorizationDetails,
     DateTime? expiresAt,
     Map<String, Object>? metadata,
-  }) = _PendedYookassaPayment;
+  }) = _PendingYookassaPayment;
 
   factory YookassaPayment.waitingForCapture({
+    required YookassaPaymentStatus status,
     required String id,
     required Amount amount,
     Amount? incomeAmount,
@@ -105,9 +98,10 @@ class YookassaPayment with _$YookassaPayment {
     AuthorizationDetails? authorizationDetails,
     DateTime? expiresAt,
     Map<String, Object>? metadata,
-  }) = _WaitedYookassaPayment;
+  }) = _WaitingYookassaPayment;
 
   factory YookassaPayment.succeeded({
+    required YookassaPaymentStatus status,
     required String id,
     required Amount amount,
     Amount? incomeAmount,
@@ -126,6 +120,7 @@ class YookassaPayment with _$YookassaPayment {
   }) = _SucceededYookassaPayment;
 
   factory YookassaPayment.canceled({
+    required YookassaPaymentStatus status,
     required String id,
     required Amount amount,
     Amount? incomeAmount,
@@ -146,4 +141,13 @@ class YookassaPayment with _$YookassaPayment {
 
   factory YookassaPayment.fromJson(Map<String, dynamic> json) =>
       _$YookassaPaymentFromJson(json);
+}
+
+/// Статус платежа
+@JsonEnum(fieldRename: FieldRename.snake)
+enum YookassaPaymentStatus {
+  pending,
+  waitingForCapture,
+  succeeded,
+  canceled,
 }

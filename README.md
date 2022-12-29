@@ -1,6 +1,6 @@
 # yookassa_client
 
-Unofficial dart rest client for [Yookassa Payments API](https://yookassa.ru/developers/payment-acceptance/getting-started/quick-start)
+Dart REST client for [Yookassa Payments API](https://yookassa.ru/developers/payment-acceptance/getting-started/quick-start)
 
 ## Get started
 

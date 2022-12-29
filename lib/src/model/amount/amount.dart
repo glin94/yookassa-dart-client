@@ -12,7 +12,7 @@ part 'amount.g.dart';
 /// [currency] - Код валюты в формате ISO-4217. Должен соответствовать валюте субаккаунта (recipient.gateway_id), если вы разделяете потоки платежей, и валюте аккаунта (shopId в личном кабинете), если не разделяете.
 @freezed
 class Amount with _$Amount {
-  factory Amount({
+  const factory Amount({
     required String value,
     required String currency,
   }) = _Amount;

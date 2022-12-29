@@ -9,7 +9,7 @@ import 'package:yookassa_client/src/model/model.dart';
 
 part 'yookassa_client.g.dart';
 
-/// Unofficial rest client for `Yookassa Payments API`
+/// Dart REST client for `Yookassa Payments API`
 ///
 /// The API allows you to process online payments: send payment requests, save details for recurring payments, make refunds, and more.
 ///
@@ -62,7 +62,7 @@ abstract class YookassaClient {
   /// [idempotenceKey] -  Ключ идемпотентности
   @POST(Urls.base)
   Future<YookassaPayment> createPayment({
-    @Body() required YookassaPayment payment,
+    @Body() required CreatePaymentRequest payment,
     @Header(_idempotenceKey) String? idempotenceKey,
   });
 
