@@ -18,7 +18,7 @@ class CreatePaymentRequest with _$CreatePaymentRequest {
     bool? savePaymentMethod,
     bool? capture,
     String? clientIp,
-    Map<String, Object>? metadata,
+    Map<String, Object?>? metadata,
     String? merchantCustomerId,
   }) = _CreatePaymentRequest;
 
