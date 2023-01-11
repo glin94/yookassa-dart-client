@@ -7,16 +7,25 @@ part 'yookassa_payment_method.g.dart';
 /// Метод оплаты
 @freezed
 class YookassaPaymentMethod with _$YookassaPaymentMethod {
+  /// YooMoney
+  const factory YookassaPaymentMethod.yooMoney() = _YooMoneyPaymentMethod;
+
   /// Система быстрых платежей
-  factory YookassaPaymentMethod.sbp({
+  const factory YookassaPaymentMethod.sbp({
     String? id,
     bool? saved,
     String? title,
   }) = _SBPPaymentMethod;
 
+  const factory YookassaPaymentMethod.bankCard({
+    String? id,
+    YookassaCard? card,
+    bool? saved,
+  }) = _BankCardaymentMethod;
+
   /// SberPay
   @FreezedUnionValue('sberbank')
-  factory YookassaPaymentMethod.sberPay({
+  const factory YookassaPaymentMethod.sberPay({
     String? id,
     String? phone,
     YookassaCard? card,

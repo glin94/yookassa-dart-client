@@ -3,13 +3,14 @@ import 'package:yookassa_client/yookassa_client.dart';
 
 void main() async {
   final dio = Dio();
+
   final yookassaClient = YookassaClient(
     dio,
     shopId: 'your_shop_id',
     secretKey: 'your_secret_key',
   );
 
-  final createdPayment = YookassaPayment.create(
+  const createdPaymentRequest = CreatePaymentRequest(
     amount: Amount(
       value: '100.00',
       currency: 'RUB',
@@ -21,9 +22,11 @@ void main() async {
   );
 
   try {
-    final payment = await yookassaClient.createPayment(payment: createdPayment);
+    final payment = await yookassaClient.createPayment(
+      paymentRequest: createdPaymentRequest,
+    );
 
-    payment.mapOrNull(
+    payment.map(
       pending: (payment) {
         print(payment);
       },

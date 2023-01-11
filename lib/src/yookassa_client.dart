@@ -2,14 +2,13 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
-import 'package:uuid/uuid.dart';
 import 'package:yookassa_client/constant/urls.dart';
-import 'package:yookassa_client/src/interceptor/yookassa_error_interceptor.dart';
+import 'package:yookassa_client/src/interceptor/yookassa_interceptor.dart';
 import 'package:yookassa_client/src/model/model.dart';
 
 part 'yookassa_client.g.dart';
 
-/// Unofficial rest client for `Yookassa Payments API`
+/// Dart REST client for `Yookassa Payments API`
 ///
 /// The API allows you to process online payments: send payment requests, save details for recurring payments, make refunds, and more.
 ///
@@ -38,12 +37,10 @@ abstract class YookassaClient {
   }) {
     final authValue = base64Encode(utf8.encode('$shopId:$secretKey'));
 
-    const uuid = Uuid();
     dio
       ..options.headers.addAll(
         <String, String>{
           'Authorization': 'Basic $authValue',
-          _idempotenceKey: uuid.v4(),
         },
       )
       ..interceptors.addAll([
@@ -62,7 +59,7 @@ abstract class YookassaClient {
   /// [idempotenceKey] -  Ключ идемпотентности
   @POST(Urls.base)
   Future<YookassaPayment> createPayment({
-    @Body() required YookassaPayment payment,
+    @Body() required CreatePaymentRequest paymentRequest,
     @Header(_idempotenceKey) String? idempotenceKey,
   });
 

@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:uuid/uuid.dart';
 import 'package:yookassa_client/yookassa_client.dart';
 
 class YookassaErrorInterceptor extends Interceptor {
@@ -17,5 +18,15 @@ class YookassaErrorInterceptor extends Interceptor {
       final error = YookassaError.fromJson(map);
       handler.next(error);
     }
+  }
+
+  @override
+  void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
+    const uuid = Uuid();
+
+    options.headers.addAll({
+      'Idempotence-Key': uuid.v4(),
+    });
+    handler.next(options);
   }
 }
