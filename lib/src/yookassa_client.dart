@@ -2,9 +2,8 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
-import 'package:uuid/uuid.dart';
 import 'package:yookassa_client/constant/urls.dart';
-import 'package:yookassa_client/src/interceptor/yookassa_error_interceptor.dart';
+import 'package:yookassa_client/src/interceptor/yookassa_interceptor.dart';
 import 'package:yookassa_client/src/model/model.dart';
 
 part 'yookassa_client.g.dart';
@@ -38,12 +37,10 @@ abstract class YookassaClient {
   }) {
     final authValue = base64Encode(utf8.encode('$shopId:$secretKey'));
 
-    const uuid = Uuid();
     dio
       ..options.headers.addAll(
         <String, String>{
           'Authorization': 'Basic $authValue',
-          _idempotenceKey: uuid.v4(),
         },
       )
       ..interceptors.addAll([
