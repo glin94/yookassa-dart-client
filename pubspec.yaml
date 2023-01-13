@@ -1,5 +1,5 @@
 name: yookassa_client
-description: Dart REST client for Yookassa Payments API
+description: This package allows implementing payment acceptance into mobile, web, desktop apps and works as an extension to the YooMoney API
 version: 1.0.0
 
 repository: https://github.com/glin94/yookassa-dart-client
