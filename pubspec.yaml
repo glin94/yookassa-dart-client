@@ -1,6 +1,6 @@
 name: yookassa_client
 description: This package allows implementing payment acceptance into mobile, web, desktop apps and works as an extension to the YooMoney API
-version: 1.0.0
+version: 1.0.1
 
 repository: https://github.com/glin94/yookassa-dart-client
 issue_tracker: https://github.com/glin94/yookassa-dart-client/issues
