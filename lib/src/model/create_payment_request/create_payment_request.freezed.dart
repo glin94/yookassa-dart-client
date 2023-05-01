@@ -33,6 +33,7 @@ mixin _$CreatePaymentRequest {
   String? get clientIp => throw _privateConstructorUsedError;
   Map<String, Object?>? get metadata => throw _privateConstructorUsedError;
   String? get merchantCustomerId => throw _privateConstructorUsedError;
+  YookassaReceipt? get receipt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -58,12 +59,14 @@ abstract class $CreatePaymentRequestCopyWith<$Res> {
       bool? capture,
       String? clientIp,
       Map<String, Object?>? metadata,
-      String? merchantCustomerId});
+      String? merchantCustomerId,
+      YookassaReceipt? receipt});
 
   $AmountCopyWith<$Res> get amount;
   $YookassaRecipientCopyWith<$Res>? get recipient;
   $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData;
   $YookassaConfirmationCopyWith<$Res>? get confirmation;
+  $YookassaReceiptCopyWith<$Res>? get receipt;
 }
 
 /// @nodoc
@@ -92,6 +95,7 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     Object? clientIp = freezed,
     Object? metadata = freezed,
     Object? merchantCustomerId = freezed,
+    Object? receipt = freezed,
   }) {
     return _then(_value.copyWith(
       amount: null == amount
@@ -142,6 +146,10 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
           ? _value.merchantCustomerId
           : merchantCustomerId // ignore: cast_nullable_to_non_nullable
               as String?,
+      receipt: freezed == receipt
+          ? _value.receipt
+          : receipt // ignore: cast_nullable_to_non_nullable
+              as YookassaReceipt?,
     ) as $Val);
   }
 
@@ -189,6 +197,18 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
       return _then(_value.copyWith(confirmation: value) as $Val);
     });
   }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $YookassaReceiptCopyWith<$Res>? get receipt {
+    if (_value.receipt == null) {
+      return null;
+    }
+
+    return $YookassaReceiptCopyWith<$Res>(_value.receipt!, (value) {
+      return _then(_value.copyWith(receipt: value) as $Val);
+    });
+  }
 }
 
 /// @nodoc
@@ -211,7 +231,8 @@ abstract class _$$_CreatePaymentRequestCopyWith<$Res>
       bool? capture,
       String? clientIp,
       Map<String, Object?>? metadata,
-      String? merchantCustomerId});
+      String? merchantCustomerId,
+      YookassaReceipt? receipt});
 
   @override
   $AmountCopyWith<$Res> get amount;
@@ -221,6 +242,8 @@ abstract class _$$_CreatePaymentRequestCopyWith<$Res>
   $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData;
   @override
   $YookassaConfirmationCopyWith<$Res>? get confirmation;
+  @override
+  $YookassaReceiptCopyWith<$Res>? get receipt;
 }
 
 /// @nodoc
@@ -246,6 +269,7 @@ class __$$_CreatePaymentRequestCopyWithImpl<$Res>
     Object? clientIp = freezed,
     Object? metadata = freezed,
     Object? merchantCustomerId = freezed,
+    Object? receipt = freezed,
   }) {
     return _then(_$_CreatePaymentRequest(
       amount: null == amount
@@ -296,6 +320,10 @@ class __$$_CreatePaymentRequestCopyWithImpl<$Res>
           ? _value.merchantCustomerId
           : merchantCustomerId // ignore: cast_nullable_to_non_nullable
               as String?,
+      receipt: freezed == receipt
+          ? _value.receipt
+          : receipt // ignore: cast_nullable_to_non_nullable
+              as YookassaReceipt?,
     ));
   }
 }
@@ -315,7 +343,8 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
       this.capture,
       this.clientIp,
       final Map<String, Object?>? metadata,
-      this.merchantCustomerId})
+      this.merchantCustomerId,
+      this.receipt})
       : _metadata = metadata;
 
   factory _$_CreatePaymentRequest.fromJson(Map<String, dynamic> json) =>
@@ -353,10 +382,12 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
 
   @override
   final String? merchantCustomerId;
+  @override
+  final YookassaReceipt? receipt;
 
   @override
   String toString() {
-    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId)';
+    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId, receipt: $receipt)';
   }
 
   @override
@@ -384,7 +415,8 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
                 other.clientIp == clientIp) &&
             const DeepCollectionEquality().equals(other._metadata, _metadata) &&
             (identical(other.merchantCustomerId, merchantCustomerId) ||
-                other.merchantCustomerId == merchantCustomerId));
+                other.merchantCustomerId == merchantCustomerId) &&
+            (identical(other.receipt, receipt) || other.receipt == receipt));
   }
 
   @JsonKey(ignore: true)
@@ -402,7 +434,8 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
       capture,
       clientIp,
       const DeepCollectionEquality().hash(_metadata),
-      merchantCustomerId);
+      merchantCustomerId,
+      receipt);
 
   @JsonKey(ignore: true)
   @override
@@ -432,7 +465,8 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
       final bool? capture,
       final String? clientIp,
       final Map<String, Object?>? metadata,
-      final String? merchantCustomerId}) = _$_CreatePaymentRequest;
+      final String? merchantCustomerId,
+      final YookassaReceipt? receipt}) = _$_CreatePaymentRequest;
 
   factory _CreatePaymentRequest.fromJson(Map<String, dynamic> json) =
       _$_CreatePaymentRequest.fromJson;
@@ -461,6 +495,8 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
   Map<String, Object?>? get metadata;
   @override
   String? get merchantCustomerId;
+  @override
+  YookassaReceipt? get receipt;
   @override
   @JsonKey(ignore: true)
   _$$_CreatePaymentRequestCopyWith<_$_CreatePaymentRequest> get copyWith =>

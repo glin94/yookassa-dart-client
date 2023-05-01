@@ -30,6 +30,9 @@ _$_CreatePaymentRequest _$$_CreatePaymentRequestFromJson(
       clientIp: json['client_ip'] as String?,
       metadata: json['metadata'] as Map<String, dynamic>?,
       merchantCustomerId: json['merchant_customer_id'] as String?,
+      receipt: json['receipt'] == null
+          ? null
+          : YookassaReceipt.fromJson(json['receipt'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_CreatePaymentRequestToJson(
@@ -47,4 +50,5 @@ Map<String, dynamic> _$$_CreatePaymentRequestToJson(
       'client_ip': instance.clientIp,
       'metadata': instance.metadata,
       'merchant_customer_id': instance.merchantCustomerId,
+      'receipt': instance.receipt,
     };

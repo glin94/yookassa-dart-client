@@ -1,6 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:yookassa_client/yookassa_client.dart';
 
+import '../receipt/yookassa_receipt.dart';
+
 part 'create_payment_request.freezed.dart';
 part 'create_payment_request.g.dart';
 
@@ -20,6 +22,7 @@ class CreatePaymentRequest with _$CreatePaymentRequest {
     String? clientIp,
     Map<String, Object?>? metadata,
     String? merchantCustomerId,
+    YookassaReceipt? receipt,
   }) = _CreatePaymentRequest;
 
   factory CreatePaymentRequest.fromJson(Map<String, dynamic> json) =>
