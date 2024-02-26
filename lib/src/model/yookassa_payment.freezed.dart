@@ -36,17 +36,17 @@ mixin _$YookassaPayment {
   YookassaPaymentStatus get status => throw _privateConstructorUsedError;
   String get id => throw _privateConstructorUsedError;
   Amount get amount => throw _privateConstructorUsedError;
+  DateTime get createdAt => throw _privateConstructorUsedError;
+  bool get test => throw _privateConstructorUsedError;
+  bool get paid => throw _privateConstructorUsedError;
+  bool get refundable => throw _privateConstructorUsedError;
   Amount? get incomeAmount => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
   YookassaRecipient? get recipient => throw _privateConstructorUsedError;
   YookassaPaymentMethod? get paymentMethod =>
       throw _privateConstructorUsedError;
   DateTime? get capturedAt => throw _privateConstructorUsedError;
-  DateTime get createdAt => throw _privateConstructorUsedError;
   YookassaConfirmation? get confirmation => throw _privateConstructorUsedError;
-  bool get test => throw _privateConstructorUsedError;
-  bool get paid => throw _privateConstructorUsedError;
-  bool get refundable => throw _privateConstructorUsedError;
   AuthorizationDetails? get authorizationDetails =>
       throw _privateConstructorUsedError;
   DateTime? get expiresAt => throw _privateConstructorUsedError;
@@ -57,16 +57,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -75,16 +75,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -93,16 +93,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -111,16 +111,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -134,16 +134,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -152,16 +152,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -170,16 +170,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -188,16 +188,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -211,16 +211,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -229,16 +229,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -247,16 +247,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -265,16 +265,16 @@ mixin _$YookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -324,16 +324,16 @@ abstract class $YookassaPaymentCopyWith<$Res> {
       {YookassaPaymentStatus status,
       String id,
       Amount amount,
+      DateTime createdAt,
+      bool test,
+      bool paid,
+      bool refundable,
       Amount? incomeAmount,
       String? description,
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethod,
       DateTime? capturedAt,
-      DateTime createdAt,
       YookassaConfirmation? confirmation,
-      bool test,
-      bool paid,
-      bool refundable,
       AuthorizationDetails? authorizationDetails,
       DateTime? expiresAt,
       Map<String, Object>? metadata});
@@ -362,16 +362,16 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     Object? status = null,
     Object? id = null,
     Object? amount = null,
+    Object? createdAt = null,
+    Object? test = null,
+    Object? paid = null,
+    Object? refundable = null,
     Object? incomeAmount = freezed,
     Object? description = freezed,
     Object? recipient = freezed,
     Object? paymentMethod = freezed,
     Object? capturedAt = freezed,
-    Object? createdAt = null,
     Object? confirmation = freezed,
-    Object? test = null,
-    Object? paid = null,
-    Object? refundable = null,
     Object? authorizationDetails = freezed,
     Object? expiresAt = freezed,
     Object? metadata = freezed,
@@ -389,6 +389,22 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      test: null == test
+          ? _value.test
+          : test // ignore: cast_nullable_to_non_nullable
+              as bool,
+      paid: null == paid
+          ? _value.paid
+          : paid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      refundable: null == refundable
+          ? _value.refundable
+          : refundable // ignore: cast_nullable_to_non_nullable
+              as bool,
       incomeAmount: freezed == incomeAmount
           ? _value.incomeAmount
           : incomeAmount // ignore: cast_nullable_to_non_nullable
@@ -409,26 +425,10 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
           ? _value.capturedAt
           : capturedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
       confirmation: freezed == confirmation
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
-      test: null == test
-          ? _value.test
-          : test // ignore: cast_nullable_to_non_nullable
-              as bool,
-      paid: null == paid
-          ? _value.paid
-          : paid // ignore: cast_nullable_to_non_nullable
-              as bool,
-      refundable: null == refundable
-          ? _value.refundable
-          : refundable // ignore: cast_nullable_to_non_nullable
-              as bool,
       authorizationDetails: freezed == authorizationDetails
           ? _value.authorizationDetails
           : authorizationDetails // ignore: cast_nullable_to_non_nullable
@@ -515,27 +515,28 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
 }
 
 /// @nodoc
-abstract class _$$_PendingYookassaPaymentCopyWith<$Res>
+abstract class _$$PendingYookassaPaymentImplCopyWith<$Res>
     implements $YookassaPaymentCopyWith<$Res> {
-  factory _$$_PendingYookassaPaymentCopyWith(_$_PendingYookassaPayment value,
-          $Res Function(_$_PendingYookassaPayment) then) =
-      __$$_PendingYookassaPaymentCopyWithImpl<$Res>;
+  factory _$$PendingYookassaPaymentImplCopyWith(
+          _$PendingYookassaPaymentImpl value,
+          $Res Function(_$PendingYookassaPaymentImpl) then) =
+      __$$PendingYookassaPaymentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {YookassaPaymentStatus status,
       String id,
       Amount amount,
+      DateTime createdAt,
+      bool test,
+      bool paid,
+      bool refundable,
       Amount? incomeAmount,
       String? description,
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethod,
       DateTime? capturedAt,
-      DateTime createdAt,
       YookassaConfirmation? confirmation,
-      bool test,
-      bool paid,
-      bool refundable,
       AuthorizationDetails? authorizationDetails,
       DateTime? expiresAt,
       Map<String, Object>? metadata});
@@ -555,11 +556,12 @@ abstract class _$$_PendingYookassaPaymentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PendingYookassaPaymentCopyWithImpl<$Res>
-    extends _$YookassaPaymentCopyWithImpl<$Res, _$_PendingYookassaPayment>
-    implements _$$_PendingYookassaPaymentCopyWith<$Res> {
-  __$$_PendingYookassaPaymentCopyWithImpl(_$_PendingYookassaPayment _value,
-      $Res Function(_$_PendingYookassaPayment) _then)
+class __$$PendingYookassaPaymentImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentCopyWithImpl<$Res, _$PendingYookassaPaymentImpl>
+    implements _$$PendingYookassaPaymentImplCopyWith<$Res> {
+  __$$PendingYookassaPaymentImplCopyWithImpl(
+      _$PendingYookassaPaymentImpl _value,
+      $Res Function(_$PendingYookassaPaymentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -568,21 +570,21 @@ class __$$_PendingYookassaPaymentCopyWithImpl<$Res>
     Object? status = null,
     Object? id = null,
     Object? amount = null,
+    Object? createdAt = null,
+    Object? test = null,
+    Object? paid = null,
+    Object? refundable = null,
     Object? incomeAmount = freezed,
     Object? description = freezed,
     Object? recipient = freezed,
     Object? paymentMethod = freezed,
     Object? capturedAt = freezed,
-    Object? createdAt = null,
     Object? confirmation = freezed,
-    Object? test = null,
-    Object? paid = null,
-    Object? refundable = null,
     Object? authorizationDetails = freezed,
     Object? expiresAt = freezed,
     Object? metadata = freezed,
   }) {
-    return _then(_$_PendingYookassaPayment(
+    return _then(_$PendingYookassaPaymentImpl(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -595,6 +597,22 @@ class __$$_PendingYookassaPaymentCopyWithImpl<$Res>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      test: null == test
+          ? _value.test
+          : test // ignore: cast_nullable_to_non_nullable
+              as bool,
+      paid: null == paid
+          ? _value.paid
+          : paid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      refundable: null == refundable
+          ? _value.refundable
+          : refundable // ignore: cast_nullable_to_non_nullable
+              as bool,
       incomeAmount: freezed == incomeAmount
           ? _value.incomeAmount
           : incomeAmount // ignore: cast_nullable_to_non_nullable
@@ -615,26 +633,10 @@ class __$$_PendingYookassaPaymentCopyWithImpl<$Res>
           ? _value.capturedAt
           : capturedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
       confirmation: freezed == confirmation
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
-      test: null == test
-          ? _value.test
-          : test // ignore: cast_nullable_to_non_nullable
-              as bool,
-      paid: null == paid
-          ? _value.paid
-          : paid // ignore: cast_nullable_to_non_nullable
-              as bool,
-      refundable: null == refundable
-          ? _value.refundable
-          : refundable // ignore: cast_nullable_to_non_nullable
-              as bool,
       authorizationDetails: freezed == authorizationDetails
           ? _value.authorizationDetails
           : authorizationDetails // ignore: cast_nullable_to_non_nullable
@@ -653,28 +655,28 @@ class __$$_PendingYookassaPaymentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PendingYookassaPayment implements _PendingYookassaPayment {
-  _$_PendingYookassaPayment(
+class _$PendingYookassaPaymentImpl implements _PendingYookassaPayment {
+  _$PendingYookassaPaymentImpl(
       {required this.status,
       required this.id,
       required this.amount,
+      required this.createdAt,
+      required this.test,
+      required this.paid,
+      required this.refundable,
       this.incomeAmount,
       this.description,
       this.recipient,
       this.paymentMethod,
       this.capturedAt,
-      required this.createdAt,
       this.confirmation,
-      required this.test,
-      required this.paid,
-      required this.refundable,
       this.authorizationDetails,
       this.expiresAt,
       final Map<String, Object>? metadata})
       : _metadata = metadata;
 
-  factory _$_PendingYookassaPayment.fromJson(Map<String, dynamic> json) =>
-      _$$_PendingYookassaPaymentFromJson(json);
+  factory _$PendingYookassaPaymentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PendingYookassaPaymentImplFromJson(json);
 
   @override
   final YookassaPaymentStatus status;
@@ -682,6 +684,14 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
   final String id;
   @override
   final Amount amount;
+  @override
+  final DateTime createdAt;
+  @override
+  final bool test;
+  @override
+  final bool paid;
+  @override
+  final bool refundable;
   @override
   final Amount? incomeAmount;
   @override
@@ -693,15 +703,7 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
   @override
   final DateTime? capturedAt;
   @override
-  final DateTime createdAt;
-  @override
   final YookassaConfirmation? confirmation;
-  @override
-  final bool test;
-  @override
-  final bool paid;
-  @override
-  final bool refundable;
   @override
   final AuthorizationDetails? authorizationDetails;
   @override
@@ -718,17 +720,23 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
 
   @override
   String toString() {
-    return 'YookassaPayment.pending(status: $status, id: $id, amount: $amount, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, createdAt: $createdAt, confirmation: $confirmation, test: $test, paid: $paid, refundable: $refundable, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
+    return 'YookassaPayment.pending(status: $status, id: $id, amount: $amount, createdAt: $createdAt, test: $test, paid: $paid, refundable: $refundable, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, confirmation: $confirmation, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PendingYookassaPayment &&
+            other is _$PendingYookassaPaymentImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.test, test) || other.test == test) &&
+            (identical(other.paid, paid) || other.paid == paid) &&
+            (identical(other.refundable, refundable) ||
+                other.refundable == refundable) &&
             (identical(other.incomeAmount, incomeAmount) ||
                 other.incomeAmount == incomeAmount) &&
             (identical(other.description, description) ||
@@ -739,14 +747,8 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
                 other.paymentMethod == paymentMethod) &&
             (identical(other.capturedAt, capturedAt) ||
                 other.capturedAt == capturedAt) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt) &&
             (identical(other.confirmation, confirmation) ||
                 other.confirmation == confirmation) &&
-            (identical(other.test, test) || other.test == test) &&
-            (identical(other.paid, paid) || other.paid == paid) &&
-            (identical(other.refundable, refundable) ||
-                other.refundable == refundable) &&
             (identical(other.authorizationDetails, authorizationDetails) ||
                 other.authorizationDetails == authorizationDetails) &&
             (identical(other.expiresAt, expiresAt) ||
@@ -761,16 +763,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
       status,
       id,
       amount,
+      createdAt,
+      test,
+      paid,
+      refundable,
       incomeAmount,
       description,
       recipient,
       paymentMethod,
       capturedAt,
-      createdAt,
       confirmation,
-      test,
-      paid,
-      refundable,
       authorizationDetails,
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
@@ -778,9 +780,9 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PendingYookassaPaymentCopyWith<_$_PendingYookassaPayment> get copyWith =>
-      __$$_PendingYookassaPaymentCopyWithImpl<_$_PendingYookassaPayment>(
-          this, _$identity);
+  _$$PendingYookassaPaymentImplCopyWith<_$PendingYookassaPaymentImpl>
+      get copyWith => __$$PendingYookassaPaymentImplCopyWithImpl<
+          _$PendingYookassaPaymentImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -789,16 +791,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -807,16 +809,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -825,16 +827,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -843,16 +845,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -863,16 +865,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         authorizationDetails,
         expiresAt,
         metadata);
@@ -885,16 +887,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -903,16 +905,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -921,16 +923,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -939,16 +941,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -959,16 +961,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         authorizationDetails,
         expiresAt,
         metadata);
@@ -981,16 +983,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -999,16 +1001,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1017,16 +1019,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1035,16 +1037,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -1057,16 +1059,16 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
           status,
           id,
           amount,
+          createdAt,
+          test,
+          paid,
+          refundable,
           incomeAmount,
           description,
           recipient,
           paymentMethod,
           capturedAt,
-          createdAt,
           confirmation,
-          test,
-          paid,
-          refundable,
           authorizationDetails,
           expiresAt,
           metadata);
@@ -1113,7 +1115,7 @@ class _$_PendingYookassaPayment implements _PendingYookassaPayment {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PendingYookassaPaymentToJson(
+    return _$$PendingYookassaPaymentImplToJson(
       this,
     );
   }
@@ -1124,22 +1126,22 @@ abstract class _PendingYookassaPayment implements YookassaPayment {
       {required final YookassaPaymentStatus status,
       required final String id,
       required final Amount amount,
+      required final DateTime createdAt,
+      required final bool test,
+      required final bool paid,
+      required final bool refundable,
       final Amount? incomeAmount,
       final String? description,
       final YookassaRecipient? recipient,
       final YookassaPaymentMethod? paymentMethod,
       final DateTime? capturedAt,
-      required final DateTime createdAt,
       final YookassaConfirmation? confirmation,
-      required final bool test,
-      required final bool paid,
-      required final bool refundable,
       final AuthorizationDetails? authorizationDetails,
       final DateTime? expiresAt,
-      final Map<String, Object>? metadata}) = _$_PendingYookassaPayment;
+      final Map<String, Object>? metadata}) = _$PendingYookassaPaymentImpl;
 
   factory _PendingYookassaPayment.fromJson(Map<String, dynamic> json) =
-      _$_PendingYookassaPayment.fromJson;
+      _$PendingYookassaPaymentImpl.fromJson;
 
   @override
   YookassaPaymentStatus get status;
@@ -1147,6 +1149,14 @@ abstract class _PendingYookassaPayment implements YookassaPayment {
   String get id;
   @override
   Amount get amount;
+  @override
+  DateTime get createdAt;
+  @override
+  bool get test;
+  @override
+  bool get paid;
+  @override
+  bool get refundable;
   @override
   Amount? get incomeAmount;
   @override
@@ -1158,15 +1168,7 @@ abstract class _PendingYookassaPayment implements YookassaPayment {
   @override
   DateTime? get capturedAt;
   @override
-  DateTime get createdAt;
-  @override
   YookassaConfirmation? get confirmation;
-  @override
-  bool get test;
-  @override
-  bool get paid;
-  @override
-  bool get refundable;
   @override
   AuthorizationDetails? get authorizationDetails;
   @override
@@ -1175,32 +1177,33 @@ abstract class _PendingYookassaPayment implements YookassaPayment {
   Map<String, Object>? get metadata;
   @override
   @JsonKey(ignore: true)
-  _$$_PendingYookassaPaymentCopyWith<_$_PendingYookassaPayment> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PendingYookassaPaymentImplCopyWith<_$PendingYookassaPaymentImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_WaitingYookassaPaymentCopyWith<$Res>
+abstract class _$$WaitingYookassaPaymentImplCopyWith<$Res>
     implements $YookassaPaymentCopyWith<$Res> {
-  factory _$$_WaitingYookassaPaymentCopyWith(_$_WaitingYookassaPayment value,
-          $Res Function(_$_WaitingYookassaPayment) then) =
-      __$$_WaitingYookassaPaymentCopyWithImpl<$Res>;
+  factory _$$WaitingYookassaPaymentImplCopyWith(
+          _$WaitingYookassaPaymentImpl value,
+          $Res Function(_$WaitingYookassaPaymentImpl) then) =
+      __$$WaitingYookassaPaymentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {YookassaPaymentStatus status,
       String id,
       Amount amount,
+      DateTime createdAt,
+      bool test,
+      bool paid,
+      bool refundable,
       Amount? incomeAmount,
       String? description,
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethod,
       DateTime? capturedAt,
-      DateTime createdAt,
       YookassaConfirmation? confirmation,
-      bool test,
-      bool paid,
-      bool refundable,
       AuthorizationDetails? authorizationDetails,
       DateTime? expiresAt,
       Map<String, Object>? metadata});
@@ -1220,11 +1223,12 @@ abstract class _$$_WaitingYookassaPaymentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_WaitingYookassaPaymentCopyWithImpl<$Res>
-    extends _$YookassaPaymentCopyWithImpl<$Res, _$_WaitingYookassaPayment>
-    implements _$$_WaitingYookassaPaymentCopyWith<$Res> {
-  __$$_WaitingYookassaPaymentCopyWithImpl(_$_WaitingYookassaPayment _value,
-      $Res Function(_$_WaitingYookassaPayment) _then)
+class __$$WaitingYookassaPaymentImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentCopyWithImpl<$Res, _$WaitingYookassaPaymentImpl>
+    implements _$$WaitingYookassaPaymentImplCopyWith<$Res> {
+  __$$WaitingYookassaPaymentImplCopyWithImpl(
+      _$WaitingYookassaPaymentImpl _value,
+      $Res Function(_$WaitingYookassaPaymentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1233,21 +1237,21 @@ class __$$_WaitingYookassaPaymentCopyWithImpl<$Res>
     Object? status = null,
     Object? id = null,
     Object? amount = null,
+    Object? createdAt = null,
+    Object? test = null,
+    Object? paid = null,
+    Object? refundable = null,
     Object? incomeAmount = freezed,
     Object? description = freezed,
     Object? recipient = freezed,
     Object? paymentMethod = freezed,
     Object? capturedAt = freezed,
-    Object? createdAt = null,
     Object? confirmation = freezed,
-    Object? test = null,
-    Object? paid = null,
-    Object? refundable = null,
     Object? authorizationDetails = freezed,
     Object? expiresAt = freezed,
     Object? metadata = freezed,
   }) {
-    return _then(_$_WaitingYookassaPayment(
+    return _then(_$WaitingYookassaPaymentImpl(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -1260,6 +1264,22 @@ class __$$_WaitingYookassaPaymentCopyWithImpl<$Res>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      test: null == test
+          ? _value.test
+          : test // ignore: cast_nullable_to_non_nullable
+              as bool,
+      paid: null == paid
+          ? _value.paid
+          : paid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      refundable: null == refundable
+          ? _value.refundable
+          : refundable // ignore: cast_nullable_to_non_nullable
+              as bool,
       incomeAmount: freezed == incomeAmount
           ? _value.incomeAmount
           : incomeAmount // ignore: cast_nullable_to_non_nullable
@@ -1280,26 +1300,10 @@ class __$$_WaitingYookassaPaymentCopyWithImpl<$Res>
           ? _value.capturedAt
           : capturedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
       confirmation: freezed == confirmation
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
-      test: null == test
-          ? _value.test
-          : test // ignore: cast_nullable_to_non_nullable
-              as bool,
-      paid: null == paid
-          ? _value.paid
-          : paid // ignore: cast_nullable_to_non_nullable
-              as bool,
-      refundable: null == refundable
-          ? _value.refundable
-          : refundable // ignore: cast_nullable_to_non_nullable
-              as bool,
       authorizationDetails: freezed == authorizationDetails
           ? _value.authorizationDetails
           : authorizationDetails // ignore: cast_nullable_to_non_nullable
@@ -1318,28 +1322,28 @@ class __$$_WaitingYookassaPaymentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
-  _$_WaitingYookassaPayment(
+class _$WaitingYookassaPaymentImpl implements _WaitingYookassaPayment {
+  _$WaitingYookassaPaymentImpl(
       {required this.status,
       required this.id,
       required this.amount,
+      required this.createdAt,
+      required this.test,
+      required this.paid,
+      required this.refundable,
       this.incomeAmount,
       this.description,
       this.recipient,
       this.paymentMethod,
       this.capturedAt,
-      required this.createdAt,
       this.confirmation,
-      required this.test,
-      required this.paid,
-      required this.refundable,
       this.authorizationDetails,
       this.expiresAt,
       final Map<String, Object>? metadata})
       : _metadata = metadata;
 
-  factory _$_WaitingYookassaPayment.fromJson(Map<String, dynamic> json) =>
-      _$$_WaitingYookassaPaymentFromJson(json);
+  factory _$WaitingYookassaPaymentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$WaitingYookassaPaymentImplFromJson(json);
 
   @override
   final YookassaPaymentStatus status;
@@ -1347,6 +1351,14 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
   final String id;
   @override
   final Amount amount;
+  @override
+  final DateTime createdAt;
+  @override
+  final bool test;
+  @override
+  final bool paid;
+  @override
+  final bool refundable;
   @override
   final Amount? incomeAmount;
   @override
@@ -1358,15 +1370,7 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
   @override
   final DateTime? capturedAt;
   @override
-  final DateTime createdAt;
-  @override
   final YookassaConfirmation? confirmation;
-  @override
-  final bool test;
-  @override
-  final bool paid;
-  @override
-  final bool refundable;
   @override
   final AuthorizationDetails? authorizationDetails;
   @override
@@ -1383,17 +1387,23 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
 
   @override
   String toString() {
-    return 'YookassaPayment.waitingForCapture(status: $status, id: $id, amount: $amount, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, createdAt: $createdAt, confirmation: $confirmation, test: $test, paid: $paid, refundable: $refundable, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
+    return 'YookassaPayment.waitingForCapture(status: $status, id: $id, amount: $amount, createdAt: $createdAt, test: $test, paid: $paid, refundable: $refundable, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, confirmation: $confirmation, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_WaitingYookassaPayment &&
+            other is _$WaitingYookassaPaymentImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.test, test) || other.test == test) &&
+            (identical(other.paid, paid) || other.paid == paid) &&
+            (identical(other.refundable, refundable) ||
+                other.refundable == refundable) &&
             (identical(other.incomeAmount, incomeAmount) ||
                 other.incomeAmount == incomeAmount) &&
             (identical(other.description, description) ||
@@ -1404,14 +1414,8 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
                 other.paymentMethod == paymentMethod) &&
             (identical(other.capturedAt, capturedAt) ||
                 other.capturedAt == capturedAt) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt) &&
             (identical(other.confirmation, confirmation) ||
                 other.confirmation == confirmation) &&
-            (identical(other.test, test) || other.test == test) &&
-            (identical(other.paid, paid) || other.paid == paid) &&
-            (identical(other.refundable, refundable) ||
-                other.refundable == refundable) &&
             (identical(other.authorizationDetails, authorizationDetails) ||
                 other.authorizationDetails == authorizationDetails) &&
             (identical(other.expiresAt, expiresAt) ||
@@ -1426,16 +1430,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
       status,
       id,
       amount,
+      createdAt,
+      test,
+      paid,
+      refundable,
       incomeAmount,
       description,
       recipient,
       paymentMethod,
       capturedAt,
-      createdAt,
       confirmation,
-      test,
-      paid,
-      refundable,
       authorizationDetails,
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
@@ -1443,9 +1447,9 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_WaitingYookassaPaymentCopyWith<_$_WaitingYookassaPayment> get copyWith =>
-      __$$_WaitingYookassaPaymentCopyWithImpl<_$_WaitingYookassaPayment>(
-          this, _$identity);
+  _$$WaitingYookassaPaymentImplCopyWith<_$WaitingYookassaPaymentImpl>
+      get copyWith => __$$WaitingYookassaPaymentImplCopyWithImpl<
+          _$WaitingYookassaPaymentImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1454,16 +1458,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -1472,16 +1476,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -1490,16 +1494,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -1508,16 +1512,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -1528,16 +1532,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         authorizationDetails,
         expiresAt,
         metadata);
@@ -1550,16 +1554,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1568,16 +1572,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1586,16 +1590,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1604,16 +1608,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -1624,16 +1628,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         authorizationDetails,
         expiresAt,
         metadata);
@@ -1646,16 +1650,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1664,16 +1668,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1682,16 +1686,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -1700,16 +1704,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -1722,16 +1726,16 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
           status,
           id,
           amount,
+          createdAt,
+          test,
+          paid,
+          refundable,
           incomeAmount,
           description,
           recipient,
           paymentMethod,
           capturedAt,
-          createdAt,
           confirmation,
-          test,
-          paid,
-          refundable,
           authorizationDetails,
           expiresAt,
           metadata);
@@ -1778,7 +1782,7 @@ class _$_WaitingYookassaPayment implements _WaitingYookassaPayment {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_WaitingYookassaPaymentToJson(
+    return _$$WaitingYookassaPaymentImplToJson(
       this,
     );
   }
@@ -1789,22 +1793,22 @@ abstract class _WaitingYookassaPayment implements YookassaPayment {
       {required final YookassaPaymentStatus status,
       required final String id,
       required final Amount amount,
+      required final DateTime createdAt,
+      required final bool test,
+      required final bool paid,
+      required final bool refundable,
       final Amount? incomeAmount,
       final String? description,
       final YookassaRecipient? recipient,
       final YookassaPaymentMethod? paymentMethod,
       final DateTime? capturedAt,
-      required final DateTime createdAt,
       final YookassaConfirmation? confirmation,
-      required final bool test,
-      required final bool paid,
-      required final bool refundable,
       final AuthorizationDetails? authorizationDetails,
       final DateTime? expiresAt,
-      final Map<String, Object>? metadata}) = _$_WaitingYookassaPayment;
+      final Map<String, Object>? metadata}) = _$WaitingYookassaPaymentImpl;
 
   factory _WaitingYookassaPayment.fromJson(Map<String, dynamic> json) =
-      _$_WaitingYookassaPayment.fromJson;
+      _$WaitingYookassaPaymentImpl.fromJson;
 
   @override
   YookassaPaymentStatus get status;
@@ -1812,6 +1816,14 @@ abstract class _WaitingYookassaPayment implements YookassaPayment {
   String get id;
   @override
   Amount get amount;
+  @override
+  DateTime get createdAt;
+  @override
+  bool get test;
+  @override
+  bool get paid;
+  @override
+  bool get refundable;
   @override
   Amount? get incomeAmount;
   @override
@@ -1823,15 +1835,7 @@ abstract class _WaitingYookassaPayment implements YookassaPayment {
   @override
   DateTime? get capturedAt;
   @override
-  DateTime get createdAt;
-  @override
   YookassaConfirmation? get confirmation;
-  @override
-  bool get test;
-  @override
-  bool get paid;
-  @override
-  bool get refundable;
   @override
   AuthorizationDetails? get authorizationDetails;
   @override
@@ -1840,33 +1844,33 @@ abstract class _WaitingYookassaPayment implements YookassaPayment {
   Map<String, Object>? get metadata;
   @override
   @JsonKey(ignore: true)
-  _$$_WaitingYookassaPaymentCopyWith<_$_WaitingYookassaPayment> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$WaitingYookassaPaymentImplCopyWith<_$WaitingYookassaPaymentImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_SucceededYookassaPaymentCopyWith<$Res>
+abstract class _$$SucceededYookassaPaymentImplCopyWith<$Res>
     implements $YookassaPaymentCopyWith<$Res> {
-  factory _$$_SucceededYookassaPaymentCopyWith(
-          _$_SucceededYookassaPayment value,
-          $Res Function(_$_SucceededYookassaPayment) then) =
-      __$$_SucceededYookassaPaymentCopyWithImpl<$Res>;
+  factory _$$SucceededYookassaPaymentImplCopyWith(
+          _$SucceededYookassaPaymentImpl value,
+          $Res Function(_$SucceededYookassaPaymentImpl) then) =
+      __$$SucceededYookassaPaymentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {YookassaPaymentStatus status,
       String id,
       Amount amount,
+      DateTime createdAt,
+      bool test,
+      bool paid,
+      bool refundable,
       Amount? incomeAmount,
       String? description,
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethod,
       DateTime? capturedAt,
-      DateTime createdAt,
       YookassaConfirmation? confirmation,
-      bool test,
-      bool paid,
-      bool refundable,
       AuthorizationDetails? authorizationDetails,
       DateTime? expiresAt,
       Map<String, Object>? metadata});
@@ -1886,11 +1890,12 @@ abstract class _$$_SucceededYookassaPaymentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SucceededYookassaPaymentCopyWithImpl<$Res>
-    extends _$YookassaPaymentCopyWithImpl<$Res, _$_SucceededYookassaPayment>
-    implements _$$_SucceededYookassaPaymentCopyWith<$Res> {
-  __$$_SucceededYookassaPaymentCopyWithImpl(_$_SucceededYookassaPayment _value,
-      $Res Function(_$_SucceededYookassaPayment) _then)
+class __$$SucceededYookassaPaymentImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentCopyWithImpl<$Res, _$SucceededYookassaPaymentImpl>
+    implements _$$SucceededYookassaPaymentImplCopyWith<$Res> {
+  __$$SucceededYookassaPaymentImplCopyWithImpl(
+      _$SucceededYookassaPaymentImpl _value,
+      $Res Function(_$SucceededYookassaPaymentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1899,21 +1904,21 @@ class __$$_SucceededYookassaPaymentCopyWithImpl<$Res>
     Object? status = null,
     Object? id = null,
     Object? amount = null,
+    Object? createdAt = null,
+    Object? test = null,
+    Object? paid = null,
+    Object? refundable = null,
     Object? incomeAmount = freezed,
     Object? description = freezed,
     Object? recipient = freezed,
     Object? paymentMethod = freezed,
     Object? capturedAt = freezed,
-    Object? createdAt = null,
     Object? confirmation = freezed,
-    Object? test = null,
-    Object? paid = null,
-    Object? refundable = null,
     Object? authorizationDetails = freezed,
     Object? expiresAt = freezed,
     Object? metadata = freezed,
   }) {
-    return _then(_$_SucceededYookassaPayment(
+    return _then(_$SucceededYookassaPaymentImpl(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -1926,6 +1931,22 @@ class __$$_SucceededYookassaPaymentCopyWithImpl<$Res>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      test: null == test
+          ? _value.test
+          : test // ignore: cast_nullable_to_non_nullable
+              as bool,
+      paid: null == paid
+          ? _value.paid
+          : paid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      refundable: null == refundable
+          ? _value.refundable
+          : refundable // ignore: cast_nullable_to_non_nullable
+              as bool,
       incomeAmount: freezed == incomeAmount
           ? _value.incomeAmount
           : incomeAmount // ignore: cast_nullable_to_non_nullable
@@ -1946,26 +1967,10 @@ class __$$_SucceededYookassaPaymentCopyWithImpl<$Res>
           ? _value.capturedAt
           : capturedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
       confirmation: freezed == confirmation
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
-      test: null == test
-          ? _value.test
-          : test // ignore: cast_nullable_to_non_nullable
-              as bool,
-      paid: null == paid
-          ? _value.paid
-          : paid // ignore: cast_nullable_to_non_nullable
-              as bool,
-      refundable: null == refundable
-          ? _value.refundable
-          : refundable // ignore: cast_nullable_to_non_nullable
-              as bool,
       authorizationDetails: freezed == authorizationDetails
           ? _value.authorizationDetails
           : authorizationDetails // ignore: cast_nullable_to_non_nullable
@@ -1984,28 +1989,28 @@ class __$$_SucceededYookassaPaymentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
-  _$_SucceededYookassaPayment(
+class _$SucceededYookassaPaymentImpl implements _SucceededYookassaPayment {
+  _$SucceededYookassaPaymentImpl(
       {required this.status,
       required this.id,
       required this.amount,
+      required this.createdAt,
+      required this.test,
+      required this.paid,
+      required this.refundable,
       this.incomeAmount,
       this.description,
       this.recipient,
       this.paymentMethod,
       this.capturedAt,
-      required this.createdAt,
       this.confirmation,
-      required this.test,
-      required this.paid,
-      required this.refundable,
       this.authorizationDetails,
       this.expiresAt,
       final Map<String, Object>? metadata})
       : _metadata = metadata;
 
-  factory _$_SucceededYookassaPayment.fromJson(Map<String, dynamic> json) =>
-      _$$_SucceededYookassaPaymentFromJson(json);
+  factory _$SucceededYookassaPaymentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SucceededYookassaPaymentImplFromJson(json);
 
   @override
   final YookassaPaymentStatus status;
@@ -2013,6 +2018,14 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
   final String id;
   @override
   final Amount amount;
+  @override
+  final DateTime createdAt;
+  @override
+  final bool test;
+  @override
+  final bool paid;
+  @override
+  final bool refundable;
   @override
   final Amount? incomeAmount;
   @override
@@ -2024,15 +2037,7 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
   @override
   final DateTime? capturedAt;
   @override
-  final DateTime createdAt;
-  @override
   final YookassaConfirmation? confirmation;
-  @override
-  final bool test;
-  @override
-  final bool paid;
-  @override
-  final bool refundable;
   @override
   final AuthorizationDetails? authorizationDetails;
   @override
@@ -2049,17 +2054,23 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
 
   @override
   String toString() {
-    return 'YookassaPayment.succeeded(status: $status, id: $id, amount: $amount, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, createdAt: $createdAt, confirmation: $confirmation, test: $test, paid: $paid, refundable: $refundable, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
+    return 'YookassaPayment.succeeded(status: $status, id: $id, amount: $amount, createdAt: $createdAt, test: $test, paid: $paid, refundable: $refundable, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, confirmation: $confirmation, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SucceededYookassaPayment &&
+            other is _$SucceededYookassaPaymentImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.test, test) || other.test == test) &&
+            (identical(other.paid, paid) || other.paid == paid) &&
+            (identical(other.refundable, refundable) ||
+                other.refundable == refundable) &&
             (identical(other.incomeAmount, incomeAmount) ||
                 other.incomeAmount == incomeAmount) &&
             (identical(other.description, description) ||
@@ -2070,14 +2081,8 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
                 other.paymentMethod == paymentMethod) &&
             (identical(other.capturedAt, capturedAt) ||
                 other.capturedAt == capturedAt) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt) &&
             (identical(other.confirmation, confirmation) ||
                 other.confirmation == confirmation) &&
-            (identical(other.test, test) || other.test == test) &&
-            (identical(other.paid, paid) || other.paid == paid) &&
-            (identical(other.refundable, refundable) ||
-                other.refundable == refundable) &&
             (identical(other.authorizationDetails, authorizationDetails) ||
                 other.authorizationDetails == authorizationDetails) &&
             (identical(other.expiresAt, expiresAt) ||
@@ -2092,16 +2097,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
       status,
       id,
       amount,
+      createdAt,
+      test,
+      paid,
+      refundable,
       incomeAmount,
       description,
       recipient,
       paymentMethod,
       capturedAt,
-      createdAt,
       confirmation,
-      test,
-      paid,
-      refundable,
       authorizationDetails,
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
@@ -2109,9 +2114,9 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SucceededYookassaPaymentCopyWith<_$_SucceededYookassaPayment>
-      get copyWith => __$$_SucceededYookassaPaymentCopyWithImpl<
-          _$_SucceededYookassaPayment>(this, _$identity);
+  _$$SucceededYookassaPaymentImplCopyWith<_$SucceededYookassaPaymentImpl>
+      get copyWith => __$$SucceededYookassaPaymentImplCopyWithImpl<
+          _$SucceededYookassaPaymentImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2120,16 +2125,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -2138,16 +2143,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -2156,16 +2161,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -2174,16 +2179,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -2194,16 +2199,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         authorizationDetails,
         expiresAt,
         metadata);
@@ -2216,16 +2221,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2234,16 +2239,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2252,16 +2257,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2270,16 +2275,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -2290,16 +2295,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         authorizationDetails,
         expiresAt,
         metadata);
@@ -2312,16 +2317,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2330,16 +2335,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2348,16 +2353,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2366,16 +2371,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -2388,16 +2393,16 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
           status,
           id,
           amount,
+          createdAt,
+          test,
+          paid,
+          refundable,
           incomeAmount,
           description,
           recipient,
           paymentMethod,
           capturedAt,
-          createdAt,
           confirmation,
-          test,
-          paid,
-          refundable,
           authorizationDetails,
           expiresAt,
           metadata);
@@ -2444,7 +2449,7 @@ class _$_SucceededYookassaPayment implements _SucceededYookassaPayment {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SucceededYookassaPaymentToJson(
+    return _$$SucceededYookassaPaymentImplToJson(
       this,
     );
   }
@@ -2455,22 +2460,22 @@ abstract class _SucceededYookassaPayment implements YookassaPayment {
       {required final YookassaPaymentStatus status,
       required final String id,
       required final Amount amount,
+      required final DateTime createdAt,
+      required final bool test,
+      required final bool paid,
+      required final bool refundable,
       final Amount? incomeAmount,
       final String? description,
       final YookassaRecipient? recipient,
       final YookassaPaymentMethod? paymentMethod,
       final DateTime? capturedAt,
-      required final DateTime createdAt,
       final YookassaConfirmation? confirmation,
-      required final bool test,
-      required final bool paid,
-      required final bool refundable,
       final AuthorizationDetails? authorizationDetails,
       final DateTime? expiresAt,
-      final Map<String, Object>? metadata}) = _$_SucceededYookassaPayment;
+      final Map<String, Object>? metadata}) = _$SucceededYookassaPaymentImpl;
 
   factory _SucceededYookassaPayment.fromJson(Map<String, dynamic> json) =
-      _$_SucceededYookassaPayment.fromJson;
+      _$SucceededYookassaPaymentImpl.fromJson;
 
   @override
   YookassaPaymentStatus get status;
@@ -2478,6 +2483,14 @@ abstract class _SucceededYookassaPayment implements YookassaPayment {
   String get id;
   @override
   Amount get amount;
+  @override
+  DateTime get createdAt;
+  @override
+  bool get test;
+  @override
+  bool get paid;
+  @override
+  bool get refundable;
   @override
   Amount? get incomeAmount;
   @override
@@ -2489,15 +2502,7 @@ abstract class _SucceededYookassaPayment implements YookassaPayment {
   @override
   DateTime? get capturedAt;
   @override
-  DateTime get createdAt;
-  @override
   YookassaConfirmation? get confirmation;
-  @override
-  bool get test;
-  @override
-  bool get paid;
-  @override
-  bool get refundable;
   @override
   AuthorizationDetails? get authorizationDetails;
   @override
@@ -2506,32 +2511,33 @@ abstract class _SucceededYookassaPayment implements YookassaPayment {
   Map<String, Object>? get metadata;
   @override
   @JsonKey(ignore: true)
-  _$$_SucceededYookassaPaymentCopyWith<_$_SucceededYookassaPayment>
+  _$$SucceededYookassaPaymentImplCopyWith<_$SucceededYookassaPaymentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_CanceledYookassaPaymentCopyWith<$Res>
+abstract class _$$CanceledYookassaPaymentImplCopyWith<$Res>
     implements $YookassaPaymentCopyWith<$Res> {
-  factory _$$_CanceledYookassaPaymentCopyWith(_$_CanceledYookassaPayment value,
-          $Res Function(_$_CanceledYookassaPayment) then) =
-      __$$_CanceledYookassaPaymentCopyWithImpl<$Res>;
+  factory _$$CanceledYookassaPaymentImplCopyWith(
+          _$CanceledYookassaPaymentImpl value,
+          $Res Function(_$CanceledYookassaPaymentImpl) then) =
+      __$$CanceledYookassaPaymentImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {YookassaPaymentStatus status,
       String id,
       Amount amount,
+      DateTime createdAt,
+      bool test,
+      bool paid,
+      bool refundable,
       Amount? incomeAmount,
       String? description,
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethod,
       DateTime? capturedAt,
-      DateTime createdAt,
       YookassaConfirmation? confirmation,
-      bool test,
-      bool paid,
-      bool refundable,
       CancellationDetails? cancellationDetails,
       AuthorizationDetails? authorizationDetails,
       DateTime? expiresAt,
@@ -2553,11 +2559,12 @@ abstract class _$$_CanceledYookassaPaymentCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CanceledYookassaPaymentCopyWithImpl<$Res>
-    extends _$YookassaPaymentCopyWithImpl<$Res, _$_CanceledYookassaPayment>
-    implements _$$_CanceledYookassaPaymentCopyWith<$Res> {
-  __$$_CanceledYookassaPaymentCopyWithImpl(_$_CanceledYookassaPayment _value,
-      $Res Function(_$_CanceledYookassaPayment) _then)
+class __$$CanceledYookassaPaymentImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentCopyWithImpl<$Res, _$CanceledYookassaPaymentImpl>
+    implements _$$CanceledYookassaPaymentImplCopyWith<$Res> {
+  __$$CanceledYookassaPaymentImplCopyWithImpl(
+      _$CanceledYookassaPaymentImpl _value,
+      $Res Function(_$CanceledYookassaPaymentImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2566,22 +2573,22 @@ class __$$_CanceledYookassaPaymentCopyWithImpl<$Res>
     Object? status = null,
     Object? id = null,
     Object? amount = null,
+    Object? createdAt = null,
+    Object? test = null,
+    Object? paid = null,
+    Object? refundable = null,
     Object? incomeAmount = freezed,
     Object? description = freezed,
     Object? recipient = freezed,
     Object? paymentMethod = freezed,
     Object? capturedAt = freezed,
-    Object? createdAt = null,
     Object? confirmation = freezed,
-    Object? test = null,
-    Object? paid = null,
-    Object? refundable = null,
     Object? cancellationDetails = freezed,
     Object? authorizationDetails = freezed,
     Object? expiresAt = freezed,
     Object? metadata = freezed,
   }) {
-    return _then(_$_CanceledYookassaPayment(
+    return _then(_$CanceledYookassaPaymentImpl(
       status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
@@ -2594,6 +2601,22 @@ class __$$_CanceledYookassaPaymentCopyWithImpl<$Res>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      test: null == test
+          ? _value.test
+          : test // ignore: cast_nullable_to_non_nullable
+              as bool,
+      paid: null == paid
+          ? _value.paid
+          : paid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      refundable: null == refundable
+          ? _value.refundable
+          : refundable // ignore: cast_nullable_to_non_nullable
+              as bool,
       incomeAmount: freezed == incomeAmount
           ? _value.incomeAmount
           : incomeAmount // ignore: cast_nullable_to_non_nullable
@@ -2614,26 +2637,10 @@ class __$$_CanceledYookassaPaymentCopyWithImpl<$Res>
           ? _value.capturedAt
           : capturedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
       confirmation: freezed == confirmation
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
-      test: null == test
-          ? _value.test
-          : test // ignore: cast_nullable_to_non_nullable
-              as bool,
-      paid: null == paid
-          ? _value.paid
-          : paid // ignore: cast_nullable_to_non_nullable
-              as bool,
-      refundable: null == refundable
-          ? _value.refundable
-          : refundable // ignore: cast_nullable_to_non_nullable
-              as bool,
       cancellationDetails: freezed == cancellationDetails
           ? _value.cancellationDetails
           : cancellationDetails // ignore: cast_nullable_to_non_nullable
@@ -2669,29 +2676,29 @@ class __$$_CanceledYookassaPaymentCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
-  _$_CanceledYookassaPayment(
+class _$CanceledYookassaPaymentImpl implements _CanceledYookassaPayment {
+  _$CanceledYookassaPaymentImpl(
       {required this.status,
       required this.id,
       required this.amount,
+      required this.createdAt,
+      required this.test,
+      required this.paid,
+      required this.refundable,
       this.incomeAmount,
       this.description,
       this.recipient,
       this.paymentMethod,
       this.capturedAt,
-      required this.createdAt,
       this.confirmation,
-      required this.test,
-      required this.paid,
-      required this.refundable,
       this.cancellationDetails,
       this.authorizationDetails,
       this.expiresAt,
       final Map<String, Object>? metadata})
       : _metadata = metadata;
 
-  factory _$_CanceledYookassaPayment.fromJson(Map<String, dynamic> json) =>
-      _$$_CanceledYookassaPaymentFromJson(json);
+  factory _$CanceledYookassaPaymentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CanceledYookassaPaymentImplFromJson(json);
 
   @override
   final YookassaPaymentStatus status;
@@ -2699,6 +2706,14 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
   final String id;
   @override
   final Amount amount;
+  @override
+  final DateTime createdAt;
+  @override
+  final bool test;
+  @override
+  final bool paid;
+  @override
+  final bool refundable;
   @override
   final Amount? incomeAmount;
   @override
@@ -2710,15 +2725,7 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
   @override
   final DateTime? capturedAt;
   @override
-  final DateTime createdAt;
-  @override
   final YookassaConfirmation? confirmation;
-  @override
-  final bool test;
-  @override
-  final bool paid;
-  @override
-  final bool refundable;
   @override
   final CancellationDetails? cancellationDetails;
   @override
@@ -2737,17 +2744,23 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
 
   @override
   String toString() {
-    return 'YookassaPayment.canceled(status: $status, id: $id, amount: $amount, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, createdAt: $createdAt, confirmation: $confirmation, test: $test, paid: $paid, refundable: $refundable, cancellationDetails: $cancellationDetails, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
+    return 'YookassaPayment.canceled(status: $status, id: $id, amount: $amount, createdAt: $createdAt, test: $test, paid: $paid, refundable: $refundable, incomeAmount: $incomeAmount, description: $description, recipient: $recipient, paymentMethod: $paymentMethod, capturedAt: $capturedAt, confirmation: $confirmation, cancellationDetails: $cancellationDetails, authorizationDetails: $authorizationDetails, expiresAt: $expiresAt, metadata: $metadata)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CanceledYookassaPayment &&
+            other is _$CanceledYookassaPaymentImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.test, test) || other.test == test) &&
+            (identical(other.paid, paid) || other.paid == paid) &&
+            (identical(other.refundable, refundable) ||
+                other.refundable == refundable) &&
             (identical(other.incomeAmount, incomeAmount) ||
                 other.incomeAmount == incomeAmount) &&
             (identical(other.description, description) ||
@@ -2758,14 +2771,8 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
                 other.paymentMethod == paymentMethod) &&
             (identical(other.capturedAt, capturedAt) ||
                 other.capturedAt == capturedAt) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt) &&
             (identical(other.confirmation, confirmation) ||
                 other.confirmation == confirmation) &&
-            (identical(other.test, test) || other.test == test) &&
-            (identical(other.paid, paid) || other.paid == paid) &&
-            (identical(other.refundable, refundable) ||
-                other.refundable == refundable) &&
             (identical(other.cancellationDetails, cancellationDetails) ||
                 other.cancellationDetails == cancellationDetails) &&
             (identical(other.authorizationDetails, authorizationDetails) ||
@@ -2782,16 +2789,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
       status,
       id,
       amount,
+      createdAt,
+      test,
+      paid,
+      refundable,
       incomeAmount,
       description,
       recipient,
       paymentMethod,
       capturedAt,
-      createdAt,
       confirmation,
-      test,
-      paid,
-      refundable,
       cancellationDetails,
       authorizationDetails,
       expiresAt,
@@ -2800,10 +2807,9 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CanceledYookassaPaymentCopyWith<_$_CanceledYookassaPayment>
-      get copyWith =>
-          __$$_CanceledYookassaPaymentCopyWithImpl<_$_CanceledYookassaPayment>(
-              this, _$identity);
+  _$$CanceledYookassaPaymentImplCopyWith<_$CanceledYookassaPaymentImpl>
+      get copyWith => __$$CanceledYookassaPaymentImplCopyWithImpl<
+          _$CanceledYookassaPaymentImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2812,16 +2818,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -2830,16 +2836,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -2848,16 +2854,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)
@@ -2866,16 +2872,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -2886,16 +2892,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         cancellationDetails,
         authorizationDetails,
         expiresAt,
@@ -2909,16 +2915,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2927,16 +2933,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2945,16 +2951,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -2963,16 +2969,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -2983,16 +2989,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
         status,
         id,
         amount,
+        createdAt,
+        test,
+        paid,
+        refundable,
         incomeAmount,
         description,
         recipient,
         paymentMethod,
         capturedAt,
-        createdAt,
         confirmation,
-        test,
-        paid,
-        refundable,
         cancellationDetails,
         authorizationDetails,
         expiresAt,
@@ -3006,16 +3012,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -3024,16 +3030,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -3042,16 +3048,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
             Map<String, Object>? metadata)?
@@ -3060,16 +3066,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
             YookassaPaymentStatus status,
             String id,
             Amount amount,
+            DateTime createdAt,
+            bool test,
+            bool paid,
+            bool refundable,
             Amount? incomeAmount,
             String? description,
             YookassaRecipient? recipient,
             YookassaPaymentMethod? paymentMethod,
             DateTime? capturedAt,
-            DateTime createdAt,
             YookassaConfirmation? confirmation,
-            bool test,
-            bool paid,
-            bool refundable,
             CancellationDetails? cancellationDetails,
             AuthorizationDetails? authorizationDetails,
             DateTime? expiresAt,
@@ -3082,16 +3088,16 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
           status,
           id,
           amount,
+          createdAt,
+          test,
+          paid,
+          refundable,
           incomeAmount,
           description,
           recipient,
           paymentMethod,
           capturedAt,
-          createdAt,
           confirmation,
-          test,
-          paid,
-          refundable,
           cancellationDetails,
           authorizationDetails,
           expiresAt,
@@ -3139,7 +3145,7 @@ class _$_CanceledYookassaPayment implements _CanceledYookassaPayment {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CanceledYookassaPaymentToJson(
+    return _$$CanceledYookassaPaymentImplToJson(
       this,
     );
   }
@@ -3150,23 +3156,23 @@ abstract class _CanceledYookassaPayment implements YookassaPayment {
       {required final YookassaPaymentStatus status,
       required final String id,
       required final Amount amount,
+      required final DateTime createdAt,
+      required final bool test,
+      required final bool paid,
+      required final bool refundable,
       final Amount? incomeAmount,
       final String? description,
       final YookassaRecipient? recipient,
       final YookassaPaymentMethod? paymentMethod,
       final DateTime? capturedAt,
-      required final DateTime createdAt,
       final YookassaConfirmation? confirmation,
-      required final bool test,
-      required final bool paid,
-      required final bool refundable,
       final CancellationDetails? cancellationDetails,
       final AuthorizationDetails? authorizationDetails,
       final DateTime? expiresAt,
-      final Map<String, Object>? metadata}) = _$_CanceledYookassaPayment;
+      final Map<String, Object>? metadata}) = _$CanceledYookassaPaymentImpl;
 
   factory _CanceledYookassaPayment.fromJson(Map<String, dynamic> json) =
-      _$_CanceledYookassaPayment.fromJson;
+      _$CanceledYookassaPaymentImpl.fromJson;
 
   @override
   YookassaPaymentStatus get status;
@@ -3174,6 +3180,14 @@ abstract class _CanceledYookassaPayment implements YookassaPayment {
   String get id;
   @override
   Amount get amount;
+  @override
+  DateTime get createdAt;
+  @override
+  bool get test;
+  @override
+  bool get paid;
+  @override
+  bool get refundable;
   @override
   Amount? get incomeAmount;
   @override
@@ -3185,15 +3199,7 @@ abstract class _CanceledYookassaPayment implements YookassaPayment {
   @override
   DateTime? get capturedAt;
   @override
-  DateTime get createdAt;
-  @override
   YookassaConfirmation? get confirmation;
-  @override
-  bool get test;
-  @override
-  bool get paid;
-  @override
-  bool get refundable;
   CancellationDetails? get cancellationDetails;
   @override
   AuthorizationDetails? get authorizationDetails;
@@ -3203,6 +3209,6 @@ abstract class _CanceledYookassaPayment implements YookassaPayment {
   Map<String, Object>? get metadata;
   @override
   @JsonKey(ignore: true)
-  _$$_CanceledYookassaPaymentCopyWith<_$_CanceledYookassaPayment>
+  _$$CanceledYookassaPaymentImplCopyWith<_$CanceledYookassaPaymentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

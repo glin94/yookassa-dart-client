@@ -20,8 +20,8 @@ YookassaReceipt _$YookassaReceiptFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$YookassaReceipt {
-  Customer get customer => throw _privateConstructorUsedError;
-  List<Item> get items => throw _privateConstructorUsedError;
+  YookassaCustomer get customer => throw _privateConstructorUsedError;
+  List<YookassaItem> get items => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,9 +35,9 @@ abstract class $YookassaReceiptCopyWith<$Res> {
           YookassaReceipt value, $Res Function(YookassaReceipt) then) =
       _$YookassaReceiptCopyWithImpl<$Res, YookassaReceipt>;
   @useResult
-  $Res call({Customer customer, List<Item> items});
+  $Res call({YookassaCustomer customer, List<YookassaItem> items});
 
-  $CustomerCopyWith<$Res> get customer;
+  $YookassaCustomerCopyWith<$Res> get customer;
 }
 
 /// @nodoc
@@ -60,43 +60,43 @@ class _$YookassaReceiptCopyWithImpl<$Res, $Val extends YookassaReceipt>
       customer: null == customer
           ? _value.customer
           : customer // ignore: cast_nullable_to_non_nullable
-              as Customer,
+              as YookassaCustomer,
       items: null == items
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<Item>,
+              as List<YookassaItem>,
     ) as $Val);
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $CustomerCopyWith<$Res> get customer {
-    return $CustomerCopyWith<$Res>(_value.customer, (value) {
+  $YookassaCustomerCopyWith<$Res> get customer {
+    return $YookassaCustomerCopyWith<$Res>(_value.customer, (value) {
       return _then(_value.copyWith(customer: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_YookassaReceiptCopyWith<$Res>
+abstract class _$$YookassaReceiptImplCopyWith<$Res>
     implements $YookassaReceiptCopyWith<$Res> {
-  factory _$$_YookassaReceiptCopyWith(
-          _$_YookassaReceipt value, $Res Function(_$_YookassaReceipt) then) =
-      __$$_YookassaReceiptCopyWithImpl<$Res>;
+  factory _$$YookassaReceiptImplCopyWith(_$YookassaReceiptImpl value,
+          $Res Function(_$YookassaReceiptImpl) then) =
+      __$$YookassaReceiptImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({Customer customer, List<Item> items});
+  $Res call({YookassaCustomer customer, List<YookassaItem> items});
 
   @override
-  $CustomerCopyWith<$Res> get customer;
+  $YookassaCustomerCopyWith<$Res> get customer;
 }
 
 /// @nodoc
-class __$$_YookassaReceiptCopyWithImpl<$Res>
-    extends _$YookassaReceiptCopyWithImpl<$Res, _$_YookassaReceipt>
-    implements _$$_YookassaReceiptCopyWith<$Res> {
-  __$$_YookassaReceiptCopyWithImpl(
-      _$_YookassaReceipt _value, $Res Function(_$_YookassaReceipt) _then)
+class __$$YookassaReceiptImplCopyWithImpl<$Res>
+    extends _$YookassaReceiptCopyWithImpl<$Res, _$YookassaReceiptImpl>
+    implements _$$YookassaReceiptImplCopyWith<$Res> {
+  __$$YookassaReceiptImplCopyWithImpl(
+      _$YookassaReceiptImpl _value, $Res Function(_$YookassaReceiptImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -105,34 +105,34 @@ class __$$_YookassaReceiptCopyWithImpl<$Res>
     Object? customer = null,
     Object? items = null,
   }) {
-    return _then(_$_YookassaReceipt(
+    return _then(_$YookassaReceiptImpl(
       customer: null == customer
           ? _value.customer
           : customer // ignore: cast_nullable_to_non_nullable
-              as Customer,
+              as YookassaCustomer,
       items: null == items
           ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<Item>,
+              as List<YookassaItem>,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_YookassaReceipt implements _YookassaReceipt {
-  const _$_YookassaReceipt(
-      {required this.customer, required final List<Item> items})
+class _$YookassaReceiptImpl implements _YookassaReceipt {
+  const _$YookassaReceiptImpl(
+      {required this.customer, required final List<YookassaItem> items})
       : _items = items;
 
-  factory _$_YookassaReceipt.fromJson(Map<String, dynamic> json) =>
-      _$$_YookassaReceiptFromJson(json);
+  factory _$YookassaReceiptImpl.fromJson(Map<String, dynamic> json) =>
+      _$$YookassaReceiptImplFromJson(json);
 
   @override
-  final Customer customer;
-  final List<Item> _items;
+  final YookassaCustomer customer;
+  final List<YookassaItem> _items;
   @override
-  List<Item> get items {
+  List<YookassaItem> get items {
     if (_items is EqualUnmodifiableListView) return _items;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_items);
@@ -144,10 +144,10 @@ class _$_YookassaReceipt implements _YookassaReceipt {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_YookassaReceipt &&
+            other is _$YookassaReceiptImpl &&
             (identical(other.customer, customer) ||
                 other.customer == customer) &&
             const DeepCollectionEquality().equals(other._items, _items));
@@ -161,12 +161,13 @@ class _$_YookassaReceipt implements _YookassaReceipt {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_YookassaReceiptCopyWith<_$_YookassaReceipt> get copyWith =>
-      __$$_YookassaReceiptCopyWithImpl<_$_YookassaReceipt>(this, _$identity);
+  _$$YookassaReceiptImplCopyWith<_$YookassaReceiptImpl> get copyWith =>
+      __$$YookassaReceiptImplCopyWithImpl<_$YookassaReceiptImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_YookassaReceiptToJson(
+    return _$$YookassaReceiptImplToJson(
       this,
     );
   }
@@ -174,18 +175,18 @@ class _$_YookassaReceipt implements _YookassaReceipt {
 
 abstract class _YookassaReceipt implements YookassaReceipt {
   const factory _YookassaReceipt(
-      {required final Customer customer,
-      required final List<Item> items}) = _$_YookassaReceipt;
+      {required final YookassaCustomer customer,
+      required final List<YookassaItem> items}) = _$YookassaReceiptImpl;
 
   factory _YookassaReceipt.fromJson(Map<String, dynamic> json) =
-      _$_YookassaReceipt.fromJson;
+      _$YookassaReceiptImpl.fromJson;
 
   @override
-  Customer get customer;
+  YookassaCustomer get customer;
   @override
-  List<Item> get items;
+  List<YookassaItem> get items;
   @override
   @JsonKey(ignore: true)
-  _$$_YookassaReceiptCopyWith<_$_YookassaReceipt> get copyWith =>
+  _$$YookassaReceiptImplCopyWith<_$YookassaReceiptImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

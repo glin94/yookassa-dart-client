@@ -20,11 +20,11 @@ YookassaCard _$YookassaCardFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$YookassaCard {
-  String? get first6 => throw _privateConstructorUsedError;
   String get last4 => throw _privateConstructorUsedError;
   String get expiryYear => throw _privateConstructorUsedError;
   String get expiryMonth => throw _privateConstructorUsedError;
   YookassaCardType get cardType => throw _privateConstructorUsedError;
+  String? get first6 => throw _privateConstructorUsedError;
   String? get issuerCountry => throw _privateConstructorUsedError;
   String? get issuerName => throw _privateConstructorUsedError;
   String? get source => throw _privateConstructorUsedError;
@@ -42,11 +42,11 @@ abstract class $YookassaCardCopyWith<$Res> {
       _$YookassaCardCopyWithImpl<$Res, YookassaCard>;
   @useResult
   $Res call(
-      {String? first6,
-      String last4,
+      {String last4,
       String expiryYear,
       String expiryMonth,
       YookassaCardType cardType,
+      String? first6,
       String? issuerCountry,
       String? issuerName,
       String? source});
@@ -65,20 +65,16 @@ class _$YookassaCardCopyWithImpl<$Res, $Val extends YookassaCard>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? first6 = freezed,
     Object? last4 = null,
     Object? expiryYear = null,
     Object? expiryMonth = null,
     Object? cardType = null,
+    Object? first6 = freezed,
     Object? issuerCountry = freezed,
     Object? issuerName = freezed,
     Object? source = freezed,
   }) {
     return _then(_value.copyWith(
-      first6: freezed == first6
-          ? _value.first6
-          : first6 // ignore: cast_nullable_to_non_nullable
-              as String?,
       last4: null == last4
           ? _value.last4
           : last4 // ignore: cast_nullable_to_non_nullable
@@ -95,6 +91,10 @@ class _$YookassaCardCopyWithImpl<$Res, $Val extends YookassaCard>
           ? _value.cardType
           : cardType // ignore: cast_nullable_to_non_nullable
               as YookassaCardType,
+      first6: freezed == first6
+          ? _value.first6
+          : first6 // ignore: cast_nullable_to_non_nullable
+              as String?,
       issuerCountry: freezed == issuerCountry
           ? _value.issuerCountry
           : issuerCountry // ignore: cast_nullable_to_non_nullable
@@ -112,49 +112,45 @@ class _$YookassaCardCopyWithImpl<$Res, $Val extends YookassaCard>
 }
 
 /// @nodoc
-abstract class _$$_YookassaCardCopyWith<$Res>
+abstract class _$$YookassaCardImplCopyWith<$Res>
     implements $YookassaCardCopyWith<$Res> {
-  factory _$$_YookassaCardCopyWith(
-          _$_YookassaCard value, $Res Function(_$_YookassaCard) then) =
-      __$$_YookassaCardCopyWithImpl<$Res>;
+  factory _$$YookassaCardImplCopyWith(
+          _$YookassaCardImpl value, $Res Function(_$YookassaCardImpl) then) =
+      __$$YookassaCardImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
-      {String? first6,
-      String last4,
+      {String last4,
       String expiryYear,
       String expiryMonth,
       YookassaCardType cardType,
+      String? first6,
       String? issuerCountry,
       String? issuerName,
       String? source});
 }
 
 /// @nodoc
-class __$$_YookassaCardCopyWithImpl<$Res>
-    extends _$YookassaCardCopyWithImpl<$Res, _$_YookassaCard>
-    implements _$$_YookassaCardCopyWith<$Res> {
-  __$$_YookassaCardCopyWithImpl(
-      _$_YookassaCard _value, $Res Function(_$_YookassaCard) _then)
+class __$$YookassaCardImplCopyWithImpl<$Res>
+    extends _$YookassaCardCopyWithImpl<$Res, _$YookassaCardImpl>
+    implements _$$YookassaCardImplCopyWith<$Res> {
+  __$$YookassaCardImplCopyWithImpl(
+      _$YookassaCardImpl _value, $Res Function(_$YookassaCardImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? first6 = freezed,
     Object? last4 = null,
     Object? expiryYear = null,
     Object? expiryMonth = null,
     Object? cardType = null,
+    Object? first6 = freezed,
     Object? issuerCountry = freezed,
     Object? issuerName = freezed,
     Object? source = freezed,
   }) {
-    return _then(_$_YookassaCard(
-      first6: freezed == first6
-          ? _value.first6
-          : first6 // ignore: cast_nullable_to_non_nullable
-              as String?,
+    return _then(_$YookassaCardImpl(
       last4: null == last4
           ? _value.last4
           : last4 // ignore: cast_nullable_to_non_nullable
@@ -171,6 +167,10 @@ class __$$_YookassaCardCopyWithImpl<$Res>
           ? _value.cardType
           : cardType // ignore: cast_nullable_to_non_nullable
               as YookassaCardType,
+      first6: freezed == first6
+          ? _value.first6
+          : first6 // ignore: cast_nullable_to_non_nullable
+              as String?,
       issuerCountry: freezed == issuerCountry
           ? _value.issuerCountry
           : issuerCountry // ignore: cast_nullable_to_non_nullable
@@ -189,22 +189,20 @@ class __$$_YookassaCardCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_YookassaCard implements _YookassaCard {
-  _$_YookassaCard(
-      {this.first6,
-      required this.last4,
+class _$YookassaCardImpl implements _YookassaCard {
+  _$YookassaCardImpl(
+      {required this.last4,
       required this.expiryYear,
       required this.expiryMonth,
       required this.cardType,
+      this.first6,
       this.issuerCountry,
       this.issuerName,
       this.source});
 
-  factory _$_YookassaCard.fromJson(Map<String, dynamic> json) =>
-      _$$_YookassaCardFromJson(json);
+  factory _$YookassaCardImpl.fromJson(Map<String, dynamic> json) =>
+      _$$YookassaCardImplFromJson(json);
 
-  @override
-  final String? first6;
   @override
   final String last4;
   @override
@@ -214,6 +212,8 @@ class _$_YookassaCard implements _YookassaCard {
   @override
   final YookassaCardType cardType;
   @override
+  final String? first6;
+  @override
   final String? issuerCountry;
   @override
   final String? issuerName;
@@ -222,15 +222,14 @@ class _$_YookassaCard implements _YookassaCard {
 
   @override
   String toString() {
-    return 'YookassaCard(first6: $first6, last4: $last4, expiryYear: $expiryYear, expiryMonth: $expiryMonth, cardType: $cardType, issuerCountry: $issuerCountry, issuerName: $issuerName, source: $source)';
+    return 'YookassaCard(last4: $last4, expiryYear: $expiryYear, expiryMonth: $expiryMonth, cardType: $cardType, first6: $first6, issuerCountry: $issuerCountry, issuerName: $issuerName, source: $source)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_YookassaCard &&
-            (identical(other.first6, first6) || other.first6 == first6) &&
+            other is _$YookassaCardImpl &&
             (identical(other.last4, last4) || other.last4 == last4) &&
             (identical(other.expiryYear, expiryYear) ||
                 other.expiryYear == expiryYear) &&
@@ -238,6 +237,7 @@ class _$_YookassaCard implements _YookassaCard {
                 other.expiryMonth == expiryMonth) &&
             (identical(other.cardType, cardType) ||
                 other.cardType == cardType) &&
+            (identical(other.first6, first6) || other.first6 == first6) &&
             (identical(other.issuerCountry, issuerCountry) ||
                 other.issuerCountry == issuerCountry) &&
             (identical(other.issuerName, issuerName) ||
@@ -247,18 +247,18 @@ class _$_YookassaCard implements _YookassaCard {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, first6, last4, expiryYear,
-      expiryMonth, cardType, issuerCountry, issuerName, source);
+  int get hashCode => Object.hash(runtimeType, last4, expiryYear, expiryMonth,
+      cardType, first6, issuerCountry, issuerName, source);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_YookassaCardCopyWith<_$_YookassaCard> get copyWith =>
-      __$$_YookassaCardCopyWithImpl<_$_YookassaCard>(this, _$identity);
+  _$$YookassaCardImplCopyWith<_$YookassaCardImpl> get copyWith =>
+      __$$YookassaCardImplCopyWithImpl<_$YookassaCardImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_YookassaCardToJson(
+    return _$$YookassaCardImplToJson(
       this,
     );
   }
@@ -266,20 +266,18 @@ class _$_YookassaCard implements _YookassaCard {
 
 abstract class _YookassaCard implements YookassaCard {
   factory _YookassaCard(
-      {final String? first6,
-      required final String last4,
+      {required final String last4,
       required final String expiryYear,
       required final String expiryMonth,
       required final YookassaCardType cardType,
+      final String? first6,
       final String? issuerCountry,
       final String? issuerName,
-      final String? source}) = _$_YookassaCard;
+      final String? source}) = _$YookassaCardImpl;
 
   factory _YookassaCard.fromJson(Map<String, dynamic> json) =
-      _$_YookassaCard.fromJson;
+      _$YookassaCardImpl.fromJson;
 
-  @override
-  String? get first6;
   @override
   String get last4;
   @override
@@ -289,6 +287,8 @@ abstract class _YookassaCard implements YookassaCard {
   @override
   YookassaCardType get cardType;
   @override
+  String? get first6;
+  @override
   String? get issuerCountry;
   @override
   String? get issuerName;
@@ -296,6 +296,6 @@ abstract class _YookassaCard implements YookassaCard {
   String? get source;
   @override
   @JsonKey(ignore: true)
-  _$$_YookassaCardCopyWith<_$_YookassaCard> get copyWith =>
+  _$$YookassaCardImplCopyWith<_$YookassaCardImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -9,3 +9,10 @@ targets:
       json_serializable:
         options:
           field_rename: snake
+global_options:
+  freezed:
+    runs_before:
+      - json_serializable
+  json_serializable:
+    runs_before:
+      - retrofit_generator

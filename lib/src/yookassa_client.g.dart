@@ -22,8 +22,8 @@ class _YookassaClient implements YookassaClient {
 
   @override
   Future<YookassaPayment> createPayment({
-    required paymentRequest,
-    idempotenceKey,
+    required CreatePaymentRequest paymentRequest,
+    String? idempotenceKey,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
@@ -44,17 +44,21 @@ class _YookassaClient implements YookassaClient {
               queryParameters: queryParameters,
               data: _data,
             )
-            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
     final value = YookassaPayment.fromJson(_result.data!);
     return value;
   }
 
   @override
-  Future<YookassaPayment> getPaymentInfo({required paymentId}) async {
+  Future<YookassaPayment> getPaymentInfo({required String paymentId}) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    final _data = <String, dynamic>{};
+    final Map<String, dynamic>? _data = null;
     final _result = await _dio
         .fetch<Map<String, dynamic>>(_setStreamType<YookassaPayment>(Options(
       method: 'GET',
@@ -67,16 +71,20 @@ class _YookassaClient implements YookassaClient {
               queryParameters: queryParameters,
               data: _data,
             )
-            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
     final value = YookassaPayment.fromJson(_result.data!);
     return value;
   }
 
   @override
   Future<YookassaPayment> capturePayment({
-    required payment,
-    required paymentId,
-    idempotenceKey,
+    required YookassaPayment payment,
+    required String paymentId,
+    String? idempotenceKey,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
@@ -97,22 +105,26 @@ class _YookassaClient implements YookassaClient {
               queryParameters: queryParameters,
               data: _data,
             )
-            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
     final value = YookassaPayment.fromJson(_result.data!);
     return value;
   }
 
   @override
   Future<YookassaPayment> cancelPayment({
-    required paymentId,
-    idempotenceKey,
+    required String paymentId,
+    String? idempotenceKey,
   }) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     queryParameters.removeWhere((k, v) => v == null);
     final _headers = <String, dynamic>{r'Idempotence-Key': idempotenceKey};
     _headers.removeWhere((k, v) => v == null);
-    final _data = <String, dynamic>{};
+    final Map<String, dynamic>? _data = null;
     final _result = await _dio
         .fetch<Map<String, dynamic>>(_setStreamType<YookassaPayment>(Options(
       method: 'POST',
@@ -125,7 +137,11 @@ class _YookassaClient implements YookassaClient {
               queryParameters: queryParameters,
               data: _data,
             )
-            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
     final value = YookassaPayment.fromJson(_result.data!);
     return value;
   }
@@ -141,5 +157,22 @@ class _YookassaClient implements YookassaClient {
       }
     }
     return requestOptions;
+  }
+
+  String _combineBaseUrls(
+    String dioBaseUrl,
+    String? baseUrl,
+  ) {
+    if (baseUrl == null || baseUrl.trim().isEmpty) {
+      return dioBaseUrl;
+    }
+
+    final url = Uri.parse(baseUrl);
+
+    if (url.isAbsolute) {
+      return url.toString();
+    }
+
+    return Uri.parse(dioBaseUrl).resolveUri(url).toString();
   }
 }

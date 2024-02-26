@@ -68,22 +68,22 @@ class _$YookassaRecipientCopyWithImpl<$Res, $Val extends YookassaRecipient>
 }
 
 /// @nodoc
-abstract class _$$_YookassaRecipientCopyWith<$Res>
+abstract class _$$YookassaRecipientImplCopyWith<$Res>
     implements $YookassaRecipientCopyWith<$Res> {
-  factory _$$_YookassaRecipientCopyWith(_$_YookassaRecipient value,
-          $Res Function(_$_YookassaRecipient) then) =
-      __$$_YookassaRecipientCopyWithImpl<$Res>;
+  factory _$$YookassaRecipientImplCopyWith(_$YookassaRecipientImpl value,
+          $Res Function(_$YookassaRecipientImpl) then) =
+      __$$YookassaRecipientImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String accountId, String gatewayId});
 }
 
 /// @nodoc
-class __$$_YookassaRecipientCopyWithImpl<$Res>
-    extends _$YookassaRecipientCopyWithImpl<$Res, _$_YookassaRecipient>
-    implements _$$_YookassaRecipientCopyWith<$Res> {
-  __$$_YookassaRecipientCopyWithImpl(
-      _$_YookassaRecipient _value, $Res Function(_$_YookassaRecipient) _then)
+class __$$YookassaRecipientImplCopyWithImpl<$Res>
+    extends _$YookassaRecipientCopyWithImpl<$Res, _$YookassaRecipientImpl>
+    implements _$$YookassaRecipientImplCopyWith<$Res> {
+  __$$YookassaRecipientImplCopyWithImpl(_$YookassaRecipientImpl _value,
+      $Res Function(_$YookassaRecipientImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_YookassaRecipientCopyWithImpl<$Res>
     Object? accountId = null,
     Object? gatewayId = null,
   }) {
-    return _then(_$_YookassaRecipient(
+    return _then(_$YookassaRecipientImpl(
       accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,11 @@ class __$$_YookassaRecipientCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_YookassaRecipient implements _YookassaRecipient {
-  _$_YookassaRecipient({required this.accountId, required this.gatewayId});
+class _$YookassaRecipientImpl implements _YookassaRecipient {
+  _$YookassaRecipientImpl({required this.accountId, required this.gatewayId});
 
-  factory _$_YookassaRecipient.fromJson(Map<String, dynamic> json) =>
-      _$$_YookassaRecipientFromJson(json);
+  factory _$YookassaRecipientImpl.fromJson(Map<String, dynamic> json) =>
+      _$$YookassaRecipientImplFromJson(json);
 
   @override
   final String accountId;
@@ -124,10 +124,10 @@ class _$_YookassaRecipient implements _YookassaRecipient {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_YookassaRecipient &&
+            other is _$YookassaRecipientImpl &&
             (identical(other.accountId, accountId) ||
                 other.accountId == accountId) &&
             (identical(other.gatewayId, gatewayId) ||
@@ -141,13 +141,13 @@ class _$_YookassaRecipient implements _YookassaRecipient {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_YookassaRecipientCopyWith<_$_YookassaRecipient> get copyWith =>
-      __$$_YookassaRecipientCopyWithImpl<_$_YookassaRecipient>(
+  _$$YookassaRecipientImplCopyWith<_$YookassaRecipientImpl> get copyWith =>
+      __$$YookassaRecipientImplCopyWithImpl<_$YookassaRecipientImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_YookassaRecipientToJson(
+    return _$$YookassaRecipientImplToJson(
       this,
     );
   }
@@ -156,10 +156,10 @@ class _$_YookassaRecipient implements _YookassaRecipient {
 abstract class _YookassaRecipient implements YookassaRecipient {
   factory _YookassaRecipient(
       {required final String accountId,
-      required final String gatewayId}) = _$_YookassaRecipient;
+      required final String gatewayId}) = _$YookassaRecipientImpl;
 
   factory _YookassaRecipient.fromJson(Map<String, dynamic> json) =
-      _$_YookassaRecipient.fromJson;
+      _$YookassaRecipientImpl.fromJson;
 
   @override
   String get accountId;
@@ -167,6 +167,6 @@ abstract class _YookassaRecipient implements YookassaRecipient {
   String get gatewayId;
   @override
   @JsonKey(ignore: true)
-  _$$_YookassaRecipientCopyWith<_$_YookassaRecipient> get copyWith =>
+  _$$YookassaRecipientImplCopyWith<_$YookassaRecipientImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

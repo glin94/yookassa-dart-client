@@ -6,9 +6,9 @@ part of 'create_payment_request.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CreatePaymentRequest _$$_CreatePaymentRequestFromJson(
+_$CreatePaymentRequestImpl _$$CreatePaymentRequestImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CreatePaymentRequest(
+    _$CreatePaymentRequestImpl(
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
       description: json['description'] as String?,
       paymentToken: json['payment_token'] as String?,
@@ -35,8 +35,8 @@ _$_CreatePaymentRequest _$$_CreatePaymentRequestFromJson(
           : YookassaReceipt.fromJson(json['receipt'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_CreatePaymentRequestToJson(
-        _$_CreatePaymentRequest instance) =>
+Map<String, dynamic> _$$CreatePaymentRequestImplToJson(
+        _$CreatePaymentRequestImpl instance) =>
     <String, dynamic>{
       'amount': instance.amount,
       'description': instance.description,

@@ -212,11 +212,11 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_CreatePaymentRequestCopyWith<$Res>
+abstract class _$$CreatePaymentRequestImplCopyWith<$Res>
     implements $CreatePaymentRequestCopyWith<$Res> {
-  factory _$$_CreatePaymentRequestCopyWith(_$_CreatePaymentRequest value,
-          $Res Function(_$_CreatePaymentRequest) then) =
-      __$$_CreatePaymentRequestCopyWithImpl<$Res>;
+  factory _$$CreatePaymentRequestImplCopyWith(_$CreatePaymentRequestImpl value,
+          $Res Function(_$CreatePaymentRequestImpl) then) =
+      __$$CreatePaymentRequestImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -247,11 +247,11 @@ abstract class _$$_CreatePaymentRequestCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CreatePaymentRequestCopyWithImpl<$Res>
-    extends _$CreatePaymentRequestCopyWithImpl<$Res, _$_CreatePaymentRequest>
-    implements _$$_CreatePaymentRequestCopyWith<$Res> {
-  __$$_CreatePaymentRequestCopyWithImpl(_$_CreatePaymentRequest _value,
-      $Res Function(_$_CreatePaymentRequest) _then)
+class __$$CreatePaymentRequestImplCopyWithImpl<$Res>
+    extends _$CreatePaymentRequestCopyWithImpl<$Res, _$CreatePaymentRequestImpl>
+    implements _$$CreatePaymentRequestImplCopyWith<$Res> {
+  __$$CreatePaymentRequestImplCopyWithImpl(_$CreatePaymentRequestImpl _value,
+      $Res Function(_$CreatePaymentRequestImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -271,7 +271,7 @@ class __$$_CreatePaymentRequestCopyWithImpl<$Res>
     Object? merchantCustomerId = freezed,
     Object? receipt = freezed,
   }) {
-    return _then(_$_CreatePaymentRequest(
+    return _then(_$CreatePaymentRequestImpl(
       amount: null == amount
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
@@ -330,8 +330,8 @@ class __$$_CreatePaymentRequestCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CreatePaymentRequest implements _CreatePaymentRequest {
-  const _$_CreatePaymentRequest(
+class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
+  const _$CreatePaymentRequestImpl(
       {required this.amount,
       this.description,
       this.paymentToken,
@@ -347,8 +347,8 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
       this.receipt})
       : _metadata = metadata;
 
-  factory _$_CreatePaymentRequest.fromJson(Map<String, dynamic> json) =>
-      _$$_CreatePaymentRequestFromJson(json);
+  factory _$CreatePaymentRequestImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CreatePaymentRequestImplFromJson(json);
 
   @override
   final Amount amount;
@@ -391,10 +391,10 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CreatePaymentRequest &&
+            other is _$CreatePaymentRequestImpl &&
             (identical(other.amount, amount) || other.amount == amount) &&
             (identical(other.description, description) ||
                 other.description == description) &&
@@ -440,13 +440,14 @@ class _$_CreatePaymentRequest implements _CreatePaymentRequest {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CreatePaymentRequestCopyWith<_$_CreatePaymentRequest> get copyWith =>
-      __$$_CreatePaymentRequestCopyWithImpl<_$_CreatePaymentRequest>(
-          this, _$identity);
+  _$$CreatePaymentRequestImplCopyWith<_$CreatePaymentRequestImpl>
+      get copyWith =>
+          __$$CreatePaymentRequestImplCopyWithImpl<_$CreatePaymentRequestImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreatePaymentRequestToJson(
+    return _$$CreatePaymentRequestImplToJson(
       this,
     );
   }
@@ -466,10 +467,10 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
       final String? clientIp,
       final Map<String, Object?>? metadata,
       final String? merchantCustomerId,
-      final YookassaReceipt? receipt}) = _$_CreatePaymentRequest;
+      final YookassaReceipt? receipt}) = _$CreatePaymentRequestImpl;
 
   factory _CreatePaymentRequest.fromJson(Map<String, dynamic> json) =
-      _$_CreatePaymentRequest.fromJson;
+      _$CreatePaymentRequestImpl.fromJson;
 
   @override
   Amount get amount;
@@ -499,6 +500,6 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
   YookassaReceipt? get receipt;
   @override
   @JsonKey(ignore: true)
-  _$$_CreatePaymentRequestCopyWith<_$_CreatePaymentRequest> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$CreatePaymentRequestImplCopyWith<_$CreatePaymentRequestImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

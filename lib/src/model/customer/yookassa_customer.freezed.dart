@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'customer.dart';
+part of 'yookassa_customer.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,33 +14,34 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Customer _$CustomerFromJson(Map<String, dynamic> json) {
-  return _Customer.fromJson(json);
+YookassaCustomer _$YookassaCustomerFromJson(Map<String, dynamic> json) {
+  return _YookassaCustomer.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Customer {
+mixin _$YookassaCustomer {
   String? get email => throw _privateConstructorUsedError;
   String? get phone => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CustomerCopyWith<Customer> get copyWith =>
+  $YookassaCustomerCopyWith<YookassaCustomer> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CustomerCopyWith<$Res> {
-  factory $CustomerCopyWith(Customer value, $Res Function(Customer) then) =
-      _$CustomerCopyWithImpl<$Res, Customer>;
+abstract class $YookassaCustomerCopyWith<$Res> {
+  factory $YookassaCustomerCopyWith(
+          YookassaCustomer value, $Res Function(YookassaCustomer) then) =
+      _$YookassaCustomerCopyWithImpl<$Res, YookassaCustomer>;
   @useResult
   $Res call({String? email, String? phone});
 }
 
 /// @nodoc
-class _$CustomerCopyWithImpl<$Res, $Val extends Customer>
-    implements $CustomerCopyWith<$Res> {
-  _$CustomerCopyWithImpl(this._value, this._then);
+class _$YookassaCustomerCopyWithImpl<$Res, $Val extends YookassaCustomer>
+    implements $YookassaCustomerCopyWith<$Res> {
+  _$YookassaCustomerCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -67,21 +68,22 @@ class _$CustomerCopyWithImpl<$Res, $Val extends Customer>
 }
 
 /// @nodoc
-abstract class _$$_CustomerCopyWith<$Res> implements $CustomerCopyWith<$Res> {
-  factory _$$_CustomerCopyWith(
-          _$_Customer value, $Res Function(_$_Customer) then) =
-      __$$_CustomerCopyWithImpl<$Res>;
+abstract class _$$YookassaCustomerImplCopyWith<$Res>
+    implements $YookassaCustomerCopyWith<$Res> {
+  factory _$$YookassaCustomerImplCopyWith(_$YookassaCustomerImpl value,
+          $Res Function(_$YookassaCustomerImpl) then) =
+      __$$YookassaCustomerImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? email, String? phone});
 }
 
 /// @nodoc
-class __$$_CustomerCopyWithImpl<$Res>
-    extends _$CustomerCopyWithImpl<$Res, _$_Customer>
-    implements _$$_CustomerCopyWith<$Res> {
-  __$$_CustomerCopyWithImpl(
-      _$_Customer _value, $Res Function(_$_Customer) _then)
+class __$$YookassaCustomerImplCopyWithImpl<$Res>
+    extends _$YookassaCustomerCopyWithImpl<$Res, _$YookassaCustomerImpl>
+    implements _$$YookassaCustomerImplCopyWith<$Res> {
+  __$$YookassaCustomerImplCopyWithImpl(_$YookassaCustomerImpl _value,
+      $Res Function(_$YookassaCustomerImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -90,7 +92,7 @@ class __$$_CustomerCopyWithImpl<$Res>
     Object? email = freezed,
     Object? phone = freezed,
   }) {
-    return _then(_$_Customer(
+    return _then(_$YookassaCustomerImpl(
       email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -105,11 +107,11 @@ class __$$_CustomerCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Customer implements _Customer {
-  const _$_Customer({this.email, this.phone});
+class _$YookassaCustomerImpl implements _YookassaCustomer {
+  const _$YookassaCustomerImpl({this.email, this.phone});
 
-  factory _$_Customer.fromJson(Map<String, dynamic> json) =>
-      _$$_CustomerFromJson(json);
+  factory _$YookassaCustomerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$YookassaCustomerImplFromJson(json);
 
   @override
   final String? email;
@@ -118,14 +120,14 @@ class _$_Customer implements _Customer {
 
   @override
   String toString() {
-    return 'Customer(email: $email, phone: $phone)';
+    return 'YookassaCustomer(email: $email, phone: $phone)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Customer &&
+            other is _$YookassaCustomerImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.phone, phone) || other.phone == phone));
   }
@@ -137,22 +139,24 @@ class _$_Customer implements _Customer {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CustomerCopyWith<_$_Customer> get copyWith =>
-      __$$_CustomerCopyWithImpl<_$_Customer>(this, _$identity);
+  _$$YookassaCustomerImplCopyWith<_$YookassaCustomerImpl> get copyWith =>
+      __$$YookassaCustomerImplCopyWithImpl<_$YookassaCustomerImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CustomerToJson(
+    return _$$YookassaCustomerImplToJson(
       this,
     );
   }
 }
 
-abstract class _Customer implements Customer {
-  const factory _Customer({final String? email, final String? phone}) =
-      _$_Customer;
+abstract class _YookassaCustomer implements YookassaCustomer {
+  const factory _YookassaCustomer({final String? email, final String? phone}) =
+      _$YookassaCustomerImpl;
 
-  factory _Customer.fromJson(Map<String, dynamic> json) = _$_Customer.fromJson;
+  factory _YookassaCustomer.fromJson(Map<String, dynamic> json) =
+      _$YookassaCustomerImpl.fromJson;
 
   @override
   String? get email;
@@ -160,6 +164,6 @@ abstract class _Customer implements Customer {
   String? get phone;
   @override
   @JsonKey(ignore: true)
-  _$$_CustomerCopyWith<_$_Customer> get copyWith =>
+  _$$YookassaCustomerImplCopyWith<_$YookassaCustomerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -149,25 +149,25 @@ class _$YookassaConfirmationCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_EmbeddedYookassaConfirmationCopyWith<$Res>
+abstract class _$$EmbeddedYookassaConfirmationImplCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$_EmbeddedYookassaConfirmationCopyWith(
-          _$_EmbeddedYookassaConfirmation value,
-          $Res Function(_$_EmbeddedYookassaConfirmation) then) =
-      __$$_EmbeddedYookassaConfirmationCopyWithImpl<$Res>;
+  factory _$$EmbeddedYookassaConfirmationImplCopyWith(
+          _$EmbeddedYookassaConfirmationImpl value,
+          $Res Function(_$EmbeddedYookassaConfirmationImpl) then) =
+      __$$EmbeddedYookassaConfirmationImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? locale, String? confirmationToken});
 }
 
 /// @nodoc
-class __$$_EmbeddedYookassaConfirmationCopyWithImpl<$Res>
+class __$$EmbeddedYookassaConfirmationImplCopyWithImpl<$Res>
     extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$_EmbeddedYookassaConfirmation>
-    implements _$$_EmbeddedYookassaConfirmationCopyWith<$Res> {
-  __$$_EmbeddedYookassaConfirmationCopyWithImpl(
-      _$_EmbeddedYookassaConfirmation _value,
-      $Res Function(_$_EmbeddedYookassaConfirmation) _then)
+        _$EmbeddedYookassaConfirmationImpl>
+    implements _$$EmbeddedYookassaConfirmationImplCopyWith<$Res> {
+  __$$EmbeddedYookassaConfirmationImplCopyWithImpl(
+      _$EmbeddedYookassaConfirmationImpl _value,
+      $Res Function(_$EmbeddedYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -176,7 +176,7 @@ class __$$_EmbeddedYookassaConfirmationCopyWithImpl<$Res>
     Object? locale = freezed,
     Object? confirmationToken = freezed,
   }) {
-    return _then(_$_EmbeddedYookassaConfirmation(
+    return _then(_$EmbeddedYookassaConfirmationImpl(
       locale: freezed == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
@@ -191,13 +191,15 @@ class __$$_EmbeddedYookassaConfirmationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_EmbeddedYookassaConfirmation implements _EmbeddedYookassaConfirmation {
-  const _$_EmbeddedYookassaConfirmation(
+class _$EmbeddedYookassaConfirmationImpl
+    implements _EmbeddedYookassaConfirmation {
+  const _$EmbeddedYookassaConfirmationImpl(
       {this.locale = 'ru_RU', this.confirmationToken, final String? $type})
       : $type = $type ?? 'embedded';
 
-  factory _$_EmbeddedYookassaConfirmation.fromJson(Map<String, dynamic> json) =>
-      _$$_EmbeddedYookassaConfirmationFromJson(json);
+  factory _$EmbeddedYookassaConfirmationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$EmbeddedYookassaConfirmationImplFromJson(json);
 
   @override
   @JsonKey()
@@ -214,10 +216,10 @@ class _$_EmbeddedYookassaConfirmation implements _EmbeddedYookassaConfirmation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_EmbeddedYookassaConfirmation &&
+            other is _$EmbeddedYookassaConfirmationImpl &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.confirmationToken, confirmationToken) ||
                 other.confirmationToken == confirmationToken));
@@ -230,9 +232,10 @@ class _$_EmbeddedYookassaConfirmation implements _EmbeddedYookassaConfirmation {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_EmbeddedYookassaConfirmationCopyWith<_$_EmbeddedYookassaConfirmation>
-      get copyWith => __$$_EmbeddedYookassaConfirmationCopyWithImpl<
-          _$_EmbeddedYookassaConfirmation>(this, _$identity);
+  _$$EmbeddedYookassaConfirmationImplCopyWith<
+          _$EmbeddedYookassaConfirmationImpl>
+      get copyWith => __$$EmbeddedYookassaConfirmationImplCopyWithImpl<
+          _$EmbeddedYookassaConfirmationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -332,7 +335,7 @@ class _$_EmbeddedYookassaConfirmation implements _EmbeddedYookassaConfirmation {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EmbeddedYookassaConfirmationToJson(
+    return _$$EmbeddedYookassaConfirmationImplToJson(
       this,
     );
   }
@@ -341,40 +344,41 @@ class _$_EmbeddedYookassaConfirmation implements _EmbeddedYookassaConfirmation {
 abstract class _EmbeddedYookassaConfirmation implements YookassaConfirmation {
   const factory _EmbeddedYookassaConfirmation(
       {final String? locale,
-      final String? confirmationToken}) = _$_EmbeddedYookassaConfirmation;
+      final String? confirmationToken}) = _$EmbeddedYookassaConfirmationImpl;
 
   factory _EmbeddedYookassaConfirmation.fromJson(Map<String, dynamic> json) =
-      _$_EmbeddedYookassaConfirmation.fromJson;
+      _$EmbeddedYookassaConfirmationImpl.fromJson;
 
   @override
   String? get locale;
   String? get confirmationToken;
   @override
   @JsonKey(ignore: true)
-  _$$_EmbeddedYookassaConfirmationCopyWith<_$_EmbeddedYookassaConfirmation>
+  _$$EmbeddedYookassaConfirmationImplCopyWith<
+          _$EmbeddedYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ExternalYookassaConfirmationCopyWith<$Res>
+abstract class _$$ExternalYookassaConfirmationImplCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$_ExternalYookassaConfirmationCopyWith(
-          _$_ExternalYookassaConfirmation value,
-          $Res Function(_$_ExternalYookassaConfirmation) then) =
-      __$$_ExternalYookassaConfirmationCopyWithImpl<$Res>;
+  factory _$$ExternalYookassaConfirmationImplCopyWith(
+          _$ExternalYookassaConfirmationImpl value,
+          $Res Function(_$ExternalYookassaConfirmationImpl) then) =
+      __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? locale});
 }
 
 /// @nodoc
-class __$$_ExternalYookassaConfirmationCopyWithImpl<$Res>
+class __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>
     extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$_ExternalYookassaConfirmation>
-    implements _$$_ExternalYookassaConfirmationCopyWith<$Res> {
-  __$$_ExternalYookassaConfirmationCopyWithImpl(
-      _$_ExternalYookassaConfirmation _value,
-      $Res Function(_$_ExternalYookassaConfirmation) _then)
+        _$ExternalYookassaConfirmationImpl>
+    implements _$$ExternalYookassaConfirmationImplCopyWith<$Res> {
+  __$$ExternalYookassaConfirmationImplCopyWithImpl(
+      _$ExternalYookassaConfirmationImpl _value,
+      $Res Function(_$ExternalYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -382,7 +386,7 @@ class __$$_ExternalYookassaConfirmationCopyWithImpl<$Res>
   $Res call({
     Object? locale = freezed,
   }) {
-    return _then(_$_ExternalYookassaConfirmation(
+    return _then(_$ExternalYookassaConfirmationImpl(
       locale: freezed == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
@@ -393,13 +397,15 @@ class __$$_ExternalYookassaConfirmationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ExternalYookassaConfirmation implements _ExternalYookassaConfirmation {
-  const _$_ExternalYookassaConfirmation(
+class _$ExternalYookassaConfirmationImpl
+    implements _ExternalYookassaConfirmation {
+  const _$ExternalYookassaConfirmationImpl(
       {this.locale = 'ru_RU', final String? $type})
       : $type = $type ?? 'external';
 
-  factory _$_ExternalYookassaConfirmation.fromJson(Map<String, dynamic> json) =>
-      _$$_ExternalYookassaConfirmationFromJson(json);
+  factory _$ExternalYookassaConfirmationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$ExternalYookassaConfirmationImplFromJson(json);
 
   @override
   @JsonKey()
@@ -414,10 +420,10 @@ class _$_ExternalYookassaConfirmation implements _ExternalYookassaConfirmation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ExternalYookassaConfirmation &&
+            other is _$ExternalYookassaConfirmationImpl &&
             (identical(other.locale, locale) || other.locale == locale));
   }
 
@@ -428,9 +434,10 @@ class _$_ExternalYookassaConfirmation implements _ExternalYookassaConfirmation {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ExternalYookassaConfirmationCopyWith<_$_ExternalYookassaConfirmation>
-      get copyWith => __$$_ExternalYookassaConfirmationCopyWithImpl<
-          _$_ExternalYookassaConfirmation>(this, _$identity);
+  _$$ExternalYookassaConfirmationImplCopyWith<
+          _$ExternalYookassaConfirmationImpl>
+      get copyWith => __$$ExternalYookassaConfirmationImplCopyWithImpl<
+          _$ExternalYookassaConfirmationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -530,7 +537,7 @@ class _$_ExternalYookassaConfirmation implements _ExternalYookassaConfirmation {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ExternalYookassaConfirmationToJson(
+    return _$$ExternalYookassaConfirmationImplToJson(
       this,
     );
   }
@@ -538,39 +545,40 @@ class _$_ExternalYookassaConfirmation implements _ExternalYookassaConfirmation {
 
 abstract class _ExternalYookassaConfirmation implements YookassaConfirmation {
   const factory _ExternalYookassaConfirmation({final String? locale}) =
-      _$_ExternalYookassaConfirmation;
+      _$ExternalYookassaConfirmationImpl;
 
   factory _ExternalYookassaConfirmation.fromJson(Map<String, dynamic> json) =
-      _$_ExternalYookassaConfirmation.fromJson;
+      _$ExternalYookassaConfirmationImpl.fromJson;
 
   @override
   String? get locale;
   @override
   @JsonKey(ignore: true)
-  _$$_ExternalYookassaConfirmationCopyWith<_$_ExternalYookassaConfirmation>
+  _$$ExternalYookassaConfirmationImplCopyWith<
+          _$ExternalYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_MobileApplicationYookassaConfirmationCopyWith<$Res>
+abstract class _$$MobileApplicationYookassaConfirmationImplCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$_MobileApplicationYookassaConfirmationCopyWith(
-          _$_MobileApplicationYookassaConfirmation value,
-          $Res Function(_$_MobileApplicationYookassaConfirmation) then) =
-      __$$_MobileApplicationYookassaConfirmationCopyWithImpl<$Res>;
+  factory _$$MobileApplicationYookassaConfirmationImplCopyWith(
+          _$MobileApplicationYookassaConfirmationImpl value,
+          $Res Function(_$MobileApplicationYookassaConfirmationImpl) then) =
+      __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? locale, String? returnUrl, String? confirmationUrl});
 }
 
 /// @nodoc
-class __$$_MobileApplicationYookassaConfirmationCopyWithImpl<$Res>
+class __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>
     extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$_MobileApplicationYookassaConfirmation>
-    implements _$$_MobileApplicationYookassaConfirmationCopyWith<$Res> {
-  __$$_MobileApplicationYookassaConfirmationCopyWithImpl(
-      _$_MobileApplicationYookassaConfirmation _value,
-      $Res Function(_$_MobileApplicationYookassaConfirmation) _then)
+        _$MobileApplicationYookassaConfirmationImpl>
+    implements _$$MobileApplicationYookassaConfirmationImplCopyWith<$Res> {
+  __$$MobileApplicationYookassaConfirmationImplCopyWithImpl(
+      _$MobileApplicationYookassaConfirmationImpl _value,
+      $Res Function(_$MobileApplicationYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -580,7 +588,7 @@ class __$$_MobileApplicationYookassaConfirmationCopyWithImpl<$Res>
     Object? returnUrl = freezed,
     Object? confirmationUrl = freezed,
   }) {
-    return _then(_$_MobileApplicationYookassaConfirmation(
+    return _then(_$MobileApplicationYookassaConfirmationImpl(
       locale: freezed == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
@@ -599,18 +607,18 @@ class __$$_MobileApplicationYookassaConfirmationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MobileApplicationYookassaConfirmation
+class _$MobileApplicationYookassaConfirmationImpl
     implements _MobileApplicationYookassaConfirmation {
-  const _$_MobileApplicationYookassaConfirmation(
+  const _$MobileApplicationYookassaConfirmationImpl(
       {this.locale = 'ru_RU',
       this.returnUrl,
       this.confirmationUrl,
       final String? $type})
       : $type = $type ?? 'mobile_application';
 
-  factory _$_MobileApplicationYookassaConfirmation.fromJson(
+  factory _$MobileApplicationYookassaConfirmationImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MobileApplicationYookassaConfirmationFromJson(json);
+      _$$MobileApplicationYookassaConfirmationImplFromJson(json);
 
   @override
   @JsonKey()
@@ -629,10 +637,10 @@ class _$_MobileApplicationYookassaConfirmation
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MobileApplicationYookassaConfirmation &&
+            other is _$MobileApplicationYookassaConfirmationImpl &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.returnUrl, returnUrl) ||
                 other.returnUrl == returnUrl) &&
@@ -648,10 +656,10 @@ class _$_MobileApplicationYookassaConfirmation
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MobileApplicationYookassaConfirmationCopyWith<
-          _$_MobileApplicationYookassaConfirmation>
-      get copyWith => __$$_MobileApplicationYookassaConfirmationCopyWithImpl<
-          _$_MobileApplicationYookassaConfirmation>(this, _$identity);
+  _$$MobileApplicationYookassaConfirmationImplCopyWith<
+          _$MobileApplicationYookassaConfirmationImpl>
+      get copyWith => __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<
+          _$MobileApplicationYookassaConfirmationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -751,7 +759,7 @@ class _$_MobileApplicationYookassaConfirmation
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MobileApplicationYookassaConfirmationToJson(
+    return _$$MobileApplicationYookassaConfirmationImplToJson(
       this,
     );
   }
@@ -763,11 +771,11 @@ abstract class _MobileApplicationYookassaConfirmation
           {final String? locale,
           final String? returnUrl,
           final String? confirmationUrl}) =
-      _$_MobileApplicationYookassaConfirmation;
+      _$MobileApplicationYookassaConfirmationImpl;
 
   factory _MobileApplicationYookassaConfirmation.fromJson(
           Map<String, dynamic> json) =
-      _$_MobileApplicationYookassaConfirmation.fromJson;
+      _$MobileApplicationYookassaConfirmationImpl.fromJson;
 
   @override
   String? get locale;
@@ -775,31 +783,31 @@ abstract class _MobileApplicationYookassaConfirmation
   String? get confirmationUrl;
   @override
   @JsonKey(ignore: true)
-  _$$_MobileApplicationYookassaConfirmationCopyWith<
-          _$_MobileApplicationYookassaConfirmation>
+  _$$MobileApplicationYookassaConfirmationImplCopyWith<
+          _$MobileApplicationYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_QrCodeYookassaConfirmationCopyWith<$Res>
+abstract class _$$QrCodeYookassaConfirmationImplCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$_QrCodeYookassaConfirmationCopyWith(
-          _$_QrCodeYookassaConfirmation value,
-          $Res Function(_$_QrCodeYookassaConfirmation) then) =
-      __$$_QrCodeYookassaConfirmationCopyWithImpl<$Res>;
+  factory _$$QrCodeYookassaConfirmationImplCopyWith(
+          _$QrCodeYookassaConfirmationImpl value,
+          $Res Function(_$QrCodeYookassaConfirmationImpl) then) =
+      __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? locale, String? confirmationData});
 }
 
 /// @nodoc
-class __$$_QrCodeYookassaConfirmationCopyWithImpl<$Res>
+class __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>
     extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$_QrCodeYookassaConfirmation>
-    implements _$$_QrCodeYookassaConfirmationCopyWith<$Res> {
-  __$$_QrCodeYookassaConfirmationCopyWithImpl(
-      _$_QrCodeYookassaConfirmation _value,
-      $Res Function(_$_QrCodeYookassaConfirmation) _then)
+        _$QrCodeYookassaConfirmationImpl>
+    implements _$$QrCodeYookassaConfirmationImplCopyWith<$Res> {
+  __$$QrCodeYookassaConfirmationImplCopyWithImpl(
+      _$QrCodeYookassaConfirmationImpl _value,
+      $Res Function(_$QrCodeYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -808,7 +816,7 @@ class __$$_QrCodeYookassaConfirmationCopyWithImpl<$Res>
     Object? locale = freezed,
     Object? confirmationData = freezed,
   }) {
-    return _then(_$_QrCodeYookassaConfirmation(
+    return _then(_$QrCodeYookassaConfirmationImpl(
       locale: freezed == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
@@ -823,13 +831,14 @@ class __$$_QrCodeYookassaConfirmationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_QrCodeYookassaConfirmation implements _QrCodeYookassaConfirmation {
-  const _$_QrCodeYookassaConfirmation(
+class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
+  const _$QrCodeYookassaConfirmationImpl(
       {this.locale = 'ru_RU', this.confirmationData, final String? $type})
       : $type = $type ?? 'qr';
 
-  factory _$_QrCodeYookassaConfirmation.fromJson(Map<String, dynamic> json) =>
-      _$$_QrCodeYookassaConfirmationFromJson(json);
+  factory _$QrCodeYookassaConfirmationImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$QrCodeYookassaConfirmationImplFromJson(json);
 
   @override
   @JsonKey()
@@ -846,10 +855,10 @@ class _$_QrCodeYookassaConfirmation implements _QrCodeYookassaConfirmation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_QrCodeYookassaConfirmation &&
+            other is _$QrCodeYookassaConfirmationImpl &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.confirmationData, confirmationData) ||
                 other.confirmationData == confirmationData));
@@ -862,9 +871,9 @@ class _$_QrCodeYookassaConfirmation implements _QrCodeYookassaConfirmation {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_QrCodeYookassaConfirmationCopyWith<_$_QrCodeYookassaConfirmation>
-      get copyWith => __$$_QrCodeYookassaConfirmationCopyWithImpl<
-          _$_QrCodeYookassaConfirmation>(this, _$identity);
+  _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
+      get copyWith => __$$QrCodeYookassaConfirmationImplCopyWithImpl<
+          _$QrCodeYookassaConfirmationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -964,7 +973,7 @@ class _$_QrCodeYookassaConfirmation implements _QrCodeYookassaConfirmation {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_QrCodeYookassaConfirmationToJson(
+    return _$$QrCodeYookassaConfirmationImplToJson(
       this,
     );
   }
@@ -973,27 +982,27 @@ class _$_QrCodeYookassaConfirmation implements _QrCodeYookassaConfirmation {
 abstract class _QrCodeYookassaConfirmation implements YookassaConfirmation {
   const factory _QrCodeYookassaConfirmation(
       {final String? locale,
-      final String? confirmationData}) = _$_QrCodeYookassaConfirmation;
+      final String? confirmationData}) = _$QrCodeYookassaConfirmationImpl;
 
   factory _QrCodeYookassaConfirmation.fromJson(Map<String, dynamic> json) =
-      _$_QrCodeYookassaConfirmation.fromJson;
+      _$QrCodeYookassaConfirmationImpl.fromJson;
 
   @override
   String? get locale;
   String? get confirmationData;
   @override
   @JsonKey(ignore: true)
-  _$$_QrCodeYookassaConfirmationCopyWith<_$_QrCodeYookassaConfirmation>
+  _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_RedirectCodeYookassaConfirmationCopyWith<$Res>
+abstract class _$$RedirectCodeYookassaConfirmationImplCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$_RedirectCodeYookassaConfirmationCopyWith(
-          _$_RedirectCodeYookassaConfirmation value,
-          $Res Function(_$_RedirectCodeYookassaConfirmation) then) =
-      __$$_RedirectCodeYookassaConfirmationCopyWithImpl<$Res>;
+  factory _$$RedirectCodeYookassaConfirmationImplCopyWith(
+          _$RedirectCodeYookassaConfirmationImpl value,
+          $Res Function(_$RedirectCodeYookassaConfirmationImpl) then) =
+      __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -1004,13 +1013,13 @@ abstract class _$$_RedirectCodeYookassaConfirmationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_RedirectCodeYookassaConfirmationCopyWithImpl<$Res>
+class __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<$Res>
     extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$_RedirectCodeYookassaConfirmation>
-    implements _$$_RedirectCodeYookassaConfirmationCopyWith<$Res> {
-  __$$_RedirectCodeYookassaConfirmationCopyWithImpl(
-      _$_RedirectCodeYookassaConfirmation _value,
-      $Res Function(_$_RedirectCodeYookassaConfirmation) _then)
+        _$RedirectCodeYookassaConfirmationImpl>
+    implements _$$RedirectCodeYookassaConfirmationImplCopyWith<$Res> {
+  __$$RedirectCodeYookassaConfirmationImplCopyWithImpl(
+      _$RedirectCodeYookassaConfirmationImpl _value,
+      $Res Function(_$RedirectCodeYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1021,7 +1030,7 @@ class __$$_RedirectCodeYookassaConfirmationCopyWithImpl<$Res>
     Object? confirmationUrl = freezed,
     Object? enforce = freezed,
   }) {
-    return _then(_$_RedirectCodeYookassaConfirmation(
+    return _then(_$RedirectCodeYookassaConfirmationImpl(
       locale: freezed == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
@@ -1044,9 +1053,9 @@ class __$$_RedirectCodeYookassaConfirmationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_RedirectCodeYookassaConfirmation
+class _$RedirectCodeYookassaConfirmationImpl
     implements _RedirectCodeYookassaConfirmation {
-  const _$_RedirectCodeYookassaConfirmation(
+  const _$RedirectCodeYookassaConfirmationImpl(
       {this.locale = 'ru_RU',
       this.returnUrl,
       this.confirmationUrl,
@@ -1054,9 +1063,9 @@ class _$_RedirectCodeYookassaConfirmation
       final String? $type})
       : $type = $type ?? 'redirect';
 
-  factory _$_RedirectCodeYookassaConfirmation.fromJson(
+  factory _$RedirectCodeYookassaConfirmationImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_RedirectCodeYookassaConfirmationFromJson(json);
+      _$$RedirectCodeYookassaConfirmationImplFromJson(json);
 
   @override
   @JsonKey()
@@ -1077,10 +1086,10 @@ class _$_RedirectCodeYookassaConfirmation
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RedirectCodeYookassaConfirmation &&
+            other is _$RedirectCodeYookassaConfirmationImpl &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.returnUrl, returnUrl) ||
                 other.returnUrl == returnUrl) &&
@@ -1097,10 +1106,10 @@ class _$_RedirectCodeYookassaConfirmation
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RedirectCodeYookassaConfirmationCopyWith<
-          _$_RedirectCodeYookassaConfirmation>
-      get copyWith => __$$_RedirectCodeYookassaConfirmationCopyWithImpl<
-          _$_RedirectCodeYookassaConfirmation>(this, _$identity);
+  _$$RedirectCodeYookassaConfirmationImplCopyWith<
+          _$RedirectCodeYookassaConfirmationImpl>
+      get copyWith => __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<
+          _$RedirectCodeYookassaConfirmationImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1200,7 +1209,7 @@ class _$_RedirectCodeYookassaConfirmation
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_RedirectCodeYookassaConfirmationToJson(
+    return _$$RedirectCodeYookassaConfirmationImplToJson(
       this,
     );
   }
@@ -1212,10 +1221,11 @@ abstract class _RedirectCodeYookassaConfirmation
       {final String? locale,
       final String? returnUrl,
       final String? confirmationUrl,
-      final bool? enforce}) = _$_RedirectCodeYookassaConfirmation;
+      final bool? enforce}) = _$RedirectCodeYookassaConfirmationImpl;
 
   factory _RedirectCodeYookassaConfirmation.fromJson(
-      Map<String, dynamic> json) = _$_RedirectCodeYookassaConfirmation.fromJson;
+          Map<String, dynamic> json) =
+      _$RedirectCodeYookassaConfirmationImpl.fromJson;
 
   @override
   String? get locale;
@@ -1224,7 +1234,7 @@ abstract class _RedirectCodeYookassaConfirmation
   bool? get enforce;
   @override
   @JsonKey(ignore: true)
-  _$$_RedirectCodeYookassaConfirmationCopyWith<
-          _$_RedirectCodeYookassaConfirmation>
+  _$$RedirectCodeYookassaConfirmationImplCopyWith<
+          _$RedirectCodeYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

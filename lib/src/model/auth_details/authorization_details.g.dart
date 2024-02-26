@@ -6,29 +6,29 @@ part of 'authorization_details.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AuthorizationDetails _$$_AuthorizationDetailsFromJson(
+_$AuthorizationDetailsImpl _$$AuthorizationDetailsImplFromJson(
         Map<String, dynamic> json) =>
-    _$_AuthorizationDetails(
-      rrn: json['rrn'] as String?,
-      authCode: json['auth_code'] as String?,
+    _$AuthorizationDetailsImpl(
       threeDSecure:
           ThreeDSecure.fromJson(json['three_d_secure'] as Map<String, dynamic>),
+      rrn: json['rrn'] as String?,
+      authCode: json['auth_code'] as String?,
     );
 
-Map<String, dynamic> _$$_AuthorizationDetailsToJson(
-        _$_AuthorizationDetails instance) =>
+Map<String, dynamic> _$$AuthorizationDetailsImplToJson(
+        _$AuthorizationDetailsImpl instance) =>
     <String, dynamic>{
+      'three_d_secure': instance.threeDSecure,
       'rrn': instance.rrn,
       'auth_code': instance.authCode,
-      'three_d_secure': instance.threeDSecure,
     };
 
-_$_ThreeDSecure _$$_ThreeDSecureFromJson(Map<String, dynamic> json) =>
-    _$_ThreeDSecure(
+_$ThreeDSecureImpl _$$ThreeDSecureImplFromJson(Map<String, dynamic> json) =>
+    _$ThreeDSecureImpl(
       applied: json['applied'] as bool,
     );
 
-Map<String, dynamic> _$$_ThreeDSecureToJson(_$_ThreeDSecure instance) =>
+Map<String, dynamic> _$$ThreeDSecureImplToJson(_$ThreeDSecureImpl instance) =>
     <String, dynamic>{
       'applied': instance.applied,
     };

@@ -66,19 +66,21 @@ class _$AmountCopyWithImpl<$Res, $Val extends Amount>
 }
 
 /// @nodoc
-abstract class _$$_AmountCopyWith<$Res> implements $AmountCopyWith<$Res> {
-  factory _$$_AmountCopyWith(_$_Amount value, $Res Function(_$_Amount) then) =
-      __$$_AmountCopyWithImpl<$Res>;
+abstract class _$$AmountImplCopyWith<$Res> implements $AmountCopyWith<$Res> {
+  factory _$$AmountImplCopyWith(
+          _$AmountImpl value, $Res Function(_$AmountImpl) then) =
+      __$$AmountImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String value, String currency});
 }
 
 /// @nodoc
-class __$$_AmountCopyWithImpl<$Res>
-    extends _$AmountCopyWithImpl<$Res, _$_Amount>
-    implements _$$_AmountCopyWith<$Res> {
-  __$$_AmountCopyWithImpl(_$_Amount _value, $Res Function(_$_Amount) _then)
+class __$$AmountImplCopyWithImpl<$Res>
+    extends _$AmountCopyWithImpl<$Res, _$AmountImpl>
+    implements _$$AmountImplCopyWith<$Res> {
+  __$$AmountImplCopyWithImpl(
+      _$AmountImpl _value, $Res Function(_$AmountImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -87,7 +89,7 @@ class __$$_AmountCopyWithImpl<$Res>
     Object? value = null,
     Object? currency = null,
   }) {
-    return _then(_$_Amount(
+    return _then(_$AmountImpl(
       value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -102,11 +104,11 @@ class __$$_AmountCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Amount extends _Amount {
-  const _$_Amount({required this.value, required this.currency}) : super._();
+class _$AmountImpl extends _Amount {
+  const _$AmountImpl({required this.value, required this.currency}) : super._();
 
-  factory _$_Amount.fromJson(Map<String, dynamic> json) =>
-      _$$_AmountFromJson(json);
+  factory _$AmountImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AmountImplFromJson(json);
 
   @override
   final String value;
@@ -119,10 +121,10 @@ class _$_Amount extends _Amount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Amount &&
+            other is _$AmountImpl &&
             (identical(other.value, value) || other.value == value) &&
             (identical(other.currency, currency) ||
                 other.currency == currency));
@@ -135,12 +137,12 @@ class _$_Amount extends _Amount {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AmountCopyWith<_$_Amount> get copyWith =>
-      __$$_AmountCopyWithImpl<_$_Amount>(this, _$identity);
+  _$$AmountImplCopyWith<_$AmountImpl> get copyWith =>
+      __$$AmountImplCopyWithImpl<_$AmountImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AmountToJson(
+    return _$$AmountImplToJson(
       this,
     );
   }
@@ -149,10 +151,10 @@ class _$_Amount extends _Amount {
 abstract class _Amount extends Amount {
   const factory _Amount(
       {required final String value,
-      required final String currency}) = _$_Amount;
+      required final String currency}) = _$AmountImpl;
   const _Amount._() : super._();
 
-  factory _Amount.fromJson(Map<String, dynamic> json) = _$_Amount.fromJson;
+  factory _Amount.fromJson(Map<String, dynamic> json) = _$AmountImpl.fromJson;
 
   @override
   String get value;
@@ -160,6 +162,6 @@ abstract class _Amount extends Amount {
   String get currency;
   @override
   @JsonKey(ignore: true)
-  _$$_AmountCopyWith<_$_Amount> get copyWith =>
+  _$$AmountImplCopyWith<_$AmountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

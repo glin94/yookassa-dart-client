@@ -6,9 +6,8 @@ part 'authorization_details.g.dart';
 @freezed
 class AuthorizationDetails with _$AuthorizationDetails {
   factory AuthorizationDetails({
-    String? rrn,
+    required ThreeDSecure threeDSecure, String? rrn,
     String? authCode,
-    required ThreeDSecure threeDSecure,
   }) = _AuthorizationDetails;
 
   factory AuthorizationDetails.fromJson(Map<String, dynamic> json) =>

@@ -6,8 +6,10 @@ void main() async {
 
   final yookassaClient = YookassaClient(
     dio,
-    shopId: 'your_shop_id',
-    secretKey: 'your_secret_key',
+    credentials: const YookassaAuthCredentials(
+      shopId: 'your_shop_id',
+      secretKey: 'your_secret_key',
+    ),
   );
 
   const createdPaymentRequest = CreatePaymentRequest(
@@ -40,7 +42,7 @@ void main() async {
         print(payment);
       },
     );
-  } on YookassaError catch (e) {
+  } on YookassaException catch (e) {
     print(e);
   }
 }

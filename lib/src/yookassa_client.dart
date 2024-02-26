@@ -1,9 +1,8 @@
-import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:yookassa_client/constant/urls.dart';
-import 'package:yookassa_client/src/interceptor/yookassa_interceptor.dart';
+import 'package:yookassa_client/src/interceptor/auth_interceptor.dart';
+import 'package:yookassa_client/src/interceptor/error_interceptor.dart';
 import 'package:yookassa_client/src/model/model.dart';
 
 part 'yookassa_client.g.dart';
@@ -31,21 +30,13 @@ part 'yookassa_client.g.dart';
 abstract class YookassaClient {
   factory YookassaClient(
     Dio dio, {
+    required YookassaAuthCredentials credentials,
     String? baseUrl,
-    required String shopId,
-    required String secretKey,
   }) {
-    final authValue = base64Encode(utf8.encode('$shopId:$secretKey'));
-
-    dio
-      ..options.headers.addAll(
-        <String, String>{
-          'Authorization': 'Basic $authValue',
-        },
-      )
-      ..interceptors.addAll([
-        YookassaErrorInterceptor(),
-      ]);
+    dio.interceptors.addAll([
+      AuthInterceptor(authCredentials: credentials),
+      YookassaErrorInterceptor(),
+    ]);
 
     return _YookassaClient(dio, baseUrl: baseUrl);
   }

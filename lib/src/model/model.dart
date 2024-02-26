@@ -1,11 +1,12 @@
 export 'amount/amount.dart';
+export 'auth_credentials.dart';
 export 'auth_details/authorization_details.dart';
 export 'cancellation_details/cancellation_details.dart';
 export 'confirmation/yookassa_confirmation.dart';
 export 'create_payment_request/create_payment_request.dart';
-export 'customer/customer.dart';
-export 'error/yookassa_error.dart';
-export 'item/item.dart';
+export 'customer/yookassa_customer.dart';
+export 'error/yookassa_exception.dart';
+export 'item/yookassa_item.dart';
 export 'payment_method/yookassa_payment_method.dart';
 export 'receipt/yookassa_receipt.dart';
 export 'recipient/yookassa_recipient.dart';

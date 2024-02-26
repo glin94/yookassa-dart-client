@@ -7,11 +7,7 @@ part 'yookassa_card.g.dart';
 @freezed
 class YookassaCard with _$YookassaCard {
   factory YookassaCard({
-    String? first6,
-    required String last4,
-    required String expiryYear,
-    required String expiryMonth,
-    required YookassaCardType cardType,
+    required String last4, required String expiryYear, required String expiryMonth, required YookassaCardType cardType, String? first6,
     String? issuerCountry,
     String? issuerName,
     String? source,

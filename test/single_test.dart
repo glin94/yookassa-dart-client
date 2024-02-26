@@ -6,13 +6,14 @@ import 'package:yookassa_client/yookassa_client.dart';
 import 'constant/test_constants.dart';
 
 void start() {
-  final dio = Dio();
+  final dio = Dio(
+    BaseOptions(connectTimeout: const Duration(seconds: 10)),
+  );
 
   const uuid = Uuid();
   final yookassaClient = YookassaClient(
     dio,
-    shopId: testShopId,
-    secretKey: testSecretKey,
+    credentials: testCredentials,
   );
 
   final createdPaymentIdempotenceKey = uuid.v4();

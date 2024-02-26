@@ -1,8 +1,20 @@
-import 'package:dio/dio.dart';
-import 'package:json_annotation/json_annotation.dart';
-import 'package:yookassa_client/constant/urls.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'yookassa_error.g.dart';
+part 'yookassa_exception.freezed.dart';
+part 'yookassa_exception.g.dart';
+
+@freezed
+class YookassaException with _$YookassaException {
+  factory YookassaException({
+    required String id,
+    required YookassaErrorCode code,
+    String? description,
+    String? parameter,
+  }) = _YookassaError;
+
+  factory YookassaException.fromJson(Map<String, dynamic> json) =>
+      _$YookassaExceptionFromJson(json);
+}
 
 /// Ответ при ошибке
 ///
@@ -30,52 +42,4 @@ enum YookassaErrorCode {
 
   /// Технические неполадки на стороне ЮKassa (HTTP 500).
   internalServerError,
-}
-
-@JsonSerializable()
-class YookassaError implements DioError {
-  YookassaError({
-    required this.id,
-    required this.code,
-    this.description,
-    this.parameter,
-  }) : requestOptions = RequestOptions(path: Urls.base);
-
-  factory YookassaError.fromJson(Map<String, dynamic> json) =>
-      _$YookassaErrorFromJson(json);
-
-  final String id;
-
-  final YookassaErrorCode code;
-
-  final String? description;
-
-  final String? parameter;
-
-  @override
-  Object? error;
-
-  @override
-  @JsonKey(ignore: true)
-  RequestOptions requestOptions;
-
-  @override
-  @JsonKey(ignore: true)
-  Response<Object?>? response;
-
-  @override
-  @JsonKey(ignore: true)
-  StackTrace? stackTrace;
-
-  @override
-  @JsonKey(ignore: true)
-  DioErrorType type = DioErrorType.other;
-
-  @override
-  String get message => description ?? 'Error';
-
-  @override
-  String toString() {
-    return 'YookassaError(id: $id, code: $code, description: $description, parameter: $parameter)';
-  }
 }

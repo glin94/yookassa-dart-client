@@ -117,25 +117,25 @@ class _$CancellationDetailsCopyWithImpl<$Res, $Val extends CancellationDetails>
 }
 
 /// @nodoc
-abstract class _$$_YookassaCancellationDetailsCopyWith<$Res>
+abstract class _$$YookassaCancellationDetailsImplCopyWith<$Res>
     implements $CancellationDetailsCopyWith<$Res> {
-  factory _$$_YookassaCancellationDetailsCopyWith(
-          _$_YookassaCancellationDetails value,
-          $Res Function(_$_YookassaCancellationDetails) then) =
-      __$$_YookassaCancellationDetailsCopyWithImpl<$Res>;
+  factory _$$YookassaCancellationDetailsImplCopyWith(
+          _$YookassaCancellationDetailsImpl value,
+          $Res Function(_$YookassaCancellationDetailsImpl) then) =
+      __$$YookassaCancellationDetailsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({CancelationReason reason});
 }
 
 /// @nodoc
-class __$$_YookassaCancellationDetailsCopyWithImpl<$Res>
+class __$$YookassaCancellationDetailsImplCopyWithImpl<$Res>
     extends _$CancellationDetailsCopyWithImpl<$Res,
-        _$_YookassaCancellationDetails>
-    implements _$$_YookassaCancellationDetailsCopyWith<$Res> {
-  __$$_YookassaCancellationDetailsCopyWithImpl(
-      _$_YookassaCancellationDetails _value,
-      $Res Function(_$_YookassaCancellationDetails) _then)
+        _$YookassaCancellationDetailsImpl>
+    implements _$$YookassaCancellationDetailsImplCopyWith<$Res> {
+  __$$YookassaCancellationDetailsImplCopyWithImpl(
+      _$YookassaCancellationDetailsImpl _value,
+      $Res Function(_$YookassaCancellationDetailsImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -143,7 +143,7 @@ class __$$_YookassaCancellationDetailsCopyWithImpl<$Res>
   $Res call({
     Object? reason = null,
   }) {
-    return _then(_$_YookassaCancellationDetails(
+    return _then(_$YookassaCancellationDetailsImpl(
       reason: null == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -154,12 +154,14 @@ class __$$_YookassaCancellationDetailsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_YookassaCancellationDetails implements _YookassaCancellationDetails {
-  _$_YookassaCancellationDetails({required this.reason, final String? $type})
+class _$YookassaCancellationDetailsImpl
+    implements _YookassaCancellationDetails {
+  _$YookassaCancellationDetailsImpl({required this.reason, final String? $type})
       : $type = $type ?? 'yoo_money';
 
-  factory _$_YookassaCancellationDetails.fromJson(Map<String, dynamic> json) =>
-      _$$_YookassaCancellationDetailsFromJson(json);
+  factory _$YookassaCancellationDetailsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$YookassaCancellationDetailsImplFromJson(json);
 
   @override
   final CancelationReason reason;
@@ -173,10 +175,10 @@ class _$_YookassaCancellationDetails implements _YookassaCancellationDetails {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_YookassaCancellationDetails &&
+            other is _$YookassaCancellationDetailsImpl &&
             (identical(other.reason, reason) || other.reason == reason));
   }
 
@@ -187,9 +189,9 @@ class _$_YookassaCancellationDetails implements _YookassaCancellationDetails {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_YookassaCancellationDetailsCopyWith<_$_YookassaCancellationDetails>
-      get copyWith => __$$_YookassaCancellationDetailsCopyWithImpl<
-          _$_YookassaCancellationDetails>(this, _$identity);
+  _$$YookassaCancellationDetailsImplCopyWith<_$YookassaCancellationDetailsImpl>
+      get copyWith => __$$YookassaCancellationDetailsImplCopyWithImpl<
+          _$YookassaCancellationDetailsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -262,7 +264,7 @@ class _$_YookassaCancellationDetails implements _YookassaCancellationDetails {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_YookassaCancellationDetailsToJson(
+    return _$$YookassaCancellationDetailsImplToJson(
       this,
     );
   }
@@ -271,39 +273,39 @@ class _$_YookassaCancellationDetails implements _YookassaCancellationDetails {
 abstract class _YookassaCancellationDetails implements CancellationDetails {
   factory _YookassaCancellationDetails(
           {required final CancelationReason reason}) =
-      _$_YookassaCancellationDetails;
+      _$YookassaCancellationDetailsImpl;
 
   factory _YookassaCancellationDetails.fromJson(Map<String, dynamic> json) =
-      _$_YookassaCancellationDetails.fromJson;
+      _$YookassaCancellationDetailsImpl.fromJson;
 
   @override
   CancelationReason get reason;
   @override
   @JsonKey(ignore: true)
-  _$$_YookassaCancellationDetailsCopyWith<_$_YookassaCancellationDetails>
+  _$$YookassaCancellationDetailsImplCopyWith<_$YookassaCancellationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_MerchantCancellationDetailsCopyWith<$Res>
+abstract class _$$MerchantCancellationDetailsImplCopyWith<$Res>
     implements $CancellationDetailsCopyWith<$Res> {
-  factory _$$_MerchantCancellationDetailsCopyWith(
-          _$_MerchantCancellationDetails value,
-          $Res Function(_$_MerchantCancellationDetails) then) =
-      __$$_MerchantCancellationDetailsCopyWithImpl<$Res>;
+  factory _$$MerchantCancellationDetailsImplCopyWith(
+          _$MerchantCancellationDetailsImpl value,
+          $Res Function(_$MerchantCancellationDetailsImpl) then) =
+      __$$MerchantCancellationDetailsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({CancelationReason reason});
 }
 
 /// @nodoc
-class __$$_MerchantCancellationDetailsCopyWithImpl<$Res>
+class __$$MerchantCancellationDetailsImplCopyWithImpl<$Res>
     extends _$CancellationDetailsCopyWithImpl<$Res,
-        _$_MerchantCancellationDetails>
-    implements _$$_MerchantCancellationDetailsCopyWith<$Res> {
-  __$$_MerchantCancellationDetailsCopyWithImpl(
-      _$_MerchantCancellationDetails _value,
-      $Res Function(_$_MerchantCancellationDetails) _then)
+        _$MerchantCancellationDetailsImpl>
+    implements _$$MerchantCancellationDetailsImplCopyWith<$Res> {
+  __$$MerchantCancellationDetailsImplCopyWithImpl(
+      _$MerchantCancellationDetailsImpl _value,
+      $Res Function(_$MerchantCancellationDetailsImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -311,7 +313,7 @@ class __$$_MerchantCancellationDetailsCopyWithImpl<$Res>
   $Res call({
     Object? reason = null,
   }) {
-    return _then(_$_MerchantCancellationDetails(
+    return _then(_$MerchantCancellationDetailsImpl(
       reason: null == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -322,12 +324,14 @@ class __$$_MerchantCancellationDetailsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MerchantCancellationDetails implements _MerchantCancellationDetails {
-  _$_MerchantCancellationDetails({required this.reason, final String? $type})
+class _$MerchantCancellationDetailsImpl
+    implements _MerchantCancellationDetails {
+  _$MerchantCancellationDetailsImpl({required this.reason, final String? $type})
       : $type = $type ?? 'merchant';
 
-  factory _$_MerchantCancellationDetails.fromJson(Map<String, dynamic> json) =>
-      _$$_MerchantCancellationDetailsFromJson(json);
+  factory _$MerchantCancellationDetailsImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MerchantCancellationDetailsImplFromJson(json);
 
   @override
   final CancelationReason reason;
@@ -341,10 +345,10 @@ class _$_MerchantCancellationDetails implements _MerchantCancellationDetails {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MerchantCancellationDetails &&
+            other is _$MerchantCancellationDetailsImpl &&
             (identical(other.reason, reason) || other.reason == reason));
   }
 
@@ -355,9 +359,9 @@ class _$_MerchantCancellationDetails implements _MerchantCancellationDetails {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MerchantCancellationDetailsCopyWith<_$_MerchantCancellationDetails>
-      get copyWith => __$$_MerchantCancellationDetailsCopyWithImpl<
-          _$_MerchantCancellationDetails>(this, _$identity);
+  _$$MerchantCancellationDetailsImplCopyWith<_$MerchantCancellationDetailsImpl>
+      get copyWith => __$$MerchantCancellationDetailsImplCopyWithImpl<
+          _$MerchantCancellationDetailsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -430,7 +434,7 @@ class _$_MerchantCancellationDetails implements _MerchantCancellationDetails {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MerchantCancellationDetailsToJson(
+    return _$$MerchantCancellationDetailsImplToJson(
       this,
     );
   }
@@ -439,39 +443,39 @@ class _$_MerchantCancellationDetails implements _MerchantCancellationDetails {
 abstract class _MerchantCancellationDetails implements CancellationDetails {
   factory _MerchantCancellationDetails(
           {required final CancelationReason reason}) =
-      _$_MerchantCancellationDetails;
+      _$MerchantCancellationDetailsImpl;
 
   factory _MerchantCancellationDetails.fromJson(Map<String, dynamic> json) =
-      _$_MerchantCancellationDetails.fromJson;
+      _$MerchantCancellationDetailsImpl.fromJson;
 
   @override
   CancelationReason get reason;
   @override
   @JsonKey(ignore: true)
-  _$$_MerchantCancellationDetailsCopyWith<_$_MerchantCancellationDetails>
+  _$$MerchantCancellationDetailsImplCopyWith<_$MerchantCancellationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PaymentNetworkCancellationDetailsCopyWith<$Res>
+abstract class _$$PaymentNetworkCancellationDetailsImplCopyWith<$Res>
     implements $CancellationDetailsCopyWith<$Res> {
-  factory _$$_PaymentNetworkCancellationDetailsCopyWith(
-          _$_PaymentNetworkCancellationDetails value,
-          $Res Function(_$_PaymentNetworkCancellationDetails) then) =
-      __$$_PaymentNetworkCancellationDetailsCopyWithImpl<$Res>;
+  factory _$$PaymentNetworkCancellationDetailsImplCopyWith(
+          _$PaymentNetworkCancellationDetailsImpl value,
+          $Res Function(_$PaymentNetworkCancellationDetailsImpl) then) =
+      __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({CancelationReason reason});
 }
 
 /// @nodoc
-class __$$_PaymentNetworkCancellationDetailsCopyWithImpl<$Res>
+class __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<$Res>
     extends _$CancellationDetailsCopyWithImpl<$Res,
-        _$_PaymentNetworkCancellationDetails>
-    implements _$$_PaymentNetworkCancellationDetailsCopyWith<$Res> {
-  __$$_PaymentNetworkCancellationDetailsCopyWithImpl(
-      _$_PaymentNetworkCancellationDetails _value,
-      $Res Function(_$_PaymentNetworkCancellationDetails) _then)
+        _$PaymentNetworkCancellationDetailsImpl>
+    implements _$$PaymentNetworkCancellationDetailsImplCopyWith<$Res> {
+  __$$PaymentNetworkCancellationDetailsImplCopyWithImpl(
+      _$PaymentNetworkCancellationDetailsImpl _value,
+      $Res Function(_$PaymentNetworkCancellationDetailsImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -479,7 +483,7 @@ class __$$_PaymentNetworkCancellationDetailsCopyWithImpl<$Res>
   $Res call({
     Object? reason = null,
   }) {
-    return _then(_$_PaymentNetworkCancellationDetails(
+    return _then(_$PaymentNetworkCancellationDetailsImpl(
       reason: null == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
@@ -490,15 +494,15 @@ class __$$_PaymentNetworkCancellationDetailsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PaymentNetworkCancellationDetails
+class _$PaymentNetworkCancellationDetailsImpl
     implements _PaymentNetworkCancellationDetails {
-  _$_PaymentNetworkCancellationDetails(
+  _$PaymentNetworkCancellationDetailsImpl(
       {required this.reason, final String? $type})
       : $type = $type ?? 'payment_network';
 
-  factory _$_PaymentNetworkCancellationDetails.fromJson(
+  factory _$PaymentNetworkCancellationDetailsImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_PaymentNetworkCancellationDetailsFromJson(json);
+      _$$PaymentNetworkCancellationDetailsImplFromJson(json);
 
   @override
   final CancelationReason reason;
@@ -512,10 +516,10 @@ class _$_PaymentNetworkCancellationDetails
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PaymentNetworkCancellationDetails &&
+            other is _$PaymentNetworkCancellationDetailsImpl &&
             (identical(other.reason, reason) || other.reason == reason));
   }
 
@@ -526,10 +530,10 @@ class _$_PaymentNetworkCancellationDetails
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PaymentNetworkCancellationDetailsCopyWith<
-          _$_PaymentNetworkCancellationDetails>
-      get copyWith => __$$_PaymentNetworkCancellationDetailsCopyWithImpl<
-          _$_PaymentNetworkCancellationDetails>(this, _$identity);
+  _$$PaymentNetworkCancellationDetailsImplCopyWith<
+          _$PaymentNetworkCancellationDetailsImpl>
+      get copyWith => __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<
+          _$PaymentNetworkCancellationDetailsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -602,7 +606,7 @@ class _$_PaymentNetworkCancellationDetails
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentNetworkCancellationDetailsToJson(
+    return _$$PaymentNetworkCancellationDetailsImplToJson(
       this,
     );
   }
@@ -612,17 +616,17 @@ abstract class _PaymentNetworkCancellationDetails
     implements CancellationDetails {
   factory _PaymentNetworkCancellationDetails(
           {required final CancelationReason reason}) =
-      _$_PaymentNetworkCancellationDetails;
+      _$PaymentNetworkCancellationDetailsImpl;
 
   factory _PaymentNetworkCancellationDetails.fromJson(
           Map<String, dynamic> json) =
-      _$_PaymentNetworkCancellationDetails.fromJson;
+      _$PaymentNetworkCancellationDetailsImpl.fromJson;
 
   @override
   CancelationReason get reason;
   @override
   @JsonKey(ignore: true)
-  _$$_PaymentNetworkCancellationDetailsCopyWith<
-          _$_PaymentNetworkCancellationDetails>
+  _$$PaymentNetworkCancellationDetailsImplCopyWith<
+          _$PaymentNetworkCancellationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

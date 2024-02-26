@@ -6,12 +6,16 @@ part of 'yookassa_payment.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PendingYookassaPayment _$$_PendingYookassaPaymentFromJson(
+_$PendingYookassaPaymentImpl _$$PendingYookassaPaymentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PendingYookassaPayment(
+    _$PendingYookassaPaymentImpl(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
+      createdAt: DateTime.parse(json['created_at'] as String),
+      test: json['test'] as bool,
+      paid: json['paid'] as bool,
+      refundable: json['refundable'] as bool,
       incomeAmount: json['income_amount'] == null
           ? null
           : Amount.fromJson(json['income_amount'] as Map<String, dynamic>),
@@ -27,14 +31,10 @@ _$_PendingYookassaPayment _$$_PendingYookassaPaymentFromJson(
       capturedAt: json['captured_at'] == null
           ? null
           : DateTime.parse(json['captured_at'] as String),
-      createdAt: DateTime.parse(json['created_at'] as String),
       confirmation: json['confirmation'] == null
           ? null
           : YookassaConfirmation.fromJson(
               json['confirmation'] as Map<String, dynamic>),
-      test: json['test'] as bool,
-      paid: json['paid'] as bool,
-      refundable: json['refundable'] as bool,
       authorizationDetails: json['authorization_details'] == null
           ? null
           : AuthorizationDetails.fromJson(
@@ -47,22 +47,22 @@ _$_PendingYookassaPayment _$$_PendingYookassaPaymentFromJson(
       ),
     );
 
-Map<String, dynamic> _$$_PendingYookassaPaymentToJson(
-        _$_PendingYookassaPayment instance) =>
+Map<String, dynamic> _$$PendingYookassaPaymentImplToJson(
+        _$PendingYookassaPaymentImpl instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
       'amount': instance.amount,
+      'created_at': instance.createdAt.toIso8601String(),
+      'test': instance.test,
+      'paid': instance.paid,
+      'refundable': instance.refundable,
       'income_amount': instance.incomeAmount,
       'description': instance.description,
       'recipient': instance.recipient,
       'payment_method': instance.paymentMethod,
       'captured_at': instance.capturedAt?.toIso8601String(),
-      'created_at': instance.createdAt.toIso8601String(),
       'confirmation': instance.confirmation,
-      'test': instance.test,
-      'paid': instance.paid,
-      'refundable': instance.refundable,
       'authorization_details': instance.authorizationDetails,
       'expires_at': instance.expiresAt?.toIso8601String(),
       'metadata': instance.metadata,
@@ -75,12 +75,16 @@ const _$YookassaPaymentStatusEnumMap = {
   YookassaPaymentStatus.canceled: 'canceled',
 };
 
-_$_WaitingYookassaPayment _$$_WaitingYookassaPaymentFromJson(
+_$WaitingYookassaPaymentImpl _$$WaitingYookassaPaymentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_WaitingYookassaPayment(
+    _$WaitingYookassaPaymentImpl(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
+      createdAt: DateTime.parse(json['created_at'] as String),
+      test: json['test'] as bool,
+      paid: json['paid'] as bool,
+      refundable: json['refundable'] as bool,
       incomeAmount: json['income_amount'] == null
           ? null
           : Amount.fromJson(json['income_amount'] as Map<String, dynamic>),
@@ -96,14 +100,10 @@ _$_WaitingYookassaPayment _$$_WaitingYookassaPaymentFromJson(
       capturedAt: json['captured_at'] == null
           ? null
           : DateTime.parse(json['captured_at'] as String),
-      createdAt: DateTime.parse(json['created_at'] as String),
       confirmation: json['confirmation'] == null
           ? null
           : YookassaConfirmation.fromJson(
               json['confirmation'] as Map<String, dynamic>),
-      test: json['test'] as bool,
-      paid: json['paid'] as bool,
-      refundable: json['refundable'] as bool,
       authorizationDetails: json['authorization_details'] == null
           ? null
           : AuthorizationDetails.fromJson(
@@ -116,33 +116,37 @@ _$_WaitingYookassaPayment _$$_WaitingYookassaPaymentFromJson(
       ),
     );
 
-Map<String, dynamic> _$$_WaitingYookassaPaymentToJson(
-        _$_WaitingYookassaPayment instance) =>
+Map<String, dynamic> _$$WaitingYookassaPaymentImplToJson(
+        _$WaitingYookassaPaymentImpl instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
       'amount': instance.amount,
+      'created_at': instance.createdAt.toIso8601String(),
+      'test': instance.test,
+      'paid': instance.paid,
+      'refundable': instance.refundable,
       'income_amount': instance.incomeAmount,
       'description': instance.description,
       'recipient': instance.recipient,
       'payment_method': instance.paymentMethod,
       'captured_at': instance.capturedAt?.toIso8601String(),
-      'created_at': instance.createdAt.toIso8601String(),
       'confirmation': instance.confirmation,
-      'test': instance.test,
-      'paid': instance.paid,
-      'refundable': instance.refundable,
       'authorization_details': instance.authorizationDetails,
       'expires_at': instance.expiresAt?.toIso8601String(),
       'metadata': instance.metadata,
     };
 
-_$_SucceededYookassaPayment _$$_SucceededYookassaPaymentFromJson(
+_$SucceededYookassaPaymentImpl _$$SucceededYookassaPaymentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SucceededYookassaPayment(
+    _$SucceededYookassaPaymentImpl(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
+      createdAt: DateTime.parse(json['created_at'] as String),
+      test: json['test'] as bool,
+      paid: json['paid'] as bool,
+      refundable: json['refundable'] as bool,
       incomeAmount: json['income_amount'] == null
           ? null
           : Amount.fromJson(json['income_amount'] as Map<String, dynamic>),
@@ -158,14 +162,10 @@ _$_SucceededYookassaPayment _$$_SucceededYookassaPaymentFromJson(
       capturedAt: json['captured_at'] == null
           ? null
           : DateTime.parse(json['captured_at'] as String),
-      createdAt: DateTime.parse(json['created_at'] as String),
       confirmation: json['confirmation'] == null
           ? null
           : YookassaConfirmation.fromJson(
               json['confirmation'] as Map<String, dynamic>),
-      test: json['test'] as bool,
-      paid: json['paid'] as bool,
-      refundable: json['refundable'] as bool,
       authorizationDetails: json['authorization_details'] == null
           ? null
           : AuthorizationDetails.fromJson(
@@ -178,33 +178,37 @@ _$_SucceededYookassaPayment _$$_SucceededYookassaPaymentFromJson(
       ),
     );
 
-Map<String, dynamic> _$$_SucceededYookassaPaymentToJson(
-        _$_SucceededYookassaPayment instance) =>
+Map<String, dynamic> _$$SucceededYookassaPaymentImplToJson(
+        _$SucceededYookassaPaymentImpl instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
       'amount': instance.amount,
+      'created_at': instance.createdAt.toIso8601String(),
+      'test': instance.test,
+      'paid': instance.paid,
+      'refundable': instance.refundable,
       'income_amount': instance.incomeAmount,
       'description': instance.description,
       'recipient': instance.recipient,
       'payment_method': instance.paymentMethod,
       'captured_at': instance.capturedAt?.toIso8601String(),
-      'created_at': instance.createdAt.toIso8601String(),
       'confirmation': instance.confirmation,
-      'test': instance.test,
-      'paid': instance.paid,
-      'refundable': instance.refundable,
       'authorization_details': instance.authorizationDetails,
       'expires_at': instance.expiresAt?.toIso8601String(),
       'metadata': instance.metadata,
     };
 
-_$_CanceledYookassaPayment _$$_CanceledYookassaPaymentFromJson(
+_$CanceledYookassaPaymentImpl _$$CanceledYookassaPaymentImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CanceledYookassaPayment(
+    _$CanceledYookassaPaymentImpl(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
+      createdAt: DateTime.parse(json['created_at'] as String),
+      test: json['test'] as bool,
+      paid: json['paid'] as bool,
+      refundable: json['refundable'] as bool,
       incomeAmount: json['income_amount'] == null
           ? null
           : Amount.fromJson(json['income_amount'] as Map<String, dynamic>),
@@ -220,14 +224,10 @@ _$_CanceledYookassaPayment _$$_CanceledYookassaPaymentFromJson(
       capturedAt: json['captured_at'] == null
           ? null
           : DateTime.parse(json['captured_at'] as String),
-      createdAt: DateTime.parse(json['created_at'] as String),
       confirmation: json['confirmation'] == null
           ? null
           : YookassaConfirmation.fromJson(
               json['confirmation'] as Map<String, dynamic>),
-      test: json['test'] as bool,
-      paid: json['paid'] as bool,
-      refundable: json['refundable'] as bool,
       cancellationDetails: json['cancellation_details'] == null
           ? null
           : CancellationDetails.fromJson(
@@ -244,22 +244,22 @@ _$_CanceledYookassaPayment _$$_CanceledYookassaPaymentFromJson(
       ),
     );
 
-Map<String, dynamic> _$$_CanceledYookassaPaymentToJson(
-        _$_CanceledYookassaPayment instance) =>
+Map<String, dynamic> _$$CanceledYookassaPaymentImplToJson(
+        _$CanceledYookassaPaymentImpl instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
       'amount': instance.amount,
+      'created_at': instance.createdAt.toIso8601String(),
+      'test': instance.test,
+      'paid': instance.paid,
+      'refundable': instance.refundable,
       'income_amount': instance.incomeAmount,
       'description': instance.description,
       'recipient': instance.recipient,
       'payment_method': instance.paymentMethod,
       'captured_at': instance.capturedAt?.toIso8601String(),
-      'created_at': instance.createdAt.toIso8601String(),
       'confirmation': instance.confirmation,
-      'test': instance.test,
-      'paid': instance.paid,
-      'refundable': instance.refundable,
       'cancellation_details': instance.cancellationDetails,
       'authorization_details': instance.authorizationDetails,
       'expires_at': instance.expiresAt?.toIso8601String(),

@@ -1,26 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'yookassa_error.dart';
+part of 'yookassa_exception.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-YookassaError _$YookassaErrorFromJson(Map<String, dynamic> json) =>
-    YookassaError(
+_$YookassaErrorImpl _$$YookassaErrorImplFromJson(Map<String, dynamic> json) =>
+    _$YookassaErrorImpl(
       id: json['id'] as String,
       code: $enumDecode(_$YookassaErrorCodeEnumMap, json['code']),
       description: json['description'] as String?,
       parameter: json['parameter'] as String?,
-    )..error = json['error'];
+    );
 
-Map<String, dynamic> _$YookassaErrorToJson(YookassaError instance) =>
+Map<String, dynamic> _$$YookassaErrorImplToJson(_$YookassaErrorImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'code': _$YookassaErrorCodeEnumMap[instance.code]!,
       'description': instance.description,
       'parameter': instance.parameter,
-      'error': instance.error,
     };
 
 const _$YookassaErrorCodeEnumMap = {

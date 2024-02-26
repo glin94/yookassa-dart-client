@@ -109,29 +109,31 @@ class _$YookassaPaymentMethodCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_YooMoneyPaymentMethodCopyWith<$Res> {
-  factory _$$_YooMoneyPaymentMethodCopyWith(_$_YooMoneyPaymentMethod value,
-          $Res Function(_$_YooMoneyPaymentMethod) then) =
-      __$$_YooMoneyPaymentMethodCopyWithImpl<$Res>;
+abstract class _$$YooMoneyPaymentMethodImplCopyWith<$Res> {
+  factory _$$YooMoneyPaymentMethodImplCopyWith(
+          _$YooMoneyPaymentMethodImpl value,
+          $Res Function(_$YooMoneyPaymentMethodImpl) then) =
+      __$$YooMoneyPaymentMethodImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_YooMoneyPaymentMethodCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res, _$_YooMoneyPaymentMethod>
-    implements _$$_YooMoneyPaymentMethodCopyWith<$Res> {
-  __$$_YooMoneyPaymentMethodCopyWithImpl(_$_YooMoneyPaymentMethod _value,
-      $Res Function(_$_YooMoneyPaymentMethod) _then)
+class __$$YooMoneyPaymentMethodImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
+        _$YooMoneyPaymentMethodImpl>
+    implements _$$YooMoneyPaymentMethodImplCopyWith<$Res> {
+  __$$YooMoneyPaymentMethodImplCopyWithImpl(_$YooMoneyPaymentMethodImpl _value,
+      $Res Function(_$YooMoneyPaymentMethodImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_YooMoneyPaymentMethod implements _YooMoneyPaymentMethod {
-  const _$_YooMoneyPaymentMethod({final String? $type})
+class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
+  const _$YooMoneyPaymentMethodImpl({final String? $type})
       : $type = $type ?? 'yoo_money';
 
-  factory _$_YooMoneyPaymentMethod.fromJson(Map<String, dynamic> json) =>
-      _$$_YooMoneyPaymentMethodFromJson(json);
+  factory _$YooMoneyPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
+      _$$YooMoneyPaymentMethodImplFromJson(json);
 
   @JsonKey(name: 'type')
   final String $type;
@@ -142,9 +144,10 @@ class _$_YooMoneyPaymentMethod implements _YooMoneyPaymentMethod {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_YooMoneyPaymentMethod);
+        (other.runtimeType == runtimeType &&
+            other is _$YooMoneyPaymentMethodImpl);
   }
 
   @JsonKey(ignore: true)
@@ -229,34 +232,34 @@ class _$_YooMoneyPaymentMethod implements _YooMoneyPaymentMethod {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_YooMoneyPaymentMethodToJson(
+    return _$$YooMoneyPaymentMethodImplToJson(
       this,
     );
   }
 }
 
 abstract class _YooMoneyPaymentMethod implements YookassaPaymentMethod {
-  const factory _YooMoneyPaymentMethod() = _$_YooMoneyPaymentMethod;
+  const factory _YooMoneyPaymentMethod() = _$YooMoneyPaymentMethodImpl;
 
   factory _YooMoneyPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$_YooMoneyPaymentMethod.fromJson;
+      _$YooMoneyPaymentMethodImpl.fromJson;
 }
 
 /// @nodoc
-abstract class _$$_SBPPaymentMethodCopyWith<$Res> {
-  factory _$$_SBPPaymentMethodCopyWith(
-          _$_SBPPaymentMethod value, $Res Function(_$_SBPPaymentMethod) then) =
-      __$$_SBPPaymentMethodCopyWithImpl<$Res>;
+abstract class _$$SBPPaymentMethodImplCopyWith<$Res> {
+  factory _$$SBPPaymentMethodImplCopyWith(_$SBPPaymentMethodImpl value,
+          $Res Function(_$SBPPaymentMethodImpl) then) =
+      __$$SBPPaymentMethodImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? id, bool? saved, String? title});
 }
 
 /// @nodoc
-class __$$_SBPPaymentMethodCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res, _$_SBPPaymentMethod>
-    implements _$$_SBPPaymentMethodCopyWith<$Res> {
-  __$$_SBPPaymentMethodCopyWithImpl(
-      _$_SBPPaymentMethod _value, $Res Function(_$_SBPPaymentMethod) _then)
+class __$$SBPPaymentMethodImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentMethodCopyWithImpl<$Res, _$SBPPaymentMethodImpl>
+    implements _$$SBPPaymentMethodImplCopyWith<$Res> {
+  __$$SBPPaymentMethodImplCopyWithImpl(_$SBPPaymentMethodImpl _value,
+      $Res Function(_$SBPPaymentMethodImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -266,7 +269,7 @@ class __$$_SBPPaymentMethodCopyWithImpl<$Res>
     Object? saved = freezed,
     Object? title = freezed,
   }) {
-    return _then(_$_SBPPaymentMethod(
+    return _then(_$SBPPaymentMethodImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -285,13 +288,13 @@ class __$$_SBPPaymentMethodCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SBPPaymentMethod implements _SBPPaymentMethod {
-  const _$_SBPPaymentMethod(
+class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
+  const _$SBPPaymentMethodImpl(
       {this.id, this.saved, this.title, final String? $type})
       : $type = $type ?? 'sbp';
 
-  factory _$_SBPPaymentMethod.fromJson(Map<String, dynamic> json) =>
-      _$$_SBPPaymentMethodFromJson(json);
+  factory _$SBPPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SBPPaymentMethodImplFromJson(json);
 
   @override
   final String? id;
@@ -309,10 +312,10 @@ class _$_SBPPaymentMethod implements _SBPPaymentMethod {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SBPPaymentMethod &&
+            other is _$SBPPaymentMethodImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.saved, saved) || other.saved == saved) &&
             (identical(other.title, title) || other.title == title));
@@ -325,8 +328,9 @@ class _$_SBPPaymentMethod implements _SBPPaymentMethod {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SBPPaymentMethodCopyWith<_$_SBPPaymentMethod> get copyWith =>
-      __$$_SBPPaymentMethodCopyWithImpl<_$_SBPPaymentMethod>(this, _$identity);
+  _$$SBPPaymentMethodImplCopyWith<_$SBPPaymentMethodImpl> get copyWith =>
+      __$$SBPPaymentMethodImplCopyWithImpl<_$SBPPaymentMethodImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -406,7 +410,7 @@ class _$_SBPPaymentMethod implements _SBPPaymentMethod {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SBPPaymentMethodToJson(
+    return _$$SBPPaymentMethodImplToJson(
       this,
     );
   }
@@ -416,24 +420,24 @@ abstract class _SBPPaymentMethod implements YookassaPaymentMethod {
   const factory _SBPPaymentMethod(
       {final String? id,
       final bool? saved,
-      final String? title}) = _$_SBPPaymentMethod;
+      final String? title}) = _$SBPPaymentMethodImpl;
 
   factory _SBPPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$_SBPPaymentMethod.fromJson;
+      _$SBPPaymentMethodImpl.fromJson;
 
   String? get id;
   bool? get saved;
   String? get title;
   @JsonKey(ignore: true)
-  _$$_SBPPaymentMethodCopyWith<_$_SBPPaymentMethod> get copyWith =>
+  _$$SBPPaymentMethodImplCopyWith<_$SBPPaymentMethodImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_BankCardaymentMethodCopyWith<$Res> {
-  factory _$$_BankCardaymentMethodCopyWith(_$_BankCardaymentMethod value,
-          $Res Function(_$_BankCardaymentMethod) then) =
-      __$$_BankCardaymentMethodCopyWithImpl<$Res>;
+abstract class _$$BankCardaymentMethodImplCopyWith<$Res> {
+  factory _$$BankCardaymentMethodImplCopyWith(_$BankCardaymentMethodImpl value,
+          $Res Function(_$BankCardaymentMethodImpl) then) =
+      __$$BankCardaymentMethodImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? id, YookassaCard? card, bool? saved});
 
@@ -441,11 +445,12 @@ abstract class _$$_BankCardaymentMethodCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_BankCardaymentMethodCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res, _$_BankCardaymentMethod>
-    implements _$$_BankCardaymentMethodCopyWith<$Res> {
-  __$$_BankCardaymentMethodCopyWithImpl(_$_BankCardaymentMethod _value,
-      $Res Function(_$_BankCardaymentMethod) _then)
+class __$$BankCardaymentMethodImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
+        _$BankCardaymentMethodImpl>
+    implements _$$BankCardaymentMethodImplCopyWith<$Res> {
+  __$$BankCardaymentMethodImplCopyWithImpl(_$BankCardaymentMethodImpl _value,
+      $Res Function(_$BankCardaymentMethodImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -455,7 +460,7 @@ class __$$_BankCardaymentMethodCopyWithImpl<$Res>
     Object? card = freezed,
     Object? saved = freezed,
   }) {
-    return _then(_$_BankCardaymentMethod(
+    return _then(_$BankCardaymentMethodImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -486,13 +491,13 @@ class __$$_BankCardaymentMethodCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_BankCardaymentMethod implements _BankCardaymentMethod {
-  const _$_BankCardaymentMethod(
+class _$BankCardaymentMethodImpl implements _BankCardaymentMethod {
+  const _$BankCardaymentMethodImpl(
       {this.id, this.card, this.saved, final String? $type})
       : $type = $type ?? 'bank_card';
 
-  factory _$_BankCardaymentMethod.fromJson(Map<String, dynamic> json) =>
-      _$$_BankCardaymentMethodFromJson(json);
+  factory _$BankCardaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
+      _$$BankCardaymentMethodImplFromJson(json);
 
   @override
   final String? id;
@@ -510,10 +515,10 @@ class _$_BankCardaymentMethod implements _BankCardaymentMethod {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_BankCardaymentMethod &&
+            other is _$BankCardaymentMethodImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.card, card) || other.card == card) &&
             (identical(other.saved, saved) || other.saved == saved));
@@ -526,9 +531,10 @@ class _$_BankCardaymentMethod implements _BankCardaymentMethod {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_BankCardaymentMethodCopyWith<_$_BankCardaymentMethod> get copyWith =>
-      __$$_BankCardaymentMethodCopyWithImpl<_$_BankCardaymentMethod>(
-          this, _$identity);
+  _$$BankCardaymentMethodImplCopyWith<_$BankCardaymentMethodImpl>
+      get copyWith =>
+          __$$BankCardaymentMethodImplCopyWithImpl<_$BankCardaymentMethodImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -608,7 +614,7 @@ class _$_BankCardaymentMethod implements _BankCardaymentMethod {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BankCardaymentMethodToJson(
+    return _$$BankCardaymentMethodImplToJson(
       this,
     );
   }
@@ -618,24 +624,25 @@ abstract class _BankCardaymentMethod implements YookassaPaymentMethod {
   const factory _BankCardaymentMethod(
       {final String? id,
       final YookassaCard? card,
-      final bool? saved}) = _$_BankCardaymentMethod;
+      final bool? saved}) = _$BankCardaymentMethodImpl;
 
   factory _BankCardaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$_BankCardaymentMethod.fromJson;
+      _$BankCardaymentMethodImpl.fromJson;
 
   String? get id;
   YookassaCard? get card;
   bool? get saved;
   @JsonKey(ignore: true)
-  _$$_BankCardaymentMethodCopyWith<_$_BankCardaymentMethod> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$BankCardaymentMethodImplCopyWith<_$BankCardaymentMethodImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_SberBankPaymentMethodCopyWith<$Res> {
-  factory _$$_SberBankPaymentMethodCopyWith(_$_SberBankPaymentMethod value,
-          $Res Function(_$_SberBankPaymentMethod) then) =
-      __$$_SberBankPaymentMethodCopyWithImpl<$Res>;
+abstract class _$$SberBankPaymentMethodImplCopyWith<$Res> {
+  factory _$$SberBankPaymentMethodImplCopyWith(
+          _$SberBankPaymentMethodImpl value,
+          $Res Function(_$SberBankPaymentMethodImpl) then) =
+      __$$SberBankPaymentMethodImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? id, String? phone, YookassaCard? card});
 
@@ -643,11 +650,12 @@ abstract class _$$_SberBankPaymentMethodCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_SberBankPaymentMethodCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res, _$_SberBankPaymentMethod>
-    implements _$$_SberBankPaymentMethodCopyWith<$Res> {
-  __$$_SberBankPaymentMethodCopyWithImpl(_$_SberBankPaymentMethod _value,
-      $Res Function(_$_SberBankPaymentMethod) _then)
+class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
+    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
+        _$SberBankPaymentMethodImpl>
+    implements _$$SberBankPaymentMethodImplCopyWith<$Res> {
+  __$$SberBankPaymentMethodImplCopyWithImpl(_$SberBankPaymentMethodImpl _value,
+      $Res Function(_$SberBankPaymentMethodImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -657,7 +665,7 @@ class __$$_SberBankPaymentMethodCopyWithImpl<$Res>
     Object? phone = freezed,
     Object? card = freezed,
   }) {
-    return _then(_$_SberBankPaymentMethod(
+    return _then(_$SberBankPaymentMethodImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -688,13 +696,13 @@ class __$$_SberBankPaymentMethodCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SberBankPaymentMethod implements _SberBankPaymentMethod {
-  const _$_SberBankPaymentMethod(
+class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
+  const _$SberBankPaymentMethodImpl(
       {this.id, this.phone, this.card, final String? $type})
       : $type = $type ?? 'sberbank';
 
-  factory _$_SberBankPaymentMethod.fromJson(Map<String, dynamic> json) =>
-      _$$_SberBankPaymentMethodFromJson(json);
+  factory _$SberBankPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SberBankPaymentMethodImplFromJson(json);
 
   @override
   final String? id;
@@ -712,10 +720,10 @@ class _$_SberBankPaymentMethod implements _SberBankPaymentMethod {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SberBankPaymentMethod &&
+            other is _$SberBankPaymentMethodImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.phone, phone) || other.phone == phone) &&
             (identical(other.card, card) || other.card == card));
@@ -728,9 +736,9 @@ class _$_SberBankPaymentMethod implements _SberBankPaymentMethod {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SberBankPaymentMethodCopyWith<_$_SberBankPaymentMethod> get copyWith =>
-      __$$_SberBankPaymentMethodCopyWithImpl<_$_SberBankPaymentMethod>(
-          this, _$identity);
+  _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
+      get copyWith => __$$SberBankPaymentMethodImplCopyWithImpl<
+          _$SberBankPaymentMethodImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -810,7 +818,7 @@ class _$_SberBankPaymentMethod implements _SberBankPaymentMethod {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SberBankPaymentMethodToJson(
+    return _$$SberBankPaymentMethodImplToJson(
       this,
     );
   }
@@ -820,15 +828,15 @@ abstract class _SberBankPaymentMethod implements YookassaPaymentMethod {
   const factory _SberBankPaymentMethod(
       {final String? id,
       final String? phone,
-      final YookassaCard? card}) = _$_SberBankPaymentMethod;
+      final YookassaCard? card}) = _$SberBankPaymentMethodImpl;
 
   factory _SberBankPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$_SberBankPaymentMethod.fromJson;
+      _$SberBankPaymentMethodImpl.fromJson;
 
   String? get id;
   String? get phone;
   YookassaCard? get card;
   @JsonKey(ignore: true)
-  _$$_SberBankPaymentMethodCopyWith<_$_SberBankPaymentMethod> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

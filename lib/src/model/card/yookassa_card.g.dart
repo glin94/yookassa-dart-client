@@ -6,25 +6,25 @@ part of 'yookassa_card.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_YookassaCard _$$_YookassaCardFromJson(Map<String, dynamic> json) =>
-    _$_YookassaCard(
-      first6: json['first6'] as String?,
+_$YookassaCardImpl _$$YookassaCardImplFromJson(Map<String, dynamic> json) =>
+    _$YookassaCardImpl(
       last4: json['last4'] as String,
       expiryYear: json['expiry_year'] as String,
       expiryMonth: json['expiry_month'] as String,
       cardType: $enumDecode(_$YookassaCardTypeEnumMap, json['card_type']),
+      first6: json['first6'] as String?,
       issuerCountry: json['issuer_country'] as String?,
       issuerName: json['issuer_name'] as String?,
       source: json['source'] as String?,
     );
 
-Map<String, dynamic> _$$_YookassaCardToJson(_$_YookassaCard instance) =>
+Map<String, dynamic> _$$YookassaCardImplToJson(_$YookassaCardImpl instance) =>
     <String, dynamic>{
-      'first6': instance.first6,
       'last4': instance.last4,
       'expiry_year': instance.expiryYear,
       'expiry_month': instance.expiryMonth,
       'card_type': _$YookassaCardTypeEnumMap[instance.cardType]!,
+      'first6': instance.first6,
       'issuer_country': instance.issuerCountry,
       'issuer_name': instance.issuerName,
       'source': instance.source,

@@ -1,8 +1,9 @@
 import 'package:yookassa_client/yookassa_client.dart';
 
-const testShopId = '969610';
-
-const testSecretKey = 'test_-GpSa0CuY-UG8w4tHxiVM3boRXlszOVuh7WeqKSeKbQ';
+const testCredentials = YookassaAuthCredentials(
+  shopId: '969610',
+  secretKey: 'test_-GpSa0CuY-UG8w4tHxiVM3boRXlszOVuh7WeqKSeKbQ',
+);
 
 const amount = Amount(value: '100.00', currency: 'RUB');
 

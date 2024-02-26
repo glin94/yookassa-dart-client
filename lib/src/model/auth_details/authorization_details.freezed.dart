@@ -20,9 +20,9 @@ AuthorizationDetails _$AuthorizationDetailsFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$AuthorizationDetails {
+  ThreeDSecure get threeDSecure => throw _privateConstructorUsedError;
   String? get rrn => throw _privateConstructorUsedError;
   String? get authCode => throw _privateConstructorUsedError;
-  ThreeDSecure get threeDSecure => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +36,7 @@ abstract class $AuthorizationDetailsCopyWith<$Res> {
           $Res Function(AuthorizationDetails) then) =
       _$AuthorizationDetailsCopyWithImpl<$Res, AuthorizationDetails>;
   @useResult
-  $Res call({String? rrn, String? authCode, ThreeDSecure threeDSecure});
+  $Res call({ThreeDSecure threeDSecure, String? rrn, String? authCode});
 
   $ThreeDSecureCopyWith<$Res> get threeDSecure;
 }
@@ -55,11 +55,15 @@ class _$AuthorizationDetailsCopyWithImpl<$Res,
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? threeDSecure = null,
     Object? rrn = freezed,
     Object? authCode = freezed,
-    Object? threeDSecure = null,
   }) {
     return _then(_value.copyWith(
+      threeDSecure: null == threeDSecure
+          ? _value.threeDSecure
+          : threeDSecure // ignore: cast_nullable_to_non_nullable
+              as ThreeDSecure,
       rrn: freezed == rrn
           ? _value.rrn
           : rrn // ignore: cast_nullable_to_non_nullable
@@ -68,10 +72,6 @@ class _$AuthorizationDetailsCopyWithImpl<$Res,
           ? _value.authCode
           : authCode // ignore: cast_nullable_to_non_nullable
               as String?,
-      threeDSecure: null == threeDSecure
-          ? _value.threeDSecure
-          : threeDSecure // ignore: cast_nullable_to_non_nullable
-              as ThreeDSecure,
     ) as $Val);
   }
 
@@ -85,35 +85,39 @@ class _$AuthorizationDetailsCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_AuthorizationDetailsCopyWith<$Res>
+abstract class _$$AuthorizationDetailsImplCopyWith<$Res>
     implements $AuthorizationDetailsCopyWith<$Res> {
-  factory _$$_AuthorizationDetailsCopyWith(_$_AuthorizationDetails value,
-          $Res Function(_$_AuthorizationDetails) then) =
-      __$$_AuthorizationDetailsCopyWithImpl<$Res>;
+  factory _$$AuthorizationDetailsImplCopyWith(_$AuthorizationDetailsImpl value,
+          $Res Function(_$AuthorizationDetailsImpl) then) =
+      __$$AuthorizationDetailsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? rrn, String? authCode, ThreeDSecure threeDSecure});
+  $Res call({ThreeDSecure threeDSecure, String? rrn, String? authCode});
 
   @override
   $ThreeDSecureCopyWith<$Res> get threeDSecure;
 }
 
 /// @nodoc
-class __$$_AuthorizationDetailsCopyWithImpl<$Res>
-    extends _$AuthorizationDetailsCopyWithImpl<$Res, _$_AuthorizationDetails>
-    implements _$$_AuthorizationDetailsCopyWith<$Res> {
-  __$$_AuthorizationDetailsCopyWithImpl(_$_AuthorizationDetails _value,
-      $Res Function(_$_AuthorizationDetails) _then)
+class __$$AuthorizationDetailsImplCopyWithImpl<$Res>
+    extends _$AuthorizationDetailsCopyWithImpl<$Res, _$AuthorizationDetailsImpl>
+    implements _$$AuthorizationDetailsImplCopyWith<$Res> {
+  __$$AuthorizationDetailsImplCopyWithImpl(_$AuthorizationDetailsImpl _value,
+      $Res Function(_$AuthorizationDetailsImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? threeDSecure = null,
     Object? rrn = freezed,
     Object? authCode = freezed,
-    Object? threeDSecure = null,
   }) {
-    return _then(_$_AuthorizationDetails(
+    return _then(_$AuthorizationDetailsImpl(
+      threeDSecure: null == threeDSecure
+          ? _value.threeDSecure
+          : threeDSecure // ignore: cast_nullable_to_non_nullable
+              as ThreeDSecure,
       rrn: freezed == rrn
           ? _value.rrn
           : rrn // ignore: cast_nullable_to_non_nullable
@@ -122,61 +126,58 @@ class __$$_AuthorizationDetailsCopyWithImpl<$Res>
           ? _value.authCode
           : authCode // ignore: cast_nullable_to_non_nullable
               as String?,
-      threeDSecure: null == threeDSecure
-          ? _value.threeDSecure
-          : threeDSecure // ignore: cast_nullable_to_non_nullable
-              as ThreeDSecure,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_AuthorizationDetails implements _AuthorizationDetails {
-  _$_AuthorizationDetails(
-      {this.rrn, this.authCode, required this.threeDSecure});
+class _$AuthorizationDetailsImpl implements _AuthorizationDetails {
+  _$AuthorizationDetailsImpl(
+      {required this.threeDSecure, this.rrn, this.authCode});
 
-  factory _$_AuthorizationDetails.fromJson(Map<String, dynamic> json) =>
-      _$$_AuthorizationDetailsFromJson(json);
+  factory _$AuthorizationDetailsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AuthorizationDetailsImplFromJson(json);
 
+  @override
+  final ThreeDSecure threeDSecure;
   @override
   final String? rrn;
   @override
   final String? authCode;
-  @override
-  final ThreeDSecure threeDSecure;
 
   @override
   String toString() {
-    return 'AuthorizationDetails(rrn: $rrn, authCode: $authCode, threeDSecure: $threeDSecure)';
+    return 'AuthorizationDetails(threeDSecure: $threeDSecure, rrn: $rrn, authCode: $authCode)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AuthorizationDetails &&
+            other is _$AuthorizationDetailsImpl &&
+            (identical(other.threeDSecure, threeDSecure) ||
+                other.threeDSecure == threeDSecure) &&
             (identical(other.rrn, rrn) || other.rrn == rrn) &&
             (identical(other.authCode, authCode) ||
-                other.authCode == authCode) &&
-            (identical(other.threeDSecure, threeDSecure) ||
-                other.threeDSecure == threeDSecure));
+                other.authCode == authCode));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, rrn, authCode, threeDSecure);
+  int get hashCode => Object.hash(runtimeType, threeDSecure, rrn, authCode);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AuthorizationDetailsCopyWith<_$_AuthorizationDetails> get copyWith =>
-      __$$_AuthorizationDetailsCopyWithImpl<_$_AuthorizationDetails>(
-          this, _$identity);
+  _$$AuthorizationDetailsImplCopyWith<_$AuthorizationDetailsImpl>
+      get copyWith =>
+          __$$AuthorizationDetailsImplCopyWithImpl<_$AuthorizationDetailsImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AuthorizationDetailsToJson(
+    return _$$AuthorizationDetailsImplToJson(
       this,
     );
   }
@@ -184,23 +185,23 @@ class _$_AuthorizationDetails implements _AuthorizationDetails {
 
 abstract class _AuthorizationDetails implements AuthorizationDetails {
   factory _AuthorizationDetails(
-      {final String? rrn,
-      final String? authCode,
-      required final ThreeDSecure threeDSecure}) = _$_AuthorizationDetails;
+      {required final ThreeDSecure threeDSecure,
+      final String? rrn,
+      final String? authCode}) = _$AuthorizationDetailsImpl;
 
   factory _AuthorizationDetails.fromJson(Map<String, dynamic> json) =
-      _$_AuthorizationDetails.fromJson;
+      _$AuthorizationDetailsImpl.fromJson;
 
+  @override
+  ThreeDSecure get threeDSecure;
   @override
   String? get rrn;
   @override
   String? get authCode;
   @override
-  ThreeDSecure get threeDSecure;
-  @override
   @JsonKey(ignore: true)
-  _$$_AuthorizationDetailsCopyWith<_$_AuthorizationDetails> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AuthorizationDetailsImplCopyWith<_$AuthorizationDetailsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 ThreeDSecure _$ThreeDSecureFromJson(Map<String, dynamic> json) {
@@ -251,22 +252,22 @@ class _$ThreeDSecureCopyWithImpl<$Res, $Val extends ThreeDSecure>
 }
 
 /// @nodoc
-abstract class _$$_ThreeDSecureCopyWith<$Res>
+abstract class _$$ThreeDSecureImplCopyWith<$Res>
     implements $ThreeDSecureCopyWith<$Res> {
-  factory _$$_ThreeDSecureCopyWith(
-          _$_ThreeDSecure value, $Res Function(_$_ThreeDSecure) then) =
-      __$$_ThreeDSecureCopyWithImpl<$Res>;
+  factory _$$ThreeDSecureImplCopyWith(
+          _$ThreeDSecureImpl value, $Res Function(_$ThreeDSecureImpl) then) =
+      __$$ThreeDSecureImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool applied});
 }
 
 /// @nodoc
-class __$$_ThreeDSecureCopyWithImpl<$Res>
-    extends _$ThreeDSecureCopyWithImpl<$Res, _$_ThreeDSecure>
-    implements _$$_ThreeDSecureCopyWith<$Res> {
-  __$$_ThreeDSecureCopyWithImpl(
-      _$_ThreeDSecure _value, $Res Function(_$_ThreeDSecure) _then)
+class __$$ThreeDSecureImplCopyWithImpl<$Res>
+    extends _$ThreeDSecureCopyWithImpl<$Res, _$ThreeDSecureImpl>
+    implements _$$ThreeDSecureImplCopyWith<$Res> {
+  __$$ThreeDSecureImplCopyWithImpl(
+      _$ThreeDSecureImpl _value, $Res Function(_$ThreeDSecureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -274,7 +275,7 @@ class __$$_ThreeDSecureCopyWithImpl<$Res>
   $Res call({
     Object? applied = null,
   }) {
-    return _then(_$_ThreeDSecure(
+    return _then(_$ThreeDSecureImpl(
       applied: null == applied
           ? _value.applied
           : applied // ignore: cast_nullable_to_non_nullable
@@ -285,11 +286,11 @@ class __$$_ThreeDSecureCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ThreeDSecure implements _ThreeDSecure {
-  _$_ThreeDSecure({required this.applied});
+class _$ThreeDSecureImpl implements _ThreeDSecure {
+  _$ThreeDSecureImpl({required this.applied});
 
-  factory _$_ThreeDSecure.fromJson(Map<String, dynamic> json) =>
-      _$$_ThreeDSecureFromJson(json);
+  factory _$ThreeDSecureImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ThreeDSecureImplFromJson(json);
 
   @override
   final bool applied;
@@ -300,10 +301,10 @@ class _$_ThreeDSecure implements _ThreeDSecure {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ThreeDSecure &&
+            other is _$ThreeDSecureImpl &&
             (identical(other.applied, applied) || other.applied == applied));
   }
 
@@ -314,27 +315,27 @@ class _$_ThreeDSecure implements _ThreeDSecure {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ThreeDSecureCopyWith<_$_ThreeDSecure> get copyWith =>
-      __$$_ThreeDSecureCopyWithImpl<_$_ThreeDSecure>(this, _$identity);
+  _$$ThreeDSecureImplCopyWith<_$ThreeDSecureImpl> get copyWith =>
+      __$$ThreeDSecureImplCopyWithImpl<_$ThreeDSecureImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ThreeDSecureToJson(
+    return _$$ThreeDSecureImplToJson(
       this,
     );
   }
 }
 
 abstract class _ThreeDSecure implements ThreeDSecure {
-  factory _ThreeDSecure({required final bool applied}) = _$_ThreeDSecure;
+  factory _ThreeDSecure({required final bool applied}) = _$ThreeDSecureImpl;
 
   factory _ThreeDSecure.fromJson(Map<String, dynamic> json) =
-      _$_ThreeDSecure.fromJson;
+      _$ThreeDSecureImpl.fromJson;
 
   @override
   bool get applied;
   @override
   @JsonKey(ignore: true)
-  _$$_ThreeDSecureCopyWith<_$_ThreeDSecure> get copyWith =>
+  _$$ThreeDSecureImplCopyWith<_$ThreeDSecureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

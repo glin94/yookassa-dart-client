@@ -6,27 +6,29 @@ part of 'yookassa_payment_method.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_YooMoneyPaymentMethod _$$_YooMoneyPaymentMethodFromJson(
+_$YooMoneyPaymentMethodImpl _$$YooMoneyPaymentMethodImplFromJson(
         Map<String, dynamic> json) =>
-    _$_YooMoneyPaymentMethod(
+    _$YooMoneyPaymentMethodImpl(
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$_YooMoneyPaymentMethodToJson(
-        _$_YooMoneyPaymentMethod instance) =>
+Map<String, dynamic> _$$YooMoneyPaymentMethodImplToJson(
+        _$YooMoneyPaymentMethodImpl instance) =>
     <String, dynamic>{
       'type': instance.$type,
     };
 
-_$_SBPPaymentMethod _$$_SBPPaymentMethodFromJson(Map<String, dynamic> json) =>
-    _$_SBPPaymentMethod(
+_$SBPPaymentMethodImpl _$$SBPPaymentMethodImplFromJson(
+        Map<String, dynamic> json) =>
+    _$SBPPaymentMethodImpl(
       id: json['id'] as String?,
       saved: json['saved'] as bool?,
       title: json['title'] as String?,
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$_SBPPaymentMethodToJson(_$_SBPPaymentMethod instance) =>
+Map<String, dynamic> _$$SBPPaymentMethodImplToJson(
+        _$SBPPaymentMethodImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'saved': instance.saved,
@@ -34,9 +36,9 @@ Map<String, dynamic> _$$_SBPPaymentMethodToJson(_$_SBPPaymentMethod instance) =>
       'type': instance.$type,
     };
 
-_$_BankCardaymentMethod _$$_BankCardaymentMethodFromJson(
+_$BankCardaymentMethodImpl _$$BankCardaymentMethodImplFromJson(
         Map<String, dynamic> json) =>
-    _$_BankCardaymentMethod(
+    _$BankCardaymentMethodImpl(
       id: json['id'] as String?,
       card: json['card'] == null
           ? null
@@ -45,8 +47,8 @@ _$_BankCardaymentMethod _$$_BankCardaymentMethodFromJson(
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$_BankCardaymentMethodToJson(
-        _$_BankCardaymentMethod instance) =>
+Map<String, dynamic> _$$BankCardaymentMethodImplToJson(
+        _$BankCardaymentMethodImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'card': instance.card,
@@ -54,9 +56,9 @@ Map<String, dynamic> _$$_BankCardaymentMethodToJson(
       'type': instance.$type,
     };
 
-_$_SberBankPaymentMethod _$$_SberBankPaymentMethodFromJson(
+_$SberBankPaymentMethodImpl _$$SberBankPaymentMethodImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SberBankPaymentMethod(
+    _$SberBankPaymentMethodImpl(
       id: json['id'] as String?,
       phone: json['phone'] as String?,
       card: json['card'] == null
@@ -65,8 +67,8 @@ _$_SberBankPaymentMethod _$$_SberBankPaymentMethodFromJson(
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$_SberBankPaymentMethodToJson(
-        _$_SberBankPaymentMethod instance) =>
+Map<String, dynamic> _$$SberBankPaymentMethodImplToJson(
+        _$SberBankPaymentMethodImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'phone': instance.phone,
