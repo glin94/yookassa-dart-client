@@ -12,7 +12,7 @@ part of 'yookassa_payment_method.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaPaymentMethod _$YookassaPaymentMethodFromJson(
     Map<String, dynamic> json) {
@@ -86,6 +86,8 @@ mixin _$YookassaPaymentMethod {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this YookassaPaymentMethod to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -106,6 +108,9 @@ class _$YookassaPaymentMethodCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -124,6 +129,9 @@ class __$$YooMoneyPaymentMethodImplCopyWithImpl<$Res>
   __$$YooMoneyPaymentMethodImplCopyWithImpl(_$YooMoneyPaymentMethodImpl _value,
       $Res Function(_$YooMoneyPaymentMethodImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -150,7 +158,7 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
             other is _$YooMoneyPaymentMethodImpl);
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => runtimeType.hashCode;
 
@@ -262,6 +270,8 @@ class __$$SBPPaymentMethodImplCopyWithImpl<$Res>
       $Res Function(_$SBPPaymentMethodImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -321,11 +331,13 @@ class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
             (identical(other.title, title) || other.title == title));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, saved, title);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SBPPaymentMethodImplCopyWith<_$SBPPaymentMethodImpl> get copyWith =>
@@ -428,7 +440,10 @@ abstract class _SBPPaymentMethod implements YookassaPaymentMethod {
   String? get id;
   bool? get saved;
   String? get title;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SBPPaymentMethodImplCopyWith<_$SBPPaymentMethodImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -453,6 +468,8 @@ class __$$BankCardaymentMethodImplCopyWithImpl<$Res>
       $Res Function(_$BankCardaymentMethodImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -476,6 +493,8 @@ class __$$BankCardaymentMethodImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaCardCopyWith<$Res>? get card {
@@ -524,11 +543,13 @@ class _$BankCardaymentMethodImpl implements _BankCardaymentMethod {
             (identical(other.saved, saved) || other.saved == saved));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, card, saved);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BankCardaymentMethodImplCopyWith<_$BankCardaymentMethodImpl>
@@ -632,7 +653,10 @@ abstract class _BankCardaymentMethod implements YookassaPaymentMethod {
   String? get id;
   YookassaCard? get card;
   bool? get saved;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BankCardaymentMethodImplCopyWith<_$BankCardaymentMethodImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -658,6 +682,8 @@ class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
       $Res Function(_$SberBankPaymentMethodImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -681,6 +707,8 @@ class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaCardCopyWith<$Res>? get card {
@@ -729,11 +757,13 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
             (identical(other.card, card) || other.card == card));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, phone, card);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
@@ -836,7 +866,10 @@ abstract class _SberBankPaymentMethod implements YookassaPaymentMethod {
   String? get id;
   String? get phone;
   YookassaCard? get card;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

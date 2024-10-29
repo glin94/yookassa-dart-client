@@ -12,7 +12,7 @@ part of 'yookassa_confirmation.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaConfirmation _$YookassaConfirmationFromJson(Map<String, dynamic> json) {
   switch (json['type']) {
@@ -108,8 +108,13 @@ mixin _$YookassaConfirmation {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this YookassaConfirmation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaConfirmationCopyWith<YookassaConfirmation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -134,6 +139,8 @@ class _$YookassaConfirmationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -170,6 +177,8 @@ class __$$EmbeddedYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$EmbeddedYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -225,11 +234,13 @@ class _$EmbeddedYookassaConfirmationImpl
                 other.confirmationToken == confirmationToken));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, locale, confirmationToken);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EmbeddedYookassaConfirmationImplCopyWith<
@@ -352,8 +363,11 @@ abstract class _EmbeddedYookassaConfirmation implements YookassaConfirmation {
   @override
   String? get locale;
   String? get confirmationToken;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EmbeddedYookassaConfirmationImplCopyWith<
           _$EmbeddedYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -381,6 +395,8 @@ class __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$ExternalYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -427,11 +443,13 @@ class _$ExternalYookassaConfirmationImpl
             (identical(other.locale, locale) || other.locale == locale));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, locale);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ExternalYookassaConfirmationImplCopyWith<
@@ -552,8 +570,11 @@ abstract class _ExternalYookassaConfirmation implements YookassaConfirmation {
 
   @override
   String? get locale;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ExternalYookassaConfirmationImplCopyWith<
           _$ExternalYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -581,6 +602,8 @@ class __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$MobileApplicationYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -648,12 +671,14 @@ class _$MobileApplicationYookassaConfirmationImpl
                 other.confirmationUrl == confirmationUrl));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationUrl);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MobileApplicationYookassaConfirmationImplCopyWith<
@@ -781,8 +806,11 @@ abstract class _MobileApplicationYookassaConfirmation
   String? get locale;
   String? get returnUrl;
   String? get confirmationUrl;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MobileApplicationYookassaConfirmationImplCopyWith<
           _$MobileApplicationYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -810,6 +838,8 @@ class __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$QrCodeYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -864,11 +894,13 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
                 other.confirmationData == confirmationData));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, locale, confirmationData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
@@ -990,8 +1022,11 @@ abstract class _QrCodeYookassaConfirmation implements YookassaConfirmation {
   @override
   String? get locale;
   String? get confirmationData;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1022,6 +1057,8 @@ class __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$RedirectCodeYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1098,12 +1135,14 @@ class _$RedirectCodeYookassaConfirmationImpl
             (identical(other.enforce, enforce) || other.enforce == enforce));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationUrl, enforce);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RedirectCodeYookassaConfirmationImplCopyWith<
@@ -1232,8 +1271,11 @@ abstract class _RedirectCodeYookassaConfirmation
   String? get returnUrl;
   String? get confirmationUrl;
   bool? get enforce;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RedirectCodeYookassaConfirmationImplCopyWith<
           _$RedirectCodeYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;

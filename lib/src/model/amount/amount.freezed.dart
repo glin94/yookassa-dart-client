@@ -12,7 +12,7 @@ part of 'amount.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 Amount _$AmountFromJson(Map<String, dynamic> json) {
   return _Amount.fromJson(json);
@@ -23,8 +23,12 @@ mixin _$Amount {
   String get value => throw _privateConstructorUsedError;
   String get currency => throw _privateConstructorUsedError;
 
+  /// Serializes this Amount to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Amount
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AmountCopyWith<Amount> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -46,6 +50,8 @@ class _$AmountCopyWithImpl<$Res, $Val extends Amount>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Amount
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -83,6 +89,8 @@ class __$$AmountImplCopyWithImpl<$Res>
       _$AmountImpl _value, $Res Function(_$AmountImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Amount
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -130,11 +138,13 @@ class _$AmountImpl extends _Amount {
                 other.currency == currency));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, value, currency);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Amount
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AmountImplCopyWith<_$AmountImpl> get copyWith =>
@@ -160,8 +170,11 @@ abstract class _Amount extends Amount {
   String get value;
   @override
   String get currency;
+
+  /// Create a copy of Amount
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AmountImplCopyWith<_$AmountImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

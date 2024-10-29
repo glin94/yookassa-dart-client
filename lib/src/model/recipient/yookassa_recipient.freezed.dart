@@ -12,7 +12,7 @@ part of 'yookassa_recipient.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaRecipient _$YookassaRecipientFromJson(Map<String, dynamic> json) {
   return _YookassaRecipient.fromJson(json);
@@ -23,8 +23,12 @@ mixin _$YookassaRecipient {
   String get accountId => throw _privateConstructorUsedError;
   String get gatewayId => throw _privateConstructorUsedError;
 
+  /// Serializes this YookassaRecipient to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaRecipient
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaRecipientCopyWith<YookassaRecipient> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -48,6 +52,8 @@ class _$YookassaRecipientCopyWithImpl<$Res, $Val extends YookassaRecipient>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaRecipient
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -86,6 +92,8 @@ class __$$YookassaRecipientImplCopyWithImpl<$Res>
       $Res Function(_$YookassaRecipientImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaRecipient
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -134,11 +142,13 @@ class _$YookassaRecipientImpl implements _YookassaRecipient {
                 other.gatewayId == gatewayId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, accountId, gatewayId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaRecipient
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$YookassaRecipientImplCopyWith<_$YookassaRecipientImpl> get copyWith =>
@@ -165,8 +175,11 @@ abstract class _YookassaRecipient implements YookassaRecipient {
   String get accountId;
   @override
   String get gatewayId;
+
+  /// Create a copy of YookassaRecipient
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$YookassaRecipientImplCopyWith<_$YookassaRecipientImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

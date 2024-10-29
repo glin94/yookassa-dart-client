@@ -15,6 +15,7 @@ class CreatePaymentRequest with _$CreatePaymentRequest {
     YookassaRecipient? recipient,
     YookassaPaymentMethod? paymentMethodData,
     YookassaConfirmation? confirmation,
+    String? paymentMethodId,
     bool? savePaymentMethod,
     bool? capture,
     String? clientIp,

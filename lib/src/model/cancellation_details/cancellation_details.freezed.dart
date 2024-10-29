@@ -12,7 +12,7 @@ part of 'cancellation_details.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 CancellationDetails _$CancellationDetailsFromJson(Map<String, dynamic> json) {
   switch (json['party']) {
@@ -77,8 +77,13 @@ mixin _$CancellationDetails {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this CancellationDetails to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CancellationDetailsCopyWith<CancellationDetails> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -102,6 +107,8 @@ class _$CancellationDetailsCopyWithImpl<$Res, $Val extends CancellationDetails>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,6 +145,8 @@ class __$$YookassaCancellationDetailsImplCopyWithImpl<$Res>
       $Res Function(_$YookassaCancellationDetailsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -182,11 +191,13 @@ class _$YookassaCancellationDetailsImpl
             (identical(other.reason, reason) || other.reason == reason));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, reason);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$YookassaCancellationDetailsImplCopyWith<_$YookassaCancellationDetailsImpl>
@@ -280,8 +291,11 @@ abstract class _YookassaCancellationDetails implements CancellationDetails {
 
   @override
   CancelationReason get reason;
+
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$YookassaCancellationDetailsImplCopyWith<_$YookassaCancellationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -308,6 +322,8 @@ class __$$MerchantCancellationDetailsImplCopyWithImpl<$Res>
       $Res Function(_$MerchantCancellationDetailsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -352,11 +368,13 @@ class _$MerchantCancellationDetailsImpl
             (identical(other.reason, reason) || other.reason == reason));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, reason);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MerchantCancellationDetailsImplCopyWith<_$MerchantCancellationDetailsImpl>
@@ -450,8 +468,11 @@ abstract class _MerchantCancellationDetails implements CancellationDetails {
 
   @override
   CancelationReason get reason;
+
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MerchantCancellationDetailsImplCopyWith<_$MerchantCancellationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -478,6 +499,8 @@ class __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<$Res>
       $Res Function(_$PaymentNetworkCancellationDetailsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -523,11 +546,13 @@ class _$PaymentNetworkCancellationDetailsImpl
             (identical(other.reason, reason) || other.reason == reason));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, reason);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PaymentNetworkCancellationDetailsImplCopyWith<
@@ -624,8 +649,11 @@ abstract class _PaymentNetworkCancellationDetails
 
   @override
   CancelationReason get reason;
+
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PaymentNetworkCancellationDetailsImplCopyWith<
           _$PaymentNetworkCancellationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
