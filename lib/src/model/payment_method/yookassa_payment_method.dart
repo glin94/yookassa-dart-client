@@ -36,7 +36,7 @@ class YookassaPaymentMethod with _$YookassaPaymentMethod {
   @FreezedUnionValue('tinkoff_bank')
   const factory YookassaPaymentMethod.tinkoffPay({
     String? id,
-  }) = _SberBankPaymentMethod;
+  }) = _TinkoffPayPaymentMethod;
 
   factory YookassaPaymentMethod.fromJson(Map<String, dynamic> json) => _$YookassaPaymentMethodFromJson(json);
 }

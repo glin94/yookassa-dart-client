@@ -26,7 +26,7 @@ YookassaPaymentMethod _$YookassaPaymentMethodFromJson(
     case 'sberbank':
       return _SberBankPaymentMethod.fromJson(json);
     case 'tinkoff_bank':
-      return _SberBankPaymentMethod.fromJson(json);
+      return _TinkoffPayPaymentMethod.fromJson(json);
 
     default:
       throw CheckedFromJsonException(json, 'type', 'YookassaPaymentMethod',
@@ -72,7 +72,7 @@ mixin _$YookassaPaymentMethod {
     required TResult Function(_SBPPaymentMethod value) sbp,
     required TResult Function(_BankCardaymentMethod value) bankCard,
     required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_SberBankPaymentMethod value) tinkoffPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -81,7 +81,7 @@ mixin _$YookassaPaymentMethod {
     TResult? Function(_SBPPaymentMethod value)? sbp,
     TResult? Function(_BankCardaymentMethod value)? bankCard,
     TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -90,7 +90,7 @@ mixin _$YookassaPaymentMethod {
     TResult Function(_SBPPaymentMethod value)? sbp,
     TResult Function(_BankCardaymentMethod value)? bankCard,
     TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -219,7 +219,7 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
     required TResult Function(_SBPPaymentMethod value) sbp,
     required TResult Function(_BankCardaymentMethod value) bankCard,
     required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_SberBankPaymentMethod value) tinkoffPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
   }) {
     return yooMoney(this);
   }
@@ -231,7 +231,7 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
     TResult? Function(_SBPPaymentMethod value)? sbp,
     TResult? Function(_BankCardaymentMethod value)? bankCard,
     TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
   }) {
     return yooMoney?.call(this);
   }
@@ -243,7 +243,7 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
     TResult Function(_SBPPaymentMethod value)? sbp,
     TResult Function(_BankCardaymentMethod value)? bankCard,
     TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
     required TResult orElse(),
   }) {
     if (yooMoney != null) {
@@ -407,7 +407,7 @@ class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
     required TResult Function(_SBPPaymentMethod value) sbp,
     required TResult Function(_BankCardaymentMethod value) bankCard,
     required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_SberBankPaymentMethod value) tinkoffPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
   }) {
     return sbp(this);
   }
@@ -419,7 +419,7 @@ class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
     TResult? Function(_SBPPaymentMethod value)? sbp,
     TResult? Function(_BankCardaymentMethod value)? bankCard,
     TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
   }) {
     return sbp?.call(this);
   }
@@ -431,7 +431,7 @@ class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
     TResult Function(_SBPPaymentMethod value)? sbp,
     TResult Function(_BankCardaymentMethod value)? bankCard,
     TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
     required TResult orElse(),
   }) {
     if (sbp != null) {
@@ -626,7 +626,7 @@ class _$BankCardaymentMethodImpl implements _BankCardaymentMethod {
     required TResult Function(_SBPPaymentMethod value) sbp,
     required TResult Function(_BankCardaymentMethod value) bankCard,
     required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_SberBankPaymentMethod value) tinkoffPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
   }) {
     return bankCard(this);
   }
@@ -638,7 +638,7 @@ class _$BankCardaymentMethodImpl implements _BankCardaymentMethod {
     TResult? Function(_SBPPaymentMethod value)? sbp,
     TResult? Function(_BankCardaymentMethod value)? bankCard,
     TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
   }) {
     return bankCard?.call(this);
   }
@@ -650,7 +650,7 @@ class _$BankCardaymentMethodImpl implements _BankCardaymentMethod {
     TResult Function(_SBPPaymentMethod value)? sbp,
     TResult Function(_BankCardaymentMethod value)? bankCard,
     TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
     required TResult orElse(),
   }) {
     if (bankCard != null) {
@@ -845,7 +845,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
     required TResult Function(_SBPPaymentMethod value) sbp,
     required TResult Function(_BankCardaymentMethod value) bankCard,
     required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_SberBankPaymentMethod value) tinkoffPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
   }) {
     return sberPay(this);
   }
@@ -857,7 +857,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
     TResult? Function(_SBPPaymentMethod value)? sbp,
     TResult? Function(_BankCardaymentMethod value)? bankCard,
     TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
   }) {
     return sberPay?.call(this);
   }
@@ -869,7 +869,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
     TResult Function(_SBPPaymentMethod value)? sbp,
     TResult Function(_BankCardaymentMethod value)? bankCard,
     TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
     required TResult orElse(),
   }) {
     if (sberPay != null) {
@@ -907,22 +907,23 @@ abstract class _SberBankPaymentMethod implements YookassaPaymentMethod {
 }
 
 /// @nodoc
-abstract class _$$SberBankPaymentMethodImplCopyWith<$Res> {
-  factory _$$SberBankPaymentMethodImplCopyWith(
-          _$SberBankPaymentMethodImpl value,
-          $Res Function(_$SberBankPaymentMethodImpl) then) =
-      __$$SberBankPaymentMethodImplCopyWithImpl<$Res>;
+abstract class _$$TinkoffPayPaymentMethodImplCopyWith<$Res> {
+  factory _$$TinkoffPayPaymentMethodImplCopyWith(
+          _$TinkoffPayPaymentMethodImpl value,
+          $Res Function(_$TinkoffPayPaymentMethodImpl) then) =
+      __$$TinkoffPayPaymentMethodImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? id});
 }
 
 /// @nodoc
-class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
+class __$$TinkoffPayPaymentMethodImplCopyWithImpl<$Res>
     extends _$YookassaPaymentMethodCopyWithImpl<$Res,
-        _$SberBankPaymentMethodImpl>
-    implements _$$SberBankPaymentMethodImplCopyWith<$Res> {
-  __$$SberBankPaymentMethodImplCopyWithImpl(_$SberBankPaymentMethodImpl _value,
-      $Res Function(_$SberBankPaymentMethodImpl) _then)
+        _$TinkoffPayPaymentMethodImpl>
+    implements _$$TinkoffPayPaymentMethodImplCopyWith<$Res> {
+  __$$TinkoffPayPaymentMethodImplCopyWithImpl(
+      _$TinkoffPayPaymentMethodImpl _value,
+      $Res Function(_$TinkoffPayPaymentMethodImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of YookassaPaymentMethod
@@ -932,7 +933,7 @@ class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
   $Res call({
     Object? id = freezed,
   }) {
-    return _then(_$SberBankPaymentMethodImpl(
+    return _then(_$TinkoffPayPaymentMethodImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -943,12 +944,12 @@ class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
-  const _$SberBankPaymentMethodImpl({this.id, final String? $type})
+class _$TinkoffPayPaymentMethodImpl implements _TinkoffPayPaymentMethod {
+  const _$TinkoffPayPaymentMethodImpl({this.id, final String? $type})
       : $type = $type ?? 'tinkoff_bank';
 
-  factory _$SberBankPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SberBankPaymentMethodImplFromJson(json);
+  factory _$TinkoffPayPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TinkoffPayPaymentMethodImplFromJson(json);
 
   @override
   final String? id;
@@ -965,7 +966,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SberBankPaymentMethodImpl &&
+            other is _$TinkoffPayPaymentMethodImpl &&
             (identical(other.id, id) || other.id == id));
   }
 
@@ -978,9 +979,9 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
-      get copyWith => __$$SberBankPaymentMethodImplCopyWithImpl<
-          _$SberBankPaymentMethodImpl>(this, _$identity);
+  _$$TinkoffPayPaymentMethodImplCopyWith<_$TinkoffPayPaymentMethodImpl>
+      get copyWith => __$$TinkoffPayPaymentMethodImplCopyWithImpl<
+          _$TinkoffPayPaymentMethodImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1031,7 +1032,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
     required TResult Function(_SBPPaymentMethod value) sbp,
     required TResult Function(_BankCardaymentMethod value) bankCard,
     required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_SberBankPaymentMethod value) tinkoffPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
   }) {
     return tinkoffPay(this);
   }
@@ -1043,7 +1044,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
     TResult? Function(_SBPPaymentMethod value)? sbp,
     TResult? Function(_BankCardaymentMethod value)? bankCard,
     TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
   }) {
     return tinkoffPay?.call(this);
   }
@@ -1055,7 +1056,7 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
     TResult Function(_SBPPaymentMethod value)? sbp,
     TResult Function(_BankCardaymentMethod value)? bankCard,
     TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_SberBankPaymentMethod value)? tinkoffPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
     required TResult orElse(),
   }) {
     if (tinkoffPay != null) {
@@ -1066,24 +1067,24 @@ class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SberBankPaymentMethodImplToJson(
+    return _$$TinkoffPayPaymentMethodImplToJson(
       this,
     );
   }
 }
 
-abstract class _SberBankPaymentMethod implements YookassaPaymentMethod {
-  const factory _SberBankPaymentMethod({final String? id}) =
-      _$SberBankPaymentMethodImpl;
+abstract class _TinkoffPayPaymentMethod implements YookassaPaymentMethod {
+  const factory _TinkoffPayPaymentMethod({final String? id}) =
+      _$TinkoffPayPaymentMethodImpl;
 
-  factory _SberBankPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$SberBankPaymentMethodImpl.fromJson;
+  factory _TinkoffPayPaymentMethod.fromJson(Map<String, dynamic> json) =
+      _$TinkoffPayPaymentMethodImpl.fromJson;
 
   String? get id;
 
   /// Create a copy of YookassaPaymentMethod
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
+  _$$TinkoffPayPaymentMethodImplCopyWith<_$TinkoffPayPaymentMethodImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
