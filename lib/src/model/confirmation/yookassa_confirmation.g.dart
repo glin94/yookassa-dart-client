@@ -59,6 +59,7 @@ _$QrCodeYookassaConfirmationImpl _$$QrCodeYookassaConfirmationImplFromJson(
         Map<String, dynamic> json) =>
     _$QrCodeYookassaConfirmationImpl(
       locale: json['locale'] as String? ?? 'ru_RU',
+      returnUrl: json['return_url'] as String?,
       confirmationData: json['confirmation_data'] as String?,
       $type: json['type'] as String?,
     );
@@ -67,6 +68,7 @@ Map<String, dynamic> _$$QrCodeYookassaConfirmationImplToJson(
         _$QrCodeYookassaConfirmationImpl instance) =>
     <String, dynamic>{
       'locale': instance.locale,
+      'return_url': instance.returnUrl,
       'confirmation_data': instance.confirmationData,
       'type': instance.$type,
     };

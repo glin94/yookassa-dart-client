@@ -12,7 +12,7 @@ part of 'create_payment_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 CreatePaymentRequest _$CreatePaymentRequestFromJson(Map<String, dynamic> json) {
   return _CreatePaymentRequest.fromJson(json);
@@ -35,8 +35,12 @@ mixin _$CreatePaymentRequest {
   String? get merchantCustomerId => throw _privateConstructorUsedError;
   YookassaReceipt? get receipt => throw _privateConstructorUsedError;
 
+  /// Serializes this CreatePaymentRequest to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreatePaymentRequestCopyWith<CreatePaymentRequest> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -80,6 +84,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,6 +159,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AmountCopyWith<$Res> get amount {
@@ -161,6 +169,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaRecipientCopyWith<$Res>? get recipient {
@@ -173,6 +183,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData {
@@ -186,6 +198,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaConfirmationCopyWith<$Res>? get confirmation {
@@ -198,6 +212,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaReceiptCopyWith<$Res>? get receipt {
@@ -254,6 +270,8 @@ class __$$CreatePaymentRequestImplCopyWithImpl<$Res>
       $Res Function(_$CreatePaymentRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -419,7 +437,7 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
             (identical(other.receipt, receipt) || other.receipt == receipt));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -437,7 +455,9 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
       merchantCustomerId,
       receipt);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreatePaymentRequestImplCopyWith<_$CreatePaymentRequestImpl>
@@ -498,8 +518,11 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
   String? get merchantCustomerId;
   @override
   YookassaReceipt? get receipt;
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreatePaymentRequestImplCopyWith<_$CreatePaymentRequestImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -12,7 +12,7 @@ part of 'authorization_details.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AuthorizationDetails _$AuthorizationDetailsFromJson(Map<String, dynamic> json) {
   return _AuthorizationDetails.fromJson(json);
@@ -24,8 +24,12 @@ mixin _$AuthorizationDetails {
   String? get rrn => throw _privateConstructorUsedError;
   String? get authCode => throw _privateConstructorUsedError;
 
+  /// Serializes this AuthorizationDetails to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuthorizationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AuthorizationDetailsCopyWith<AuthorizationDetails> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +56,8 @@ class _$AuthorizationDetailsCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AuthorizationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -75,6 +81,8 @@ class _$AuthorizationDetailsCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of AuthorizationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ThreeDSecureCopyWith<$Res> get threeDSecure {
@@ -106,6 +114,8 @@ class __$$AuthorizationDetailsImplCopyWithImpl<$Res>
       $Res Function(_$AuthorizationDetailsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuthorizationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -163,11 +173,13 @@ class _$AuthorizationDetailsImpl implements _AuthorizationDetails {
                 other.authCode == authCode));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, threeDSecure, rrn, authCode);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuthorizationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AuthorizationDetailsImplCopyWith<_$AuthorizationDetailsImpl>
@@ -198,8 +210,11 @@ abstract class _AuthorizationDetails implements AuthorizationDetails {
   String? get rrn;
   @override
   String? get authCode;
+
+  /// Create a copy of AuthorizationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuthorizationDetailsImplCopyWith<_$AuthorizationDetailsImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -212,8 +227,12 @@ ThreeDSecure _$ThreeDSecureFromJson(Map<String, dynamic> json) {
 mixin _$ThreeDSecure {
   bool get applied => throw _privateConstructorUsedError;
 
+  /// Serializes this ThreeDSecure to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ThreeDSecure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ThreeDSecureCopyWith<ThreeDSecure> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -237,6 +256,8 @@ class _$ThreeDSecureCopyWithImpl<$Res, $Val extends ThreeDSecure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ThreeDSecure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -270,6 +291,8 @@ class __$$ThreeDSecureImplCopyWithImpl<$Res>
       _$ThreeDSecureImpl _value, $Res Function(_$ThreeDSecureImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ThreeDSecure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -308,11 +331,13 @@ class _$ThreeDSecureImpl implements _ThreeDSecure {
             (identical(other.applied, applied) || other.applied == applied));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, applied);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ThreeDSecure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ThreeDSecureImplCopyWith<_$ThreeDSecureImpl> get copyWith =>
@@ -334,8 +359,11 @@ abstract class _ThreeDSecure implements ThreeDSecure {
 
   @override
   bool get applied;
+
+  /// Create a copy of ThreeDSecure
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ThreeDSecureImplCopyWith<_$ThreeDSecureImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

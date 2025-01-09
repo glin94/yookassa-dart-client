@@ -27,6 +27,7 @@ class YookassaConfirmation with _$YookassaConfirmation {
   /// Сценарий подтверждения QR-код: для подтверждения платежа пользователю необходимо просканировать QR-код. От вас требуется сгенерировать QR-код, используя любой доступный инструмент, и отобразить его на странице оплаты.
   const factory YookassaConfirmation.qr({
     @Default('ru_RU') String? locale,
+    String? returnUrl,
     String? confirmationData,
   }) = _QrCodeYookassaConfirmation;
 

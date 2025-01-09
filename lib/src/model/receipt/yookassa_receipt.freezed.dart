@@ -12,7 +12,7 @@ part of 'yookassa_receipt.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaReceipt _$YookassaReceiptFromJson(Map<String, dynamic> json) {
   return _YookassaReceipt.fromJson(json);
@@ -23,8 +23,12 @@ mixin _$YookassaReceipt {
   YookassaCustomer get customer => throw _privateConstructorUsedError;
   List<YookassaItem> get items => throw _privateConstructorUsedError;
 
+  /// Serializes this YookassaReceipt to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaReceipt
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaReceiptCopyWith<YookassaReceipt> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -50,6 +54,8 @@ class _$YookassaReceiptCopyWithImpl<$Res, $Val extends YookassaReceipt>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaReceipt
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -68,6 +74,8 @@ class _$YookassaReceiptCopyWithImpl<$Res, $Val extends YookassaReceipt>
     ) as $Val);
   }
 
+  /// Create a copy of YookassaReceipt
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaCustomerCopyWith<$Res> get customer {
@@ -99,6 +107,8 @@ class __$$YookassaReceiptImplCopyWithImpl<$Res>
       _$YookassaReceiptImpl _value, $Res Function(_$YookassaReceiptImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaReceipt
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,12 +163,14 @@ class _$YookassaReceiptImpl implements _YookassaReceipt {
             const DeepCollectionEquality().equals(other._items, _items));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, customer, const DeepCollectionEquality().hash(_items));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaReceipt
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$YookassaReceiptImplCopyWith<_$YookassaReceiptImpl> get copyWith =>
@@ -185,8 +197,11 @@ abstract class _YookassaReceipt implements YookassaReceipt {
   YookassaCustomer get customer;
   @override
   List<YookassaItem> get items;
+
+  /// Create a copy of YookassaReceipt
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$YookassaReceiptImplCopyWith<_$YookassaReceiptImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

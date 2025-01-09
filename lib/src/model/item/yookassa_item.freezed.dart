@@ -12,7 +12,7 @@ part of 'yookassa_item.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaItem _$YookassaItemFromJson(Map<String, dynamic> json) {
   return _YookassaItem.fromJson(json);
@@ -25,8 +25,12 @@ mixin _$YookassaItem {
   Amount get amount => throw _privateConstructorUsedError;
   String get vatCode => throw _privateConstructorUsedError;
 
+  /// Serializes this YookassaItem to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaItemCopyWith<YookassaItem> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +57,8 @@ class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
     ) as $Val);
   }
 
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AmountCopyWith<$Res> get amount {
@@ -113,6 +121,8 @@ class __$$YookassaItemImplCopyWithImpl<$Res>
       _$YookassaItemImpl _value, $Res Function(_$YookassaItemImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -182,12 +192,14 @@ class _$YookassaItemImpl implements _YookassaItem {
             (identical(other.vatCode, vatCode) || other.vatCode == vatCode));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, description, quantity, amount, vatCode);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$YookassaItemImplCopyWith<_$YookassaItemImpl> get copyWith =>
@@ -219,8 +231,11 @@ abstract class _YookassaItem implements YookassaItem {
   Amount get amount;
   @override
   String get vatCode;
+
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$YookassaItemImplCopyWith<_$YookassaItemImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

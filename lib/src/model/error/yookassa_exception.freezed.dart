@@ -12,7 +12,7 @@ part of 'yookassa_exception.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaException _$YookassaExceptionFromJson(Map<String, dynamic> json) {
   return _YookassaError.fromJson(json);
@@ -25,8 +25,12 @@ mixin _$YookassaException {
   String? get description => throw _privateConstructorUsedError;
   String? get parameter => throw _privateConstructorUsedError;
 
+  /// Serializes this YookassaException to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaException
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaExceptionCopyWith<YookassaException> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -54,6 +58,8 @@ class _$YookassaExceptionCopyWithImpl<$Res, $Val extends YookassaException>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaException
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -106,6 +112,8 @@ class __$$YookassaErrorImplCopyWithImpl<$Res>
       _$YookassaErrorImpl _value, $Res Function(_$YookassaErrorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaException
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -171,12 +179,14 @@ class _$YookassaErrorImpl implements _YookassaError {
                 other.parameter == parameter));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, id, code, description, parameter);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaException
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$YookassaErrorImplCopyWith<_$YookassaErrorImpl> get copyWith =>
@@ -208,8 +218,11 @@ abstract class _YookassaError implements YookassaException {
   String? get description;
   @override
   String? get parameter;
+
+  /// Create a copy of YookassaException
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$YookassaErrorImplCopyWith<_$YookassaErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

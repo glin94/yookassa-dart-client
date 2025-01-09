@@ -12,7 +12,7 @@ part of 'yookassa_confirmation.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaConfirmation _$YookassaConfirmationFromJson(Map<String, dynamic> json) {
   switch (json['type']) {
@@ -44,7 +44,9 @@ mixin _$YookassaConfirmation {
     required TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)
         mobileApplication,
-    required TResult Function(String? locale, String? confirmationData) qr,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
     required TResult Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)
         redirect,
@@ -57,7 +59,9 @@ mixin _$YookassaConfirmation {
     TResult? Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult? Function(String? locale, String? confirmationData)? qr,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult? Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)?
         redirect,
@@ -70,7 +74,9 @@ mixin _$YookassaConfirmation {
     TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult Function(String? locale, String? confirmationData)? qr,
+    TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
             bool? enforce)?
         redirect,
@@ -108,8 +114,13 @@ mixin _$YookassaConfirmation {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this YookassaConfirmation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaConfirmationCopyWith<YookassaConfirmation> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -134,6 +145,8 @@ class _$YookassaConfirmationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -170,6 +183,8 @@ class __$$EmbeddedYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$EmbeddedYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -225,11 +240,13 @@ class _$EmbeddedYookassaConfirmationImpl
                 other.confirmationToken == confirmationToken));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, locale, confirmationToken);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EmbeddedYookassaConfirmationImplCopyWith<
@@ -246,7 +263,9 @@ class _$EmbeddedYookassaConfirmationImpl
     required TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)
         mobileApplication,
-    required TResult Function(String? locale, String? confirmationData) qr,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
     required TResult Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)
         redirect,
@@ -262,7 +281,9 @@ class _$EmbeddedYookassaConfirmationImpl
     TResult? Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult? Function(String? locale, String? confirmationData)? qr,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult? Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)?
         redirect,
@@ -278,7 +299,9 @@ class _$EmbeddedYookassaConfirmationImpl
     TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult Function(String? locale, String? confirmationData)? qr,
+    TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
             bool? enforce)?
         redirect,
@@ -352,8 +375,11 @@ abstract class _EmbeddedYookassaConfirmation implements YookassaConfirmation {
   @override
   String? get locale;
   String? get confirmationToken;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EmbeddedYookassaConfirmationImplCopyWith<
           _$EmbeddedYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -381,6 +407,8 @@ class __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$ExternalYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -427,11 +455,13 @@ class _$ExternalYookassaConfirmationImpl
             (identical(other.locale, locale) || other.locale == locale));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, locale);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ExternalYookassaConfirmationImplCopyWith<
@@ -448,7 +478,9 @@ class _$ExternalYookassaConfirmationImpl
     required TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)
         mobileApplication,
-    required TResult Function(String? locale, String? confirmationData) qr,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
     required TResult Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)
         redirect,
@@ -464,7 +496,9 @@ class _$ExternalYookassaConfirmationImpl
     TResult? Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult? Function(String? locale, String? confirmationData)? qr,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult? Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)?
         redirect,
@@ -480,7 +514,9 @@ class _$ExternalYookassaConfirmationImpl
     TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult Function(String? locale, String? confirmationData)? qr,
+    TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
             bool? enforce)?
         redirect,
@@ -552,8 +588,11 @@ abstract class _ExternalYookassaConfirmation implements YookassaConfirmation {
 
   @override
   String? get locale;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ExternalYookassaConfirmationImplCopyWith<
           _$ExternalYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -581,6 +620,8 @@ class __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$MobileApplicationYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -648,12 +689,14 @@ class _$MobileApplicationYookassaConfirmationImpl
                 other.confirmationUrl == confirmationUrl));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationUrl);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MobileApplicationYookassaConfirmationImplCopyWith<
@@ -670,7 +713,9 @@ class _$MobileApplicationYookassaConfirmationImpl
     required TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)
         mobileApplication,
-    required TResult Function(String? locale, String? confirmationData) qr,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
     required TResult Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)
         redirect,
@@ -686,7 +731,9 @@ class _$MobileApplicationYookassaConfirmationImpl
     TResult? Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult? Function(String? locale, String? confirmationData)? qr,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult? Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)?
         redirect,
@@ -702,7 +749,9 @@ class _$MobileApplicationYookassaConfirmationImpl
     TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult Function(String? locale, String? confirmationData)? qr,
+    TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
             bool? enforce)?
         redirect,
@@ -781,8 +830,11 @@ abstract class _MobileApplicationYookassaConfirmation
   String? get locale;
   String? get returnUrl;
   String? get confirmationUrl;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MobileApplicationYookassaConfirmationImplCopyWith<
           _$MobileApplicationYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -797,7 +849,7 @@ abstract class _$$QrCodeYookassaConfirmationImplCopyWith<$Res>
       __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? locale, String? confirmationData});
+  $Res call({String? locale, String? returnUrl, String? confirmationData});
 }
 
 /// @nodoc
@@ -810,16 +862,23 @@ class __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$QrCodeYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? locale = freezed,
+    Object? returnUrl = freezed,
     Object? confirmationData = freezed,
   }) {
     return _then(_$QrCodeYookassaConfirmationImpl(
       locale: freezed == locale
           ? _value.locale
           : locale // ignore: cast_nullable_to_non_nullable
+              as String?,
+      returnUrl: freezed == returnUrl
+          ? _value.returnUrl
+          : returnUrl // ignore: cast_nullable_to_non_nullable
               as String?,
       confirmationData: freezed == confirmationData
           ? _value.confirmationData
@@ -833,7 +892,10 @@ class __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
   const _$QrCodeYookassaConfirmationImpl(
-      {this.locale = 'ru_RU', this.confirmationData, final String? $type})
+      {this.locale = 'ru_RU',
+      this.returnUrl,
+      this.confirmationData,
+      final String? $type})
       : $type = $type ?? 'qr';
 
   factory _$QrCodeYookassaConfirmationImpl.fromJson(
@@ -844,6 +906,8 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
   @JsonKey()
   final String? locale;
   @override
+  final String? returnUrl;
+  @override
   final String? confirmationData;
 
   @JsonKey(name: 'type')
@@ -851,7 +915,7 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
 
   @override
   String toString() {
-    return 'YookassaConfirmation.qr(locale: $locale, confirmationData: $confirmationData)';
+    return 'YookassaConfirmation.qr(locale: $locale, returnUrl: $returnUrl, confirmationData: $confirmationData)';
   }
 
   @override
@@ -860,15 +924,20 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
         (other.runtimeType == runtimeType &&
             other is _$QrCodeYookassaConfirmationImpl &&
             (identical(other.locale, locale) || other.locale == locale) &&
+            (identical(other.returnUrl, returnUrl) ||
+                other.returnUrl == returnUrl) &&
             (identical(other.confirmationData, confirmationData) ||
                 other.confirmationData == confirmationData));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, locale, confirmationData);
+  int get hashCode =>
+      Object.hash(runtimeType, locale, returnUrl, confirmationData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
@@ -884,12 +953,14 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
     required TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)
         mobileApplication,
-    required TResult Function(String? locale, String? confirmationData) qr,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
     required TResult Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)
         redirect,
   }) {
-    return qr(locale, confirmationData);
+    return qr(locale, returnUrl, confirmationData);
   }
 
   @override
@@ -900,12 +971,14 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
     TResult? Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult? Function(String? locale, String? confirmationData)? qr,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult? Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)?
         redirect,
   }) {
-    return qr?.call(locale, confirmationData);
+    return qr?.call(locale, returnUrl, confirmationData);
   }
 
   @override
@@ -916,14 +989,16 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
     TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult Function(String? locale, String? confirmationData)? qr,
+    TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
             bool? enforce)?
         redirect,
     required TResult orElse(),
   }) {
     if (qr != null) {
-      return qr(locale, confirmationData);
+      return qr(locale, returnUrl, confirmationData);
     }
     return orElse();
   }
@@ -982,6 +1057,7 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
 abstract class _QrCodeYookassaConfirmation implements YookassaConfirmation {
   const factory _QrCodeYookassaConfirmation(
       {final String? locale,
+      final String? returnUrl,
       final String? confirmationData}) = _$QrCodeYookassaConfirmationImpl;
 
   factory _QrCodeYookassaConfirmation.fromJson(Map<String, dynamic> json) =
@@ -989,9 +1065,13 @@ abstract class _QrCodeYookassaConfirmation implements YookassaConfirmation {
 
   @override
   String? get locale;
+  String? get returnUrl;
   String? get confirmationData;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1022,6 +1102,8 @@ class __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<$Res>
       $Res Function(_$RedirectCodeYookassaConfirmationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1098,12 +1180,14 @@ class _$RedirectCodeYookassaConfirmationImpl
             (identical(other.enforce, enforce) || other.enforce == enforce));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationUrl, enforce);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RedirectCodeYookassaConfirmationImplCopyWith<
@@ -1120,7 +1204,9 @@ class _$RedirectCodeYookassaConfirmationImpl
     required TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)
         mobileApplication,
-    required TResult Function(String? locale, String? confirmationData) qr,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
     required TResult Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)
         redirect,
@@ -1136,7 +1222,9 @@ class _$RedirectCodeYookassaConfirmationImpl
     TResult? Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult? Function(String? locale, String? confirmationData)? qr,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult? Function(String? locale, String? returnUrl,
             String? confirmationUrl, bool? enforce)?
         redirect,
@@ -1152,7 +1240,9 @@ class _$RedirectCodeYookassaConfirmationImpl
     TResult Function(
             String? locale, String? returnUrl, String? confirmationUrl)?
         mobileApplication,
-    TResult Function(String? locale, String? confirmationData)? qr,
+    TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
     TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
             bool? enforce)?
         redirect,
@@ -1232,8 +1322,11 @@ abstract class _RedirectCodeYookassaConfirmation
   String? get returnUrl;
   String? get confirmationUrl;
   bool? get enforce;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RedirectCodeYookassaConfirmationImplCopyWith<
           _$RedirectCodeYookassaConfirmationImpl>
       get copyWith => throw _privateConstructorUsedError;

@@ -12,7 +12,7 @@ part of 'yookassa_payment.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 YookassaPayment _$YookassaPaymentFromJson(Map<String, dynamic> json) {
   switch (json['status']) {
@@ -308,8 +308,13 @@ mixin _$YookassaPayment {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this YookassaPayment to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $YookassaPaymentCopyWith<YookassaPayment> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -356,6 +361,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -444,6 +451,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     ) as $Val);
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AmountCopyWith<$Res> get amount {
@@ -452,6 +461,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     });
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AmountCopyWith<$Res>? get incomeAmount {
@@ -464,6 +475,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     });
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaRecipientCopyWith<$Res>? get recipient {
@@ -476,6 +489,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     });
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaPaymentMethodCopyWith<$Res>? get paymentMethod {
@@ -488,6 +503,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     });
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $YookassaConfirmationCopyWith<$Res>? get confirmation {
@@ -500,6 +517,8 @@ class _$YookassaPaymentCopyWithImpl<$Res, $Val extends YookassaPayment>
     });
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $AuthorizationDetailsCopyWith<$Res>? get authorizationDetails {
@@ -564,6 +583,8 @@ class __$$PendingYookassaPaymentImplCopyWithImpl<$Res>
       $Res Function(_$PendingYookassaPaymentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -756,7 +777,7 @@ class _$PendingYookassaPaymentImpl implements _PendingYookassaPayment {
             const DeepCollectionEquality().equals(other._metadata, _metadata));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -777,7 +798,9 @@ class _$PendingYookassaPaymentImpl implements _PendingYookassaPayment {
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PendingYookassaPaymentImplCopyWith<_$PendingYookassaPaymentImpl>
@@ -1175,8 +1198,11 @@ abstract class _PendingYookassaPayment implements YookassaPayment {
   DateTime? get expiresAt;
   @override
   Map<String, Object>? get metadata;
+
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PendingYookassaPaymentImplCopyWith<_$PendingYookassaPaymentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1231,6 +1257,8 @@ class __$$WaitingYookassaPaymentImplCopyWithImpl<$Res>
       $Res Function(_$WaitingYookassaPaymentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1423,7 +1451,7 @@ class _$WaitingYookassaPaymentImpl implements _WaitingYookassaPayment {
             const DeepCollectionEquality().equals(other._metadata, _metadata));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1444,7 +1472,9 @@ class _$WaitingYookassaPaymentImpl implements _WaitingYookassaPayment {
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$WaitingYookassaPaymentImplCopyWith<_$WaitingYookassaPaymentImpl>
@@ -1842,8 +1872,11 @@ abstract class _WaitingYookassaPayment implements YookassaPayment {
   DateTime? get expiresAt;
   @override
   Map<String, Object>? get metadata;
+
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$WaitingYookassaPaymentImplCopyWith<_$WaitingYookassaPaymentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1898,6 +1931,8 @@ class __$$SucceededYookassaPaymentImplCopyWithImpl<$Res>
       $Res Function(_$SucceededYookassaPaymentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2090,7 +2125,7 @@ class _$SucceededYookassaPaymentImpl implements _SucceededYookassaPayment {
             const DeepCollectionEquality().equals(other._metadata, _metadata));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2111,7 +2146,9 @@ class _$SucceededYookassaPaymentImpl implements _SucceededYookassaPayment {
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SucceededYookassaPaymentImplCopyWith<_$SucceededYookassaPaymentImpl>
@@ -2509,8 +2546,11 @@ abstract class _SucceededYookassaPayment implements YookassaPayment {
   DateTime? get expiresAt;
   @override
   Map<String, Object>? get metadata;
+
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SucceededYookassaPaymentImplCopyWith<_$SucceededYookassaPaymentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2567,6 +2607,8 @@ class __$$CanceledYookassaPaymentImplCopyWithImpl<$Res>
       $Res Function(_$CanceledYookassaPaymentImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2660,6 +2702,8 @@ class __$$CanceledYookassaPaymentImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CancellationDetailsCopyWith<$Res>? get cancellationDetails {
@@ -2782,7 +2826,7 @@ class _$CanceledYookassaPaymentImpl implements _CanceledYookassaPayment {
             const DeepCollectionEquality().equals(other._metadata, _metadata));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2804,7 +2848,9 @@ class _$CanceledYookassaPaymentImpl implements _CanceledYookassaPayment {
       expiresAt,
       const DeepCollectionEquality().hash(_metadata));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CanceledYookassaPaymentImplCopyWith<_$CanceledYookassaPaymentImpl>
@@ -3207,8 +3253,11 @@ abstract class _CanceledYookassaPayment implements YookassaPayment {
   DateTime? get expiresAt;
   @override
   Map<String, Object>? get metadata;
+
+  /// Create a copy of YookassaPayment
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CanceledYookassaPaymentImplCopyWith<_$CanceledYookassaPaymentImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
