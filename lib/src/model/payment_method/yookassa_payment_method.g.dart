@@ -75,3 +75,17 @@ Map<String, dynamic> _$$SberBankPaymentMethodImplToJson(
       'card': instance.card,
       'type': instance.$type,
     };
+
+_$TinkoffPayPaymentMethodImpl _$$TinkoffPayPaymentMethodImplFromJson(
+        Map<String, dynamic> json) =>
+    _$TinkoffPayPaymentMethodImpl(
+      id: json['id'] as String?,
+      $type: json['type'] as String?,
+    );
+
+Map<String, dynamic> _$$TinkoffPayPaymentMethodImplToJson(
+        _$TinkoffPayPaymentMethodImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'type': instance.$type,
+    };

@@ -28,6 +28,7 @@ mixin _$CreatePaymentRequest {
   YookassaPaymentMethod? get paymentMethodData =>
       throw _privateConstructorUsedError;
   YookassaConfirmation? get confirmation => throw _privateConstructorUsedError;
+  String? get paymentMethodId => throw _privateConstructorUsedError;
   bool? get savePaymentMethod => throw _privateConstructorUsedError;
   bool? get capture => throw _privateConstructorUsedError;
   String? get clientIp => throw _privateConstructorUsedError;
@@ -59,6 +60,7 @@ abstract class $CreatePaymentRequestCopyWith<$Res> {
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethodData,
       YookassaConfirmation? confirmation,
+      String? paymentMethodId,
       bool? savePaymentMethod,
       bool? capture,
       String? clientIp,
@@ -96,6 +98,7 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     Object? recipient = freezed,
     Object? paymentMethodData = freezed,
     Object? confirmation = freezed,
+    Object? paymentMethodId = freezed,
     Object? savePaymentMethod = freezed,
     Object? capture = freezed,
     Object? clientIp = freezed,
@@ -132,6 +135,10 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
+      paymentMethodId: freezed == paymentMethodId
+          ? _value.paymentMethodId
+          : paymentMethodId // ignore: cast_nullable_to_non_nullable
+              as String?,
       savePaymentMethod: freezed == savePaymentMethod
           ? _value.savePaymentMethod
           : savePaymentMethod // ignore: cast_nullable_to_non_nullable
@@ -243,6 +250,7 @@ abstract class _$$CreatePaymentRequestImplCopyWith<$Res>
       YookassaRecipient? recipient,
       YookassaPaymentMethod? paymentMethodData,
       YookassaConfirmation? confirmation,
+      String? paymentMethodId,
       bool? savePaymentMethod,
       bool? capture,
       String? clientIp,
@@ -282,6 +290,7 @@ class __$$CreatePaymentRequestImplCopyWithImpl<$Res>
     Object? recipient = freezed,
     Object? paymentMethodData = freezed,
     Object? confirmation = freezed,
+    Object? paymentMethodId = freezed,
     Object? savePaymentMethod = freezed,
     Object? capture = freezed,
     Object? clientIp = freezed,
@@ -318,6 +327,10 @@ class __$$CreatePaymentRequestImplCopyWithImpl<$Res>
           ? _value.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
+      paymentMethodId: freezed == paymentMethodId
+          ? _value.paymentMethodId
+          : paymentMethodId // ignore: cast_nullable_to_non_nullable
+              as String?,
       savePaymentMethod: freezed == savePaymentMethod
           ? _value.savePaymentMethod
           : savePaymentMethod // ignore: cast_nullable_to_non_nullable
@@ -357,6 +370,7 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
       this.recipient,
       this.paymentMethodData,
       this.confirmation,
+      this.paymentMethodId,
       this.savePaymentMethod,
       this.capture,
       this.clientIp,
@@ -383,6 +397,8 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
   @override
   final YookassaConfirmation? confirmation;
   @override
+  final String? paymentMethodId;
+  @override
   final bool? savePaymentMethod;
   @override
   final bool? capture;
@@ -405,7 +421,7 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
 
   @override
   String toString() {
-    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId, receipt: $receipt)';
+    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, paymentMethodId: $paymentMethodId, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId, receipt: $receipt)';
   }
 
   @override
@@ -426,6 +442,8 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
                 other.paymentMethodData == paymentMethodData) &&
             (identical(other.confirmation, confirmation) ||
                 other.confirmation == confirmation) &&
+            (identical(other.paymentMethodId, paymentMethodId) ||
+                other.paymentMethodId == paymentMethodId) &&
             (identical(other.savePaymentMethod, savePaymentMethod) ||
                 other.savePaymentMethod == savePaymentMethod) &&
             (identical(other.capture, capture) || other.capture == capture) &&
@@ -448,6 +466,7 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
       recipient,
       paymentMethodData,
       confirmation,
+      paymentMethodId,
       savePaymentMethod,
       capture,
       clientIp,
@@ -482,6 +501,7 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
       final YookassaRecipient? recipient,
       final YookassaPaymentMethod? paymentMethodData,
       final YookassaConfirmation? confirmation,
+      final String? paymentMethodId,
       final bool? savePaymentMethod,
       final bool? capture,
       final String? clientIp,
@@ -506,6 +526,8 @@ abstract class _CreatePaymentRequest implements CreatePaymentRequest {
   YookassaPaymentMethod? get paymentMethodData;
   @override
   YookassaConfirmation? get confirmation;
+  @override
+  String? get paymentMethodId;
   @override
   bool? get savePaymentMethod;
   @override

@@ -25,6 +25,7 @@ _$CreatePaymentRequestImpl _$$CreatePaymentRequestImplFromJson(
           ? null
           : YookassaConfirmation.fromJson(
               json['confirmation'] as Map<String, dynamic>),
+      paymentMethodId: json['payment_method_id'] as String?,
       savePaymentMethod: json['save_payment_method'] as bool?,
       capture: json['capture'] as bool?,
       clientIp: json['client_ip'] as String?,
@@ -45,6 +46,7 @@ Map<String, dynamic> _$$CreatePaymentRequestImplToJson(
       'recipient': instance.recipient,
       'payment_method_data': instance.paymentMethodData,
       'confirmation': instance.confirmation,
+      'payment_method_id': instance.paymentMethodId,
       'save_payment_method': instance.savePaymentMethod,
       'capture': instance.capture,
       'client_ip': instance.clientIp,
