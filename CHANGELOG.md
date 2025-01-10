@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Add T-Pay method
+
 ## 1.0.3
 
 - Add return link for SBP confirmation
