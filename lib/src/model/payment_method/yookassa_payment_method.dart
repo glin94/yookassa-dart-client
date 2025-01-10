@@ -38,7 +38,8 @@ class YookassaPaymentMethod with _$YookassaPaymentMethod {
     String? id,
   }) = _TinkoffPayPaymentMethod;
 
-  factory YookassaPaymentMethod.fromJson(Map<String, dynamic> json) => _$YookassaPaymentMethodFromJson(json);
+  factory YookassaPaymentMethod.fromJson(Map<String, dynamic> json) =>
+      _$YookassaPaymentMethodFromJson(json);
 }
 
 /// Тип способа оплаты

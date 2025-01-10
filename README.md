@@ -8,7 +8,7 @@ Dart REST client for [Yookassa Payments API](https://yookassa.ru/developers/paym
 
 ```yaml
 dependencies:
-  yookassa_client: ^1.0.0
+  yookassa_client: ^1.0.5
 ```
 
 ### Simple to use

@@ -1,14 +1,28 @@
 name: yookassa_client
-description: Dart REST client for Yookassa Payments API
+description: A Dart client for Yookassa Payments APIs, simplifying payment integration and transaction processing for web,desktop and mobile applications.
 
-version: 1.0.4
+version: 1.0.5
 
-repository: https://github.com/glin94/yookassa-dart-client
-issue_tracker: https://github.com/glin94/yookassa-dart-client/issues
 homepage: https://github.com/glin94/yookassa-dart-client
 
+repository: https://github.com/glin94/yookassa-dart-client
+
+issue_tracker: https://github.com/glin94/yookassa-dart-client/issues
+
+topics:
+  - payments
+  - yookassa
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
   dio: ^5.2.1+1
@@ -16,7 +30,7 @@ dependencies:
   json_annotation: ^4.8.1
   retrofit: ^4.0.1
   stack_trace: ^1.11.0
-  uuid: ^3.0.7
+  uuid: ^4.5.1
 
 dev_dependencies:
   build_runner: ^2.2.1

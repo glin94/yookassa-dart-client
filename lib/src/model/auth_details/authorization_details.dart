@@ -6,7 +6,8 @@ part 'authorization_details.g.dart';
 @freezed
 class AuthorizationDetails with _$AuthorizationDetails {
   factory AuthorizationDetails({
-    required ThreeDSecure threeDSecure, String? rrn,
+    required ThreeDSecure threeDSecure,
+    String? rrn,
     String? authCode,
   }) = _AuthorizationDetails;
 
