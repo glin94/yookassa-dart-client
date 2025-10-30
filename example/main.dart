@@ -13,15 +13,25 @@ void main() async {
   );
 
   const createdPaymentRequest = CreatePaymentRequest(
-    amount: Amount(
-      value: '100.00',
-      currency: 'RUB',
-    ),
-    paymentMethodData: YookassaPaymentMethod.sbp(),
-    confirmation: YookassaConfirmation.qr(),
-    capture: true,
-    description: 'Заказ #1',
-  );
+      amount: Amount(
+        value: '100.00',
+        currency: 'RUB',
+      ),
+      paymentMethodData: YookassaPaymentMethod.sbp(),
+      confirmation: YookassaConfirmation.qr(),
+      capture: true,
+      description: 'Заказ #1',
+      receipt: YookassaReceipt(
+        customer: YookassaCustomer(email: 'example@domain.com'),
+        items: [
+          YookassaItem(
+            description: 'Пример описания',
+            quantity: '1',
+            amount: Amount(value: '299', currency: 'RUB'),
+            vatCode: '1',
+          )
+        ],
+      ));
 
   try {
     final payment = await yookassaClient.createPayment(

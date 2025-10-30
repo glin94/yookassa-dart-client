@@ -11,6 +11,8 @@ _$YookassaItemImpl _$$YookassaItemImplFromJson(Map<String, dynamic> json) =>
       description: json['description'] as String,
       quantity: json['quantity'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
+      paymentSubject: json['payment_subject'] as String?,
+      paymentMode: json['payment_mode'] as String?,
       vatCode: json['vat_code'] as String? ?? '1',
     );
 
@@ -19,5 +21,7 @@ Map<String, dynamic> _$$YookassaItemImplToJson(_$YookassaItemImpl instance) =>
       'description': instance.description,
       'quantity': instance.quantity,
       'amount': instance.amount,
+      'payment_subject': instance.paymentSubject,
+      'payment_mode': instance.paymentMode,
       'vat_code': instance.vatCode,
     };

@@ -23,6 +23,10 @@ mixin _$YookassaItem {
   String get description => throw _privateConstructorUsedError;
   String get quantity => throw _privateConstructorUsedError;
   Amount get amount => throw _privateConstructorUsedError;
+  @JsonKey(name: 'payment_subject')
+  String? get paymentSubject => throw _privateConstructorUsedError;
+  @JsonKey(name: 'payment_mode')
+  String? get paymentMode => throw _privateConstructorUsedError;
   String get vatCode => throw _privateConstructorUsedError;
 
   /// Serializes this YookassaItem to a JSON map.
@@ -42,7 +46,12 @@ abstract class $YookassaItemCopyWith<$Res> {
       _$YookassaItemCopyWithImpl<$Res, YookassaItem>;
   @useResult
   $Res call(
-      {String description, String quantity, Amount amount, String vatCode});
+      {String description,
+      String quantity,
+      Amount amount,
+      @JsonKey(name: 'payment_subject') String? paymentSubject,
+      @JsonKey(name: 'payment_mode') String? paymentMode,
+      String vatCode});
 
   $AmountCopyWith<$Res> get amount;
 }
@@ -65,6 +74,8 @@ class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
     Object? description = null,
     Object? quantity = null,
     Object? amount = null,
+    Object? paymentSubject = freezed,
+    Object? paymentMode = freezed,
     Object? vatCode = null,
   }) {
     return _then(_value.copyWith(
@@ -80,6 +91,14 @@ class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      paymentSubject: freezed == paymentSubject
+          ? _value.paymentSubject
+          : paymentSubject // ignore: cast_nullable_to_non_nullable
+              as String?,
+      paymentMode: freezed == paymentMode
+          ? _value.paymentMode
+          : paymentMode // ignore: cast_nullable_to_non_nullable
+              as String?,
       vatCode: null == vatCode
           ? _value.vatCode
           : vatCode // ignore: cast_nullable_to_non_nullable
@@ -107,7 +126,12 @@ abstract class _$$YookassaItemImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String description, String quantity, Amount amount, String vatCode});
+      {String description,
+      String quantity,
+      Amount amount,
+      @JsonKey(name: 'payment_subject') String? paymentSubject,
+      @JsonKey(name: 'payment_mode') String? paymentMode,
+      String vatCode});
 
   @override
   $AmountCopyWith<$Res> get amount;
@@ -129,6 +153,8 @@ class __$$YookassaItemImplCopyWithImpl<$Res>
     Object? description = null,
     Object? quantity = null,
     Object? amount = null,
+    Object? paymentSubject = freezed,
+    Object? paymentMode = freezed,
     Object? vatCode = null,
   }) {
     return _then(_$YookassaItemImpl(
@@ -144,6 +170,14 @@ class __$$YookassaItemImplCopyWithImpl<$Res>
           ? _value.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      paymentSubject: freezed == paymentSubject
+          ? _value.paymentSubject
+          : paymentSubject // ignore: cast_nullable_to_non_nullable
+              as String?,
+      paymentMode: freezed == paymentMode
+          ? _value.paymentMode
+          : paymentMode // ignore: cast_nullable_to_non_nullable
+              as String?,
       vatCode: null == vatCode
           ? _value.vatCode
           : vatCode // ignore: cast_nullable_to_non_nullable
@@ -159,6 +193,8 @@ class _$YookassaItemImpl implements _YookassaItem {
       {required this.description,
       required this.quantity,
       required this.amount,
+      @JsonKey(name: 'payment_subject') this.paymentSubject,
+      @JsonKey(name: 'payment_mode') this.paymentMode,
       this.vatCode = '1'});
 
   factory _$YookassaItemImpl.fromJson(Map<String, dynamic> json) =>
@@ -171,12 +207,18 @@ class _$YookassaItemImpl implements _YookassaItem {
   @override
   final Amount amount;
   @override
+  @JsonKey(name: 'payment_subject')
+  final String? paymentSubject;
+  @override
+  @JsonKey(name: 'payment_mode')
+  final String? paymentMode;
+  @override
   @JsonKey()
   final String vatCode;
 
   @override
   String toString() {
-    return 'YookassaItem(description: $description, quantity: $quantity, amount: $amount, vatCode: $vatCode)';
+    return 'YookassaItem(description: $description, quantity: $quantity, amount: $amount, paymentSubject: $paymentSubject, paymentMode: $paymentMode, vatCode: $vatCode)';
   }
 
   @override
@@ -189,13 +231,17 @@ class _$YookassaItemImpl implements _YookassaItem {
             (identical(other.quantity, quantity) ||
                 other.quantity == quantity) &&
             (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.paymentSubject, paymentSubject) ||
+                other.paymentSubject == paymentSubject) &&
+            (identical(other.paymentMode, paymentMode) ||
+                other.paymentMode == paymentMode) &&
             (identical(other.vatCode, vatCode) || other.vatCode == vatCode));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, description, quantity, amount, vatCode);
+  int get hashCode => Object.hash(runtimeType, description, quantity, amount,
+      paymentSubject, paymentMode, vatCode);
 
   /// Create a copy of YookassaItem
   /// with the given fields replaced by the non-null parameter values.
@@ -218,6 +264,8 @@ abstract class _YookassaItem implements YookassaItem {
       {required final String description,
       required final String quantity,
       required final Amount amount,
+      @JsonKey(name: 'payment_subject') final String? paymentSubject,
+      @JsonKey(name: 'payment_mode') final String? paymentMode,
       final String vatCode}) = _$YookassaItemImpl;
 
   factory _YookassaItem.fromJson(Map<String, dynamic> json) =
@@ -229,6 +277,12 @@ abstract class _YookassaItem implements YookassaItem {
   String get quantity;
   @override
   Amount get amount;
+  @override
+  @JsonKey(name: 'payment_subject')
+  String? get paymentSubject;
+  @override
+  @JsonKey(name: 'payment_mode')
+  String? get paymentMode;
   @override
   String get vatCode;
 
