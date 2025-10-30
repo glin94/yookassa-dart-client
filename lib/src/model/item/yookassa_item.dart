@@ -14,9 +14,15 @@ abstract class YookassaItem with _$YookassaItem {
     required String quantity,
     required Amount amount,
     @JsonKey(name: 'payment_subject') String? paymentSubject,
-    @JsonKey(name: 'payment_mode') String? paymentMode,
+    @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
     @Default('1') String vatCode,
   }) = _YookassaItem;
 
   factory YookassaItem.fromJson(Map<String, dynamic> json) => _$YookassaItemFromJson(json);
+}
+
+@JsonEnum(fieldRename: FieldRename.snake)
+enum YookassaPaymentMode {
+  fullPayment,
+  fullPrepayment,
 }

@@ -20,7 +20,7 @@ mixin _$YookassaItem {
   @JsonKey(name: 'payment_subject')
   String? get paymentSubject;
   @JsonKey(name: 'payment_mode')
-  String? get paymentMode;
+  YookassaPaymentMode? get paymentMode;
   String get vatCode;
 
   /// Create a copy of YookassaItem
@@ -73,7 +73,7 @@ abstract mixin class $YookassaItemCopyWith<$Res> {
       String quantity,
       Amount amount,
       @JsonKey(name: 'payment_subject') String? paymentSubject,
-      @JsonKey(name: 'payment_mode') String? paymentMode,
+      @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
       String vatCode});
 
   $AmountCopyWith<$Res> get amount;
@@ -118,7 +118,7 @@ class _$YookassaItemCopyWithImpl<$Res> implements $YookassaItemCopyWith<$Res> {
       paymentMode: freezed == paymentMode
           ? _self.paymentMode
           : paymentMode // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as YookassaPaymentMode?,
       vatCode: null == vatCode
           ? _self.vatCode
           : vatCode // ignore: cast_nullable_to_non_nullable
@@ -235,7 +235,7 @@ extension YookassaItemPatterns on YookassaItem {
             String quantity,
             Amount amount,
             @JsonKey(name: 'payment_subject') String? paymentSubject,
-            @JsonKey(name: 'payment_mode') String? paymentMode,
+            @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
             String vatCode)?
         $default, {
     required TResult orElse(),
@@ -270,7 +270,7 @@ extension YookassaItemPatterns on YookassaItem {
             String quantity,
             Amount amount,
             @JsonKey(name: 'payment_subject') String? paymentSubject,
-            @JsonKey(name: 'payment_mode') String? paymentMode,
+            @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
             String vatCode)
         $default,
   ) {
@@ -303,7 +303,7 @@ extension YookassaItemPatterns on YookassaItem {
             String quantity,
             Amount amount,
             @JsonKey(name: 'payment_subject') String? paymentSubject,
-            @JsonKey(name: 'payment_mode') String? paymentMode,
+            @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
             String vatCode)?
         $default,
   ) {
@@ -342,7 +342,7 @@ class _YookassaItem implements YookassaItem {
   final String? paymentSubject;
   @override
   @JsonKey(name: 'payment_mode')
-  final String? paymentMode;
+  final YookassaPaymentMode? paymentMode;
   @override
   @JsonKey()
   final String vatCode;
@@ -403,7 +403,7 @@ abstract mixin class _$YookassaItemCopyWith<$Res>
       String quantity,
       Amount amount,
       @JsonKey(name: 'payment_subject') String? paymentSubject,
-      @JsonKey(name: 'payment_mode') String? paymentMode,
+      @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
       String vatCode});
 
   @override
@@ -450,7 +450,7 @@ class __$YookassaItemCopyWithImpl<$Res>
       paymentMode: freezed == paymentMode
           ? _self.paymentMode
           : paymentMode // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as YookassaPaymentMode?,
       vatCode: null == vatCode
           ? _self.vatCode
           : vatCode // ignore: cast_nullable_to_non_nullable
