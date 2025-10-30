@@ -61,7 +61,7 @@ part 'yookassa_payment.g.dart';
 ///
 /// [merchant_customer_id] - Идентификатор покупателя в вашей системе, например электронная почта или номер телефона. Не более 200 символов. Присутствует, если вы хотите запомнить банковскую карту.
 @Freezed(unionKey: 'status')
-class YookassaPayment with _$YookassaPayment {
+abstract class YookassaPayment with _$YookassaPayment {
   factory YookassaPayment.pending({
     required YookassaPaymentStatus status,
     required String id,

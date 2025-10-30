@@ -6,7 +6,7 @@ part 'yookassa_receipt.g.dart';
 
 /// Объект для формирования чека
 @freezed
-class YookassaReceipt with _$YookassaReceipt {
+abstract class YookassaReceipt with _$YookassaReceipt {
   const factory YookassaReceipt({
     required YookassaCustomer customer,
     required List<YookassaItem> items,

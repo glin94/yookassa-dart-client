@@ -8,7 +8,7 @@ part 'yookassa_item.g.dart';
 /// Информация о товаре
 /// https://yookassa.ru/developers/api#create_payment
 @Freezed()
-class YookassaItem with _$YookassaItem {
+abstract class YookassaItem with _$YookassaItem {
   const factory YookassaItem({
     required String description,
     required String quantity,

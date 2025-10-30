@@ -7,7 +7,7 @@ part 'cancellation_details.g.dart';
 ///
 /// Подробнее про [инициаторов отмены платежа](https://yookassa.ru/developers/payment-acceptance/after-the-payment/declined-payments#cancellation-details-party)
 @Freezed(unionKey: 'party', unionValueCase: FreezedUnionCase.snake)
-class CancellationDetails with _$CancellationDetails {
+abstract class CancellationDetails with _$CancellationDetails {
   @FreezedUnionValue('yoo_money')
   factory CancellationDetails.yookassa({
     required CancelationReason reason,

@@ -1,11 +1,12 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'yookassa_card.freezed.dart';
+
 part 'yookassa_card.g.dart';
 
 /// Данные банковской карты.
 @freezed
-class YookassaCard with _$YookassaCard {
+abstract class YookassaCard with _$YookassaCard {
   factory YookassaCard({
     required String last4,
     required String expiryYear,
@@ -17,8 +18,7 @@ class YookassaCard with _$YookassaCard {
     String? source,
   }) = _YookassaCard;
 
-  factory YookassaCard.fromJson(Map<String, dynamic> json) =>
-      _$YookassaCardFromJson(json);
+  factory YookassaCard.fromJson(Map<String, dynamic> json) => _$YookassaCardFromJson(json);
 }
 
 @JsonEnum(fieldRename: FieldRename.pascal)

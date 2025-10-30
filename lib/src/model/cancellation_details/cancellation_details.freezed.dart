@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,11 +9,8 @@ part of 'cancellation_details.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
 CancellationDetails _$CancellationDetailsFromJson(Map<String, dynamic> json) {
   switch (json['party']) {
     case 'yoo_money':
@@ -31,119 +28,53 @@ CancellationDetails _$CancellationDetailsFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$CancellationDetails {
-  CancelationReason get reason => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(CancelationReason reason) yookassa,
-    required TResult Function(CancelationReason reason) merchant,
-    required TResult Function(CancelationReason reason) paymentNetwork,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(CancelationReason reason)? yookassa,
-    TResult? Function(CancelationReason reason)? merchant,
-    TResult? Function(CancelationReason reason)? paymentNetwork,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(CancelationReason reason)? yookassa,
-    TResult Function(CancelationReason reason)? merchant,
-    TResult Function(CancelationReason reason)? paymentNetwork,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YookassaCancellationDetails value) yookassa,
-    required TResult Function(_MerchantCancellationDetails value) merchant,
-    required TResult Function(_PaymentNetworkCancellationDetails value)
-        paymentNetwork,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YookassaCancellationDetails value)? yookassa,
-    TResult? Function(_MerchantCancellationDetails value)? merchant,
-    TResult? Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YookassaCancellationDetails value)? yookassa,
-    TResult Function(_MerchantCancellationDetails value)? merchant,
-    TResult Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-
-  /// Serializes this CancellationDetails to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  CancelationReason get reason;
 
   /// Create a copy of CancellationDetails
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $CancellationDetailsCopyWith<CancellationDetails> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $CancellationDetailsCopyWith<$Res> {
-  factory $CancellationDetailsCopyWith(
-          CancellationDetails value, $Res Function(CancellationDetails) then) =
-      _$CancellationDetailsCopyWithImpl<$Res, CancellationDetails>;
-  @useResult
-  $Res call({CancelationReason reason});
-}
-
-/// @nodoc
-class _$CancellationDetailsCopyWithImpl<$Res, $Val extends CancellationDetails>
-    implements $CancellationDetailsCopyWith<$Res> {
-  _$CancellationDetailsCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of CancellationDetails
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  $CancellationDetailsCopyWith<CancellationDetails> get copyWith =>
+      _$CancellationDetailsCopyWithImpl<CancellationDetails>(
+          this as CancellationDetails, _$identity);
+
+  /// Serializes this CancellationDetails to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? reason = null,
-  }) {
-    return _then(_value.copyWith(
-      reason: null == reason
-          ? _value.reason
-          : reason // ignore: cast_nullable_to_non_nullable
-              as CancelationReason,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is CancellationDetails &&
+            (identical(other.reason, reason) || other.reason == reason));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, reason);
+
+  @override
+  String toString() {
+    return 'CancellationDetails(reason: $reason)';
   }
 }
 
 /// @nodoc
-abstract class _$$YookassaCancellationDetailsImplCopyWith<$Res>
-    implements $CancellationDetailsCopyWith<$Res> {
-  factory _$$YookassaCancellationDetailsImplCopyWith(
-          _$YookassaCancellationDetailsImpl value,
-          $Res Function(_$YookassaCancellationDetailsImpl) then) =
-      __$$YookassaCancellationDetailsImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $CancellationDetailsCopyWith<$Res> {
+  factory $CancellationDetailsCopyWith(
+          CancellationDetails value, $Res Function(CancellationDetails) _then) =
+      _$CancellationDetailsCopyWithImpl;
   @useResult
   $Res call({CancelationReason reason});
 }
 
 /// @nodoc
-class __$$YookassaCancellationDetailsImplCopyWithImpl<$Res>
-    extends _$CancellationDetailsCopyWithImpl<$Res,
-        _$YookassaCancellationDetailsImpl>
-    implements _$$YookassaCancellationDetailsImplCopyWith<$Res> {
-  __$$YookassaCancellationDetailsImplCopyWithImpl(
-      _$YookassaCancellationDetailsImpl _value,
-      $Res Function(_$YookassaCancellationDetailsImpl) _then)
-      : super(_value, _then);
+class _$CancellationDetailsCopyWithImpl<$Res>
+    implements $CancellationDetailsCopyWith<$Res> {
+  _$CancellationDetailsCopyWithImpl(this._self, this._then);
+
+  final CancellationDetails _self;
+  final $Res Function(CancellationDetails) _then;
 
   /// Create a copy of CancellationDetails
   /// with the given fields replaced by the non-null parameter values.
@@ -152,186 +83,287 @@ class __$$YookassaCancellationDetailsImplCopyWithImpl<$Res>
   $Res call({
     Object? reason = null,
   }) {
-    return _then(_$YookassaCancellationDetailsImpl(
+    return _then(_self.copyWith(
       reason: null == reason
-          ? _value.reason
+          ? _self.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as CancelationReason,
     ));
   }
 }
 
+/// Adds pattern-matching-related methods to [CancellationDetails].
+extension CancellationDetailsPatterns on CancellationDetails {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_YookassaCancellationDetails value)? yookassa,
+    TResult Function(_MerchantCancellationDetails value)? merchant,
+    TResult Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaCancellationDetails() when yookassa != null:
+        return yookassa(_that);
+      case _MerchantCancellationDetails() when merchant != null:
+        return merchant(_that);
+      case _PaymentNetworkCancellationDetails() when paymentNetwork != null:
+        return paymentNetwork(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_YookassaCancellationDetails value) yookassa,
+    required TResult Function(_MerchantCancellationDetails value) merchant,
+    required TResult Function(_PaymentNetworkCancellationDetails value)
+        paymentNetwork,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaCancellationDetails():
+        return yookassa(_that);
+      case _MerchantCancellationDetails():
+        return merchant(_that);
+      case _PaymentNetworkCancellationDetails():
+        return paymentNetwork(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_YookassaCancellationDetails value)? yookassa,
+    TResult? Function(_MerchantCancellationDetails value)? merchant,
+    TResult? Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaCancellationDetails() when yookassa != null:
+        return yookassa(_that);
+      case _MerchantCancellationDetails() when merchant != null:
+        return merchant(_that);
+      case _PaymentNetworkCancellationDetails() when paymentNetwork != null:
+        return paymentNetwork(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(CancelationReason reason)? yookassa,
+    TResult Function(CancelationReason reason)? merchant,
+    TResult Function(CancelationReason reason)? paymentNetwork,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaCancellationDetails() when yookassa != null:
+        return yookassa(_that.reason);
+      case _MerchantCancellationDetails() when merchant != null:
+        return merchant(_that.reason);
+      case _PaymentNetworkCancellationDetails() when paymentNetwork != null:
+        return paymentNetwork(_that.reason);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(CancelationReason reason) yookassa,
+    required TResult Function(CancelationReason reason) merchant,
+    required TResult Function(CancelationReason reason) paymentNetwork,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaCancellationDetails():
+        return yookassa(_that.reason);
+      case _MerchantCancellationDetails():
+        return merchant(_that.reason);
+      case _PaymentNetworkCancellationDetails():
+        return paymentNetwork(_that.reason);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(CancelationReason reason)? yookassa,
+    TResult? Function(CancelationReason reason)? merchant,
+    TResult? Function(CancelationReason reason)? paymentNetwork,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaCancellationDetails() when yookassa != null:
+        return yookassa(_that.reason);
+      case _MerchantCancellationDetails() when merchant != null:
+        return merchant(_that.reason);
+      case _PaymentNetworkCancellationDetails() when paymentNetwork != null:
+        return paymentNetwork(_that.reason);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
-class _$YookassaCancellationDetailsImpl
-    implements _YookassaCancellationDetails {
-  _$YookassaCancellationDetailsImpl({required this.reason, final String? $type})
+class _YookassaCancellationDetails implements CancellationDetails {
+  _YookassaCancellationDetails({required this.reason, final String? $type})
       : $type = $type ?? 'yoo_money';
-
-  factory _$YookassaCancellationDetailsImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$YookassaCancellationDetailsImplFromJson(json);
+  factory _YookassaCancellationDetails.fromJson(Map<String, dynamic> json) =>
+      _$YookassaCancellationDetailsFromJson(json);
 
   @override
   final CancelationReason reason;
 
   @JsonKey(name: 'party')
   final String $type;
+
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$YookassaCancellationDetailsCopyWith<_YookassaCancellationDetails>
+      get copyWith => __$YookassaCancellationDetailsCopyWithImpl<
+          _YookassaCancellationDetails>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$YookassaCancellationDetailsToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _YookassaCancellationDetails &&
+            (identical(other.reason, reason) || other.reason == reason));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, reason);
 
   @override
   String toString() {
     return 'CancellationDetails.yookassa(reason: $reason)';
   }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$YookassaCancellationDetailsImpl &&
-            (identical(other.reason, reason) || other.reason == reason));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, reason);
-
-  /// Create a copy of CancellationDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$YookassaCancellationDetailsImplCopyWith<_$YookassaCancellationDetailsImpl>
-      get copyWith => __$$YookassaCancellationDetailsImplCopyWithImpl<
-          _$YookassaCancellationDetailsImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(CancelationReason reason) yookassa,
-    required TResult Function(CancelationReason reason) merchant,
-    required TResult Function(CancelationReason reason) paymentNetwork,
-  }) {
-    return yookassa(reason);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(CancelationReason reason)? yookassa,
-    TResult? Function(CancelationReason reason)? merchant,
-    TResult? Function(CancelationReason reason)? paymentNetwork,
-  }) {
-    return yookassa?.call(reason);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(CancelationReason reason)? yookassa,
-    TResult Function(CancelationReason reason)? merchant,
-    TResult Function(CancelationReason reason)? paymentNetwork,
-    required TResult orElse(),
-  }) {
-    if (yookassa != null) {
-      return yookassa(reason);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YookassaCancellationDetails value) yookassa,
-    required TResult Function(_MerchantCancellationDetails value) merchant,
-    required TResult Function(_PaymentNetworkCancellationDetails value)
-        paymentNetwork,
-  }) {
-    return yookassa(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YookassaCancellationDetails value)? yookassa,
-    TResult? Function(_MerchantCancellationDetails value)? merchant,
-    TResult? Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-  }) {
-    return yookassa?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YookassaCancellationDetails value)? yookassa,
-    TResult Function(_MerchantCancellationDetails value)? merchant,
-    TResult Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-    required TResult orElse(),
-  }) {
-    if (yookassa != null) {
-      return yookassa(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$YookassaCancellationDetailsImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _YookassaCancellationDetails implements CancellationDetails {
-  factory _YookassaCancellationDetails(
-          {required final CancelationReason reason}) =
-      _$YookassaCancellationDetailsImpl;
-
-  factory _YookassaCancellationDetails.fromJson(Map<String, dynamic> json) =
-      _$YookassaCancellationDetailsImpl.fromJson;
-
-  @override
-  CancelationReason get reason;
-
-  /// Create a copy of CancellationDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$YookassaCancellationDetailsImplCopyWith<_$YookassaCancellationDetailsImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$MerchantCancellationDetailsImplCopyWith<$Res>
+abstract mixin class _$YookassaCancellationDetailsCopyWith<$Res>
     implements $CancellationDetailsCopyWith<$Res> {
-  factory _$$MerchantCancellationDetailsImplCopyWith(
-          _$MerchantCancellationDetailsImpl value,
-          $Res Function(_$MerchantCancellationDetailsImpl) then) =
-      __$$MerchantCancellationDetailsImplCopyWithImpl<$Res>;
+  factory _$YookassaCancellationDetailsCopyWith(
+          _YookassaCancellationDetails value,
+          $Res Function(_YookassaCancellationDetails) _then) =
+      __$YookassaCancellationDetailsCopyWithImpl;
   @override
   @useResult
   $Res call({CancelationReason reason});
 }
 
 /// @nodoc
-class __$$MerchantCancellationDetailsImplCopyWithImpl<$Res>
-    extends _$CancellationDetailsCopyWithImpl<$Res,
-        _$MerchantCancellationDetailsImpl>
-    implements _$$MerchantCancellationDetailsImplCopyWith<$Res> {
-  __$$MerchantCancellationDetailsImplCopyWithImpl(
-      _$MerchantCancellationDetailsImpl _value,
-      $Res Function(_$MerchantCancellationDetailsImpl) _then)
-      : super(_value, _then);
+class __$YookassaCancellationDetailsCopyWithImpl<$Res>
+    implements _$YookassaCancellationDetailsCopyWith<$Res> {
+  __$YookassaCancellationDetailsCopyWithImpl(this._self, this._then);
+
+  final _YookassaCancellationDetails _self;
+  final $Res Function(_YookassaCancellationDetails) _then;
 
   /// Create a copy of CancellationDetails
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
     Object? reason = null,
   }) {
-    return _then(_$MerchantCancellationDetailsImpl(
+    return _then(_YookassaCancellationDetails(
       reason: null == reason
-          ? _value.reason
+          ? _self.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as CancelationReason,
     ));
@@ -340,175 +372,82 @@ class __$$MerchantCancellationDetailsImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$MerchantCancellationDetailsImpl
-    implements _MerchantCancellationDetails {
-  _$MerchantCancellationDetailsImpl({required this.reason, final String? $type})
+class _MerchantCancellationDetails implements CancellationDetails {
+  _MerchantCancellationDetails({required this.reason, final String? $type})
       : $type = $type ?? 'merchant';
-
-  factory _$MerchantCancellationDetailsImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$MerchantCancellationDetailsImplFromJson(json);
+  factory _MerchantCancellationDetails.fromJson(Map<String, dynamic> json) =>
+      _$MerchantCancellationDetailsFromJson(json);
 
   @override
   final CancelationReason reason;
 
   @JsonKey(name: 'party')
   final String $type;
+
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$MerchantCancellationDetailsCopyWith<_MerchantCancellationDetails>
+      get copyWith => __$MerchantCancellationDetailsCopyWithImpl<
+          _MerchantCancellationDetails>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$MerchantCancellationDetailsToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _MerchantCancellationDetails &&
+            (identical(other.reason, reason) || other.reason == reason));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, reason);
 
   @override
   String toString() {
     return 'CancellationDetails.merchant(reason: $reason)';
   }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$MerchantCancellationDetailsImpl &&
-            (identical(other.reason, reason) || other.reason == reason));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, reason);
-
-  /// Create a copy of CancellationDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$MerchantCancellationDetailsImplCopyWith<_$MerchantCancellationDetailsImpl>
-      get copyWith => __$$MerchantCancellationDetailsImplCopyWithImpl<
-          _$MerchantCancellationDetailsImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(CancelationReason reason) yookassa,
-    required TResult Function(CancelationReason reason) merchant,
-    required TResult Function(CancelationReason reason) paymentNetwork,
-  }) {
-    return merchant(reason);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(CancelationReason reason)? yookassa,
-    TResult? Function(CancelationReason reason)? merchant,
-    TResult? Function(CancelationReason reason)? paymentNetwork,
-  }) {
-    return merchant?.call(reason);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(CancelationReason reason)? yookassa,
-    TResult Function(CancelationReason reason)? merchant,
-    TResult Function(CancelationReason reason)? paymentNetwork,
-    required TResult orElse(),
-  }) {
-    if (merchant != null) {
-      return merchant(reason);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YookassaCancellationDetails value) yookassa,
-    required TResult Function(_MerchantCancellationDetails value) merchant,
-    required TResult Function(_PaymentNetworkCancellationDetails value)
-        paymentNetwork,
-  }) {
-    return merchant(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YookassaCancellationDetails value)? yookassa,
-    TResult? Function(_MerchantCancellationDetails value)? merchant,
-    TResult? Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-  }) {
-    return merchant?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YookassaCancellationDetails value)? yookassa,
-    TResult Function(_MerchantCancellationDetails value)? merchant,
-    TResult Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-    required TResult orElse(),
-  }) {
-    if (merchant != null) {
-      return merchant(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$MerchantCancellationDetailsImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _MerchantCancellationDetails implements CancellationDetails {
-  factory _MerchantCancellationDetails(
-          {required final CancelationReason reason}) =
-      _$MerchantCancellationDetailsImpl;
-
-  factory _MerchantCancellationDetails.fromJson(Map<String, dynamic> json) =
-      _$MerchantCancellationDetailsImpl.fromJson;
-
-  @override
-  CancelationReason get reason;
-
-  /// Create a copy of CancellationDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$MerchantCancellationDetailsImplCopyWith<_$MerchantCancellationDetailsImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$PaymentNetworkCancellationDetailsImplCopyWith<$Res>
+abstract mixin class _$MerchantCancellationDetailsCopyWith<$Res>
     implements $CancellationDetailsCopyWith<$Res> {
-  factory _$$PaymentNetworkCancellationDetailsImplCopyWith(
-          _$PaymentNetworkCancellationDetailsImpl value,
-          $Res Function(_$PaymentNetworkCancellationDetailsImpl) then) =
-      __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<$Res>;
+  factory _$MerchantCancellationDetailsCopyWith(
+          _MerchantCancellationDetails value,
+          $Res Function(_MerchantCancellationDetails) _then) =
+      __$MerchantCancellationDetailsCopyWithImpl;
   @override
   @useResult
   $Res call({CancelationReason reason});
 }
 
 /// @nodoc
-class __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<$Res>
-    extends _$CancellationDetailsCopyWithImpl<$Res,
-        _$PaymentNetworkCancellationDetailsImpl>
-    implements _$$PaymentNetworkCancellationDetailsImplCopyWith<$Res> {
-  __$$PaymentNetworkCancellationDetailsImplCopyWithImpl(
-      _$PaymentNetworkCancellationDetailsImpl _value,
-      $Res Function(_$PaymentNetworkCancellationDetailsImpl) _then)
-      : super(_value, _then);
+class __$MerchantCancellationDetailsCopyWithImpl<$Res>
+    implements _$MerchantCancellationDetailsCopyWith<$Res> {
+  __$MerchantCancellationDetailsCopyWithImpl(this._self, this._then);
+
+  final _MerchantCancellationDetails _self;
+  final $Res Function(_MerchantCancellationDetails) _then;
 
   /// Create a copy of CancellationDetails
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
     Object? reason = null,
   }) {
-    return _then(_$PaymentNetworkCancellationDetailsImpl(
+    return _then(_MerchantCancellationDetails(
       reason: null == reason
-          ? _value.reason
+          ? _self.reason
           : reason // ignore: cast_nullable_to_non_nullable
               as CancelationReason,
     ));
@@ -517,15 +456,13 @@ class __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$PaymentNetworkCancellationDetailsImpl
-    implements _PaymentNetworkCancellationDetails {
-  _$PaymentNetworkCancellationDetailsImpl(
+class _PaymentNetworkCancellationDetails implements CancellationDetails {
+  _PaymentNetworkCancellationDetails(
       {required this.reason, final String? $type})
       : $type = $type ?? 'payment_network';
-
-  factory _$PaymentNetworkCancellationDetailsImpl.fromJson(
+  factory _PaymentNetworkCancellationDetails.fromJson(
           Map<String, dynamic> json) =>
-      _$$PaymentNetworkCancellationDetailsImplFromJson(json);
+      _$PaymentNetworkCancellationDetailsFromJson(json);
 
   @override
   final CancelationReason reason;
@@ -533,16 +470,28 @@ class _$PaymentNetworkCancellationDetailsImpl
   @JsonKey(name: 'party')
   final String $type;
 
+  /// Create a copy of CancellationDetails
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'CancellationDetails.paymentNetwork(reason: $reason)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$PaymentNetworkCancellationDetailsCopyWith<
+          _PaymentNetworkCancellationDetails>
+      get copyWith => __$PaymentNetworkCancellationDetailsCopyWithImpl<
+          _PaymentNetworkCancellationDetails>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$PaymentNetworkCancellationDetailsToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PaymentNetworkCancellationDetailsImpl &&
+            other is _PaymentNetworkCancellationDetails &&
             (identical(other.reason, reason) || other.reason == reason));
   }
 
@@ -550,111 +499,46 @@ class _$PaymentNetworkCancellationDetailsImpl
   @override
   int get hashCode => Object.hash(runtimeType, reason);
 
+  @override
+  String toString() {
+    return 'CancellationDetails.paymentNetwork(reason: $reason)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$PaymentNetworkCancellationDetailsCopyWith<$Res>
+    implements $CancellationDetailsCopyWith<$Res> {
+  factory _$PaymentNetworkCancellationDetailsCopyWith(
+          _PaymentNetworkCancellationDetails value,
+          $Res Function(_PaymentNetworkCancellationDetails) _then) =
+      __$PaymentNetworkCancellationDetailsCopyWithImpl;
+  @override
+  @useResult
+  $Res call({CancelationReason reason});
+}
+
+/// @nodoc
+class __$PaymentNetworkCancellationDetailsCopyWithImpl<$Res>
+    implements _$PaymentNetworkCancellationDetailsCopyWith<$Res> {
+  __$PaymentNetworkCancellationDetailsCopyWithImpl(this._self, this._then);
+
+  final _PaymentNetworkCancellationDetails _self;
+  final $Res Function(_PaymentNetworkCancellationDetails) _then;
+
   /// Create a copy of CancellationDetails
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$PaymentNetworkCancellationDetailsImplCopyWith<
-          _$PaymentNetworkCancellationDetailsImpl>
-      get copyWith => __$$PaymentNetworkCancellationDetailsImplCopyWithImpl<
-          _$PaymentNetworkCancellationDetailsImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(CancelationReason reason) yookassa,
-    required TResult Function(CancelationReason reason) merchant,
-    required TResult Function(CancelationReason reason) paymentNetwork,
+  $Res call({
+    Object? reason = null,
   }) {
-    return paymentNetwork(reason);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(CancelationReason reason)? yookassa,
-    TResult? Function(CancelationReason reason)? merchant,
-    TResult? Function(CancelationReason reason)? paymentNetwork,
-  }) {
-    return paymentNetwork?.call(reason);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(CancelationReason reason)? yookassa,
-    TResult Function(CancelationReason reason)? merchant,
-    TResult Function(CancelationReason reason)? paymentNetwork,
-    required TResult orElse(),
-  }) {
-    if (paymentNetwork != null) {
-      return paymentNetwork(reason);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YookassaCancellationDetails value) yookassa,
-    required TResult Function(_MerchantCancellationDetails value) merchant,
-    required TResult Function(_PaymentNetworkCancellationDetails value)
-        paymentNetwork,
-  }) {
-    return paymentNetwork(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YookassaCancellationDetails value)? yookassa,
-    TResult? Function(_MerchantCancellationDetails value)? merchant,
-    TResult? Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-  }) {
-    return paymentNetwork?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YookassaCancellationDetails value)? yookassa,
-    TResult Function(_MerchantCancellationDetails value)? merchant,
-    TResult Function(_PaymentNetworkCancellationDetails value)? paymentNetwork,
-    required TResult orElse(),
-  }) {
-    if (paymentNetwork != null) {
-      return paymentNetwork(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$PaymentNetworkCancellationDetailsImplToJson(
-      this,
-    );
+    return _then(_PaymentNetworkCancellationDetails(
+      reason: null == reason
+          ? _self.reason
+          : reason // ignore: cast_nullable_to_non_nullable
+              as CancelationReason,
+    ));
   }
 }
 
-abstract class _PaymentNetworkCancellationDetails
-    implements CancellationDetails {
-  factory _PaymentNetworkCancellationDetails(
-          {required final CancelationReason reason}) =
-      _$PaymentNetworkCancellationDetailsImpl;
-
-  factory _PaymentNetworkCancellationDetails.fromJson(
-          Map<String, dynamic> json) =
-      _$PaymentNetworkCancellationDetailsImpl.fromJson;
-
-  @override
-  CancelationReason get reason;
-
-  /// Create a copy of CancellationDetails
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PaymentNetworkCancellationDetailsImplCopyWith<
-          _$PaymentNetworkCancellationDetailsImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
+// dart format on

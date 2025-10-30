@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,11 +9,8 @@ part of 'yookassa_confirmation.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
 YookassaConfirmation _$YookassaConfirmationFromJson(Map<String, dynamic> json) {
   switch (json['type']) {
     case 'embedded':
@@ -35,38 +32,202 @@ YookassaConfirmation _$YookassaConfirmationFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$YookassaConfirmation {
-  String? get locale => throw _privateConstructorUsedError;
+  String? get locale;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $YookassaConfirmationCopyWith<YookassaConfirmation> get copyWith =>
+      _$YookassaConfirmationCopyWithImpl<YookassaConfirmation>(
+          this as YookassaConfirmation, _$identity);
+
+  /// Serializes this YookassaConfirmation to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is YookassaConfirmation &&
+            (identical(other.locale, locale) || other.locale == locale));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, locale);
+
+  @override
+  String toString() {
+    return 'YookassaConfirmation(locale: $locale)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $YookassaConfirmationCopyWith<$Res> {
+  factory $YookassaConfirmationCopyWith(YookassaConfirmation value,
+          $Res Function(YookassaConfirmation) _then) =
+      _$YookassaConfirmationCopyWithImpl;
+  @useResult
+  $Res call({String? locale});
+}
+
+/// @nodoc
+class _$YookassaConfirmationCopyWithImpl<$Res>
+    implements $YookassaConfirmationCopyWith<$Res> {
+  _$YookassaConfirmationCopyWithImpl(this._self, this._then);
+
+  final YookassaConfirmation _self;
+  final $Res Function(YookassaConfirmation) _then;
+
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? locale = freezed,
+  }) {
+    return _then(_self.copyWith(
+      locale: freezed == locale
+          ? _self.locale
+          : locale // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// Adds pattern-matching-related methods to [YookassaConfirmation].
+extension YookassaConfirmationPatterns on YookassaConfirmation {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(String? locale, String? confirmationToken)
-        embedded,
-    required TResult Function(String? locale) external,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
+    TResult Function(_ExternalYookassaConfirmation value)? external,
+    TResult Function(_MobileApplicationYookassaConfirmation value)?
         mobileApplication,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)
-        qr,
-    required TResult Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)
-        redirect,
-  }) =>
-      throw _privateConstructorUsedError;
+    TResult Function(_QrCodeYookassaConfirmation value)? qr,
+    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EmbeddedYookassaConfirmation() when embedded != null:
+        return embedded(_that);
+      case _ExternalYookassaConfirmation() when external != null:
+        return external(_that);
+      case _MobileApplicationYookassaConfirmation()
+          when mobileApplication != null:
+        return mobileApplication(_that);
+      case _QrCodeYookassaConfirmation() when qr != null:
+        return qr(_that);
+      case _RedirectCodeYookassaConfirmation() when redirect != null:
+        return redirect(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? locale, String? confirmationToken)? embedded,
-    TResult? Function(String? locale)? external,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
+  TResult map<TResult extends Object?>({
+    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
+    required TResult Function(_ExternalYookassaConfirmation value) external,
+    required TResult Function(_MobileApplicationYookassaConfirmation value)
         mobileApplication,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult? Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)?
-        redirect,
-  }) =>
-      throw _privateConstructorUsedError;
+    required TResult Function(_QrCodeYookassaConfirmation value) qr,
+    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EmbeddedYookassaConfirmation():
+        return embedded(_that);
+      case _ExternalYookassaConfirmation():
+        return external(_that);
+      case _MobileApplicationYookassaConfirmation():
+        return mobileApplication(_that);
+      case _QrCodeYookassaConfirmation():
+        return qr(_that);
+      case _RedirectCodeYookassaConfirmation():
+        return redirect(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
+    TResult? Function(_ExternalYookassaConfirmation value)? external,
+    TResult? Function(_MobileApplicationYookassaConfirmation value)?
+        mobileApplication,
+    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
+    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EmbeddedYookassaConfirmation() when embedded != null:
+        return embedded(_that);
+      case _ExternalYookassaConfirmation() when external != null:
+        return external(_that);
+      case _MobileApplicationYookassaConfirmation()
+          when mobileApplication != null:
+        return mobileApplication(_that);
+      case _QrCodeYookassaConfirmation() when qr != null:
+        return qr(_that);
+      case _RedirectCodeYookassaConfirmation() when redirect != null:
+        return redirect(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String? locale, String? confirmationToken)? embedded,
@@ -81,160 +242,159 @@ mixin _$YookassaConfirmation {
             bool? enforce)?
         redirect,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
-    required TResult Function(_ExternalYookassaConfirmation value) external,
-    required TResult Function(_MobileApplicationYookassaConfirmation value)
-        mobileApplication,
-    required TResult Function(_QrCodeYookassaConfirmation value) qr,
-    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult? Function(_ExternalYookassaConfirmation value)? external,
-    TResult? Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult Function(_ExternalYookassaConfirmation value)? external,
-    TResult Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-
-  /// Serializes this YookassaConfirmation to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $YookassaConfirmationCopyWith<YookassaConfirmation> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $YookassaConfirmationCopyWith<$Res> {
-  factory $YookassaConfirmationCopyWith(YookassaConfirmation value,
-          $Res Function(YookassaConfirmation) then) =
-      _$YookassaConfirmationCopyWithImpl<$Res, YookassaConfirmation>;
-  @useResult
-  $Res call({String? locale});
-}
-
-/// @nodoc
-class _$YookassaConfirmationCopyWithImpl<$Res,
-        $Val extends YookassaConfirmation>
-    implements $YookassaConfirmationCopyWith<$Res> {
-  _$YookassaConfirmationCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? locale = freezed,
   }) {
-    return _then(_value.copyWith(
-      locale: freezed == locale
-          ? _value.locale
-          : locale // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    final _that = this;
+    switch (_that) {
+      case _EmbeddedYookassaConfirmation() when embedded != null:
+        return embedded(_that.locale, _that.confirmationToken);
+      case _ExternalYookassaConfirmation() when external != null:
+        return external(_that.locale);
+      case _MobileApplicationYookassaConfirmation()
+          when mobileApplication != null:
+        return mobileApplication(
+            _that.locale, _that.returnUrl, _that.confirmationUrl);
+      case _QrCodeYookassaConfirmation() when qr != null:
+        return qr(_that.locale, _that.returnUrl, _that.confirmationData);
+      case _RedirectCodeYookassaConfirmation() when redirect != null:
+        return redirect(_that.locale, _that.returnUrl, _that.confirmationUrl,
+            _that.enforce);
+      case _:
+        return orElse();
+    }
   }
-}
 
-/// @nodoc
-abstract class _$$EmbeddedYookassaConfirmationImplCopyWith<$Res>
-    implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$EmbeddedYookassaConfirmationImplCopyWith(
-          _$EmbeddedYookassaConfirmationImpl value,
-          $Res Function(_$EmbeddedYookassaConfirmationImpl) then) =
-      __$$EmbeddedYookassaConfirmationImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String? locale, String? confirmationToken});
-}
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
 
-/// @nodoc
-class __$$EmbeddedYookassaConfirmationImplCopyWithImpl<$Res>
-    extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$EmbeddedYookassaConfirmationImpl>
-    implements _$$EmbeddedYookassaConfirmationImplCopyWith<$Res> {
-  __$$EmbeddedYookassaConfirmationImplCopyWithImpl(
-      _$EmbeddedYookassaConfirmationImpl _value,
-      $Res Function(_$EmbeddedYookassaConfirmationImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? locale = freezed,
-    Object? confirmationToken = freezed,
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String? locale, String? confirmationToken)
+        embedded,
+    required TResult Function(String? locale) external,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationUrl)
+        mobileApplication,
+    required TResult Function(
+            String? locale, String? returnUrl, String? confirmationData)
+        qr,
+    required TResult Function(String? locale, String? returnUrl,
+            String? confirmationUrl, bool? enforce)
+        redirect,
   }) {
-    return _then(_$EmbeddedYookassaConfirmationImpl(
-      locale: freezed == locale
-          ? _value.locale
-          : locale // ignore: cast_nullable_to_non_nullable
-              as String?,
-      confirmationToken: freezed == confirmationToken
-          ? _value.confirmationToken
-          : confirmationToken // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    final _that = this;
+    switch (_that) {
+      case _EmbeddedYookassaConfirmation():
+        return embedded(_that.locale, _that.confirmationToken);
+      case _ExternalYookassaConfirmation():
+        return external(_that.locale);
+      case _MobileApplicationYookassaConfirmation():
+        return mobileApplication(
+            _that.locale, _that.returnUrl, _that.confirmationUrl);
+      case _QrCodeYookassaConfirmation():
+        return qr(_that.locale, _that.returnUrl, _that.confirmationData);
+      case _RedirectCodeYookassaConfirmation():
+        return redirect(_that.locale, _that.returnUrl, _that.confirmationUrl,
+            _that.enforce);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String? locale, String? confirmationToken)? embedded,
+    TResult? Function(String? locale)? external,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationUrl)?
+        mobileApplication,
+    TResult? Function(
+            String? locale, String? returnUrl, String? confirmationData)?
+        qr,
+    TResult? Function(String? locale, String? returnUrl,
+            String? confirmationUrl, bool? enforce)?
+        redirect,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _EmbeddedYookassaConfirmation() when embedded != null:
+        return embedded(_that.locale, _that.confirmationToken);
+      case _ExternalYookassaConfirmation() when external != null:
+        return external(_that.locale);
+      case _MobileApplicationYookassaConfirmation()
+          when mobileApplication != null:
+        return mobileApplication(
+            _that.locale, _that.returnUrl, _that.confirmationUrl);
+      case _QrCodeYookassaConfirmation() when qr != null:
+        return qr(_that.locale, _that.returnUrl, _that.confirmationData);
+      case _RedirectCodeYookassaConfirmation() when redirect != null:
+        return redirect(_that.locale, _that.returnUrl, _that.confirmationUrl,
+            _that.enforce);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$EmbeddedYookassaConfirmationImpl
-    implements _EmbeddedYookassaConfirmation {
-  const _$EmbeddedYookassaConfirmationImpl(
+class _EmbeddedYookassaConfirmation implements YookassaConfirmation {
+  const _EmbeddedYookassaConfirmation(
       {this.locale = 'ru_RU', this.confirmationToken, final String? $type})
       : $type = $type ?? 'embedded';
-
-  factory _$EmbeddedYookassaConfirmationImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$EmbeddedYookassaConfirmationImplFromJson(json);
+  factory _EmbeddedYookassaConfirmation.fromJson(Map<String, dynamic> json) =>
+      _$EmbeddedYookassaConfirmationFromJson(json);
 
   @override
   @JsonKey()
   final String? locale;
-  @override
   final String? confirmationToken;
 
   @JsonKey(name: 'type')
   final String $type;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'YookassaConfirmation.embedded(locale: $locale, confirmationToken: $confirmationToken)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$EmbeddedYookassaConfirmationCopyWith<_EmbeddedYookassaConfirmation>
+      get copyWith => __$EmbeddedYookassaConfirmationCopyWithImpl<
+          _EmbeddedYookassaConfirmation>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$EmbeddedYookassaConfirmationToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$EmbeddedYookassaConfirmationImpl &&
+            other is _EmbeddedYookassaConfirmation &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.confirmationToken, confirmationToken) ||
                 other.confirmationToken == confirmationToken));
@@ -244,180 +404,48 @@ class _$EmbeddedYookassaConfirmationImpl
   @override
   int get hashCode => Object.hash(runtimeType, locale, confirmationToken);
 
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$EmbeddedYookassaConfirmationImplCopyWith<
-          _$EmbeddedYookassaConfirmationImpl>
-      get copyWith => __$$EmbeddedYookassaConfirmationImplCopyWithImpl<
-          _$EmbeddedYookassaConfirmationImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(String? locale, String? confirmationToken)
-        embedded,
-    required TResult Function(String? locale) external,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)
-        mobileApplication,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)
-        qr,
-    required TResult Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)
-        redirect,
-  }) {
-    return embedded(locale, confirmationToken);
+  String toString() {
+    return 'YookassaConfirmation.embedded(locale: $locale, confirmationToken: $confirmationToken)';
   }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? locale, String? confirmationToken)? embedded,
-    TResult? Function(String? locale)? external,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult? Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)?
-        redirect,
-  }) {
-    return embedded?.call(locale, confirmationToken);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? locale, String? confirmationToken)? embedded,
-    TResult Function(String? locale)? external,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
-            bool? enforce)?
-        redirect,
-    required TResult orElse(),
-  }) {
-    if (embedded != null) {
-      return embedded(locale, confirmationToken);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
-    required TResult Function(_ExternalYookassaConfirmation value) external,
-    required TResult Function(_MobileApplicationYookassaConfirmation value)
-        mobileApplication,
-    required TResult Function(_QrCodeYookassaConfirmation value) qr,
-    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
-  }) {
-    return embedded(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult? Function(_ExternalYookassaConfirmation value)? external,
-    TResult? Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
-  }) {
-    return embedded?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult Function(_ExternalYookassaConfirmation value)? external,
-    TResult Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
-    required TResult orElse(),
-  }) {
-    if (embedded != null) {
-      return embedded(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$EmbeddedYookassaConfirmationImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _EmbeddedYookassaConfirmation implements YookassaConfirmation {
-  const factory _EmbeddedYookassaConfirmation(
-      {final String? locale,
-      final String? confirmationToken}) = _$EmbeddedYookassaConfirmationImpl;
-
-  factory _EmbeddedYookassaConfirmation.fromJson(Map<String, dynamic> json) =
-      _$EmbeddedYookassaConfirmationImpl.fromJson;
-
-  @override
-  String? get locale;
-  String? get confirmationToken;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$EmbeddedYookassaConfirmationImplCopyWith<
-          _$EmbeddedYookassaConfirmationImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ExternalYookassaConfirmationImplCopyWith<$Res>
+abstract mixin class _$EmbeddedYookassaConfirmationCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$ExternalYookassaConfirmationImplCopyWith(
-          _$ExternalYookassaConfirmationImpl value,
-          $Res Function(_$ExternalYookassaConfirmationImpl) then) =
-      __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>;
+  factory _$EmbeddedYookassaConfirmationCopyWith(
+          _EmbeddedYookassaConfirmation value,
+          $Res Function(_EmbeddedYookassaConfirmation) _then) =
+      __$EmbeddedYookassaConfirmationCopyWithImpl;
   @override
   @useResult
-  $Res call({String? locale});
+  $Res call({String? locale, String? confirmationToken});
 }
 
 /// @nodoc
-class __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>
-    extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$ExternalYookassaConfirmationImpl>
-    implements _$$ExternalYookassaConfirmationImplCopyWith<$Res> {
-  __$$ExternalYookassaConfirmationImplCopyWithImpl(
-      _$ExternalYookassaConfirmationImpl _value,
-      $Res Function(_$ExternalYookassaConfirmationImpl) _then)
-      : super(_value, _then);
+class __$EmbeddedYookassaConfirmationCopyWithImpl<$Res>
+    implements _$EmbeddedYookassaConfirmationCopyWith<$Res> {
+  __$EmbeddedYookassaConfirmationCopyWithImpl(this._self, this._then);
+
+  final _EmbeddedYookassaConfirmation _self;
+  final $Res Function(_EmbeddedYookassaConfirmation) _then;
 
   /// Create a copy of YookassaConfirmation
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
     Object? locale = freezed,
+    Object? confirmationToken = freezed,
   }) {
-    return _then(_$ExternalYookassaConfirmationImpl(
+    return _then(_EmbeddedYookassaConfirmation(
       locale: freezed == locale
-          ? _value.locale
+          ? _self.locale
           : locale // ignore: cast_nullable_to_non_nullable
+              as String?,
+      confirmationToken: freezed == confirmationToken
+          ? _self.confirmationToken
+          : confirmationToken // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -425,15 +453,12 @@ class __$$ExternalYookassaConfirmationImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ExternalYookassaConfirmationImpl
-    implements _ExternalYookassaConfirmation {
-  const _$ExternalYookassaConfirmationImpl(
+class _ExternalYookassaConfirmation implements YookassaConfirmation {
+  const _ExternalYookassaConfirmation(
       {this.locale = 'ru_RU', final String? $type})
       : $type = $type ?? 'external';
-
-  factory _$ExternalYookassaConfirmationImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$ExternalYookassaConfirmationImplFromJson(json);
+  factory _ExternalYookassaConfirmation.fromJson(Map<String, dynamic> json) =>
+      _$ExternalYookassaConfirmationFromJson(json);
 
   @override
   @JsonKey()
@@ -442,16 +467,27 @@ class _$ExternalYookassaConfirmationImpl
   @JsonKey(name: 'type')
   final String $type;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'YookassaConfirmation.external(locale: $locale)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ExternalYookassaConfirmationCopyWith<_ExternalYookassaConfirmation>
+      get copyWith => __$ExternalYookassaConfirmationCopyWithImpl<
+          _ExternalYookassaConfirmation>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ExternalYookassaConfirmationToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ExternalYookassaConfirmationImpl &&
+            other is _ExternalYookassaConfirmation &&
             (identical(other.locale, locale) || other.locale == locale));
   }
 
@@ -459,188 +495,43 @@ class _$ExternalYookassaConfirmationImpl
   @override
   int get hashCode => Object.hash(runtimeType, locale);
 
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ExternalYookassaConfirmationImplCopyWith<
-          _$ExternalYookassaConfirmationImpl>
-      get copyWith => __$$ExternalYookassaConfirmationImplCopyWithImpl<
-          _$ExternalYookassaConfirmationImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(String? locale, String? confirmationToken)
-        embedded,
-    required TResult Function(String? locale) external,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)
-        mobileApplication,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)
-        qr,
-    required TResult Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)
-        redirect,
-  }) {
-    return external(locale);
+  String toString() {
+    return 'YookassaConfirmation.external(locale: $locale)';
   }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? locale, String? confirmationToken)? embedded,
-    TResult? Function(String? locale)? external,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult? Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)?
-        redirect,
-  }) {
-    return external?.call(locale);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? locale, String? confirmationToken)? embedded,
-    TResult Function(String? locale)? external,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
-            bool? enforce)?
-        redirect,
-    required TResult orElse(),
-  }) {
-    if (external != null) {
-      return external(locale);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
-    required TResult Function(_ExternalYookassaConfirmation value) external,
-    required TResult Function(_MobileApplicationYookassaConfirmation value)
-        mobileApplication,
-    required TResult Function(_QrCodeYookassaConfirmation value) qr,
-    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
-  }) {
-    return external(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult? Function(_ExternalYookassaConfirmation value)? external,
-    TResult? Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
-  }) {
-    return external?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult Function(_ExternalYookassaConfirmation value)? external,
-    TResult Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
-    required TResult orElse(),
-  }) {
-    if (external != null) {
-      return external(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ExternalYookassaConfirmationImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _ExternalYookassaConfirmation implements YookassaConfirmation {
-  const factory _ExternalYookassaConfirmation({final String? locale}) =
-      _$ExternalYookassaConfirmationImpl;
-
-  factory _ExternalYookassaConfirmation.fromJson(Map<String, dynamic> json) =
-      _$ExternalYookassaConfirmationImpl.fromJson;
-
-  @override
-  String? get locale;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ExternalYookassaConfirmationImplCopyWith<
-          _$ExternalYookassaConfirmationImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$MobileApplicationYookassaConfirmationImplCopyWith<$Res>
+abstract mixin class _$ExternalYookassaConfirmationCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$MobileApplicationYookassaConfirmationImplCopyWith(
-          _$MobileApplicationYookassaConfirmationImpl value,
-          $Res Function(_$MobileApplicationYookassaConfirmationImpl) then) =
-      __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>;
+  factory _$ExternalYookassaConfirmationCopyWith(
+          _ExternalYookassaConfirmation value,
+          $Res Function(_ExternalYookassaConfirmation) _then) =
+      __$ExternalYookassaConfirmationCopyWithImpl;
   @override
   @useResult
-  $Res call({String? locale, String? returnUrl, String? confirmationUrl});
+  $Res call({String? locale});
 }
 
 /// @nodoc
-class __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>
-    extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$MobileApplicationYookassaConfirmationImpl>
-    implements _$$MobileApplicationYookassaConfirmationImplCopyWith<$Res> {
-  __$$MobileApplicationYookassaConfirmationImplCopyWithImpl(
-      _$MobileApplicationYookassaConfirmationImpl _value,
-      $Res Function(_$MobileApplicationYookassaConfirmationImpl) _then)
-      : super(_value, _then);
+class __$ExternalYookassaConfirmationCopyWithImpl<$Res>
+    implements _$ExternalYookassaConfirmationCopyWith<$Res> {
+  __$ExternalYookassaConfirmationCopyWithImpl(this._self, this._then);
+
+  final _ExternalYookassaConfirmation _self;
+  final $Res Function(_ExternalYookassaConfirmation) _then;
 
   /// Create a copy of YookassaConfirmation
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
     Object? locale = freezed,
-    Object? returnUrl = freezed,
-    Object? confirmationUrl = freezed,
   }) {
-    return _then(_$MobileApplicationYookassaConfirmationImpl(
+    return _then(_ExternalYookassaConfirmation(
       locale: freezed == locale
-          ? _value.locale
+          ? _self.locale
           : locale // ignore: cast_nullable_to_non_nullable
-              as String?,
-      returnUrl: freezed == returnUrl
-          ? _value.returnUrl
-          : returnUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      confirmationUrl: freezed == confirmationUrl
-          ? _value.confirmationUrl
-          : confirmationUrl // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -648,40 +539,48 @@ class __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$MobileApplicationYookassaConfirmationImpl
-    implements _MobileApplicationYookassaConfirmation {
-  const _$MobileApplicationYookassaConfirmationImpl(
+class _MobileApplicationYookassaConfirmation implements YookassaConfirmation {
+  const _MobileApplicationYookassaConfirmation(
       {this.locale = 'ru_RU',
       this.returnUrl,
       this.confirmationUrl,
       final String? $type})
       : $type = $type ?? 'mobile_application';
-
-  factory _$MobileApplicationYookassaConfirmationImpl.fromJson(
+  factory _MobileApplicationYookassaConfirmation.fromJson(
           Map<String, dynamic> json) =>
-      _$$MobileApplicationYookassaConfirmationImplFromJson(json);
+      _$MobileApplicationYookassaConfirmationFromJson(json);
 
   @override
   @JsonKey()
   final String? locale;
-  @override
   final String? returnUrl;
-  @override
   final String? confirmationUrl;
 
   @JsonKey(name: 'type')
   final String $type;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'YookassaConfirmation.mobileApplication(locale: $locale, returnUrl: $returnUrl, confirmationUrl: $confirmationUrl)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$MobileApplicationYookassaConfirmationCopyWith<
+          _MobileApplicationYookassaConfirmation>
+      get copyWith => __$MobileApplicationYookassaConfirmationCopyWithImpl<
+          _MobileApplicationYookassaConfirmation>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$MobileApplicationYookassaConfirmationToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$MobileApplicationYookassaConfirmationImpl &&
+            other is _MobileApplicationYookassaConfirmation &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.returnUrl, returnUrl) ||
                 other.returnUrl == returnUrl) &&
@@ -694,195 +593,53 @@ class _$MobileApplicationYookassaConfirmationImpl
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationUrl);
 
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$MobileApplicationYookassaConfirmationImplCopyWith<
-          _$MobileApplicationYookassaConfirmationImpl>
-      get copyWith => __$$MobileApplicationYookassaConfirmationImplCopyWithImpl<
-          _$MobileApplicationYookassaConfirmationImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(String? locale, String? confirmationToken)
-        embedded,
-    required TResult Function(String? locale) external,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)
-        mobileApplication,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)
-        qr,
-    required TResult Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)
-        redirect,
-  }) {
-    return mobileApplication(locale, returnUrl, confirmationUrl);
+  String toString() {
+    return 'YookassaConfirmation.mobileApplication(locale: $locale, returnUrl: $returnUrl, confirmationUrl: $confirmationUrl)';
   }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? locale, String? confirmationToken)? embedded,
-    TResult? Function(String? locale)? external,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult? Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)?
-        redirect,
-  }) {
-    return mobileApplication?.call(locale, returnUrl, confirmationUrl);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? locale, String? confirmationToken)? embedded,
-    TResult Function(String? locale)? external,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
-            bool? enforce)?
-        redirect,
-    required TResult orElse(),
-  }) {
-    if (mobileApplication != null) {
-      return mobileApplication(locale, returnUrl, confirmationUrl);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
-    required TResult Function(_ExternalYookassaConfirmation value) external,
-    required TResult Function(_MobileApplicationYookassaConfirmation value)
-        mobileApplication,
-    required TResult Function(_QrCodeYookassaConfirmation value) qr,
-    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
-  }) {
-    return mobileApplication(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult? Function(_ExternalYookassaConfirmation value)? external,
-    TResult? Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
-  }) {
-    return mobileApplication?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult Function(_ExternalYookassaConfirmation value)? external,
-    TResult Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
-    required TResult orElse(),
-  }) {
-    if (mobileApplication != null) {
-      return mobileApplication(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$MobileApplicationYookassaConfirmationImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _MobileApplicationYookassaConfirmation
-    implements YookassaConfirmation {
-  const factory _MobileApplicationYookassaConfirmation(
-          {final String? locale,
-          final String? returnUrl,
-          final String? confirmationUrl}) =
-      _$MobileApplicationYookassaConfirmationImpl;
-
-  factory _MobileApplicationYookassaConfirmation.fromJson(
-          Map<String, dynamic> json) =
-      _$MobileApplicationYookassaConfirmationImpl.fromJson;
-
-  @override
-  String? get locale;
-  String? get returnUrl;
-  String? get confirmationUrl;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$MobileApplicationYookassaConfirmationImplCopyWith<
-          _$MobileApplicationYookassaConfirmationImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$QrCodeYookassaConfirmationImplCopyWith<$Res>
+abstract mixin class _$MobileApplicationYookassaConfirmationCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$QrCodeYookassaConfirmationImplCopyWith(
-          _$QrCodeYookassaConfirmationImpl value,
-          $Res Function(_$QrCodeYookassaConfirmationImpl) then) =
-      __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>;
+  factory _$MobileApplicationYookassaConfirmationCopyWith(
+          _MobileApplicationYookassaConfirmation value,
+          $Res Function(_MobileApplicationYookassaConfirmation) _then) =
+      __$MobileApplicationYookassaConfirmationCopyWithImpl;
   @override
   @useResult
-  $Res call({String? locale, String? returnUrl, String? confirmationData});
+  $Res call({String? locale, String? returnUrl, String? confirmationUrl});
 }
 
 /// @nodoc
-class __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>
-    extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$QrCodeYookassaConfirmationImpl>
-    implements _$$QrCodeYookassaConfirmationImplCopyWith<$Res> {
-  __$$QrCodeYookassaConfirmationImplCopyWithImpl(
-      _$QrCodeYookassaConfirmationImpl _value,
-      $Res Function(_$QrCodeYookassaConfirmationImpl) _then)
-      : super(_value, _then);
+class __$MobileApplicationYookassaConfirmationCopyWithImpl<$Res>
+    implements _$MobileApplicationYookassaConfirmationCopyWith<$Res> {
+  __$MobileApplicationYookassaConfirmationCopyWithImpl(this._self, this._then);
+
+  final _MobileApplicationYookassaConfirmation _self;
+  final $Res Function(_MobileApplicationYookassaConfirmation) _then;
 
   /// Create a copy of YookassaConfirmation
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
     Object? locale = freezed,
     Object? returnUrl = freezed,
-    Object? confirmationData = freezed,
+    Object? confirmationUrl = freezed,
   }) {
-    return _then(_$QrCodeYookassaConfirmationImpl(
+    return _then(_MobileApplicationYookassaConfirmation(
       locale: freezed == locale
-          ? _value.locale
+          ? _self.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String?,
       returnUrl: freezed == returnUrl
-          ? _value.returnUrl
+          ? _self.returnUrl
           : returnUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      confirmationData: freezed == confirmationData
-          ? _value.confirmationData
-          : confirmationData // ignore: cast_nullable_to_non_nullable
+      confirmationUrl: freezed == confirmationUrl
+          ? _self.confirmationUrl
+          : confirmationUrl // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -890,39 +647,46 @@ class __$$QrCodeYookassaConfirmationImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
-  const _$QrCodeYookassaConfirmationImpl(
+class _QrCodeYookassaConfirmation implements YookassaConfirmation {
+  const _QrCodeYookassaConfirmation(
       {this.locale = 'ru_RU',
       this.returnUrl,
       this.confirmationData,
       final String? $type})
       : $type = $type ?? 'qr';
-
-  factory _$QrCodeYookassaConfirmationImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$QrCodeYookassaConfirmationImplFromJson(json);
+  factory _QrCodeYookassaConfirmation.fromJson(Map<String, dynamic> json) =>
+      _$QrCodeYookassaConfirmationFromJson(json);
 
   @override
   @JsonKey()
   final String? locale;
-  @override
   final String? returnUrl;
-  @override
   final String? confirmationData;
 
   @JsonKey(name: 'type')
   final String $type;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'YookassaConfirmation.qr(locale: $locale, returnUrl: $returnUrl, confirmationData: $confirmationData)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$QrCodeYookassaConfirmationCopyWith<_QrCodeYookassaConfirmation>
+      get copyWith => __$QrCodeYookassaConfirmationCopyWithImpl<
+          _QrCodeYookassaConfirmation>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$QrCodeYookassaConfirmationToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$QrCodeYookassaConfirmationImpl &&
+            other is _QrCodeYookassaConfirmation &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.returnUrl, returnUrl) ||
                 other.returnUrl == returnUrl) &&
@@ -935,243 +699,103 @@ class _$QrCodeYookassaConfirmationImpl implements _QrCodeYookassaConfirmation {
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationData);
 
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
-      get copyWith => __$$QrCodeYookassaConfirmationImplCopyWithImpl<
-          _$QrCodeYookassaConfirmationImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(String? locale, String? confirmationToken)
-        embedded,
-    required TResult Function(String? locale) external,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)
-        mobileApplication,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)
-        qr,
-    required TResult Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)
-        redirect,
-  }) {
-    return qr(locale, returnUrl, confirmationData);
+  String toString() {
+    return 'YookassaConfirmation.qr(locale: $locale, returnUrl: $returnUrl, confirmationData: $confirmationData)';
   }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? locale, String? confirmationToken)? embedded,
-    TResult? Function(String? locale)? external,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult? Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)?
-        redirect,
-  }) {
-    return qr?.call(locale, returnUrl, confirmationData);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? locale, String? confirmationToken)? embedded,
-    TResult Function(String? locale)? external,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
-            bool? enforce)?
-        redirect,
-    required TResult orElse(),
-  }) {
-    if (qr != null) {
-      return qr(locale, returnUrl, confirmationData);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
-    required TResult Function(_ExternalYookassaConfirmation value) external,
-    required TResult Function(_MobileApplicationYookassaConfirmation value)
-        mobileApplication,
-    required TResult Function(_QrCodeYookassaConfirmation value) qr,
-    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
-  }) {
-    return qr(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult? Function(_ExternalYookassaConfirmation value)? external,
-    TResult? Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
-  }) {
-    return qr?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult Function(_ExternalYookassaConfirmation value)? external,
-    TResult Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
-    required TResult orElse(),
-  }) {
-    if (qr != null) {
-      return qr(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$QrCodeYookassaConfirmationImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _QrCodeYookassaConfirmation implements YookassaConfirmation {
-  const factory _QrCodeYookassaConfirmation(
-      {final String? locale,
-      final String? returnUrl,
-      final String? confirmationData}) = _$QrCodeYookassaConfirmationImpl;
-
-  factory _QrCodeYookassaConfirmation.fromJson(Map<String, dynamic> json) =
-      _$QrCodeYookassaConfirmationImpl.fromJson;
-
-  @override
-  String? get locale;
-  String? get returnUrl;
-  String? get confirmationData;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$QrCodeYookassaConfirmationImplCopyWith<_$QrCodeYookassaConfirmationImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$RedirectCodeYookassaConfirmationImplCopyWith<$Res>
+abstract mixin class _$QrCodeYookassaConfirmationCopyWith<$Res>
     implements $YookassaConfirmationCopyWith<$Res> {
-  factory _$$RedirectCodeYookassaConfirmationImplCopyWith(
-          _$RedirectCodeYookassaConfirmationImpl value,
-          $Res Function(_$RedirectCodeYookassaConfirmationImpl) then) =
-      __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<$Res>;
+  factory _$QrCodeYookassaConfirmationCopyWith(
+          _QrCodeYookassaConfirmation value,
+          $Res Function(_QrCodeYookassaConfirmation) _then) =
+      __$QrCodeYookassaConfirmationCopyWithImpl;
   @override
   @useResult
-  $Res call(
-      {String? locale,
-      String? returnUrl,
-      String? confirmationUrl,
-      bool? enforce});
+  $Res call({String? locale, String? returnUrl, String? confirmationData});
 }
 
 /// @nodoc
-class __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<$Res>
-    extends _$YookassaConfirmationCopyWithImpl<$Res,
-        _$RedirectCodeYookassaConfirmationImpl>
-    implements _$$RedirectCodeYookassaConfirmationImplCopyWith<$Res> {
-  __$$RedirectCodeYookassaConfirmationImplCopyWithImpl(
-      _$RedirectCodeYookassaConfirmationImpl _value,
-      $Res Function(_$RedirectCodeYookassaConfirmationImpl) _then)
-      : super(_value, _then);
+class __$QrCodeYookassaConfirmationCopyWithImpl<$Res>
+    implements _$QrCodeYookassaConfirmationCopyWith<$Res> {
+  __$QrCodeYookassaConfirmationCopyWithImpl(this._self, this._then);
+
+  final _QrCodeYookassaConfirmation _self;
+  final $Res Function(_QrCodeYookassaConfirmation) _then;
 
   /// Create a copy of YookassaConfirmation
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
   @override
+  @pragma('vm:prefer-inline')
   $Res call({
     Object? locale = freezed,
     Object? returnUrl = freezed,
-    Object? confirmationUrl = freezed,
-    Object? enforce = freezed,
+    Object? confirmationData = freezed,
   }) {
-    return _then(_$RedirectCodeYookassaConfirmationImpl(
+    return _then(_QrCodeYookassaConfirmation(
       locale: freezed == locale
-          ? _value.locale
+          ? _self.locale
           : locale // ignore: cast_nullable_to_non_nullable
               as String?,
       returnUrl: freezed == returnUrl
-          ? _value.returnUrl
+          ? _self.returnUrl
           : returnUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      confirmationUrl: freezed == confirmationUrl
-          ? _value.confirmationUrl
-          : confirmationUrl // ignore: cast_nullable_to_non_nullable
+      confirmationData: freezed == confirmationData
+          ? _self.confirmationData
+          : confirmationData // ignore: cast_nullable_to_non_nullable
               as String?,
-      enforce: freezed == enforce
-          ? _value.enforce
-          : enforce // ignore: cast_nullable_to_non_nullable
-              as bool?,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$RedirectCodeYookassaConfirmationImpl
-    implements _RedirectCodeYookassaConfirmation {
-  const _$RedirectCodeYookassaConfirmationImpl(
+class _RedirectCodeYookassaConfirmation implements YookassaConfirmation {
+  const _RedirectCodeYookassaConfirmation(
       {this.locale = 'ru_RU',
       this.returnUrl,
       this.confirmationUrl,
       this.enforce,
       final String? $type})
       : $type = $type ?? 'redirect';
-
-  factory _$RedirectCodeYookassaConfirmationImpl.fromJson(
+  factory _RedirectCodeYookassaConfirmation.fromJson(
           Map<String, dynamic> json) =>
-      _$$RedirectCodeYookassaConfirmationImplFromJson(json);
+      _$RedirectCodeYookassaConfirmationFromJson(json);
 
   @override
   @JsonKey()
   final String? locale;
-  @override
   final String? returnUrl;
-  @override
   final String? confirmationUrl;
-  @override
   final bool? enforce;
 
   @JsonKey(name: 'type')
   final String $type;
 
+  /// Create a copy of YookassaConfirmation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'YookassaConfirmation.redirect(locale: $locale, returnUrl: $returnUrl, confirmationUrl: $confirmationUrl, enforce: $enforce)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$RedirectCodeYookassaConfirmationCopyWith<_RedirectCodeYookassaConfirmation>
+      get copyWith => __$RedirectCodeYookassaConfirmationCopyWithImpl<
+          _RedirectCodeYookassaConfirmation>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$RedirectCodeYookassaConfirmationToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RedirectCodeYookassaConfirmationImpl &&
+            other is _RedirectCodeYookassaConfirmation &&
             (identical(other.locale, locale) || other.locale == locale) &&
             (identical(other.returnUrl, returnUrl) ||
                 other.returnUrl == returnUrl) &&
@@ -1185,149 +809,65 @@ class _$RedirectCodeYookassaConfirmationImpl
   int get hashCode =>
       Object.hash(runtimeType, locale, returnUrl, confirmationUrl, enforce);
 
+  @override
+  String toString() {
+    return 'YookassaConfirmation.redirect(locale: $locale, returnUrl: $returnUrl, confirmationUrl: $confirmationUrl, enforce: $enforce)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$RedirectCodeYookassaConfirmationCopyWith<$Res>
+    implements $YookassaConfirmationCopyWith<$Res> {
+  factory _$RedirectCodeYookassaConfirmationCopyWith(
+          _RedirectCodeYookassaConfirmation value,
+          $Res Function(_RedirectCodeYookassaConfirmation) _then) =
+      __$RedirectCodeYookassaConfirmationCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String? locale,
+      String? returnUrl,
+      String? confirmationUrl,
+      bool? enforce});
+}
+
+/// @nodoc
+class __$RedirectCodeYookassaConfirmationCopyWithImpl<$Res>
+    implements _$RedirectCodeYookassaConfirmationCopyWith<$Res> {
+  __$RedirectCodeYookassaConfirmationCopyWithImpl(this._self, this._then);
+
+  final _RedirectCodeYookassaConfirmation _self;
+  final $Res Function(_RedirectCodeYookassaConfirmation) _then;
+
   /// Create a copy of YookassaConfirmation
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$RedirectCodeYookassaConfirmationImplCopyWith<
-          _$RedirectCodeYookassaConfirmationImpl>
-      get copyWith => __$$RedirectCodeYookassaConfirmationImplCopyWithImpl<
-          _$RedirectCodeYookassaConfirmationImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(String? locale, String? confirmationToken)
-        embedded,
-    required TResult Function(String? locale) external,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)
-        mobileApplication,
-    required TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)
-        qr,
-    required TResult Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)
-        redirect,
+  $Res call({
+    Object? locale = freezed,
+    Object? returnUrl = freezed,
+    Object? confirmationUrl = freezed,
+    Object? enforce = freezed,
   }) {
-    return redirect(locale, returnUrl, confirmationUrl, enforce);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(String? locale, String? confirmationToken)? embedded,
-    TResult? Function(String? locale)? external,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult? Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult? Function(String? locale, String? returnUrl,
-            String? confirmationUrl, bool? enforce)?
-        redirect,
-  }) {
-    return redirect?.call(locale, returnUrl, confirmationUrl, enforce);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(String? locale, String? confirmationToken)? embedded,
-    TResult Function(String? locale)? external,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationUrl)?
-        mobileApplication,
-    TResult Function(
-            String? locale, String? returnUrl, String? confirmationData)?
-        qr,
-    TResult Function(String? locale, String? returnUrl, String? confirmationUrl,
-            bool? enforce)?
-        redirect,
-    required TResult orElse(),
-  }) {
-    if (redirect != null) {
-      return redirect(locale, returnUrl, confirmationUrl, enforce);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_EmbeddedYookassaConfirmation value) embedded,
-    required TResult Function(_ExternalYookassaConfirmation value) external,
-    required TResult Function(_MobileApplicationYookassaConfirmation value)
-        mobileApplication,
-    required TResult Function(_QrCodeYookassaConfirmation value) qr,
-    required TResult Function(_RedirectCodeYookassaConfirmation value) redirect,
-  }) {
-    return redirect(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult? Function(_ExternalYookassaConfirmation value)? external,
-    TResult? Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult? Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult? Function(_RedirectCodeYookassaConfirmation value)? redirect,
-  }) {
-    return redirect?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_EmbeddedYookassaConfirmation value)? embedded,
-    TResult Function(_ExternalYookassaConfirmation value)? external,
-    TResult Function(_MobileApplicationYookassaConfirmation value)?
-        mobileApplication,
-    TResult Function(_QrCodeYookassaConfirmation value)? qr,
-    TResult Function(_RedirectCodeYookassaConfirmation value)? redirect,
-    required TResult orElse(),
-  }) {
-    if (redirect != null) {
-      return redirect(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$RedirectCodeYookassaConfirmationImplToJson(
-      this,
-    );
+    return _then(_RedirectCodeYookassaConfirmation(
+      locale: freezed == locale
+          ? _self.locale
+          : locale // ignore: cast_nullable_to_non_nullable
+              as String?,
+      returnUrl: freezed == returnUrl
+          ? _self.returnUrl
+          : returnUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      confirmationUrl: freezed == confirmationUrl
+          ? _self.confirmationUrl
+          : confirmationUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      enforce: freezed == enforce
+          ? _self.enforce
+          : enforce // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
-abstract class _RedirectCodeYookassaConfirmation
-    implements YookassaConfirmation {
-  const factory _RedirectCodeYookassaConfirmation(
-      {final String? locale,
-      final String? returnUrl,
-      final String? confirmationUrl,
-      final bool? enforce}) = _$RedirectCodeYookassaConfirmationImpl;
-
-  factory _RedirectCodeYookassaConfirmation.fromJson(
-          Map<String, dynamic> json) =
-      _$RedirectCodeYookassaConfirmationImpl.fromJson;
-
-  @override
-  String? get locale;
-  String? get returnUrl;
-  String? get confirmationUrl;
-  bool? get enforce;
-
-  /// Create a copy of YookassaConfirmation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$RedirectCodeYookassaConfirmationImplCopyWith<
-          _$RedirectCodeYookassaConfirmationImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
+// dart format on

@@ -9,7 +9,7 @@ part 'yookassa_recipient.g.dart';
 ///
 /// [gatewayId] - Идентификатор субаккаунта. Используется для разделения потоков платежей в рамках одного аккаунта.
 @freezed
-class YookassaRecipient with _$YookassaRecipient {
+abstract class YookassaRecipient with _$YookassaRecipient {
   factory YookassaRecipient({
     required String accountId,
     required String gatewayId,

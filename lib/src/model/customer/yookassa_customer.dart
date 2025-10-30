@@ -5,7 +5,7 @@ part 'yookassa_customer.g.dart';
 
 /// Информация о покупателе для передачи чека
 @Freezed()
-class YookassaCustomer with _$YookassaCustomer {
+abstract class YookassaCustomer with _$YookassaCustomer {
   const factory YookassaCustomer({
     String? email,
     String? phone,
