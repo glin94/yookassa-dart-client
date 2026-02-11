@@ -6,15 +6,15 @@ part of 'cancellation_details.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$YookassaCancellationDetailsImpl _$$YookassaCancellationDetailsImplFromJson(
+_YookassaCancellationDetails _$YookassaCancellationDetailsFromJson(
         Map<String, dynamic> json) =>
-    _$YookassaCancellationDetailsImpl(
+    _YookassaCancellationDetails(
       reason: $enumDecode(_$CancelationReasonEnumMap, json['reason']),
       $type: json['party'] as String?,
     );
 
-Map<String, dynamic> _$$YookassaCancellationDetailsImplToJson(
-        _$YookassaCancellationDetailsImpl instance) =>
+Map<String, dynamic> _$YookassaCancellationDetailsToJson(
+        _YookassaCancellationDetails instance) =>
     <String, dynamic>{
       'reason': _$CancelationReasonEnumMap[instance.reason]!,
       'party': instance.$type,
@@ -42,30 +42,29 @@ const _$CancelationReasonEnumMap = {
   CancelationReason.unsupportedMobileOperator: 'unsupported_mobile_operator',
 };
 
-_$MerchantCancellationDetailsImpl _$$MerchantCancellationDetailsImplFromJson(
+_MerchantCancellationDetails _$MerchantCancellationDetailsFromJson(
         Map<String, dynamic> json) =>
-    _$MerchantCancellationDetailsImpl(
+    _MerchantCancellationDetails(
       reason: $enumDecode(_$CancelationReasonEnumMap, json['reason']),
       $type: json['party'] as String?,
     );
 
-Map<String, dynamic> _$$MerchantCancellationDetailsImplToJson(
-        _$MerchantCancellationDetailsImpl instance) =>
+Map<String, dynamic> _$MerchantCancellationDetailsToJson(
+        _MerchantCancellationDetails instance) =>
     <String, dynamic>{
       'reason': _$CancelationReasonEnumMap[instance.reason]!,
       'party': instance.$type,
     };
 
-_$PaymentNetworkCancellationDetailsImpl
-    _$$PaymentNetworkCancellationDetailsImplFromJson(
-            Map<String, dynamic> json) =>
-        _$PaymentNetworkCancellationDetailsImpl(
-          reason: $enumDecode(_$CancelationReasonEnumMap, json['reason']),
-          $type: json['party'] as String?,
-        );
+_PaymentNetworkCancellationDetails _$PaymentNetworkCancellationDetailsFromJson(
+        Map<String, dynamic> json) =>
+    _PaymentNetworkCancellationDetails(
+      reason: $enumDecode(_$CancelationReasonEnumMap, json['reason']),
+      $type: json['party'] as String?,
+    );
 
-Map<String, dynamic> _$$PaymentNetworkCancellationDetailsImplToJson(
-        _$PaymentNetworkCancellationDetailsImpl instance) =>
+Map<String, dynamic> _$PaymentNetworkCancellationDetailsToJson(
+        _PaymentNetworkCancellationDetails instance) =>
     <String, dynamic>{
       'reason': _$CancelationReasonEnumMap[instance.reason]!,
       'party': instance.$type,

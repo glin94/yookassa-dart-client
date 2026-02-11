@@ -6,9 +6,8 @@ part of 'yookassa_receipt.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$YookassaReceiptImpl _$$YookassaReceiptImplFromJson(
-        Map<String, dynamic> json) =>
-    _$YookassaReceiptImpl(
+_YookassaReceipt _$YookassaReceiptFromJson(Map<String, dynamic> json) =>
+    _YookassaReceipt(
       customer:
           YookassaCustomer.fromJson(json['customer'] as Map<String, dynamic>),
       items: (json['items'] as List<dynamic>)
@@ -16,8 +15,7 @@ _$YookassaReceiptImpl _$$YookassaReceiptImplFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$YookassaReceiptImplToJson(
-        _$YookassaReceiptImpl instance) =>
+Map<String, dynamic> _$YookassaReceiptToJson(_YookassaReceipt instance) =>
     <String, dynamic>{
       'customer': instance.customer,
       'items': instance.items,

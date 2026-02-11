@@ -4,7 +4,7 @@ part 'authorization_details.freezed.dart';
 part 'authorization_details.g.dart';
 
 @freezed
-class AuthorizationDetails with _$AuthorizationDetails {
+abstract class AuthorizationDetails with _$AuthorizationDetails {
   factory AuthorizationDetails({
     required ThreeDSecure threeDSecure,
     String? rrn,
@@ -16,7 +16,7 @@ class AuthorizationDetails with _$AuthorizationDetails {
 }
 
 @freezed
-class ThreeDSecure with _$ThreeDSecure {
+abstract class ThreeDSecure with _$ThreeDSecure {
   factory ThreeDSecure({
     required bool applied,
   }) = _ThreeDSecure;

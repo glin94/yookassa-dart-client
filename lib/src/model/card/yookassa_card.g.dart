@@ -6,8 +6,8 @@ part of 'yookassa_card.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$YookassaCardImpl _$$YookassaCardImplFromJson(Map<String, dynamic> json) =>
-    _$YookassaCardImpl(
+_YookassaCard _$YookassaCardFromJson(Map<String, dynamic> json) =>
+    _YookassaCard(
       last4: json['last4'] as String,
       expiryYear: json['expiry_year'] as String,
       expiryMonth: json['expiry_month'] as String,
@@ -18,7 +18,7 @@ _$YookassaCardImpl _$$YookassaCardImplFromJson(Map<String, dynamic> json) =>
       source: json['source'] as String?,
     );
 
-Map<String, dynamic> _$$YookassaCardImplToJson(_$YookassaCardImpl instance) =>
+Map<String, dynamic> _$YookassaCardToJson(_YookassaCard instance) =>
     <String, dynamic>{
       'last4': instance.last4,
       'expiry_year': instance.expiryYear,

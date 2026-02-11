@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,48 +9,98 @@ part of 'create_payment_request.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-CreatePaymentRequest _$CreatePaymentRequestFromJson(Map<String, dynamic> json) {
-  return _CreatePaymentRequest.fromJson(json);
-}
 
 /// @nodoc
 mixin _$CreatePaymentRequest {
-  Amount get amount => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  String? get paymentToken => throw _privateConstructorUsedError;
-  String? get paymentId => throw _privateConstructorUsedError;
-  YookassaRecipient? get recipient => throw _privateConstructorUsedError;
-  YookassaPaymentMethod? get paymentMethodData =>
-      throw _privateConstructorUsedError;
-  YookassaConfirmation? get confirmation => throw _privateConstructorUsedError;
-  String? get paymentMethodId => throw _privateConstructorUsedError;
-  bool? get savePaymentMethod => throw _privateConstructorUsedError;
-  bool? get capture => throw _privateConstructorUsedError;
-  String? get clientIp => throw _privateConstructorUsedError;
-  Map<String, Object?>? get metadata => throw _privateConstructorUsedError;
-  String? get merchantCustomerId => throw _privateConstructorUsedError;
-  YookassaReceipt? get receipt => throw _privateConstructorUsedError;
-
-  /// Serializes this CreatePaymentRequest to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Amount get amount;
+  String? get description;
+  String? get paymentToken;
+  String? get paymentId;
+  YookassaRecipient? get recipient;
+  YookassaPaymentMethod? get paymentMethodData;
+  YookassaConfirmation? get confirmation;
+  String? get paymentMethodId;
+  bool? get savePaymentMethod;
+  bool? get capture;
+  String? get clientIp;
+  Map<String, Object?>? get metadata;
+  String? get merchantCustomerId;
+  YookassaReceipt? get receipt;
 
   /// Create a copy of CreatePaymentRequest
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $CreatePaymentRequestCopyWith<CreatePaymentRequest> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$CreatePaymentRequestCopyWithImpl<CreatePaymentRequest>(
+          this as CreatePaymentRequest, _$identity);
+
+  /// Serializes this CreatePaymentRequest to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is CreatePaymentRequest &&
+            (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.paymentToken, paymentToken) ||
+                other.paymentToken == paymentToken) &&
+            (identical(other.paymentId, paymentId) ||
+                other.paymentId == paymentId) &&
+            (identical(other.recipient, recipient) ||
+                other.recipient == recipient) &&
+            (identical(other.paymentMethodData, paymentMethodData) ||
+                other.paymentMethodData == paymentMethodData) &&
+            (identical(other.confirmation, confirmation) ||
+                other.confirmation == confirmation) &&
+            (identical(other.paymentMethodId, paymentMethodId) ||
+                other.paymentMethodId == paymentMethodId) &&
+            (identical(other.savePaymentMethod, savePaymentMethod) ||
+                other.savePaymentMethod == savePaymentMethod) &&
+            (identical(other.capture, capture) || other.capture == capture) &&
+            (identical(other.clientIp, clientIp) ||
+                other.clientIp == clientIp) &&
+            const DeepCollectionEquality().equals(other.metadata, metadata) &&
+            (identical(other.merchantCustomerId, merchantCustomerId) ||
+                other.merchantCustomerId == merchantCustomerId) &&
+            (identical(other.receipt, receipt) || other.receipt == receipt));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      amount,
+      description,
+      paymentToken,
+      paymentId,
+      recipient,
+      paymentMethodData,
+      confirmation,
+      paymentMethodId,
+      savePaymentMethod,
+      capture,
+      clientIp,
+      const DeepCollectionEquality().hash(metadata),
+      merchantCustomerId,
+      receipt);
+
+  @override
+  String toString() {
+    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, paymentMethodId: $paymentMethodId, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId, receipt: $receipt)';
+  }
 }
 
 /// @nodoc
-abstract class $CreatePaymentRequestCopyWith<$Res> {
+abstract mixin class $CreatePaymentRequestCopyWith<$Res> {
   factory $CreatePaymentRequestCopyWith(CreatePaymentRequest value,
-          $Res Function(CreatePaymentRequest) then) =
-      _$CreatePaymentRequestCopyWithImpl<$Res, CreatePaymentRequest>;
+          $Res Function(CreatePaymentRequest) _then) =
+      _$CreatePaymentRequestCopyWithImpl;
   @useResult
   $Res call(
       {Amount amount,
@@ -76,15 +126,12 @@ abstract class $CreatePaymentRequestCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CreatePaymentRequestCopyWithImpl<$Res,
-        $Val extends CreatePaymentRequest>
+class _$CreatePaymentRequestCopyWithImpl<$Res>
     implements $CreatePaymentRequestCopyWith<$Res> {
-  _$CreatePaymentRequestCopyWithImpl(this._value, this._then);
+  _$CreatePaymentRequestCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final CreatePaymentRequest _self;
+  final $Res Function(CreatePaymentRequest) _then;
 
   /// Create a copy of CreatePaymentRequest
   /// with the given fields replaced by the non-null parameter values.
@@ -106,64 +153,64 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
     Object? merchantCustomerId = freezed,
     Object? receipt = freezed,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       amount: null == amount
-          ? _value.amount
+          ? _self.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
       description: freezed == description
-          ? _value.description
+          ? _self.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
       paymentToken: freezed == paymentToken
-          ? _value.paymentToken
+          ? _self.paymentToken
           : paymentToken // ignore: cast_nullable_to_non_nullable
               as String?,
       paymentId: freezed == paymentId
-          ? _value.paymentId
+          ? _self.paymentId
           : paymentId // ignore: cast_nullable_to_non_nullable
               as String?,
       recipient: freezed == recipient
-          ? _value.recipient
+          ? _self.recipient
           : recipient // ignore: cast_nullable_to_non_nullable
               as YookassaRecipient?,
       paymentMethodData: freezed == paymentMethodData
-          ? _value.paymentMethodData
+          ? _self.paymentMethodData
           : paymentMethodData // ignore: cast_nullable_to_non_nullable
               as YookassaPaymentMethod?,
       confirmation: freezed == confirmation
-          ? _value.confirmation
+          ? _self.confirmation
           : confirmation // ignore: cast_nullable_to_non_nullable
               as YookassaConfirmation?,
       paymentMethodId: freezed == paymentMethodId
-          ? _value.paymentMethodId
+          ? _self.paymentMethodId
           : paymentMethodId // ignore: cast_nullable_to_non_nullable
               as String?,
       savePaymentMethod: freezed == savePaymentMethod
-          ? _value.savePaymentMethod
+          ? _self.savePaymentMethod
           : savePaymentMethod // ignore: cast_nullable_to_non_nullable
               as bool?,
       capture: freezed == capture
-          ? _value.capture
+          ? _self.capture
           : capture // ignore: cast_nullable_to_non_nullable
               as bool?,
       clientIp: freezed == clientIp
-          ? _value.clientIp
+          ? _self.clientIp
           : clientIp // ignore: cast_nullable_to_non_nullable
               as String?,
       metadata: freezed == metadata
-          ? _value.metadata
+          ? _self.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as Map<String, Object?>?,
       merchantCustomerId: freezed == merchantCustomerId
-          ? _value.merchantCustomerId
+          ? _self.merchantCustomerId
           : merchantCustomerId // ignore: cast_nullable_to_non_nullable
               as String?,
       receipt: freezed == receipt
-          ? _value.receipt
+          ? _self.receipt
           : receipt // ignore: cast_nullable_to_non_nullable
               as YookassaReceipt?,
-    ) as $Val);
+    ));
   }
 
   /// Create a copy of CreatePaymentRequest
@@ -171,8 +218,8 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
   @override
   @pragma('vm:prefer-inline')
   $AmountCopyWith<$Res> get amount {
-    return $AmountCopyWith<$Res>(_value.amount, (value) {
-      return _then(_value.copyWith(amount: value) as $Val);
+    return $AmountCopyWith<$Res>(_self.amount, (value) {
+      return _then(_self.copyWith(amount: value));
     });
   }
 
@@ -181,12 +228,12 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
   @override
   @pragma('vm:prefer-inline')
   $YookassaRecipientCopyWith<$Res>? get recipient {
-    if (_value.recipient == null) {
+    if (_self.recipient == null) {
       return null;
     }
 
-    return $YookassaRecipientCopyWith<$Res>(_value.recipient!, (value) {
-      return _then(_value.copyWith(recipient: value) as $Val);
+    return $YookassaRecipientCopyWith<$Res>(_self.recipient!, (value) {
+      return _then(_self.copyWith(recipient: value));
     });
   }
 
@@ -195,13 +242,13 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
   @override
   @pragma('vm:prefer-inline')
   $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData {
-    if (_value.paymentMethodData == null) {
+    if (_self.paymentMethodData == null) {
       return null;
     }
 
-    return $YookassaPaymentMethodCopyWith<$Res>(_value.paymentMethodData!,
+    return $YookassaPaymentMethodCopyWith<$Res>(_self.paymentMethodData!,
         (value) {
-      return _then(_value.copyWith(paymentMethodData: value) as $Val);
+      return _then(_self.copyWith(paymentMethodData: value));
     });
   }
 
@@ -210,12 +257,12 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
   @override
   @pragma('vm:prefer-inline')
   $YookassaConfirmationCopyWith<$Res>? get confirmation {
-    if (_value.confirmation == null) {
+    if (_self.confirmation == null) {
       return null;
     }
 
-    return $YookassaConfirmationCopyWith<$Res>(_value.confirmation!, (value) {
-      return _then(_value.copyWith(confirmation: value) as $Val);
+    return $YookassaConfirmationCopyWith<$Res>(_self.confirmation!, (value) {
+      return _then(_self.copyWith(confirmation: value));
     });
   }
 
@@ -224,145 +271,264 @@ class _$CreatePaymentRequestCopyWithImpl<$Res,
   @override
   @pragma('vm:prefer-inline')
   $YookassaReceiptCopyWith<$Res>? get receipt {
-    if (_value.receipt == null) {
+    if (_self.receipt == null) {
       return null;
     }
 
-    return $YookassaReceiptCopyWith<$Res>(_value.receipt!, (value) {
-      return _then(_value.copyWith(receipt: value) as $Val);
+    return $YookassaReceiptCopyWith<$Res>(_self.receipt!, (value) {
+      return _then(_self.copyWith(receipt: value));
     });
   }
 }
 
-/// @nodoc
-abstract class _$$CreatePaymentRequestImplCopyWith<$Res>
-    implements $CreatePaymentRequestCopyWith<$Res> {
-  factory _$$CreatePaymentRequestImplCopyWith(_$CreatePaymentRequestImpl value,
-          $Res Function(_$CreatePaymentRequestImpl) then) =
-      __$$CreatePaymentRequestImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {Amount amount,
-      String? description,
-      String? paymentToken,
-      String? paymentId,
-      YookassaRecipient? recipient,
-      YookassaPaymentMethod? paymentMethodData,
-      YookassaConfirmation? confirmation,
-      String? paymentMethodId,
-      bool? savePaymentMethod,
-      bool? capture,
-      String? clientIp,
-      Map<String, Object?>? metadata,
-      String? merchantCustomerId,
-      YookassaReceipt? receipt});
+/// Adds pattern-matching-related methods to [CreatePaymentRequest].
+extension CreatePaymentRequestPatterns on CreatePaymentRequest {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
 
-  @override
-  $AmountCopyWith<$Res> get amount;
-  @override
-  $YookassaRecipientCopyWith<$Res>? get recipient;
-  @override
-  $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData;
-  @override
-  $YookassaConfirmationCopyWith<$Res>? get confirmation;
-  @override
-  $YookassaReceiptCopyWith<$Res>? get receipt;
-}
-
-/// @nodoc
-class __$$CreatePaymentRequestImplCopyWithImpl<$Res>
-    extends _$CreatePaymentRequestCopyWithImpl<$Res, _$CreatePaymentRequestImpl>
-    implements _$$CreatePaymentRequestImplCopyWith<$Res> {
-  __$$CreatePaymentRequestImplCopyWithImpl(_$CreatePaymentRequestImpl _value,
-      $Res Function(_$CreatePaymentRequestImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of CreatePaymentRequest
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? amount = null,
-    Object? description = freezed,
-    Object? paymentToken = freezed,
-    Object? paymentId = freezed,
-    Object? recipient = freezed,
-    Object? paymentMethodData = freezed,
-    Object? confirmation = freezed,
-    Object? paymentMethodId = freezed,
-    Object? savePaymentMethod = freezed,
-    Object? capture = freezed,
-    Object? clientIp = freezed,
-    Object? metadata = freezed,
-    Object? merchantCustomerId = freezed,
-    Object? receipt = freezed,
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CreatePaymentRequest value)? $default, {
+    required TResult orElse(),
   }) {
-    return _then(_$CreatePaymentRequestImpl(
-      amount: null == amount
-          ? _value.amount
-          : amount // ignore: cast_nullable_to_non_nullable
-              as Amount,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      paymentToken: freezed == paymentToken
-          ? _value.paymentToken
-          : paymentToken // ignore: cast_nullable_to_non_nullable
-              as String?,
-      paymentId: freezed == paymentId
-          ? _value.paymentId
-          : paymentId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      recipient: freezed == recipient
-          ? _value.recipient
-          : recipient // ignore: cast_nullable_to_non_nullable
-              as YookassaRecipient?,
-      paymentMethodData: freezed == paymentMethodData
-          ? _value.paymentMethodData
-          : paymentMethodData // ignore: cast_nullable_to_non_nullable
-              as YookassaPaymentMethod?,
-      confirmation: freezed == confirmation
-          ? _value.confirmation
-          : confirmation // ignore: cast_nullable_to_non_nullable
-              as YookassaConfirmation?,
-      paymentMethodId: freezed == paymentMethodId
-          ? _value.paymentMethodId
-          : paymentMethodId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      savePaymentMethod: freezed == savePaymentMethod
-          ? _value.savePaymentMethod
-          : savePaymentMethod // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      capture: freezed == capture
-          ? _value.capture
-          : capture // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      clientIp: freezed == clientIp
-          ? _value.clientIp
-          : clientIp // ignore: cast_nullable_to_non_nullable
-              as String?,
-      metadata: freezed == metadata
-          ? _value._metadata
-          : metadata // ignore: cast_nullable_to_non_nullable
-              as Map<String, Object?>?,
-      merchantCustomerId: freezed == merchantCustomerId
-          ? _value.merchantCustomerId
-          : merchantCustomerId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      receipt: freezed == receipt
-          ? _value.receipt
-          : receipt // ignore: cast_nullable_to_non_nullable
-              as YookassaReceipt?,
-    ));
+    final _that = this;
+    switch (_that) {
+      case _CreatePaymentRequest() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CreatePaymentRequest value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreatePaymentRequest():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CreatePaymentRequest value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreatePaymentRequest() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            Amount amount,
+            String? description,
+            String? paymentToken,
+            String? paymentId,
+            YookassaRecipient? recipient,
+            YookassaPaymentMethod? paymentMethodData,
+            YookassaConfirmation? confirmation,
+            String? paymentMethodId,
+            bool? savePaymentMethod,
+            bool? capture,
+            String? clientIp,
+            Map<String, Object?>? metadata,
+            String? merchantCustomerId,
+            YookassaReceipt? receipt)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CreatePaymentRequest() when $default != null:
+        return $default(
+            _that.amount,
+            _that.description,
+            _that.paymentToken,
+            _that.paymentId,
+            _that.recipient,
+            _that.paymentMethodData,
+            _that.confirmation,
+            _that.paymentMethodId,
+            _that.savePaymentMethod,
+            _that.capture,
+            _that.clientIp,
+            _that.metadata,
+            _that.merchantCustomerId,
+            _that.receipt);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            Amount amount,
+            String? description,
+            String? paymentToken,
+            String? paymentId,
+            YookassaRecipient? recipient,
+            YookassaPaymentMethod? paymentMethodData,
+            YookassaConfirmation? confirmation,
+            String? paymentMethodId,
+            bool? savePaymentMethod,
+            bool? capture,
+            String? clientIp,
+            Map<String, Object?>? metadata,
+            String? merchantCustomerId,
+            YookassaReceipt? receipt)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreatePaymentRequest():
+        return $default(
+            _that.amount,
+            _that.description,
+            _that.paymentToken,
+            _that.paymentId,
+            _that.recipient,
+            _that.paymentMethodData,
+            _that.confirmation,
+            _that.paymentMethodId,
+            _that.savePaymentMethod,
+            _that.capture,
+            _that.clientIp,
+            _that.metadata,
+            _that.merchantCustomerId,
+            _that.receipt);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            Amount amount,
+            String? description,
+            String? paymentToken,
+            String? paymentId,
+            YookassaRecipient? recipient,
+            YookassaPaymentMethod? paymentMethodData,
+            YookassaConfirmation? confirmation,
+            String? paymentMethodId,
+            bool? savePaymentMethod,
+            bool? capture,
+            String? clientIp,
+            Map<String, Object?>? metadata,
+            String? merchantCustomerId,
+            YookassaReceipt? receipt)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CreatePaymentRequest() when $default != null:
+        return $default(
+            _that.amount,
+            _that.description,
+            _that.paymentToken,
+            _that.paymentId,
+            _that.recipient,
+            _that.paymentMethodData,
+            _that.confirmation,
+            _that.paymentMethodId,
+            _that.savePaymentMethod,
+            _that.capture,
+            _that.clientIp,
+            _that.metadata,
+            _that.merchantCustomerId,
+            _that.receipt);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
-  const _$CreatePaymentRequestImpl(
+class _CreatePaymentRequest implements CreatePaymentRequest {
+  const _CreatePaymentRequest(
       {required this.amount,
       this.description,
       this.paymentToken,
@@ -378,9 +544,8 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
       this.merchantCustomerId,
       this.receipt})
       : _metadata = metadata;
-
-  factory _$CreatePaymentRequestImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CreatePaymentRequestImplFromJson(json);
+  factory _CreatePaymentRequest.fromJson(Map<String, dynamic> json) =>
+      _$CreatePaymentRequestFromJson(json);
 
   @override
   final Amount amount;
@@ -419,16 +584,27 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
   @override
   final YookassaReceipt? receipt;
 
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, paymentMethodId: $paymentMethodId, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId, receipt: $receipt)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$CreatePaymentRequestCopyWith<_CreatePaymentRequest> get copyWith =>
+      __$CreatePaymentRequestCopyWithImpl<_CreatePaymentRequest>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$CreatePaymentRequestToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CreatePaymentRequestImpl &&
+            other is _CreatePaymentRequest &&
             (identical(other.amount, amount) || other.amount == amount) &&
             (identical(other.description, description) ||
                 other.description == description) &&
@@ -474,77 +650,202 @@ class _$CreatePaymentRequestImpl implements _CreatePaymentRequest {
       merchantCustomerId,
       receipt);
 
-  /// Create a copy of CreatePaymentRequest
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$CreatePaymentRequestImplCopyWith<_$CreatePaymentRequestImpl>
-      get copyWith =>
-          __$$CreatePaymentRequestImplCopyWithImpl<_$CreatePaymentRequestImpl>(
-              this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$CreatePaymentRequestImplToJson(
-      this,
-    );
+  String toString() {
+    return 'CreatePaymentRequest(amount: $amount, description: $description, paymentToken: $paymentToken, paymentId: $paymentId, recipient: $recipient, paymentMethodData: $paymentMethodData, confirmation: $confirmation, paymentMethodId: $paymentMethodId, savePaymentMethod: $savePaymentMethod, capture: $capture, clientIp: $clientIp, metadata: $metadata, merchantCustomerId: $merchantCustomerId, receipt: $receipt)';
   }
 }
 
-abstract class _CreatePaymentRequest implements CreatePaymentRequest {
-  const factory _CreatePaymentRequest(
-      {required final Amount amount,
-      final String? description,
-      final String? paymentToken,
-      final String? paymentId,
-      final YookassaRecipient? recipient,
-      final YookassaPaymentMethod? paymentMethodData,
-      final YookassaConfirmation? confirmation,
-      final String? paymentMethodId,
-      final bool? savePaymentMethod,
-      final bool? capture,
-      final String? clientIp,
-      final Map<String, Object?>? metadata,
-      final String? merchantCustomerId,
-      final YookassaReceipt? receipt}) = _$CreatePaymentRequestImpl;
+/// @nodoc
+abstract mixin class _$CreatePaymentRequestCopyWith<$Res>
+    implements $CreatePaymentRequestCopyWith<$Res> {
+  factory _$CreatePaymentRequestCopyWith(_CreatePaymentRequest value,
+          $Res Function(_CreatePaymentRequest) _then) =
+      __$CreatePaymentRequestCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {Amount amount,
+      String? description,
+      String? paymentToken,
+      String? paymentId,
+      YookassaRecipient? recipient,
+      YookassaPaymentMethod? paymentMethodData,
+      YookassaConfirmation? confirmation,
+      String? paymentMethodId,
+      bool? savePaymentMethod,
+      bool? capture,
+      String? clientIp,
+      Map<String, Object?>? metadata,
+      String? merchantCustomerId,
+      YookassaReceipt? receipt});
 
-  factory _CreatePaymentRequest.fromJson(Map<String, dynamic> json) =
-      _$CreatePaymentRequestImpl.fromJson;
+  @override
+  $AmountCopyWith<$Res> get amount;
+  @override
+  $YookassaRecipientCopyWith<$Res>? get recipient;
+  @override
+  $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData;
+  @override
+  $YookassaConfirmationCopyWith<$Res>? get confirmation;
+  @override
+  $YookassaReceiptCopyWith<$Res>? get receipt;
+}
 
-  @override
-  Amount get amount;
-  @override
-  String? get description;
-  @override
-  String? get paymentToken;
-  @override
-  String? get paymentId;
-  @override
-  YookassaRecipient? get recipient;
-  @override
-  YookassaPaymentMethod? get paymentMethodData;
-  @override
-  YookassaConfirmation? get confirmation;
-  @override
-  String? get paymentMethodId;
-  @override
-  bool? get savePaymentMethod;
-  @override
-  bool? get capture;
-  @override
-  String? get clientIp;
-  @override
-  Map<String, Object?>? get metadata;
-  @override
-  String? get merchantCustomerId;
-  @override
-  YookassaReceipt? get receipt;
+/// @nodoc
+class __$CreatePaymentRequestCopyWithImpl<$Res>
+    implements _$CreatePaymentRequestCopyWith<$Res> {
+  __$CreatePaymentRequestCopyWithImpl(this._self, this._then);
+
+  final _CreatePaymentRequest _self;
+  final $Res Function(_CreatePaymentRequest) _then;
 
   /// Create a copy of CreatePaymentRequest
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CreatePaymentRequestImplCopyWith<_$CreatePaymentRequestImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? amount = null,
+    Object? description = freezed,
+    Object? paymentToken = freezed,
+    Object? paymentId = freezed,
+    Object? recipient = freezed,
+    Object? paymentMethodData = freezed,
+    Object? confirmation = freezed,
+    Object? paymentMethodId = freezed,
+    Object? savePaymentMethod = freezed,
+    Object? capture = freezed,
+    Object? clientIp = freezed,
+    Object? metadata = freezed,
+    Object? merchantCustomerId = freezed,
+    Object? receipt = freezed,
+  }) {
+    return _then(_CreatePaymentRequest(
+      amount: null == amount
+          ? _self.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as Amount,
+      description: freezed == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      paymentToken: freezed == paymentToken
+          ? _self.paymentToken
+          : paymentToken // ignore: cast_nullable_to_non_nullable
+              as String?,
+      paymentId: freezed == paymentId
+          ? _self.paymentId
+          : paymentId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      recipient: freezed == recipient
+          ? _self.recipient
+          : recipient // ignore: cast_nullable_to_non_nullable
+              as YookassaRecipient?,
+      paymentMethodData: freezed == paymentMethodData
+          ? _self.paymentMethodData
+          : paymentMethodData // ignore: cast_nullable_to_non_nullable
+              as YookassaPaymentMethod?,
+      confirmation: freezed == confirmation
+          ? _self.confirmation
+          : confirmation // ignore: cast_nullable_to_non_nullable
+              as YookassaConfirmation?,
+      paymentMethodId: freezed == paymentMethodId
+          ? _self.paymentMethodId
+          : paymentMethodId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      savePaymentMethod: freezed == savePaymentMethod
+          ? _self.savePaymentMethod
+          : savePaymentMethod // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      capture: freezed == capture
+          ? _self.capture
+          : capture // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      clientIp: freezed == clientIp
+          ? _self.clientIp
+          : clientIp // ignore: cast_nullable_to_non_nullable
+              as String?,
+      metadata: freezed == metadata
+          ? _self._metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, Object?>?,
+      merchantCustomerId: freezed == merchantCustomerId
+          ? _self.merchantCustomerId
+          : merchantCustomerId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      receipt: freezed == receipt
+          ? _self.receipt
+          : receipt // ignore: cast_nullable_to_non_nullable
+              as YookassaReceipt?,
+    ));
+  }
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $AmountCopyWith<$Res> get amount {
+    return $AmountCopyWith<$Res>(_self.amount, (value) {
+      return _then(_self.copyWith(amount: value));
+    });
+  }
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $YookassaRecipientCopyWith<$Res>? get recipient {
+    if (_self.recipient == null) {
+      return null;
+    }
+
+    return $YookassaRecipientCopyWith<$Res>(_self.recipient!, (value) {
+      return _then(_self.copyWith(recipient: value));
+    });
+  }
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $YookassaPaymentMethodCopyWith<$Res>? get paymentMethodData {
+    if (_self.paymentMethodData == null) {
+      return null;
+    }
+
+    return $YookassaPaymentMethodCopyWith<$Res>(_self.paymentMethodData!,
+        (value) {
+      return _then(_self.copyWith(paymentMethodData: value));
+    });
+  }
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $YookassaConfirmationCopyWith<$Res>? get confirmation {
+    if (_self.confirmation == null) {
+      return null;
+    }
+
+    return $YookassaConfirmationCopyWith<$Res>(_self.confirmation!, (value) {
+      return _then(_self.copyWith(confirmation: value));
+    });
+  }
+
+  /// Create a copy of CreatePaymentRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $YookassaReceiptCopyWith<$Res>? get receipt {
+    if (_self.receipt == null) {
+      return null;
+    }
+
+    return $YookassaReceiptCopyWith<$Res>(_self.receipt!, (value) {
+      return _then(_self.copyWith(receipt: value));
+    });
+  }
 }
+
+// dart format on

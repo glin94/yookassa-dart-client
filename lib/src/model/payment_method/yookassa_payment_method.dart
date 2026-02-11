@@ -7,7 +7,7 @@ part 'yookassa_payment_method.g.dart';
 
 /// Метод оплаты
 @freezed
-class YookassaPaymentMethod with _$YookassaPaymentMethod {
+abstract class YookassaPaymentMethod with _$YookassaPaymentMethod {
   /// YooMoney
   const factory YookassaPaymentMethod.yooMoney() = _YooMoneyPaymentMethod;
 

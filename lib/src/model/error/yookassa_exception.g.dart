@@ -6,15 +6,15 @@ part of 'yookassa_exception.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$YookassaErrorImpl _$$YookassaErrorImplFromJson(Map<String, dynamic> json) =>
-    _$YookassaErrorImpl(
+_YookassaError _$YookassaErrorFromJson(Map<String, dynamic> json) =>
+    _YookassaError(
       id: json['id'] as String,
       code: $enumDecode(_$YookassaErrorCodeEnumMap, json['code']),
       description: json['description'] as String?,
       parameter: json['parameter'] as String?,
     );
 
-Map<String, dynamic> _$$YookassaErrorImplToJson(_$YookassaErrorImpl instance) =>
+Map<String, dynamic> _$YookassaErrorToJson(_YookassaError instance) =>
     <String, dynamic>{
       'id': instance.id,
       'code': _$YookassaErrorCodeEnumMap[instance.code]!,

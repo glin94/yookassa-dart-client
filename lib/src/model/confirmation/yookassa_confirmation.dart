@@ -5,7 +5,7 @@ part 'yookassa_confirmation.g.dart';
 
 /// ЮKassa поддерживает несколько сценариев подтверждения: Redirect, External, QR-код, Embedded и Mobile application.
 @freezed
-class YookassaConfirmation with _$YookassaConfirmation {
+abstract class YookassaConfirmation with _$YookassaConfirmation {
   /// Сценарий подтверждения Embedded: действия, необходимые для подтверждения платежа, будут зависеть от способа оплаты, который пользователь выберет в виджете ЮKassa. Подтверждение от пользователя получит ЮKassa — вам необходимо только встроить виджет к себе на страницу.
   const factory YookassaConfirmation.embedded({
     @Default('ru_RU') String? locale,

@@ -6,15 +6,13 @@ part of 'yookassa_recipient.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$YookassaRecipientImpl _$$YookassaRecipientImplFromJson(
-        Map<String, dynamic> json) =>
-    _$YookassaRecipientImpl(
+_YookassaRecipient _$YookassaRecipientFromJson(Map<String, dynamic> json) =>
+    _YookassaRecipient(
       accountId: json['account_id'] as String,
       gatewayId: json['gateway_id'] as String,
     );
 
-Map<String, dynamic> _$$YookassaRecipientImplToJson(
-        _$YookassaRecipientImpl instance) =>
+Map<String, dynamic> _$YookassaRecipientToJson(_YookassaRecipient instance) =>
     <String, dynamic>{
       'account_id': instance.accountId,
       'gateway_id': instance.gatewayId,

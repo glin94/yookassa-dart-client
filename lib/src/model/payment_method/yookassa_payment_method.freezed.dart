@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,11 +9,8 @@ part of 'yookassa_payment_method.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
 YookassaPaymentMethod _$YookassaPaymentMethodFromJson(
     Map<String, dynamic> json) {
   switch (json['type']) {
@@ -36,134 +33,13 @@ YookassaPaymentMethod _$YookassaPaymentMethodFromJson(
 
 /// @nodoc
 mixin _$YookassaPaymentMethod {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() yooMoney,
-    required TResult Function(String? id, bool? saved, String? title) sbp,
-    required TResult Function(String? id, YookassaCard? card, bool? saved)
-        bankCard,
-    required TResult Function(String? id, String? phone, YookassaCard? card)
-        sberPay,
-    required TResult Function(String? id) tinkoffPay,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? yooMoney,
-    TResult? Function(String? id, bool? saved, String? title)? sbp,
-    TResult? Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult? Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult? Function(String? id)? tinkoffPay,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? yooMoney,
-    TResult Function(String? id, bool? saved, String? title)? sbp,
-    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult Function(String? id)? tinkoffPay,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
-    required TResult Function(_SBPPaymentMethod value) sbp,
-    required TResult Function(_BankCardaymentMethod value) bankCard,
-    required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult? Function(_SBPPaymentMethod value)? sbp,
-    TResult? Function(_BankCardaymentMethod value)? bankCard,
-    TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult Function(_SBPPaymentMethod value)? sbp,
-    TResult Function(_BankCardaymentMethod value)? bankCard,
-    TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-
   /// Serializes this YookassaPaymentMethod to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $YookassaPaymentMethodCopyWith<$Res> {
-  factory $YookassaPaymentMethodCopyWith(YookassaPaymentMethod value,
-          $Res Function(YookassaPaymentMethod) then) =
-      _$YookassaPaymentMethodCopyWithImpl<$Res, YookassaPaymentMethod>;
-}
-
-/// @nodoc
-class _$YookassaPaymentMethodCopyWithImpl<$Res,
-        $Val extends YookassaPaymentMethod>
-    implements $YookassaPaymentMethodCopyWith<$Res> {
-  _$YookassaPaymentMethodCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-abstract class _$$YooMoneyPaymentMethodImplCopyWith<$Res> {
-  factory _$$YooMoneyPaymentMethodImplCopyWith(
-          _$YooMoneyPaymentMethodImpl value,
-          $Res Function(_$YooMoneyPaymentMethodImpl) then) =
-      __$$YooMoneyPaymentMethodImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$YooMoneyPaymentMethodImplCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
-        _$YooMoneyPaymentMethodImpl>
-    implements _$$YooMoneyPaymentMethodImplCopyWith<$Res> {
-  __$$YooMoneyPaymentMethodImplCopyWithImpl(_$YooMoneyPaymentMethodImpl _value,
-      $Res Function(_$YooMoneyPaymentMethodImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
-  const _$YooMoneyPaymentMethodImpl({final String? $type})
-      : $type = $type ?? 'yoo_money';
-
-  factory _$YooMoneyPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$YooMoneyPaymentMethodImplFromJson(json);
-
-  @JsonKey(name: 'type')
-  final String $type;
-
-  @override
-  String toString() {
-    return 'YookassaPaymentMethod.yooMoney()';
-  }
+  Map<String, dynamic> toJson();
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$YooMoneyPaymentMethodImpl);
+        (other.runtimeType == runtimeType && other is YookassaPaymentMethod);
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -171,6 +47,183 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
   int get hashCode => runtimeType.hashCode;
 
   @override
+  String toString() {
+    return 'YookassaPaymentMethod()';
+  }
+}
+
+/// @nodoc
+class $YookassaPaymentMethodCopyWith<$Res> {
+  $YookassaPaymentMethodCopyWith(
+      YookassaPaymentMethod _, $Res Function(YookassaPaymentMethod) __);
+}
+
+/// Adds pattern-matching-related methods to [YookassaPaymentMethod].
+extension YookassaPaymentMethodPatterns on YookassaPaymentMethod {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
+    TResult Function(_SBPPaymentMethod value)? sbp,
+    TResult Function(_BankCardaymentMethod value)? bankCard,
+    TResult Function(_SberBankPaymentMethod value)? sberPay,
+    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YooMoneyPaymentMethod() when yooMoney != null:
+        return yooMoney(_that);
+      case _SBPPaymentMethod() when sbp != null:
+        return sbp(_that);
+      case _BankCardaymentMethod() when bankCard != null:
+        return bankCard(_that);
+      case _SberBankPaymentMethod() when sberPay != null:
+        return sberPay(_that);
+      case _TinkoffPayPaymentMethod() when tinkoffPay != null:
+        return tinkoffPay(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
+    required TResult Function(_SBPPaymentMethod value) sbp,
+    required TResult Function(_BankCardaymentMethod value) bankCard,
+    required TResult Function(_SberBankPaymentMethod value) sberPay,
+    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YooMoneyPaymentMethod():
+        return yooMoney(_that);
+      case _SBPPaymentMethod():
+        return sbp(_that);
+      case _BankCardaymentMethod():
+        return bankCard(_that);
+      case _SberBankPaymentMethod():
+        return sberPay(_that);
+      case _TinkoffPayPaymentMethod():
+        return tinkoffPay(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
+    TResult? Function(_SBPPaymentMethod value)? sbp,
+    TResult? Function(_BankCardaymentMethod value)? bankCard,
+    TResult? Function(_SberBankPaymentMethod value)? sberPay,
+    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YooMoneyPaymentMethod() when yooMoney != null:
+        return yooMoney(_that);
+      case _SBPPaymentMethod() when sbp != null:
+        return sbp(_that);
+      case _BankCardaymentMethod() when bankCard != null:
+        return bankCard(_that);
+      case _SberBankPaymentMethod() when sberPay != null:
+        return sberPay(_that);
+      case _TinkoffPayPaymentMethod() when tinkoffPay != null:
+        return tinkoffPay(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? yooMoney,
+    TResult Function(String? id, bool? saved, String? title)? sbp,
+    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
+    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
+    TResult Function(String? id)? tinkoffPay,
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YooMoneyPaymentMethod() when yooMoney != null:
+        return yooMoney();
+      case _SBPPaymentMethod() when sbp != null:
+        return sbp(_that.id, _that.saved, _that.title);
+      case _BankCardaymentMethod() when bankCard != null:
+        return bankCard(_that.id, _that.card, _that.saved);
+      case _SberBankPaymentMethod() when sberPay != null:
+        return sberPay(_that.id, _that.phone, _that.card);
+      case _TinkoffPayPaymentMethod() when tinkoffPay != null:
+        return tinkoffPay(_that.id);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() yooMoney,
@@ -181,10 +234,35 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
         sberPay,
     required TResult Function(String? id) tinkoffPay,
   }) {
-    return yooMoney();
+    final _that = this;
+    switch (_that) {
+      case _YooMoneyPaymentMethod():
+        return yooMoney();
+      case _SBPPaymentMethod():
+        return sbp(_that.id, _that.saved, _that.title);
+      case _BankCardaymentMethod():
+        return bankCard(_that.id, _that.card, _that.saved);
+      case _SberBankPaymentMethod():
+        return sberPay(_that.id, _that.phone, _that.card);
+      case _TinkoffPayPaymentMethod():
+        return tinkoffPay(_that.id);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
   }
 
-  @override
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? yooMoney,
@@ -193,153 +271,93 @@ class _$YooMoneyPaymentMethodImpl implements _YooMoneyPaymentMethod {
     TResult? Function(String? id, String? phone, YookassaCard? card)? sberPay,
     TResult? Function(String? id)? tinkoffPay,
   }) {
-    return yooMoney?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? yooMoney,
-    TResult Function(String? id, bool? saved, String? title)? sbp,
-    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult Function(String? id)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (yooMoney != null) {
-      return yooMoney();
+    final _that = this;
+    switch (_that) {
+      case _YooMoneyPaymentMethod() when yooMoney != null:
+        return yooMoney();
+      case _SBPPaymentMethod() when sbp != null:
+        return sbp(_that.id, _that.saved, _that.title);
+      case _BankCardaymentMethod() when bankCard != null:
+        return bankCard(_that.id, _that.card, _that.saved);
+      case _SberBankPaymentMethod() when sberPay != null:
+        return sberPay(_that.id, _that.phone, _that.card);
+      case _TinkoffPayPaymentMethod() when tinkoffPay != null:
+        return tinkoffPay(_that.id);
+      case _:
+        return null;
     }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
-    required TResult Function(_SBPPaymentMethod value) sbp,
-    required TResult Function(_BankCardaymentMethod value) bankCard,
-    required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
-  }) {
-    return yooMoney(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult? Function(_SBPPaymentMethod value)? sbp,
-    TResult? Function(_BankCardaymentMethod value)? bankCard,
-    TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-  }) {
-    return yooMoney?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult Function(_SBPPaymentMethod value)? sbp,
-    TResult Function(_BankCardaymentMethod value)? bankCard,
-    TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (yooMoney != null) {
-      return yooMoney(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$YooMoneyPaymentMethodImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _YooMoneyPaymentMethod implements YookassaPaymentMethod {
-  const factory _YooMoneyPaymentMethod() = _$YooMoneyPaymentMethodImpl;
-
-  factory _YooMoneyPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$YooMoneyPaymentMethodImpl.fromJson;
-}
-
-/// @nodoc
-abstract class _$$SBPPaymentMethodImplCopyWith<$Res> {
-  factory _$$SBPPaymentMethodImplCopyWith(_$SBPPaymentMethodImpl value,
-          $Res Function(_$SBPPaymentMethodImpl) then) =
-      __$$SBPPaymentMethodImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? id, bool? saved, String? title});
-}
-
-/// @nodoc
-class __$$SBPPaymentMethodImplCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res, _$SBPPaymentMethodImpl>
-    implements _$$SBPPaymentMethodImplCopyWith<$Res> {
-  __$$SBPPaymentMethodImplCopyWithImpl(_$SBPPaymentMethodImpl _value,
-      $Res Function(_$SBPPaymentMethodImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? saved = freezed,
-    Object? title = freezed,
-  }) {
-    return _then(_$SBPPaymentMethodImpl(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      saved: freezed == saved
-          ? _value.saved
-          : saved // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      title: freezed == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
-  const _$SBPPaymentMethodImpl(
-      {this.id, this.saved, this.title, final String? $type})
-      : $type = $type ?? 'sbp';
-
-  factory _$SBPPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SBPPaymentMethodImplFromJson(json);
-
-  @override
-  final String? id;
-  @override
-  final bool? saved;
-  @override
-  final String? title;
+class _YooMoneyPaymentMethod implements YookassaPaymentMethod {
+  const _YooMoneyPaymentMethod({final String? $type})
+      : $type = $type ?? 'yoo_money';
+  factory _YooMoneyPaymentMethod.fromJson(Map<String, dynamic> json) =>
+      _$YooMoneyPaymentMethodFromJson(json);
 
   @JsonKey(name: 'type')
   final String $type;
 
   @override
+  Map<String, dynamic> toJson() {
+    return _$YooMoneyPaymentMethodToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _YooMoneyPaymentMethod);
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
   String toString() {
-    return 'YookassaPaymentMethod.sbp(id: $id, saved: $saved, title: $title)';
+    return 'YookassaPaymentMethod.yooMoney()';
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _SBPPaymentMethod implements YookassaPaymentMethod {
+  const _SBPPaymentMethod(
+      {this.id, this.saved, this.title, final String? $type})
+      : $type = $type ?? 'sbp';
+  factory _SBPPaymentMethod.fromJson(Map<String, dynamic> json) =>
+      _$SBPPaymentMethodFromJson(json);
+
+  final String? id;
+  final bool? saved;
+  final String? title;
+
+  @JsonKey(name: 'type')
+  final String $type;
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$SBPPaymentMethodCopyWith<_SBPPaymentMethod> get copyWith =>
+      __$SBPPaymentMethodCopyWithImpl<_SBPPaymentMethod>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$SBPPaymentMethodToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SBPPaymentMethodImpl &&
+            other is _SBPPaymentMethod &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.saved, saved) || other.saved == saved) &&
             (identical(other.title, title) || other.title == title));
@@ -349,130 +367,112 @@ class _$SBPPaymentMethodImpl implements _SBPPaymentMethod {
   @override
   int get hashCode => Object.hash(runtimeType, id, saved, title);
 
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$SBPPaymentMethodImplCopyWith<_$SBPPaymentMethodImpl> get copyWith =>
-      __$$SBPPaymentMethodImplCopyWithImpl<_$SBPPaymentMethodImpl>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() yooMoney,
-    required TResult Function(String? id, bool? saved, String? title) sbp,
-    required TResult Function(String? id, YookassaCard? card, bool? saved)
-        bankCard,
-    required TResult Function(String? id, String? phone, YookassaCard? card)
-        sberPay,
-    required TResult Function(String? id) tinkoffPay,
-  }) {
-    return sbp(id, saved, title);
+  String toString() {
+    return 'YookassaPaymentMethod.sbp(id: $id, saved: $saved, title: $title)';
   }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? yooMoney,
-    TResult? Function(String? id, bool? saved, String? title)? sbp,
-    TResult? Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult? Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult? Function(String? id)? tinkoffPay,
-  }) {
-    return sbp?.call(id, saved, title);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? yooMoney,
-    TResult Function(String? id, bool? saved, String? title)? sbp,
-    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult Function(String? id)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (sbp != null) {
-      return sbp(id, saved, title);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
-    required TResult Function(_SBPPaymentMethod value) sbp,
-    required TResult Function(_BankCardaymentMethod value) bankCard,
-    required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
-  }) {
-    return sbp(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult? Function(_SBPPaymentMethod value)? sbp,
-    TResult? Function(_BankCardaymentMethod value)? bankCard,
-    TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-  }) {
-    return sbp?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult Function(_SBPPaymentMethod value)? sbp,
-    TResult Function(_BankCardaymentMethod value)? bankCard,
-    TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (sbp != null) {
-      return sbp(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SBPPaymentMethodImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _SBPPaymentMethod implements YookassaPaymentMethod {
-  const factory _SBPPaymentMethod(
-      {final String? id,
-      final bool? saved,
-      final String? title}) = _$SBPPaymentMethodImpl;
-
-  factory _SBPPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$SBPPaymentMethodImpl.fromJson;
-
-  String? get id;
-  bool? get saved;
-  String? get title;
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SBPPaymentMethodImplCopyWith<_$SBPPaymentMethodImpl> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$BankCardaymentMethodImplCopyWith<$Res> {
-  factory _$$BankCardaymentMethodImplCopyWith(_$BankCardaymentMethodImpl value,
-          $Res Function(_$BankCardaymentMethodImpl) then) =
-      __$$BankCardaymentMethodImplCopyWithImpl<$Res>;
+abstract mixin class _$SBPPaymentMethodCopyWith<$Res>
+    implements $YookassaPaymentMethodCopyWith<$Res> {
+  factory _$SBPPaymentMethodCopyWith(
+          _SBPPaymentMethod value, $Res Function(_SBPPaymentMethod) _then) =
+      __$SBPPaymentMethodCopyWithImpl;
+  @useResult
+  $Res call({String? id, bool? saved, String? title});
+}
+
+/// @nodoc
+class __$SBPPaymentMethodCopyWithImpl<$Res>
+    implements _$SBPPaymentMethodCopyWith<$Res> {
+  __$SBPPaymentMethodCopyWithImpl(this._self, this._then);
+
+  final _SBPPaymentMethod _self;
+  final $Res Function(_SBPPaymentMethod) _then;
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = freezed,
+    Object? saved = freezed,
+    Object? title = freezed,
+  }) {
+    return _then(_SBPPaymentMethod(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      saved: freezed == saved
+          ? _self.saved
+          : saved // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      title: freezed == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _BankCardaymentMethod implements YookassaPaymentMethod {
+  const _BankCardaymentMethod(
+      {this.id, this.card, this.saved, final String? $type})
+      : $type = $type ?? 'bank_card';
+  factory _BankCardaymentMethod.fromJson(Map<String, dynamic> json) =>
+      _$BankCardaymentMethodFromJson(json);
+
+  final String? id;
+  final YookassaCard? card;
+  final bool? saved;
+
+  @JsonKey(name: 'type')
+  final String $type;
+
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$BankCardaymentMethodCopyWith<_BankCardaymentMethod> get copyWith =>
+      __$BankCardaymentMethodCopyWithImpl<_BankCardaymentMethod>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$BankCardaymentMethodToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _BankCardaymentMethod &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.card, card) || other.card == card) &&
+            (identical(other.saved, saved) || other.saved == saved));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, card, saved);
+
+  @override
+  String toString() {
+    return 'YookassaPaymentMethod.bankCard(id: $id, card: $card, saved: $saved)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$BankCardaymentMethodCopyWith<$Res>
+    implements $YookassaPaymentMethodCopyWith<$Res> {
+  factory _$BankCardaymentMethodCopyWith(_BankCardaymentMethod value,
+          $Res Function(_BankCardaymentMethod) _then) =
+      __$BankCardaymentMethodCopyWithImpl;
   @useResult
   $Res call({String? id, YookassaCard? card, bool? saved});
 
@@ -480,34 +480,32 @@ abstract class _$$BankCardaymentMethodImplCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$BankCardaymentMethodImplCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
-        _$BankCardaymentMethodImpl>
-    implements _$$BankCardaymentMethodImplCopyWith<$Res> {
-  __$$BankCardaymentMethodImplCopyWithImpl(_$BankCardaymentMethodImpl _value,
-      $Res Function(_$BankCardaymentMethodImpl) _then)
-      : super(_value, _then);
+class __$BankCardaymentMethodCopyWithImpl<$Res>
+    implements _$BankCardaymentMethodCopyWith<$Res> {
+  __$BankCardaymentMethodCopyWithImpl(this._self, this._then);
+
+  final _BankCardaymentMethod _self;
+  final $Res Function(_BankCardaymentMethod) _then;
 
   /// Create a copy of YookassaPaymentMethod
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
-  @override
   $Res call({
     Object? id = freezed,
     Object? card = freezed,
     Object? saved = freezed,
   }) {
-    return _then(_$BankCardaymentMethodImpl(
+    return _then(_BankCardaymentMethod(
       id: freezed == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
       card: freezed == card
-          ? _value.card
+          ? _self.card
           : card // ignore: cast_nullable_to_non_nullable
               as YookassaCard?,
       saved: freezed == saved
-          ? _value.saved
+          ? _self.saved
           : saved // ignore: cast_nullable_to_non_nullable
               as bool?,
     ));
@@ -518,181 +516,73 @@ class __$$BankCardaymentMethodImplCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $YookassaCardCopyWith<$Res>? get card {
-    if (_value.card == null) {
+    if (_self.card == null) {
       return null;
     }
 
-    return $YookassaCardCopyWith<$Res>(_value.card!, (value) {
-      return _then(_value.copyWith(card: value));
+    return $YookassaCardCopyWith<$Res>(_self.card!, (value) {
+      return _then(_self.copyWith(card: value));
     });
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$BankCardaymentMethodImpl implements _BankCardaymentMethod {
-  const _$BankCardaymentMethodImpl(
-      {this.id, this.card, this.saved, final String? $type})
-      : $type = $type ?? 'bank_card';
+class _SberBankPaymentMethod implements YookassaPaymentMethod {
+  const _SberBankPaymentMethod(
+      {this.id, this.phone, this.card, final String? $type})
+      : $type = $type ?? 'sberbank';
+  factory _SberBankPaymentMethod.fromJson(Map<String, dynamic> json) =>
+      _$SberBankPaymentMethodFromJson(json);
 
-  factory _$BankCardaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$BankCardaymentMethodImplFromJson(json);
-
-  @override
   final String? id;
-  @override
+  final String? phone;
   final YookassaCard? card;
-  @override
-  final bool? saved;
 
   @JsonKey(name: 'type')
   final String $type;
 
+  /// Create a copy of YookassaPaymentMethod
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$SberBankPaymentMethodCopyWith<_SberBankPaymentMethod> get copyWith =>
+      __$SberBankPaymentMethodCopyWithImpl<_SberBankPaymentMethod>(
+          this, _$identity);
+
   @override
-  String toString() {
-    return 'YookassaPaymentMethod.bankCard(id: $id, card: $card, saved: $saved)';
+  Map<String, dynamic> toJson() {
+    return _$SberBankPaymentMethodToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$BankCardaymentMethodImpl &&
+            other is _SberBankPaymentMethod &&
             (identical(other.id, id) || other.id == id) &&
-            (identical(other.card, card) || other.card == card) &&
-            (identical(other.saved, saved) || other.saved == saved));
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.card, card) || other.card == card));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, card, saved);
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$BankCardaymentMethodImplCopyWith<_$BankCardaymentMethodImpl>
-      get copyWith =>
-          __$$BankCardaymentMethodImplCopyWithImpl<_$BankCardaymentMethodImpl>(
-              this, _$identity);
+  int get hashCode => Object.hash(runtimeType, id, phone, card);
 
   @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() yooMoney,
-    required TResult Function(String? id, bool? saved, String? title) sbp,
-    required TResult Function(String? id, YookassaCard? card, bool? saved)
-        bankCard,
-    required TResult Function(String? id, String? phone, YookassaCard? card)
-        sberPay,
-    required TResult Function(String? id) tinkoffPay,
-  }) {
-    return bankCard(id, card, saved);
+  String toString() {
+    return 'YookassaPaymentMethod.sberPay(id: $id, phone: $phone, card: $card)';
   }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? yooMoney,
-    TResult? Function(String? id, bool? saved, String? title)? sbp,
-    TResult? Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult? Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult? Function(String? id)? tinkoffPay,
-  }) {
-    return bankCard?.call(id, card, saved);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? yooMoney,
-    TResult Function(String? id, bool? saved, String? title)? sbp,
-    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult Function(String? id)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (bankCard != null) {
-      return bankCard(id, card, saved);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
-    required TResult Function(_SBPPaymentMethod value) sbp,
-    required TResult Function(_BankCardaymentMethod value) bankCard,
-    required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
-  }) {
-    return bankCard(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult? Function(_SBPPaymentMethod value)? sbp,
-    TResult? Function(_BankCardaymentMethod value)? bankCard,
-    TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-  }) {
-    return bankCard?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult Function(_SBPPaymentMethod value)? sbp,
-    TResult Function(_BankCardaymentMethod value)? bankCard,
-    TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (bankCard != null) {
-      return bankCard(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$BankCardaymentMethodImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _BankCardaymentMethod implements YookassaPaymentMethod {
-  const factory _BankCardaymentMethod(
-      {final String? id,
-      final YookassaCard? card,
-      final bool? saved}) = _$BankCardaymentMethodImpl;
-
-  factory _BankCardaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$BankCardaymentMethodImpl.fromJson;
-
-  String? get id;
-  YookassaCard? get card;
-  bool? get saved;
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$BankCardaymentMethodImplCopyWith<_$BankCardaymentMethodImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$SberBankPaymentMethodImplCopyWith<$Res> {
-  factory _$$SberBankPaymentMethodImplCopyWith(
-          _$SberBankPaymentMethodImpl value,
-          $Res Function(_$SberBankPaymentMethodImpl) then) =
-      __$$SberBankPaymentMethodImplCopyWithImpl<$Res>;
+abstract mixin class _$SberBankPaymentMethodCopyWith<$Res>
+    implements $YookassaPaymentMethodCopyWith<$Res> {
+  factory _$SberBankPaymentMethodCopyWith(_SberBankPaymentMethod value,
+          $Res Function(_SberBankPaymentMethod) _then) =
+      __$SberBankPaymentMethodCopyWithImpl;
   @useResult
   $Res call({String? id, String? phone, YookassaCard? card});
 
@@ -700,34 +590,32 @@ abstract class _$$SberBankPaymentMethodImplCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
-        _$SberBankPaymentMethodImpl>
-    implements _$$SberBankPaymentMethodImplCopyWith<$Res> {
-  __$$SberBankPaymentMethodImplCopyWithImpl(_$SberBankPaymentMethodImpl _value,
-      $Res Function(_$SberBankPaymentMethodImpl) _then)
-      : super(_value, _then);
+class __$SberBankPaymentMethodCopyWithImpl<$Res>
+    implements _$SberBankPaymentMethodCopyWith<$Res> {
+  __$SberBankPaymentMethodCopyWithImpl(this._self, this._then);
+
+  final _SberBankPaymentMethod _self;
+  final $Res Function(_SberBankPaymentMethod) _then;
 
   /// Create a copy of YookassaPaymentMethod
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
-  @override
   $Res call({
     Object? id = freezed,
     Object? phone = freezed,
     Object? card = freezed,
   }) {
-    return _then(_$SberBankPaymentMethodImpl(
+    return _then(_SberBankPaymentMethod(
       id: freezed == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as String?,
       phone: freezed == phone
-          ? _value.phone
+          ? _self.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
       card: freezed == card
-          ? _value.card
+          ? _self.card
           : card // ignore: cast_nullable_to_non_nullable
               as YookassaCard?,
     ));
@@ -738,235 +626,49 @@ class __$$SberBankPaymentMethodImplCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $YookassaCardCopyWith<$Res>? get card {
-    if (_value.card == null) {
+    if (_self.card == null) {
       return null;
     }
 
-    return $YookassaCardCopyWith<$Res>(_value.card!, (value) {
-      return _then(_value.copyWith(card: value));
+    return $YookassaCardCopyWith<$Res>(_self.card!, (value) {
+      return _then(_self.copyWith(card: value));
     });
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$SberBankPaymentMethodImpl implements _SberBankPaymentMethod {
-  const _$SberBankPaymentMethodImpl(
-      {this.id, this.phone, this.card, final String? $type})
-      : $type = $type ?? 'sberbank';
+class _TinkoffPayPaymentMethod implements YookassaPaymentMethod {
+  const _TinkoffPayPaymentMethod({this.id, final String? $type})
+      : $type = $type ?? 'tinkoff_bank';
+  factory _TinkoffPayPaymentMethod.fromJson(Map<String, dynamic> json) =>
+      _$TinkoffPayPaymentMethodFromJson(json);
 
-  factory _$SberBankPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SberBankPaymentMethodImplFromJson(json);
-
-  @override
   final String? id;
-  @override
-  final String? phone;
-  @override
-  final YookassaCard? card;
 
   @JsonKey(name: 'type')
   final String $type;
 
-  @override
-  String toString() {
-    return 'YookassaPaymentMethod.sberPay(id: $id, phone: $phone, card: $card)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SberBankPaymentMethodImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.phone, phone) || other.phone == phone) &&
-            (identical(other.card, card) || other.card == card));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, phone, card);
-
   /// Create a copy of YookassaPaymentMethod
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
   @pragma('vm:prefer-inline')
-  _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
-      get copyWith => __$$SberBankPaymentMethodImplCopyWithImpl<
-          _$SberBankPaymentMethodImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() yooMoney,
-    required TResult Function(String? id, bool? saved, String? title) sbp,
-    required TResult Function(String? id, YookassaCard? card, bool? saved)
-        bankCard,
-    required TResult Function(String? id, String? phone, YookassaCard? card)
-        sberPay,
-    required TResult Function(String? id) tinkoffPay,
-  }) {
-    return sberPay(id, phone, card);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? yooMoney,
-    TResult? Function(String? id, bool? saved, String? title)? sbp,
-    TResult? Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult? Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult? Function(String? id)? tinkoffPay,
-  }) {
-    return sberPay?.call(id, phone, card);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? yooMoney,
-    TResult Function(String? id, bool? saved, String? title)? sbp,
-    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult Function(String? id)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (sberPay != null) {
-      return sberPay(id, phone, card);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
-    required TResult Function(_SBPPaymentMethod value) sbp,
-    required TResult Function(_BankCardaymentMethod value) bankCard,
-    required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
-  }) {
-    return sberPay(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult? Function(_SBPPaymentMethod value)? sbp,
-    TResult? Function(_BankCardaymentMethod value)? bankCard,
-    TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-  }) {
-    return sberPay?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult Function(_SBPPaymentMethod value)? sbp,
-    TResult Function(_BankCardaymentMethod value)? bankCard,
-    TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (sberPay != null) {
-      return sberPay(this);
-    }
-    return orElse();
-  }
+  _$TinkoffPayPaymentMethodCopyWith<_TinkoffPayPaymentMethod> get copyWith =>
+      __$TinkoffPayPaymentMethodCopyWithImpl<_TinkoffPayPaymentMethod>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SberBankPaymentMethodImplToJson(
+    return _$TinkoffPayPaymentMethodToJson(
       this,
     );
-  }
-}
-
-abstract class _SberBankPaymentMethod implements YookassaPaymentMethod {
-  const factory _SberBankPaymentMethod(
-      {final String? id,
-      final String? phone,
-      final YookassaCard? card}) = _$SberBankPaymentMethodImpl;
-
-  factory _SberBankPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$SberBankPaymentMethodImpl.fromJson;
-
-  String? get id;
-  String? get phone;
-  YookassaCard? get card;
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SberBankPaymentMethodImplCopyWith<_$SberBankPaymentMethodImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$TinkoffPayPaymentMethodImplCopyWith<$Res> {
-  factory _$$TinkoffPayPaymentMethodImplCopyWith(
-          _$TinkoffPayPaymentMethodImpl value,
-          $Res Function(_$TinkoffPayPaymentMethodImpl) then) =
-      __$$TinkoffPayPaymentMethodImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String? id});
-}
-
-/// @nodoc
-class __$$TinkoffPayPaymentMethodImplCopyWithImpl<$Res>
-    extends _$YookassaPaymentMethodCopyWithImpl<$Res,
-        _$TinkoffPayPaymentMethodImpl>
-    implements _$$TinkoffPayPaymentMethodImplCopyWith<$Res> {
-  __$$TinkoffPayPaymentMethodImplCopyWithImpl(
-      _$TinkoffPayPaymentMethodImpl _value,
-      $Res Function(_$TinkoffPayPaymentMethodImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-  }) {
-    return _then(_$TinkoffPayPaymentMethodImpl(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$TinkoffPayPaymentMethodImpl implements _TinkoffPayPaymentMethod {
-  const _$TinkoffPayPaymentMethodImpl({this.id, final String? $type})
-      : $type = $type ?? 'tinkoff_bank';
-
-  factory _$TinkoffPayPaymentMethodImpl.fromJson(Map<String, dynamic> json) =>
-      _$$TinkoffPayPaymentMethodImplFromJson(json);
-
-  @override
-  final String? id;
-
-  @JsonKey(name: 'type')
-  final String $type;
-
-  @override
-  String toString() {
-    return 'YookassaPaymentMethod.tinkoffPay(id: $id)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$TinkoffPayPaymentMethodImpl &&
+            other is _TinkoffPayPaymentMethod &&
             (identical(other.id, id) || other.id == id));
   }
 
@@ -974,117 +676,43 @@ class _$TinkoffPayPaymentMethodImpl implements _TinkoffPayPaymentMethod {
   @override
   int get hashCode => Object.hash(runtimeType, id);
 
+  @override
+  String toString() {
+    return 'YookassaPaymentMethod.tinkoffPay(id: $id)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$TinkoffPayPaymentMethodCopyWith<$Res>
+    implements $YookassaPaymentMethodCopyWith<$Res> {
+  factory _$TinkoffPayPaymentMethodCopyWith(_TinkoffPayPaymentMethod value,
+          $Res Function(_TinkoffPayPaymentMethod) _then) =
+      __$TinkoffPayPaymentMethodCopyWithImpl;
+  @useResult
+  $Res call({String? id});
+}
+
+/// @nodoc
+class __$TinkoffPayPaymentMethodCopyWithImpl<$Res>
+    implements _$TinkoffPayPaymentMethodCopyWith<$Res> {
+  __$TinkoffPayPaymentMethodCopyWithImpl(this._self, this._then);
+
+  final _TinkoffPayPaymentMethod _self;
+  final $Res Function(_TinkoffPayPaymentMethod) _then;
+
   /// Create a copy of YookassaPaymentMethod
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
   @pragma('vm:prefer-inline')
-  _$$TinkoffPayPaymentMethodImplCopyWith<_$TinkoffPayPaymentMethodImpl>
-      get copyWith => __$$TinkoffPayPaymentMethodImplCopyWithImpl<
-          _$TinkoffPayPaymentMethodImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() yooMoney,
-    required TResult Function(String? id, bool? saved, String? title) sbp,
-    required TResult Function(String? id, YookassaCard? card, bool? saved)
-        bankCard,
-    required TResult Function(String? id, String? phone, YookassaCard? card)
-        sberPay,
-    required TResult Function(String? id) tinkoffPay,
+  $Res call({
+    Object? id = freezed,
   }) {
-    return tinkoffPay(id);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? yooMoney,
-    TResult? Function(String? id, bool? saved, String? title)? sbp,
-    TResult? Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult? Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult? Function(String? id)? tinkoffPay,
-  }) {
-    return tinkoffPay?.call(id);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? yooMoney,
-    TResult Function(String? id, bool? saved, String? title)? sbp,
-    TResult Function(String? id, YookassaCard? card, bool? saved)? bankCard,
-    TResult Function(String? id, String? phone, YookassaCard? card)? sberPay,
-    TResult Function(String? id)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (tinkoffPay != null) {
-      return tinkoffPay(id);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_YooMoneyPaymentMethod value) yooMoney,
-    required TResult Function(_SBPPaymentMethod value) sbp,
-    required TResult Function(_BankCardaymentMethod value) bankCard,
-    required TResult Function(_SberBankPaymentMethod value) sberPay,
-    required TResult Function(_TinkoffPayPaymentMethod value) tinkoffPay,
-  }) {
-    return tinkoffPay(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult? Function(_SBPPaymentMethod value)? sbp,
-    TResult? Function(_BankCardaymentMethod value)? bankCard,
-    TResult? Function(_SberBankPaymentMethod value)? sberPay,
-    TResult? Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-  }) {
-    return tinkoffPay?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_YooMoneyPaymentMethod value)? yooMoney,
-    TResult Function(_SBPPaymentMethod value)? sbp,
-    TResult Function(_BankCardaymentMethod value)? bankCard,
-    TResult Function(_SberBankPaymentMethod value)? sberPay,
-    TResult Function(_TinkoffPayPaymentMethod value)? tinkoffPay,
-    required TResult orElse(),
-  }) {
-    if (tinkoffPay != null) {
-      return tinkoffPay(this);
-    }
-    return orElse();
-  }
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$TinkoffPayPaymentMethodImplToJson(
-      this,
-    );
+    return _then(_TinkoffPayPaymentMethod(
+      id: freezed == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
-abstract class _TinkoffPayPaymentMethod implements YookassaPaymentMethod {
-  const factory _TinkoffPayPaymentMethod({final String? id}) =
-      _$TinkoffPayPaymentMethodImpl;
-
-  factory _TinkoffPayPaymentMethod.fromJson(Map<String, dynamic> json) =
-      _$TinkoffPayPaymentMethodImpl.fromJson;
-
-  String? get id;
-
-  /// Create a copy of YookassaPaymentMethod
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$TinkoffPayPaymentMethodImplCopyWith<_$TinkoffPayPaymentMethodImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
+// dart format on

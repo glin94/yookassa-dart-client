@@ -4,7 +4,7 @@ part 'yookassa_exception.freezed.dart';
 part 'yookassa_exception.g.dart';
 
 @freezed
-class YookassaException with _$YookassaException {
+abstract class YookassaException with _$YookassaException {
   factory YookassaException({
     required String id,
     required YookassaErrorCode code,

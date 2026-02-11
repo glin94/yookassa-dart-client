@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,53 +9,82 @@ part of 'yookassa_item.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-YookassaItem _$YookassaItemFromJson(Map<String, dynamic> json) {
-  return _YookassaItem.fromJson(json);
-}
 
 /// @nodoc
 mixin _$YookassaItem {
-  String get description => throw _privateConstructorUsedError;
-  String get quantity => throw _privateConstructorUsedError;
-  Amount get amount => throw _privateConstructorUsedError;
-  String get vatCode => throw _privateConstructorUsedError;
-
-  /// Serializes this YookassaItem to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  String get description;
+  String get quantity;
+  Amount get amount;
+  @JsonKey(name: 'payment_subject')
+  String? get paymentSubject;
+  @JsonKey(name: 'payment_mode')
+  YookassaPaymentMode? get paymentMode;
+  String get vatCode;
 
   /// Create a copy of YookassaItem
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $YookassaItemCopyWith<YookassaItem> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$YookassaItemCopyWithImpl<YookassaItem>(
+          this as YookassaItem, _$identity);
+
+  /// Serializes this YookassaItem to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is YookassaItem &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.quantity, quantity) ||
+                other.quantity == quantity) &&
+            (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.paymentSubject, paymentSubject) ||
+                other.paymentSubject == paymentSubject) &&
+            (identical(other.paymentMode, paymentMode) ||
+                other.paymentMode == paymentMode) &&
+            (identical(other.vatCode, vatCode) || other.vatCode == vatCode));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, description, quantity, amount,
+      paymentSubject, paymentMode, vatCode);
+
+  @override
+  String toString() {
+    return 'YookassaItem(description: $description, quantity: $quantity, amount: $amount, paymentSubject: $paymentSubject, paymentMode: $paymentMode, vatCode: $vatCode)';
+  }
 }
 
 /// @nodoc
-abstract class $YookassaItemCopyWith<$Res> {
+abstract mixin class $YookassaItemCopyWith<$Res> {
   factory $YookassaItemCopyWith(
-          YookassaItem value, $Res Function(YookassaItem) then) =
-      _$YookassaItemCopyWithImpl<$Res, YookassaItem>;
+          YookassaItem value, $Res Function(YookassaItem) _then) =
+      _$YookassaItemCopyWithImpl;
   @useResult
   $Res call(
-      {String description, String quantity, Amount amount, String vatCode});
+      {String description,
+      String quantity,
+      Amount amount,
+      @JsonKey(name: 'payment_subject') String? paymentSubject,
+      @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
+      String vatCode});
 
   $AmountCopyWith<$Res> get amount;
 }
 
 /// @nodoc
-class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
-    implements $YookassaItemCopyWith<$Res> {
-  _$YookassaItemCopyWithImpl(this._value, this._then);
+class _$YookassaItemCopyWithImpl<$Res> implements $YookassaItemCopyWith<$Res> {
+  _$YookassaItemCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final YookassaItem _self;
+  final $Res Function(YookassaItem) _then;
 
   /// Create a copy of YookassaItem
   /// with the given fields replaced by the non-null parameter values.
@@ -65,26 +94,36 @@ class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
     Object? description = null,
     Object? quantity = null,
     Object? amount = null,
+    Object? paymentSubject = freezed,
+    Object? paymentMode = freezed,
     Object? vatCode = null,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       description: null == description
-          ? _value.description
+          ? _self.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
       quantity: null == quantity
-          ? _value.quantity
+          ? _self.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
               as String,
       amount: null == amount
-          ? _value.amount
+          ? _self.amount
           : amount // ignore: cast_nullable_to_non_nullable
               as Amount,
+      paymentSubject: freezed == paymentSubject
+          ? _self.paymentSubject
+          : paymentSubject // ignore: cast_nullable_to_non_nullable
+              as String?,
+      paymentMode: freezed == paymentMode
+          ? _self.paymentMode
+          : paymentMode // ignore: cast_nullable_to_non_nullable
+              as YookassaPaymentMode?,
       vatCode: null == vatCode
-          ? _value.vatCode
+          ? _self.vatCode
           : vatCode // ignore: cast_nullable_to_non_nullable
               as String,
-    ) as $Val);
+    ));
   }
 
   /// Create a copy of YookassaItem
@@ -92,77 +131,205 @@ class _$YookassaItemCopyWithImpl<$Res, $Val extends YookassaItem>
   @override
   @pragma('vm:prefer-inline')
   $AmountCopyWith<$Res> get amount {
-    return $AmountCopyWith<$Res>(_value.amount, (value) {
-      return _then(_value.copyWith(amount: value) as $Val);
+    return $AmountCopyWith<$Res>(_self.amount, (value) {
+      return _then(_self.copyWith(amount: value));
     });
   }
 }
 
-/// @nodoc
-abstract class _$$YookassaItemImplCopyWith<$Res>
-    implements $YookassaItemCopyWith<$Res> {
-  factory _$$YookassaItemImplCopyWith(
-          _$YookassaItemImpl value, $Res Function(_$YookassaItemImpl) then) =
-      __$$YookassaItemImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String description, String quantity, Amount amount, String vatCode});
+/// Adds pattern-matching-related methods to [YookassaItem].
+extension YookassaItemPatterns on YookassaItem {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
 
-  @override
-  $AmountCopyWith<$Res> get amount;
-}
-
-/// @nodoc
-class __$$YookassaItemImplCopyWithImpl<$Res>
-    extends _$YookassaItemCopyWithImpl<$Res, _$YookassaItemImpl>
-    implements _$$YookassaItemImplCopyWith<$Res> {
-  __$$YookassaItemImplCopyWithImpl(
-      _$YookassaItemImpl _value, $Res Function(_$YookassaItemImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of YookassaItem
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? description = null,
-    Object? quantity = null,
-    Object? amount = null,
-    Object? vatCode = null,
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_YookassaItem value)? $default, {
+    required TResult orElse(),
   }) {
-    return _then(_$YookassaItemImpl(
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      quantity: null == quantity
-          ? _value.quantity
-          : quantity // ignore: cast_nullable_to_non_nullable
-              as String,
-      amount: null == amount
-          ? _value.amount
-          : amount // ignore: cast_nullable_to_non_nullable
-              as Amount,
-      vatCode: null == vatCode
-          ? _value.vatCode
-          : vatCode // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    final _that = this;
+    switch (_that) {
+      case _YookassaItem() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_YookassaItem value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaItem():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_YookassaItem value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaItem() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            String description,
+            String quantity,
+            Amount amount,
+            @JsonKey(name: 'payment_subject') String? paymentSubject,
+            @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
+            String vatCode)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaItem() when $default != null:
+        return $default(_that.description, _that.quantity, _that.amount,
+            _that.paymentSubject, _that.paymentMode, _that.vatCode);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            String description,
+            String quantity,
+            Amount amount,
+            @JsonKey(name: 'payment_subject') String? paymentSubject,
+            @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
+            String vatCode)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaItem():
+        return $default(_that.description, _that.quantity, _that.amount,
+            _that.paymentSubject, _that.paymentMode, _that.vatCode);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            String description,
+            String quantity,
+            Amount amount,
+            @JsonKey(name: 'payment_subject') String? paymentSubject,
+            @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
+            String vatCode)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _YookassaItem() when $default != null:
+        return $default(_that.description, _that.quantity, _that.amount,
+            _that.paymentSubject, _that.paymentMode, _that.vatCode);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$YookassaItemImpl implements _YookassaItem {
-  const _$YookassaItemImpl(
+class _YookassaItem implements YookassaItem {
+  const _YookassaItem(
       {required this.description,
       required this.quantity,
       required this.amount,
+      @JsonKey(name: 'payment_subject') this.paymentSubject,
+      @JsonKey(name: 'payment_mode') this.paymentMode,
       this.vatCode = '1'});
-
-  factory _$YookassaItemImpl.fromJson(Map<String, dynamic> json) =>
-      _$$YookassaItemImplFromJson(json);
+  factory _YookassaItem.fromJson(Map<String, dynamic> json) =>
+      _$YookassaItemFromJson(json);
 
   @override
   final String description;
@@ -171,71 +338,135 @@ class _$YookassaItemImpl implements _YookassaItem {
   @override
   final Amount amount;
   @override
+  @JsonKey(name: 'payment_subject')
+  final String? paymentSubject;
+  @override
+  @JsonKey(name: 'payment_mode')
+  final YookassaPaymentMode? paymentMode;
+  @override
   @JsonKey()
   final String vatCode;
 
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'YookassaItem(description: $description, quantity: $quantity, amount: $amount, vatCode: $vatCode)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$YookassaItemCopyWith<_YookassaItem> get copyWith =>
+      __$YookassaItemCopyWithImpl<_YookassaItem>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$YookassaItemToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$YookassaItemImpl &&
+            other is _YookassaItem &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.quantity, quantity) ||
                 other.quantity == quantity) &&
             (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.paymentSubject, paymentSubject) ||
+                other.paymentSubject == paymentSubject) &&
+            (identical(other.paymentMode, paymentMode) ||
+                other.paymentMode == paymentMode) &&
             (identical(other.vatCode, vatCode) || other.vatCode == vatCode));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, description, quantity, amount, vatCode);
-
-  /// Create a copy of YookassaItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$YookassaItemImplCopyWith<_$YookassaItemImpl> get copyWith =>
-      __$$YookassaItemImplCopyWithImpl<_$YookassaItemImpl>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, description, quantity, amount,
+      paymentSubject, paymentMode, vatCode);
 
   @override
-  Map<String, dynamic> toJson() {
-    return _$$YookassaItemImplToJson(
-      this,
-    );
+  String toString() {
+    return 'YookassaItem(description: $description, quantity: $quantity, amount: $amount, paymentSubject: $paymentSubject, paymentMode: $paymentMode, vatCode: $vatCode)';
   }
 }
 
-abstract class _YookassaItem implements YookassaItem {
-  const factory _YookassaItem(
-      {required final String description,
-      required final String quantity,
-      required final Amount amount,
-      final String vatCode}) = _$YookassaItemImpl;
+/// @nodoc
+abstract mixin class _$YookassaItemCopyWith<$Res>
+    implements $YookassaItemCopyWith<$Res> {
+  factory _$YookassaItemCopyWith(
+          _YookassaItem value, $Res Function(_YookassaItem) _then) =
+      __$YookassaItemCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {String description,
+      String quantity,
+      Amount amount,
+      @JsonKey(name: 'payment_subject') String? paymentSubject,
+      @JsonKey(name: 'payment_mode') YookassaPaymentMode? paymentMode,
+      String vatCode});
 
-  factory _YookassaItem.fromJson(Map<String, dynamic> json) =
-      _$YookassaItemImpl.fromJson;
+  @override
+  $AmountCopyWith<$Res> get amount;
+}
 
-  @override
-  String get description;
-  @override
-  String get quantity;
-  @override
-  Amount get amount;
-  @override
-  String get vatCode;
+/// @nodoc
+class __$YookassaItemCopyWithImpl<$Res>
+    implements _$YookassaItemCopyWith<$Res> {
+  __$YookassaItemCopyWithImpl(this._self, this._then);
+
+  final _YookassaItem _self;
+  final $Res Function(_YookassaItem) _then;
 
   /// Create a copy of YookassaItem
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$YookassaItemImplCopyWith<_$YookassaItemImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? description = null,
+    Object? quantity = null,
+    Object? amount = null,
+    Object? paymentSubject = freezed,
+    Object? paymentMode = freezed,
+    Object? vatCode = null,
+  }) {
+    return _then(_YookassaItem(
+      description: null == description
+          ? _self.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      quantity: null == quantity
+          ? _self.quantity
+          : quantity // ignore: cast_nullable_to_non_nullable
+              as String,
+      amount: null == amount
+          ? _self.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as Amount,
+      paymentSubject: freezed == paymentSubject
+          ? _self.paymentSubject
+          : paymentSubject // ignore: cast_nullable_to_non_nullable
+              as String?,
+      paymentMode: freezed == paymentMode
+          ? _self.paymentMode
+          : paymentMode // ignore: cast_nullable_to_non_nullable
+              as YookassaPaymentMode?,
+      vatCode: null == vatCode
+          ? _self.vatCode
+          : vatCode // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+
+  /// Create a copy of YookassaItem
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $AmountCopyWith<$Res> get amount {
+    return $AmountCopyWith<$Res>(_self.amount, (value) {
+      return _then(_self.copyWith(amount: value));
+    });
+  }
 }
+
+// dart format on

@@ -6,7 +6,7 @@ part 'create_payment_request.g.dart';
 
 /// Чтобы принять оплату, необходимо создать объект платежа.
 @freezed
-class CreatePaymentRequest with _$CreatePaymentRequest {
+abstract class CreatePaymentRequest with _$CreatePaymentRequest {
   const factory CreatePaymentRequest({
     required Amount amount,
     String? description,

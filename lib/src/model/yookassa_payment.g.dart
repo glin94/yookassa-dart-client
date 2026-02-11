@@ -6,9 +6,9 @@ part of 'yookassa_payment.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$PendingYookassaPaymentImpl _$$PendingYookassaPaymentImplFromJson(
+_PendingYookassaPayment _$PendingYookassaPaymentFromJson(
         Map<String, dynamic> json) =>
-    _$PendingYookassaPaymentImpl(
+    _PendingYookassaPayment(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
@@ -47,8 +47,8 @@ _$PendingYookassaPaymentImpl _$$PendingYookassaPaymentImplFromJson(
       ),
     );
 
-Map<String, dynamic> _$$PendingYookassaPaymentImplToJson(
-        _$PendingYookassaPaymentImpl instance) =>
+Map<String, dynamic> _$PendingYookassaPaymentToJson(
+        _PendingYookassaPayment instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
@@ -75,9 +75,9 @@ const _$YookassaPaymentStatusEnumMap = {
   YookassaPaymentStatus.canceled: 'canceled',
 };
 
-_$WaitingYookassaPaymentImpl _$$WaitingYookassaPaymentImplFromJson(
+_WaitingYookassaPayment _$WaitingYookassaPaymentFromJson(
         Map<String, dynamic> json) =>
-    _$WaitingYookassaPaymentImpl(
+    _WaitingYookassaPayment(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
@@ -116,8 +116,8 @@ _$WaitingYookassaPaymentImpl _$$WaitingYookassaPaymentImplFromJson(
       ),
     );
 
-Map<String, dynamic> _$$WaitingYookassaPaymentImplToJson(
-        _$WaitingYookassaPaymentImpl instance) =>
+Map<String, dynamic> _$WaitingYookassaPaymentToJson(
+        _WaitingYookassaPayment instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
@@ -137,9 +137,9 @@ Map<String, dynamic> _$$WaitingYookassaPaymentImplToJson(
       'metadata': instance.metadata,
     };
 
-_$SucceededYookassaPaymentImpl _$$SucceededYookassaPaymentImplFromJson(
+_SucceededYookassaPayment _$SucceededYookassaPaymentFromJson(
         Map<String, dynamic> json) =>
-    _$SucceededYookassaPaymentImpl(
+    _SucceededYookassaPayment(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
@@ -178,8 +178,8 @@ _$SucceededYookassaPaymentImpl _$$SucceededYookassaPaymentImplFromJson(
       ),
     );
 
-Map<String, dynamic> _$$SucceededYookassaPaymentImplToJson(
-        _$SucceededYookassaPaymentImpl instance) =>
+Map<String, dynamic> _$SucceededYookassaPaymentToJson(
+        _SucceededYookassaPayment instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,
@@ -199,9 +199,9 @@ Map<String, dynamic> _$$SucceededYookassaPaymentImplToJson(
       'metadata': instance.metadata,
     };
 
-_$CanceledYookassaPaymentImpl _$$CanceledYookassaPaymentImplFromJson(
+_CanceledYookassaPayment _$CanceledYookassaPaymentFromJson(
         Map<String, dynamic> json) =>
-    _$CanceledYookassaPaymentImpl(
+    _CanceledYookassaPayment(
       status: $enumDecode(_$YookassaPaymentStatusEnumMap, json['status']),
       id: json['id'] as String,
       amount: Amount.fromJson(json['amount'] as Map<String, dynamic>),
@@ -244,8 +244,8 @@ _$CanceledYookassaPaymentImpl _$$CanceledYookassaPaymentImplFromJson(
       ),
     );
 
-Map<String, dynamic> _$$CanceledYookassaPaymentImplToJson(
-        _$CanceledYookassaPaymentImpl instance) =>
+Map<String, dynamic> _$CanceledYookassaPaymentToJson(
+        _CanceledYookassaPayment instance) =>
     <String, dynamic>{
       'status': _$YookassaPaymentStatusEnumMap[instance.status]!,
       'id': instance.id,

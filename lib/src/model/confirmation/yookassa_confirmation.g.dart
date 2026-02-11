@@ -6,48 +6,48 @@ part of 'yookassa_confirmation.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$EmbeddedYookassaConfirmationImpl _$$EmbeddedYookassaConfirmationImplFromJson(
+_EmbeddedYookassaConfirmation _$EmbeddedYookassaConfirmationFromJson(
         Map<String, dynamic> json) =>
-    _$EmbeddedYookassaConfirmationImpl(
+    _EmbeddedYookassaConfirmation(
       locale: json['locale'] as String? ?? 'ru_RU',
       confirmationToken: json['confirmation_token'] as String?,
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$EmbeddedYookassaConfirmationImplToJson(
-        _$EmbeddedYookassaConfirmationImpl instance) =>
+Map<String, dynamic> _$EmbeddedYookassaConfirmationToJson(
+        _EmbeddedYookassaConfirmation instance) =>
     <String, dynamic>{
       'locale': instance.locale,
       'confirmation_token': instance.confirmationToken,
       'type': instance.$type,
     };
 
-_$ExternalYookassaConfirmationImpl _$$ExternalYookassaConfirmationImplFromJson(
+_ExternalYookassaConfirmation _$ExternalYookassaConfirmationFromJson(
         Map<String, dynamic> json) =>
-    _$ExternalYookassaConfirmationImpl(
+    _ExternalYookassaConfirmation(
       locale: json['locale'] as String? ?? 'ru_RU',
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$ExternalYookassaConfirmationImplToJson(
-        _$ExternalYookassaConfirmationImpl instance) =>
+Map<String, dynamic> _$ExternalYookassaConfirmationToJson(
+        _ExternalYookassaConfirmation instance) =>
     <String, dynamic>{
       'locale': instance.locale,
       'type': instance.$type,
     };
 
-_$MobileApplicationYookassaConfirmationImpl
-    _$$MobileApplicationYookassaConfirmationImplFromJson(
+_MobileApplicationYookassaConfirmation
+    _$MobileApplicationYookassaConfirmationFromJson(
             Map<String, dynamic> json) =>
-        _$MobileApplicationYookassaConfirmationImpl(
+        _MobileApplicationYookassaConfirmation(
           locale: json['locale'] as String? ?? 'ru_RU',
           returnUrl: json['return_url'] as String?,
           confirmationUrl: json['confirmation_url'] as String?,
           $type: json['type'] as String?,
         );
 
-Map<String, dynamic> _$$MobileApplicationYookassaConfirmationImplToJson(
-        _$MobileApplicationYookassaConfirmationImpl instance) =>
+Map<String, dynamic> _$MobileApplicationYookassaConfirmationToJson(
+        _MobileApplicationYookassaConfirmation instance) =>
     <String, dynamic>{
       'locale': instance.locale,
       'return_url': instance.returnUrl,
@@ -55,17 +55,17 @@ Map<String, dynamic> _$$MobileApplicationYookassaConfirmationImplToJson(
       'type': instance.$type,
     };
 
-_$QrCodeYookassaConfirmationImpl _$$QrCodeYookassaConfirmationImplFromJson(
+_QrCodeYookassaConfirmation _$QrCodeYookassaConfirmationFromJson(
         Map<String, dynamic> json) =>
-    _$QrCodeYookassaConfirmationImpl(
+    _QrCodeYookassaConfirmation(
       locale: json['locale'] as String? ?? 'ru_RU',
       returnUrl: json['return_url'] as String?,
       confirmationData: json['confirmation_data'] as String?,
       $type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$$QrCodeYookassaConfirmationImplToJson(
-        _$QrCodeYookassaConfirmationImpl instance) =>
+Map<String, dynamic> _$QrCodeYookassaConfirmationToJson(
+        _QrCodeYookassaConfirmation instance) =>
     <String, dynamic>{
       'locale': instance.locale,
       'return_url': instance.returnUrl,
@@ -73,19 +73,18 @@ Map<String, dynamic> _$$QrCodeYookassaConfirmationImplToJson(
       'type': instance.$type,
     };
 
-_$RedirectCodeYookassaConfirmationImpl
-    _$$RedirectCodeYookassaConfirmationImplFromJson(
-            Map<String, dynamic> json) =>
-        _$RedirectCodeYookassaConfirmationImpl(
-          locale: json['locale'] as String? ?? 'ru_RU',
-          returnUrl: json['return_url'] as String?,
-          confirmationUrl: json['confirmation_url'] as String?,
-          enforce: json['enforce'] as bool?,
-          $type: json['type'] as String?,
-        );
+_RedirectCodeYookassaConfirmation _$RedirectCodeYookassaConfirmationFromJson(
+        Map<String, dynamic> json) =>
+    _RedirectCodeYookassaConfirmation(
+      locale: json['locale'] as String? ?? 'ru_RU',
+      returnUrl: json['return_url'] as String?,
+      confirmationUrl: json['confirmation_url'] as String?,
+      enforce: json['enforce'] as bool?,
+      $type: json['type'] as String?,
+    );
 
-Map<String, dynamic> _$$RedirectCodeYookassaConfirmationImplToJson(
-        _$RedirectCodeYookassaConfirmationImpl instance) =>
+Map<String, dynamic> _$RedirectCodeYookassaConfirmationToJson(
+        _RedirectCodeYookassaConfirmation instance) =>
     <String, dynamic>{
       'locale': instance.locale,
       'return_url': instance.returnUrl,

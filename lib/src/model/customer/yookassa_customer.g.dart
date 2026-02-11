@@ -6,15 +6,13 @@ part of 'yookassa_customer.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$YookassaCustomerImpl _$$YookassaCustomerImplFromJson(
-        Map<String, dynamic> json) =>
-    _$YookassaCustomerImpl(
+_YookassaCustomer _$YookassaCustomerFromJson(Map<String, dynamic> json) =>
+    _YookassaCustomer(
       email: json['email'] as String?,
       phone: json['phone'] as String?,
     );
 
-Map<String, dynamic> _$$YookassaCustomerImplToJson(
-        _$YookassaCustomerImpl instance) =>
+Map<String, dynamic> _$YookassaCustomerToJson(_YookassaCustomer instance) =>
     <String, dynamic>{
       'email': instance.email,
       'phone': instance.phone,
