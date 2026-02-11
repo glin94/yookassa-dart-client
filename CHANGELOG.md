@@ -1,3 +1,10 @@
+## 1.0.6
+
+- Change `paymentMode` type.
+- Add `payment_subject` parameter to `YookassaItem`.
+- Update freezed dependency.
+- Migrate freezed to `3.x.x`.
+
 ## 1.0.4
 
 - Add T-Pay method
