@@ -12,4 +12,10 @@ mixin Urls {
 
   /// Отмена платежа
   static const String cancel = '$base/{paymentId}/cancel';
+
+  /// Базовый URL для возвратов
+  static const String refunds = 'https://api.yookassa.ru/v3/refunds';
+
+  /// Информация о возврате
+  static const String refundInfo = '$refunds/{refundId}';
 }
