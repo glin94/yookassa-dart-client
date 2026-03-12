@@ -100,4 +100,26 @@ abstract class YookassaClient {
     @Path() required String paymentId,
     @Header(_idempotenceKey) String? idempotenceKey,
   });
+
+  /// Создание возврата.
+  ///
+  /// Создает возврат успешного платежа на указанную сумму. Платеж можно вернуть только в течение 3 лет с момента его создания.
+  /// Комиссия ЮKassa за проведение платежа не возвращается.
+  ///
+  /// [refundRequest] - Объект запроса на возврат
+  ///
+  /// [idempotenceKey] - Ключ идемпотентности
+  @POST(Urls.refunds)
+  Future<YookassaRefund> createRefund({
+    @Body() required CreateRefundRequest refundRequest,
+    @Header(_idempotenceKey) String? idempotenceKey,
+  });
+
+  /// Запрос позволяет получить информацию о текущем состоянии возврата по его уникальному идентификатору.
+  ///
+  /// [refundId] - ID возврата
+  @GET(Urls.refundInfo)
+  Future<YookassaRefund> getRefundInfo({
+    @Path() required String refundId,
+  });
 }
